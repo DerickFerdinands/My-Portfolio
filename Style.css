@@ -6,6 +6,10 @@ h1 {
     background-attachment: fixed; */
 }
 
+p{
+    color: azure;
+}
+
 body{
     background-color: Black;
 }
