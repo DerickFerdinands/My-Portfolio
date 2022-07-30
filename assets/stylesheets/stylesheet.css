@@ -20,6 +20,8 @@ body{
     top: 50px;
     left:132px;
     letter-spacing: -2.5px;
+    line-height: 247px;
+    color: #181818;
 }
 
 #img1{
@@ -76,21 +78,26 @@ body{
     font-family: Roboto;
     font-weight: 550;
     font-size: 22px;
-    /*position: absolute;*/
     display: inline-block;
     margin: 13px;
 
 }
 
-.hashtags:first-child{
-    /*left: ;*/
-}
+#name{
+    position: absolute;
+    width: 340px;
+    height: 24px;
+    left: 1400px;
+    top: 175px;
 
-.hashtags:nth-of-type(3){
+    font-family: Allura;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 40px;
 
-}
+    color: #000000;
 
-#last{
-    top: 690px;
-    left: 1500px;
+    mix-blend-mode: darken;
+    transform: rotate(16.6deg);
 }
