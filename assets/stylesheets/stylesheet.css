@@ -349,3 +349,28 @@ html, body {
     position: absolute;
     top: 3966px;
 }
+
+#assignments{
+    position: absolute;
+    width: 1919px;
+    height: 980px;
+    left: -5px;
+    top: 4943px;
+
+    background: #000000;
+}
+
+#Assignments-back-img{
+    position: absolute;
+    height: 910px;
+    position: relative;
+
+    left: 1150px;
+}
+
+#Gallery{
+    position: absolute;
+    top: 5956px;
+}
+
+#activities
