@@ -113,7 +113,7 @@ body {
     margin-bottom: 20px;
 }
 
-.intro {
+#intro {
     position: absolute;
     top: 965px;
     left: 0px;
@@ -136,6 +136,7 @@ body {
 #intro-desc {
     background-color: #181818;
     position: absolute;
+    top: 0px;
     left: 950px;
     height: 1020px;
     width: 953px;
@@ -179,4 +180,27 @@ body {
 
 .intro-paras:nth-of-type(5) {
     top: 700px;
+}
+
+.sections{
+    height: 1020px;
+    width: 100%;
+}
+
+#skills{
+    position: absolute;
+    top: 1985px;
+}
+
+#skills-Title{
+    position: absolute;
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 38px;
+    line-height: 45px;
+    width: 462px;
+    height: 53px;
+    color: #1D1B1B;
+    left: 725px;
 }
