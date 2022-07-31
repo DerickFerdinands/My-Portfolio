@@ -325,5 +325,27 @@ html, body {
 }
 
 #projects{
+    position: absolute;
+    width: 1914px;
+    height: 987px;
+    left: 0px;
+    top: 2979px;
 
+    background: #000000;
+    mix-blend-mode: normal;
+}
+
+#project-background-img{
+    position: relative;
+    width: 1042px;
+    height: 601px;
+    left: 0px;
+    top: 0px;
+
+    transform: rotate(-180deg);
+}
+
+#about-me{
+    position: absolute;
+    top: 3966px;
 }
