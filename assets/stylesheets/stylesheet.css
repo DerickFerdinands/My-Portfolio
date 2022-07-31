@@ -101,3 +101,20 @@ body{
     mix-blend-mode: darken;
     transform: rotate(16.6deg);
 }
+
+#socialgroups{
+    position: absolute;
+    top: 747.83px;
+    left: 1856px;
+}
+
+#socialgroups img{
+    display: list-item;
+    margin-bottom: 20px;
+}
+
+#intro{
+    position: absolute;
+    top: 965px;
+    left: 0px;
+}
