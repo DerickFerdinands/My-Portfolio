@@ -377,3 +377,10 @@ html, body {
     position: absolute;
     top: 5956px;
 }
+
+#contact-me{
+    position: absolute;
+    top: 7833px;
+    background: #141414;
+    height: 574px;
+}
