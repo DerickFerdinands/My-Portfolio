@@ -373,4 +373,7 @@ html, body {
     top: 5956px;
 }
 
-#activities
+#activities{
+    position: absolute;
+    top: 5956px;
+}
