@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta view="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        section {
+            background-color: blue;
+            width: 100vw;
+            height: 100vh;
+        }
+
+        body {
+            margin-right: 0px;
+            margin-top: 0px;
+            margin-left: 0px;
+            margin-bottom: 0px;
+        }
+
+        .rectangle {
+            position: absolute;
+            display: inline-block;
+            width: 50vw;
+            height: 50vh;
+        }
+
+        .rectangle:nth-child(1) {
+            background-color: red;
+            top: 0px;
+            left: 0px;
+        }
+
+        .rectangle:nth-child(2) {
+            background-color: green;
+            right: 0px;
+            top: 0px;
+        }
+
+        .rectangle:nth-child(3) {
+            background-color: orange;
+            bottom: 0px;
+            left: 0px;
+        }
+
+        .rectangle:nth-child(4) {
+            background-color: deeppink;
+            right: 0px;
+            bottom: 0px;
+        }
+
+        .quarterCircle {
+            position: absolute;
+            width: 10vw;
+            height: 10vw;
+            background-color: white;
+
+        }
+
+        .quarterCircle:nth-child(5) {
+            border-bottom-right-radius: 100%;
+            top: 0px;
+            left: 0px;
+        }
+
+        .quarterCircle:nth-child(6) {
+            border-bottom-left-radius: 100%;
+            top: 0px;
+            right: 0px;
+        }
+
+        .quarterCircle:nth-child(7) {
+            border-top-right-radius: 100%;
+            bottom: 0px;
+            left: 0px;
+        }
+
+        .quarterCircle:nth-child(8) {
+            border-top-left-radius: 100%;
+            bottom: 0px;
+            right: 0px;
+        }
+
+        .semiCircle {
+            position: absolute;
+            width: 15vw;
+            height: 15vh;
+            background-color: white;
+            left: 0px;
+            right: 0px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .semiCircle:nth-child(9) {
+            top: 0px;
+            border-bottom-left-radius: 100vw;
+            border-bottom-right-radius: 100vw;
+        }
+
+        .semiCircle:nth-child(10) {
+            bottom: 0px;
+            border-top-left-radius: 100vw;
+            border-top-right-radius: 100vw;
+        }
+
+        .circle {
+            position: absolute;
+            width: 15vw;
+            height: 15vw;
+            background-color: white;
+            left: 0px;
+            right: 0px;
+            top: 0px;
+            bottom: 0px;
+            margin: auto;
+            border-radius: 100%;
+        }
+
+        .square {
+            position: absolute;
+            left: 0px;
+            right: 0px;
+            top: 0px;
+            bottom: 0px;
+            margin: auto;
+            background-color: red;
+            height: 8vw;
+            width: 8vw;
+        }
+
+        #mainSquare {
+            position: absolute;
+            left: 0px;
+            right: 0px;
+            top: 0px;
+            bottom: 0px;
+            margin: auto;
+            background-color: white;
+            width: 15vw;
+            height: 15vw;
+        }
+
+        #mainCircle {
+            position: absolute;
+            left: 0px;
+            right: 0px;
+            top: 0px;
+            bottom: 0px;
+            margin: auto;
+            background-color: red;
+            height: 10vw;
+            width: 10vw;
+            border-radius: 100%;
+        }
+    </style>
+</head>
+<body>
+<section>
+    <div class="rectangle">
+        <div class="circle">
+            <div class="square"></div>
+        </div>
+    </div>
+    <div class="rectangle">
+        <div class="circle">
+            <div class="square"></div>
+        </div>
+    </div>
+    <div class="rectangle">
+        <div class="circle">
+            <div class="square"></div>
+        </div>
+    </div>
+    <div class="rectangle">
+        <div class="circle">
+            <div class="square"></div>
+        </div>
+    </div>
+
+    <div class="quarterCircle"></div>
+    <div class="quarterCircle"></div>
+    <div class="quarterCircle"></div>
+    <div class="quarterCircle"></div>
+
+    <div class="semiCircle"></div>
+    <div class="semiCircle"></div>
+
+    <div id="mainSquare">
+        <div id="mainCircle"></div>
+    </div>
+
+</section>
+</body>
+</html>
