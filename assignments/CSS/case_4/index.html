@@ -2,9 +2,109 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta view="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="assets/normalize.css">
     <title>Title</title>
+    <link href="https://fonts.googleapis.com/css2?family=Allura&family=Bebas+Neue&family=Raleway:wght@500;600;700;800;900&family=Roboto:wght@300;400;500;700;900&display=swap"
+          rel="stylesheet">
+    <title>Title</title>
+    <style>
+        ::-webkit-scrollbar {
+            width: 0px;
+        }
+
+        main {
+            width: 100vw;
+            height: 100vh;
+        }
+
+        main > section {
+            width: 100vw;
+            height: 100vh;
+            position: relative;
+        }
+
+        main > section:first-child > div{
+            width: 100vw;
+            height: 8vh;
+            background-color: darkred;
+            position: sticky;
+            top: 0px;
+        }
+
+        main > section:first-child > div > div {
+            position: absolute;
+            top: 0px;
+            bottom: 0px;
+            left: 10px;
+            margin: auto;
+            color: white;
+            font-family: 'raleway';
+        }
+
+        main > section:first-child >h1 {
+            font-family: 'raleway';
+            position: absolute;
+            font-size: 100px;
+            width: 100vw;
+            height: 100px;
+            text-align: center;
+            top: 0px;
+            bottom: 0px;
+            left: 0px;
+            right: 0px;
+            margin: auto;
+        }
+
+        main > section:nth-child(2) > div{
+            width: 100vw;
+            height: 8vh;
+            background-color: darkblue;
+            position: sticky;
+            top: 0px;
+        }
+
+        main > section:nth-child(2) > div > div {
+            position: absolute;
+            top: 0px;
+            bottom: 0px;
+            left: 10px;
+            margin: auto;
+            color: cornflowerblue;
+            font-family: 'raleway';
+        }
+
+        main > section:nth-child(2) >h1 {
+            font-family: 'raleway';
+            position: absolute;
+            font-size: 100px;
+            width: 100vw;
+            height: 100px;
+            text-align: center;
+            top: 0px;
+            bottom: 0px;
+            left: 0px;
+            right: 0px;
+            margin: auto;
+        }
+    </style>
 </head>
 <body>
+<main>
+    <section>
+        <div>
+            <div><h1>Card 01</h1></div>
+        </div>
+        <h1>Hello</h1>
 
+    </section>
+    <section>
+        <div>
+            <div><h1>Card 02</h1></div>
+        </div>
+        <h1>How</h1>
+
+    </section>
+</main>
 </body>
 </html>
