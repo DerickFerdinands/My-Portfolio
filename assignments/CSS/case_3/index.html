@@ -32,11 +32,58 @@
             border: 15px solid red;
             border-radius: 100%;
         }
+
+        main>div:nth-child(2){
+            width:16.5vw;
+            height:16.5vw;
+            position: fixed;
+            top: 0px;
+            bottom: 0px;
+            left: 0px;
+            right: 0px;
+            margin:auto;
+            border: 15px solid grey;
+            border-radius: 100%;
+        }
+
+        main>section:nth-child(3){
+            position: relative;
+            width:100vw;
+            height:100vh;
+        }
+
+        main>section:nth-child(3)>div{
+            width:15vw;
+            height:15vw;
+            position: absolute;
+            top: 0px;
+            bottom: 0px;
+            left: 0px;
+            right: 0px;
+            margin:auto;
+            background-color: purple;
+            border-radius: 100%;
+        }
+
+        main>section:nth-child(3)>div>h1{
+            font-family:'Raleway' ;
+            color: white;
+            position: absolute;
+            top: 0px;
+            bottom: 0px;
+            left: 0px;
+            right: 0px;
+            margin:auto;
+        }
     </style>
 </head>
 <body>
 <main>
     <div></div>
+    <div></div>
+    <section>
+        <div><h1>hello</h1></div>
+    </section>
 </main>
 </body>
 </html>
