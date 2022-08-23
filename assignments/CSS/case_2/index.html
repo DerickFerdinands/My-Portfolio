@@ -5,19 +5,23 @@
     <meta view="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="assets/normalize.css">
     <title>Title</title>
-    <link href="https://fonts.googleapis.com/css2?family=Allura&family=Bebas+Neue&family=Raleway:wght@500;600;700;800;900&family=Roboto:wght@300;400;500;700;900&display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=Allura&family=Bebas+Neue&family=Poppins:wght@300;400;500;600&family=Raleway:wght@500;600;700;800;900&family=Roboto:wght@300;400;500;700;900&display=swap"
           rel="stylesheet">
+    <link rel="stylesheet" href="../../../assets/fonts/fontawesome-free-6.1.2-web/css/all.min.css">
     <style>
         body {
             font-weight: bold;
             font-family: Roboto;
-            position: relative;
         }
 
         header {
-            width: 99vw;
-            box-shadow: -1px 2px 0px 1px Black;
-            height: 8vh;
+            top:0px;
+            background-color: white;
+            position: fixed;
+            z-index: 1;
+            width: 99.3vw;
+            box-shadow: -1px 2px 5px 1px Black;
+            height: 7vh;
         }
 
         header > img {
@@ -26,47 +30,49 @@
             top: 10px;
         }
 
-        header > ul {
+        header > nav > ul {
             font-family: 'Raleway', sans-serif;
             position: absolute;
             right: 30px;
             top: 10px;
         }
 
-        header > ul > li {
+        header > nav > ul > li {
             padding-left: 20px;
             display: inline-block;
             cursor: pointer;
         }
 
         main {
-            top: 0px;
             width: 99vw;
             position: relative;
+            top: 50px;
         }
 
         main > section:first-child {
             font-family: 'Raleway', sans-serif;
-            font-size:19px;
+            font-size: 19px;
             color: White;
             width: 300px;
             /*height: 100%;*/
-            background-color: #500F86;
+            background-color: #0B1B34;
             position: absolute;
             top: 0px;
-            bottom:0px;
+            bottom: 0px;
 
         }
 
-        main > section:first-child>ul{
-            position:relative;
+        main > section:first-child > nav > ul {
+            font-family: 'Poppins', sans-serif;
+            position: relative;
             top: 20px;
-            left:-10px;
-            list-style:none;
+            left: -10px;
+            list-style: none;
         }
 
-        main > section:first-child>ul>li{
+        main > section:first-child > nav > ul > li {
             padding-bottom: 20px;
+            text-underline: none;
         }
 
         main > section:nth-child(2) {
@@ -74,19 +80,11 @@
             position: relative;
             width: 83vw;
             left: 16vw;
+            padding-top:30px;
             /*top: 10px;*/
 
         }
 
-        main > section:nth-child(2) > img {
-            position: relative;
-            display: inline-block;
-            top: 5px;
-            width: 500px;
-            padding: 10px;
-
-            border: 1px solid black;
-        }
 
         footer {
             font-family: 'Roboto', sans-serif;
@@ -103,170 +101,224 @@
             position: relative;
             top: 10px;
         }
+
+        nav > ul > li i {
+            margin-right: 10px;
+        }
+
+        nav > ul > li a {
+            color: black;
+            text-underline: none;
+            text-decoration: none;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        nav > ul > li a:hover {
+            color: blue;
+        }
+
+        section > nav > ul > li a {
+            color: white;
+
+        }
+
+        main>section:nth-child(2)>section{
+            /*display: flex;*/
+            height: 40vh;
+            position:relative;
+        }
+        main>section:nth-child(2)>section>div{
+            border: 1px solid black;
+            position:absolute;
+            top: 0px;
+            bottom:0px;
+            width:calc(100%/3);
+        }
+
+        main>section:nth-child(2)>section>div:last-child{
+            right: 0px;
+        }
+
+        main>section:nth-child(2)>section>div:nth-child(2){
+            left:calc(100%/3);
+        }
+        main>section:nth-child(2)>section>div>img{
+            height: 100%;
+        }
     </style>
 </head>
 <body>
 <header>
     <img src="assets/ijse-logo%201.png" width="150px" alt="">
-    <ul>
-        <li>Home</li>
-        <li>Services</li>
-        <li>Contacts</li>
-        <li>About Us</li>
-    </ul>
+    <nav>
+        <ul>
+            <li><i class="fa-solid fa-house"></i><a href="#">Home</a></li>
+            <li><i class="fa-solid fa-fax"></i><a href="#">Services</a></li>
+            <li><i class="fa-solid fa-phone"></i><a href="#">Contacts</a></li>
+            <li><i class="fa-solid fa-info"></i><a href="#">About Us</a></li>
+        </ul>
+    </nav>
 </header>
 <main>
 
-        <section>
+    <section>
+        <nav>
             <ul>
-                <li>Home</li>
-                <li>Services</li>
-                <li>Contacts</li>
-                <li>About Us</li>
+                <li><i class="fa-solid fa-house"></i><a href="#">Home</a></li>
+                <li><i class="fa-solid fa-fax"></i><a href="#">Services</a></li>
+                <li><i class="fa-solid fa-phone"></i><a href="#">Contacts</a></li>
+                <li><i class="fa-solid fa-info"></i><a href="#">About Us</a></li>
             </ul>
-        </section>
+        </nav>
+    </section>
+    <section>
         <section>
-             <img src="assets/2ba160192820f5455364dc7ab4a0a09a.webp" alt="">
-             <img src="assets/9abfd2e03251c98cb5340a677ac219f1.webp" alt="">
-             <img src="assets/c8215a54580b82fe03bb71c1a914158e.webp" alt="">
-
-
-             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis fuga neque praesentium quaerat ratione.
-                 Aliquam debitis delectus, et harum impedit laudantium maxime minima, nisi omnis perspiciatis praesentium
-                 quaerat repellat sed!</p>
-
-
-             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis fuga neque praesentium quaerat ratione.
-                 Aliquam debitis delectus, et harum impedit laudantium maxime minima, nisi omnis perspiciatis praesentium
-                 quaerat repellat sed!</p>
-
-
-             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis fuga neque praesentium quaerat ratione.
-                 Aliquam debitis delectus, et harum impedit laudantium maxime minima, nisi omnis perspiciatis praesentium
-                 quaerat repellat sed!</p>
-
-
-             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis fuga neque praesentium quaerat ratione.
-                 Aliquam debitis delectus, et harum impedit laudantium maxime minima, nisi omnis perspiciatis praesentium
-                 quaerat repellat sed!</p>
-
-             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis fuga neque praesentium quaerat ratione.
-                 Aliquam debitis delectus, et harum impedit laudantium maxime minima, nisi omnis perspiciatis praesentium
-                 quaerat repellat sed!</p>
-
-
-             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis fuga neque praesentium quaerat ratione.
-                 Aliquam debitis delectus, et harum impedit laudantium maxime minima, nisi omnis perspiciatis praesentium
-                 quaerat repellat sed!</p>
-
-
-             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis fuga neque praesentium quaerat ratione.
-                 Aliquam debitis delectus, et harum impedit laudantium maxime minima, nisi omnis perspiciatis praesentium
-                 quaerat repellat sed!</p>
-
-
-             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis fuga neque praesentium quaerat ratione.
-                 Aliquam debitis delectus, et harum impedit laudantium maxime minima, nisi omnis perspiciatis praesentium
-                 quaerat repellat sed!</p>
-
-
-             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis fuga neque praesentium quaerat ratione.
-                 Aliquam debitis delectus, et harum impedit laudantium maxime minima, nisi omnis perspiciatis praesentium
-                 quaerat repellat sed!</p>
-
-
-             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis fuga neque praesentium quaerat ratione.
-                 Aliquam debitis delectus, et harum impedit laudantium maxime minima, nisi omnis perspiciatis praesentium
-                 quaerat repellat sed!</p>
-
-
-             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis fuga neque praesentium quaerat ratione.
-                 Aliquam debitis delectus, et harum impedit laudantium maxime minima, nisi omnis perspiciatis praesentium
-                 quaerat repellat sed!</p>
-
-
-             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis fuga neque praesentium quaerat ratione.
-                 Aliquam debitis delectus, et harum impedit laudantium maxime minima, nisi omnis perspiciatis praesentium
-                 quaerat repellat sed!</p>
-
-             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis fuga neque praesentium quaerat ratione.
-                 Aliquam debitis delectus, et harum impedit laudantium maxime minima, nisi omnis perspiciatis praesentium
-                 quaerat repellat sed!</p>
-
-
-             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis fuga neque praesentium quaerat ratione.
-                 Aliquam debitis delectus, et harum impedit laudantium maxime minima, nisi omnis perspiciatis praesentium
-                 quaerat repellat sed!</p>
-
-
-             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis fuga neque praesentium quaerat ratione.
-                 Aliquam debitis delectus, et harum impedit laudantium maxime minima, nisi omnis perspiciatis praesentium
-                 quaerat repellat sed!</p>
-
-
-             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis fuga neque praesentium quaerat ratione.
-                 Aliquam debitis delectus, et harum impedit laudantium maxime minima, nisi omnis perspiciatis praesentium
-                 quaerat repellat sed!</p>
-
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis fuga neque praesentium quaerat ratione.
-                Aliquam debitis delectus, et harum impedit laudantium maxime minima, nisi omnis perspiciatis praesentium
-                quaerat repellat sed!</p>
-
-
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis fuga neque praesentium quaerat ratione.
-                Aliquam debitis delectus, et harum impedit laudantium maxime minima, nisi omnis perspiciatis praesentium
-                quaerat repellat sed!</p>
-
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis fuga neque praesentium quaerat ratione.
-                Aliquam debitis delectus, et harum impedit laudantium maxime minima, nisi omnis perspiciatis praesentium
-                quaerat repellat sed!</p>
-
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis fuga neque praesentium quaerat ratione.
-                Aliquam debitis delectus, et harum impedit laudantium maxime minima, nisi omnis perspiciatis praesentium
-                quaerat repellat sed!</p>
-
-
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis fuga neque praesentium quaerat ratione.
-                Aliquam debitis Derick Derick Derick, et harum impedit laudantium maxime minima, nisi omnis perspiciatis praesentium
-                quaerat repellat sed!</p>
-
-            <h1>Derick</h1>
-            <h1>Andrew</h1>
-            <h1>Ferdinands</h1>
-
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis fuga neque praesentium quaerat ratione.
-                Aliquam debitis delectus, et harum impedit laudantium maxime minima, nisi omnis perspiciatis praesentium
-                quaerat repellat sed!</p>
-
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis fuga neque praesentium quaerat ratione.
-                Aliquam debitis delectus, et harum impedit laudantium maxime minima, nisi omnis perspiciatis praesentium
-                quaerat repellat sed!</p>
-
-
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis fuga neque praesentium quaerat ratione.
-                Aliquam debitis Derick Derick Derick, et harum impedit laudantium maxime minima, nisi omnis perspiciatis praesentium
-                quaerat repellat sed!</p>
-
-
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis fuga neque praesentium quaerat ratione.
-                Aliquam debitis delectus, et harum impedit laudantium maxime minima, nisi omnis perspiciatis praesentium
-                quaerat repellat sed!</p>
-
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis fuga neque praesentium quaerat ratione.
-                Aliquam debitis delectus, et harum impedit laudantium maxime minima, nisi omnis perspiciatis praesentium
-                quaerat repellat sed!</p>
-
-
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis fuga neque praesentium quaerat ratione.
-                Aliquam debitis Derick Derick Derick, et harum impedit laudantium maxime minima, nisi omnis perspiciatis praesentium
-                quaerat repellat sedeasfwefwe!</p>
-
-            <h1>Derick</h1>
-            <h1>Andrew</h1>
-            <h1>Ferdinands</h1>
-
-
+            <div><img src="assets/2ba160192820f5455364dc7ab4a0a09a.webp" alt=""></div>
+            <div><img src="assets/9abfd2e03251c98cb5340a677ac219f1.webp" alt=""></div>
+            <div><img src="assets/c8215a54580b82fe03bb71c1a914158e.webp" alt=""></div>
         </section>
+
+
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis fuga neque praesentium quaerat ratione.
+            Aliquam debitis delectus, et harum impedit laudantium maxime minima, nisi omnis perspiciatis praesentium
+            quaerat repellat sed!</p>
+
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis fuga neque praesentium quaerat ratione.
+            Aliquam debitis delectus, et harum impedit laudantium maxime minima, nisi omnis perspiciatis praesentium
+            quaerat repellat sed!</p>
+
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis fuga neque praesentium quaerat ratione.
+            Aliquam debitis delectus, et harum impedit laudantium maxime minima, nisi omnis perspiciatis praesentium
+            quaerat repellat sed!</p>
+
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis fuga neque praesentium quaerat ratione.
+            Aliquam debitis delectus, et harum impedit laudantium maxime minima, nisi omnis perspiciatis praesentium
+            quaerat repellat sed!</p>
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis fuga neque praesentium quaerat ratione.
+            Aliquam debitis delectus, et harum impedit laudantium maxime minima, nisi omnis perspiciatis praesentium
+            quaerat repellat sed!</p>
+
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis fuga neque praesentium quaerat ratione.
+            Aliquam debitis delectus, et harum impedit laudantium maxime minima, nisi omnis perspiciatis praesentium
+            quaerat repellat sed!</p>
+
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis fuga neque praesentium quaerat ratione.
+            Aliquam debitis delectus, et harum impedit laudantium maxime minima, nisi omnis perspiciatis praesentium
+            quaerat repellat sed!</p>
+
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis fuga neque praesentium quaerat ratione.
+            Aliquam debitis delectus, et harum impedit laudantium maxime minima, nisi omnis perspiciatis praesentium
+            quaerat repellat sed!</p>
+
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis fuga neque praesentium quaerat ratione.
+            Aliquam debitis delectus, et harum impedit laudantium maxime minima, nisi omnis perspiciatis praesentium
+            quaerat repellat sed!</p>
+
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis fuga neque praesentium quaerat ratione.
+            Aliquam debitis delectus, et harum impedit laudantium maxime minima, nisi omnis perspiciatis praesentium
+            quaerat repellat sed!</p>
+
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis fuga neque praesentium quaerat ratione.
+            Aliquam debitis delectus, et harum impedit laudantium maxime minima, nisi omnis perspiciatis praesentium
+            quaerat repellat sed!</p>
+
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis fuga neque praesentium quaerat ratione.
+            Aliquam debitis delectus, et harum impedit laudantium maxime minima, nisi omnis perspiciatis praesentium
+            quaerat repellat sed!</p>
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis fuga neque praesentium quaerat ratione.
+            Aliquam debitis delectus, et harum impedit laudantium maxime minima, nisi omnis perspiciatis praesentium
+            quaerat repellat sed!</p>
+
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis fuga neque praesentium quaerat ratione.
+            Aliquam debitis delectus, et harum impedit laudantium maxime minima, nisi omnis perspiciatis praesentium
+            quaerat repellat sed!</p>
+
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis fuga neque praesentium quaerat ratione.
+            Aliquam debitis delectus, et harum impedit laudantium maxime minima, nisi omnis perspiciatis praesentium
+            quaerat repellat sed!</p>
+
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis fuga neque praesentium quaerat ratione.
+            Aliquam debitis delectus, et harum impedit laudantium maxime minima, nisi omnis perspiciatis praesentium
+            quaerat repellat sed!</p>
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis fuga neque praesentium quaerat ratione.
+            Aliquam debitis delectus, et harum impedit laudantium maxime minima, nisi omnis perspiciatis praesentium
+            quaerat repellat sed!</p>
+
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis fuga neque praesentium quaerat ratione.
+            Aliquam debitis delectus, et harum impedit laudantium maxime minima, nisi omnis perspiciatis praesentium
+            quaerat repellat sed!</p>
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis fuga neque praesentium quaerat ratione.
+            Aliquam debitis delectus, et harum impedit laudantium maxime minima, nisi omnis perspiciatis praesentium
+            quaerat repellat sed!</p>
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis fuga neque praesentium quaerat ratione.
+            Aliquam debitis delectus, et harum impedit laudantium maxime minima, nisi omnis perspiciatis praesentium
+            quaerat repellat sed!</p>
+
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis fuga neque praesentium quaerat ratione.
+            Aliquam debitis Derick Derick Derick, et harum impedit laudantium maxime minima, nisi omnis perspiciatis
+            praesentium
+            quaerat repellat sed!</p>
+
+        <h1>Derick</h1>
+        <h1>Andrew</h1>
+        <h1>Ferdinands</h1>
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis fuga neque praesentium quaerat ratione.
+            Aliquam debitis delectus, et harum impedit laudantium maxime minima, nisi omnis perspiciatis praesentium
+            quaerat repellat sed!</p>
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis fuga neque praesentium quaerat ratione.
+            Aliquam debitis delectus, et harum impedit laudantium maxime minima, nisi omnis perspiciatis praesentium
+            quaerat repellat sed!</p>
+
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis fuga neque praesentium quaerat ratione.
+            Aliquam debitis Derick Derick Derick, et harum impedit laudantium maxime minima, nisi omnis perspiciatis
+            praesentium
+            quaerat repellat sed!</p>
+
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis fuga neque praesentium quaerat ratione.
+            Aliquam debitis delectus, et harum impedit laudantium maxime minima, nisi omnis perspiciatis praesentium
+            quaerat repellat sed!</p>
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis fuga neque praesentium quaerat ratione.
+            Aliquam debitis delectus, et harum impedit laudantium maxime minima, nisi omnis perspiciatis praesentium
+            quaerat repellat sed!</p>
+
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis fuga neque praesentium quaerat ratione.
+            Aliquam debitis Derick Derick Derick, et harum impedit laudantium maxime minima, nisi omnis perspiciatis
+            praesentium
+            quaerat repellat sedeasfwefwe!</p>
+
+        <h1>Derick</h1>
+        <h1>Andrew</h1>
+        <h1>Ferdinands</h1>
+
+
+    </section>
     <footer>
         <h3>Developed By IJSE</h3>
     </footer>
