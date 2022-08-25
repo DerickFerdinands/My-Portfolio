@@ -630,7 +630,11 @@ header > nav > ul > li {
 .dots{
     font-size: 12px;
     margin-right: 50px;
+    position: relative;
 
+}
+.sections:nth-child(5) >aside:nth-of-type(2)>h2:nth-of-type(7){
+    left: 6px;
 }
 .sections:nth-child(5) >aside:nth-of-type(2)>h2:first-of-type{
     margin: 0;
@@ -676,5 +680,14 @@ header > nav > ul > li {
     margin-bottom: 30px;
     position: relative;
     left: 65px;
+}
+
+.sections:nth-child(5) >aside:nth-of-type(2)>div:first-of-type{
+    height: 210px;
+    background-color: black;
+    width: 3px;
+    position: absolute;
+    top: 109px;
+    left: 10px;
 }
 
