@@ -349,13 +349,14 @@ header > nav > ul > li {
     right: 20px;
 }
 
-.sections:nth-child(4) >section:first-of-type{
+.sections:nth-child(4) > section:first-of-type {
     height: 80%;
     width: 650px;
     position: absolute;
     right: 0;
 }
-.sections:nth-child(4) >section:first-of-type>h1:first-of-type{
+
+.sections:nth-child(4) > section:first-of-type > h1:first-of-type {
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
     font-size: 60px;
@@ -366,7 +367,7 @@ header > nav > ul > li {
     background-size: 300px 66px;
 }
 
-.sections:nth-child(4) >section:first-of-type>p{
+.sections:nth-child(4) > section:first-of-type > p {
     width: 520px;
     margin: 0;
     padding: 0;
@@ -376,11 +377,13 @@ header > nav > ul > li {
     font-size: 22px;
     color: #E3E1E1;
 }
-.sections:nth-child(4) >section:first-of-type>h3{
+
+.sections:nth-child(4) > section:first-of-type > h3 {
     margin: 0px;
     height: 100px;
 }
-.sections:nth-child(4) >section:first-of-type>h3>a{
+
+.sections:nth-child(4) > section:first-of-type > h3 > a {
     text-decoration: none;
     cursor: pointer;
     color: #1F6E9A;
@@ -391,13 +394,87 @@ header > nav > ul > li {
     font-size: 18px;
 }
 
-.sections:nth-child(4) >section:first-of-type>h3>a>i{
+.sections:nth-child(4) > section:first-of-type > h3 > a > i {
     color: white;
     font-size: 30px;
     padding-right: 10px;
 }
 
-.sections:nth-child(4) >div:nth-of-type(2){
-    background-color: white;
+.sections:nth-child(4) > div:nth-of-type(2) {
+    display: flex;
+    justify-content: space-around;
+    width: 650px;
+    height: 50px;
+    position: absolute;
+    bottom: 80px;
+    right: 10px;
+}
+
+.sections:nth-child(4) > div:nth-of-type(2) > div {
+    display: flex;
+    justify-content: space-around;
+    width: 500px;
+}
+
+.sections:nth-child(4) > div:nth-of-type(2) > div > img {
+    height: 20px;
+    position: relative;
+    top: 14px;
+}
+
+.sections:nth-child(4) > div:nth-of-type(2) > div > h2 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 17px;
+    color: #A6A4A4;
+}
+
+.sections:nth-child(4) > div:nth-of-type(2) > h2:first-of-type {
+    display: inline-block;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    position: relative;
+    padding-right: 30px;
+    bottom: 5px;
+    color: #EAE8E8;
+}
+
+.sections:nth-child(5) > div:first-of-type {
     display: flex;
 }
+
+.sections:nth-child(5) > div:first-of-type > h1 {
+    margin: 0px;
+}
+
+.sections:nth-child(5) > div:first-of-type > h1:first-of-type {
+    font-family: 'Raleway',sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 38px;
+}
+
+.sections:nth-child(5) > div:first-of-type > h1:nth-of-type(2){
+    font-family: 'Raleway',sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 88px;
+    /*width: 390px;*/
+    /*height: 85px;*/
+    background: url("../../assets/images/Flag_of_Sri_Lanka.svg.png");
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+
+    background-size: 388px 120px;
+}
+
+.sections:nth-child(5) > div:first-of-type > h4:first-of-type>time{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    font-size: 15px;
+}
+
+.sections:nth-child(5) > div:first-of-type > h1:nth-of-type(2)
