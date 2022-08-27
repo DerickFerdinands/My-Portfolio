@@ -460,14 +460,14 @@ header > nav > ul > li {
     font-size: 38px;
     position: relative;
     top: 150px;
-    left: 70px;
+    left: 75px;
 }
 
 .sections:nth-child(5) > div:first-of-type > h1:nth-of-type(2) {
     font-family: 'Raleway', sans-serif;
     font-style: normal;
     font-weight: 600;
-    font-size: 88px;
+    font-size: 89px;
 
     background: url("../../assets/images/Flag_of_Sri_Lanka.svg.png");
     -webkit-text-fill-color: transparent;
@@ -476,7 +476,7 @@ header > nav > ul > li {
 
     position: relative;
     top: 110px;
-    left: 100px;
+    left: 95px;
 }
 
 .sections:nth-child(5) > div:first-of-type > h4:first-of-type > time {
@@ -485,7 +485,7 @@ header > nav > ul > li {
     font-size: 15px;
     position: relative;
     top: 180px;
-    left: 10px;
+    left: 5px;
 }
 
 .sections:nth-child(5) > div:first-of-type > h1:nth-of-type(3) {
@@ -515,7 +515,7 @@ header > nav > ul > li {
 }
 
 .sections:nth-child(5) > div:first-of-type > div:nth-of-type(2) {
-    border:3px solid White;
+    border: 3px solid White;
     border-radius: 100%;
     height: 315px;
     width: 337px;
@@ -523,11 +523,13 @@ header > nav > ul > li {
     top: 30px;
     left: 870px;
 }
-.sections:nth-child(5) > div:first-of-type >img:first-of-type{
-    position:absolute;
+
+.sections:nth-child(5) > div:first-of-type > img:first-of-type {
+    position: absolute;
     top: -50px;
     left: 42vw;
 }
+
 .sections:nth-child(5) > div:first-of-type > h1:nth-of-type(4) {
     font-family: 'Raleway', sans-serif;
     font-style: normal;
@@ -558,15 +560,16 @@ header > nav > ul > li {
     top: 160px;
     left: 70px;
 }
+
 .sections:nth-child(5) > div:first-of-type > h1:nth-of-type(6) > i {
     color: #259674;
     font-size: 20px;
     margin-right: 40px;
-    position:relative;
+    position: relative;
     bottom: 10px;
 }
 
-.sections:nth-child(5) >aside:first-of-type{
+.sections:nth-child(5) > aside:first-of-type {
     align-items: center;
     border: 2px solid black;
     border-radius: 5px;
@@ -579,7 +582,7 @@ header > nav > ul > li {
     bottom: 80px;
 }
 
-.sections:nth-child(5) >aside:first-of-type>div{
+.sections:nth-child(5) > aside:first-of-type > div {
     background-color: white;
     width: 120px;
     height: 20px;
@@ -588,14 +591,17 @@ header > nav > ul > li {
     right: 0;
     margin: auto;
 }
-.sections:nth-child(5) >aside:first-of-type>ul{
+
+.sections:nth-child(5) > aside:first-of-type > ul {
     padding-top: 10px;
     padding-bottom: 10px;
 }
-.sections:nth-child(5) >aside:first-of-type>ul>li{
+
+.sections:nth-child(5) > aside:first-of-type > ul > li {
     padding-bottom: 5px;
 }
-.sections:nth-child(5) >aside:first-of-type>div>h4:first-of-type{
+
+.sections:nth-child(5) > aside:first-of-type > div > h4:first-of-type {
     text-align: center;
     position: absolute;
     bottom: 5px;
@@ -609,14 +615,16 @@ header > nav > ul > li {
     -webkit-background-clip: text;
     background-size: 100px 20px;
 }
-.sections:nth-child(5) >aside:nth-of-type(2)>h1:first-of-type > i {
-    color:#821C34;
+
+.sections:nth-child(5) > aside:nth-of-type(2) > h1:first-of-type > i {
+    color: #821C34;
     font-size: 20px;
     margin-right: 40px;
- /*   position:relative;
-    bottom: 10px;*/
+    /*   position:relative;
+       bottom: 10px;*/
 }
-.sections:nth-child(5) >aside:nth-of-type(2){
+
+.sections:nth-child(5) > aside:nth-of-type(2) {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -629,32 +637,39 @@ header > nav > ul > li {
     font-family: 'Raleway', sans-serif;
     font-weight: 600;
 }
-.sections:nth-child(5) >aside:nth-of-type(2)>h1:first-of-type{
+
+.sections:nth-child(5) > aside:nth-of-type(2) > h1:first-of-type {
     font-family: 'Raleway', sans-serif;
     font-weight: 600;
     font-size: 29px;
 }
-.dots{
+
+.dots {
     font-size: 12px;
     margin-right: 50px;
     position: relative;
 
 }
-.sections:nth-child(5) >aside:nth-of-type(2)>h2:nth-of-type(7){
+
+.sections:nth-child(5) > aside:nth-of-type(2) > h2:nth-of-type(7) {
     left: 6px;
 }
-.sections:nth-child(5) >aside:nth-of-type(2)>h2:first-of-type{
+
+.sections:nth-child(5) > aside:nth-of-type(2) > h2:first-of-type {
     margin: 0;
     display: inline-block;
-    margin-left:5px;
+    margin-left: 5px;
 }
-.sections:nth-child(5) >aside:nth-of-type(2)>h2:nth-of-type(8){
+
+.sections:nth-child(5) > aside:nth-of-type(2) > h2:nth-of-type(8) {
     width: 300px;
 }
-.sections:nth-child(5) >aside:nth-of-type(2)>h2:nth-of-type(11){
+
+.sections:nth-child(5) > aside:nth-of-type(2) > h2:nth-of-type(11) {
     bottom: 20px;
 }
-.college{
+
+.college {
     font-size: 18px;
     width: 350px;
     position: relative;
@@ -663,22 +678,23 @@ header > nav > ul > li {
     left: 62px;
     color: #000000;
 }
-.duration{
+
+.duration {
     font-size: 18px;
     text-align: center;
     width: 103px;
     background: #CBC7CC;
     border-radius: 5px;
-    position:relative;
+    position: relative;
     bottom: 10px;
-    left:60px;
+    left: 60px;
     margin: 0;
     height: 70px;
     justify-content: center;
 
 }
 
-.program{
+.program {
     font-size: 18px;
     color: #6F1919;
     width: 357px;
@@ -689,7 +705,7 @@ header > nav > ul > li {
     left: 65px;
 }
 
-.sections:nth-child(5) >aside:nth-of-type(2)>div:first-of-type{
+.sections:nth-child(5) > aside:nth-of-type(2) > div:first-of-type {
     height: 210px;
     background-color: black;
     width: 3px;
@@ -697,7 +713,8 @@ header > nav > ul > li {
     top: 109px;
     left: 10px;
 }
-.sections:nth-child(5) >aside:nth-of-type(2)>div:nth-of-type(2){
+
+.sections:nth-child(5) > aside:nth-of-type(2) > div:nth-of-type(2) {
     height: 150px;
     background-color: black;
     width: 3px;
@@ -706,7 +723,7 @@ header > nav > ul > li {
     left: 10px;
 }
 
-.sections:nth-child(5) >aside:nth-of-type(3){
+.sections:nth-child(5) > aside:nth-of-type(3) {
     display: flex;
     flex-direction: column;
     font-family: 'Raleway', sans-serif;
@@ -721,16 +738,17 @@ header > nav > ul > li {
     height: 900px;
     justify-content: flex-end;
 }
-.sections:nth-child(5) >aside:nth-of-type(3)>div{
+
+.sections:nth-child(5) > aside:nth-of-type(3) > div {
     child-align: middle;
     text-align: center;
 }
 
-.sections:nth-child(5) >aside:nth-of-type(3) img{
+.sections:nth-child(5) > aside:nth-of-type(3) img {
     height: 69px;
 }
 
-.sections:nth-child(5) >aside:nth-of-type(3) h3{
+.sections:nth-child(5) > aside:nth-of-type(3) h3 {
     font-family: 'Raleway', sans-serif;
     font-size: 13px;
     margin-bottom: 20px;
@@ -738,7 +756,8 @@ header > nav > ul > li {
     position: relative;
     left: 5px;
 }
-.sections:nth-child(5) >aside:nth-of-type(3)>div>h1{
+
+.sections:nth-child(5) > aside:nth-of-type(3) > div > h1 {
     font-family: 'Raleway', sans-serif;
     font-style: normal;
     font-size: 22px;
@@ -747,33 +766,99 @@ header > nav > ul > li {
     right: 5px;
 }
 
-.sections:nth-child(5) >aside:nth-of-type(3)>div:nth-of-type(2)>img:nth-of-type(1){
+.sections:nth-child(5) > aside:nth-of-type(3) > div:nth-of-type(2) > img:nth-of-type(1) {
     height: 81px;
 }
-.sections:nth-child(5) >aside:nth-of-type(3)>div:nth-of-type(2)>img:nth-of-type(2){
+
+.sections:nth-child(5) > aside:nth-of-type(3) > div:nth-of-type(2) > img:nth-of-type(2) {
     height: 23px;
 }
-.sections:nth-child(5) >aside:nth-of-type(3)>div:nth-of-type(2)>img:nth-of-type(3){
+
+.sections:nth-child(5) > aside:nth-of-type(3) > div:nth-of-type(2) > img:nth-of-type(3) {
     height: 25px;
 }
 
-.sections:nth-child(5) >aside:nth-of-type(4)>img{
+.sections:nth-child(5) > aside:nth-of-type(4) {
+    position: relative;
+    left: 75px;
+    bottom: 15px;
+    width: 1000px;
+    height: 300px;
+}
+
+.sections:nth-child(5) > aside:nth-of-type(4) > h1:first-of-type {
+    font-family: 'Raleway', sans serif;
+    font-size: 24px;
+}
+
+.sections:nth-child(5) > aside:nth-of-type(4) > img {
     padding: 10px;
 }
-.sections:nth-child(5) >aside:nth-of-type(4)>img:nth-of-type(1){
+
+.sections:nth-child(5) > aside:nth-of-type(4) > img:nth-of-type(1) {
     width: 311px;
     height: 218px;
     border-radius: 15px;
 }
-.sections:nth-child(5) >aside:nth-of-type(4)>img:nth-of-type(2){
-    width: 307px;
-    height: 218px;
-    border-radius: 15px;
-}
-.sections:nth-child(5) >aside:nth-of-type(4)>img:nth-of-type(3){
+
+.sections:nth-child(5) > aside:nth-of-type(4) > img:nth-of-type(2) {
     width: 307px;
     height: 218px;
     border-radius: 15px;
 }
 
+.sections:nth-child(5) > aside:nth-of-type(4) > img:nth-of-type(3) {
+    width: 307px;
+    height: 218px;
+    border-radius: 15px;
+}
+
+.sections:nth-child(5) > aside:nth-of-type(4) > h3 {
+    font-family: 'Raleway', sans serif;
+    width: 157px;
+    height: 20px;
+    text-align: center;
+    font-size: 24px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+.sections:nth-child(5) > aside:nth-of-type(4) > h3:nth-of-type(1) {
+    left: 85px;
+    font-weight: 700;
+}
+
+.sections:nth-child(5) > aside:nth-of-type(4) > h3:nth-of-type(2) {
+    left: 0;
+    right: 0;
+
+}
+
+.sections:nth-child(5) > aside:nth-of-type(4) > h3:nth-of-type(3) {
+    right: 90px;
+}
+
+.sections:nth-child(5) > aside:nth-of-type(4) > h6{
+    font-family: 'Raleway', sans serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    display: inline-block;
+    margin: 0;
+    padding-right: 220px;
+    position:relative;
+    left: 100px;
+}
+
+.sections:nth-child(6){
+    background-color: #000000;
+}
+
+.sections:nth-child(6)>img:nth-of-type(1){
+    height: 100vh;
+    position: absolute;
+    /*right: -30px;*/
+}
 
