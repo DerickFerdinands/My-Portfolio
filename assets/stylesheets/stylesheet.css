@@ -787,7 +787,7 @@ header > nav > ul > li {
 }
 
 .sections:nth-child(5) > aside:nth-of-type(4) > h1:first-of-type {
-    font-family: 'Raleway', sans serif;
+    font-family: 'Raleway', sans-serif;
     font-size: 24px;
 }
 
@@ -814,7 +814,7 @@ header > nav > ul > li {
 }
 
 .sections:nth-child(5) > aside:nth-of-type(4) > h3 {
-    font-family: 'Raleway', sans serif;
+    font-family: 'Raleway', sans-serif;
     width: 157px;
     height: 20px;
     text-align: center;
@@ -840,25 +840,97 @@ header > nav > ul > li {
     right: 90px;
 }
 
-.sections:nth-child(5) > aside:nth-of-type(4) > h6{
-    font-family: 'Raleway', sans serif;
+.sections:nth-child(5) > aside:nth-of-type(4) > h6 {
+    font-family: 'Raleway', sans-serif;
     font-style: normal;
     font-weight: 600;
     font-size: 16px;
     display: inline-block;
     margin: 0;
     padding-right: 220px;
-    position:relative;
+    position: relative;
     left: 100px;
 }
 
-.sections:nth-child(6){
+.sections:nth-child(6) {
     background-color: #000000;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 800;
 }
 
-.sections:nth-child(6)>img:nth-of-type(1){
+.sections:nth-child(6) > img:nth-of-type(1) {
     height: 100vh;
     position: absolute;
-    /*right: -30px;*/
+    right: 90px;
 }
 
+.sections:nth-child(6) > section>h1 {
+    font-family: 'Raleway', sans-serif;
+    font-style: normal;
+    font-size: 31px;
+    font-weight: 800;
+    color: #FFFFFF;
+    display: inline-block;
+    margin: 0;
+    /*margin-bottom: 100px;*/
+    position: relative;
+
+}
+
+
+.sections:nth-child(6) > section:first-of-type {
+    width: 1215px;
+    height: 500px;
+    align-items: center;
+    position:relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    top: 300px;
+}
+
+.sections:nth-child(6) > section:first-of-type > div {
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    left: 0px;
+}
+
+.sections:nth-child(6) > section:first-of-type > div > img {
+    border-radius: 10px;
+    width: 372px;
+    height: 391px;
+}
+.sections:nth-child(6) > section:first-of-type > div > img:hover{
+        width: 403px;
+        height: 425px;
+}
+
+
+.sections:nth-child(6) > section:first-of-type >div>h3{
+    font-family: 'Raleway', sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 20px;
+    color: #FFFFFF;
+    display: inline-block;
+    margin: 10px;
+
+}
+
+.sections:nth-child(6) > section:first-of-type >div>h5{
+    font-family: 'Raleway', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    color: #B9B9B9;
+    margin: 0;
+}
+
+
+
+.sections:nth-child(6) > section:first-of-type .index-color{
+    color: #D0AD41;
+}
