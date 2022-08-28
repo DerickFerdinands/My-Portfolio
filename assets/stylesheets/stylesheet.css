@@ -937,3 +937,27 @@ header > nav > ul > li {
 .sections:nth-child(6) > section:first-of-type .index-color{
     color: #D0AD41;
 }
+
+.sections:nth-child(6) > div{
+    color: #A6A4A4;
+    display: flex;
+    z-index: 5;
+    position:relative;
+    justify-content: space-around;
+    margin: 0;
+    width: 525px;
+    top: 230px;
+    left: 410px;
+}
+
+.sections:nth-child(6) > div>h2{
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    margin: 0;
+}
+.sections:nth-child(6) > div>img{
+    height: 20px;
+    margin: 0;
+}
