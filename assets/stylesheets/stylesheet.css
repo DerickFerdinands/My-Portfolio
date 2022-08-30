@@ -864,7 +864,7 @@ header > nav > ul > li {
     right: 90px;
 }
 
-.sections:nth-child(6) >section>h1 {
+.sections:nth-child(6) > section > h1 {
     font-family: 'Raleway', sans-serif;
     font-style: normal;
     font-size: 31px;
@@ -884,7 +884,7 @@ header > nav > ul > li {
     width: 1215px;
     height: 600px;
     align-items: center;
-    position:relative;
+    position: relative;
     display: flex;
     align-items: flex-end;
     justify-content: space-between;
@@ -905,18 +905,19 @@ header > nav > ul > li {
     border-radius: 10px;
     width: 372px;
     height: 391px;
-    transition: height,width;
+    transition: height, width;
     transition-duration: 0.3s;
 }
-.sections:nth-child(6) > section:first-of-type > div > img:hover{
-        width: 403px;
-        height: 425px;
-        transition: height,width;
+
+.sections:nth-child(6) > section:first-of-type > div > img:hover {
+    width: 403px;
+    height: 425px;
+    transition: height, width;
     transition-duration: 0.3s;
 }
 
 
-.sections:nth-child(6) > section:first-of-type >div>h3{
+.sections:nth-child(6) > section:first-of-type > div > h3 {
     font-family: 'Raleway', sans-serif;
     font-style: normal;
     font-weight: 800;
@@ -927,7 +928,7 @@ header > nav > ul > li {
 
 }
 
-.sections:nth-child(6) > section:first-of-type >div>h5{
+.sections:nth-child(6) > section:first-of-type > div > h5 {
     font-family: 'Raleway', sans-serif;
     font-style: normal;
     font-weight: 400;
@@ -937,16 +938,15 @@ header > nav > ul > li {
 }
 
 
-
-.sections:nth-child(6) > section:first-of-type .index-color{
+.sections:nth-child(6) > section:first-of-type .index-color {
     color: #D0AD41;
 }
 
-.sections:nth-child(6) > div{
+.sections:nth-child(6) > div {
     color: #A6A4A4;
     display: flex;
     z-index: 5;
-    position:relative;
+    position: relative;
     justify-content: space-around;
     margin: 0;
     width: 525px;
@@ -954,14 +954,95 @@ header > nav > ul > li {
     left: 410px;
 }
 
-.sections:nth-child(6) > div>h2{
+.sections:nth-child(6) > div > h2 {
     font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 17px;
     margin: 0;
 }
-.sections:nth-child(6) > div>img{
+
+.sections:nth-child(6) > div > img {
     height: 20px;
     margin: 0;
+}
+
+.sections:nth-child(7) {
+    background-size: cover !important;
+    background: url("../../assets/images/light-gray-acrylic-painting-background-wallpaper-image.jpg") center;
+}
+
+.sections:nth-child(7) > h1:first-of-type {
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 50px;
+    margin: 0;
+    padding-top:30px;
+}
+
+.sections:nth-child(7) > section {
+    display: grid;
+    height: 80vh;
+    width: 90vw;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 20px;
+    position: relative;
+    top: 20px;
+    left: 50px;
+    align-items: center;
+
+}
+
+.sections:nth-child(7) > section > div {
+    height: 700px;
+    width: 440px;
+    background-size:cover !important;
+    background-position: center !important;
+    border-radius: 5px;
+    box-shadow: 0px 5px 10px 5px rgba(0, 0, 0, 0.25);
+    transition: height,width;
+    transition-duration: 0.4s;
+}
+
+.sections:nth-child(7) > section > div:hover{
+    height: 730px;
+    width: 470px;
+    transition: height,width;
+    transition-duration: 0.4s;
+}
+
+.sections:nth-child(7) > section > div:nth-child(1){
+    background: url("../../assets/images/_MG_6012.JPG");
+    grid-column: 1/2;
+    grid-row: 1/3;
+}
+.sections:nth-child(7) > section > div:nth-child(2){
+    background: url("../../assets/images/PXL_20220515_130148162_2-01_2-01-min.jpeg");
+    grid-column: 2/3;
+    grid-row: 1/3;
+}
+.sections:nth-child(7) > section > div:nth-child(3){
+    background: url("../../assets/images/IMG_20220719_094857_573.jpg");
+    grid-column: 3/4;
+    grid-row: 1/3;
+}
+
+.sections:nth-child(7) > section > div:nth-child(4){
+    background: url("../../assets/images/IMG_20220602_205132_170.jpg");
+    grid-column: 4/5;
+    grid-row: 1/3;
+}
+
+.sections:nth-child(7) > section > div:nth-child(5){
+    grid-column: 4/5;
+    grid-row: 2/3;
+}
+
+.sections:nth-child(7) > section >div> img {
+    /*width: 100%;*/
+    height: 700px;
+    box-shadow: 0px 5px 10px 5px rgba(0, 0, 0, 0.25);
 }
