@@ -905,10 +905,14 @@ header > nav > ul > li {
     border-radius: 10px;
     width: 372px;
     height: 391px;
+    transition: height,width;
+    transition-duration: 0.3s;
 }
 .sections:nth-child(6) > section:first-of-type > div > img:hover{
         width: 403px;
         height: 425px;
+        transition: height,width;
+    transition-duration: 0.3s;
 }
 
 
