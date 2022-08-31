@@ -1279,8 +1279,63 @@ header > nav > ul > li {
     margin: auto;
 }
 
-@media all and (max-width:1440px) {
-    .sections:nth-child(1)>img:first-of-type{
-        left: 10px;
+@media all and (max-width: 1440px) {
+
+
+    header > h1 {
+        font-size: 25px;
+        top: 34px;
+        left: 48px;
     }
+
+    header > nav {
+        display: inline-block;
+        padding-top: 25px;
+        position: absolute;
+        left: 539px;
+        margin: 0;
+    }
+
+    header > nav > ul {
+        margin: 0px;
+        display: inline-block;
+        width: 900px;
+    }
+
+    .sections:first-child > aside:nth-child(4) > h1 {
+        left: 67px;
+        top: 257px;
+        margin: 0px;
+        font-size: 160px;
+        line-height: 150px;
+    }
+
+    .sections:first-child > img:first-child {
+        position: absolute;
+        width: 450px;
+        left: 872px;
+        top: 169px;
+        border-radius: 23px;
+    }
+    .sections:first-child > img:nth-child(2) {
+        position: absolute;
+        height: 535px;
+        width: 433px;
+        left: 734px;
+        top: -29px;
+    }
+
+    .sections:first-child > h1:nth-child(3) {
+        left: 1033px;
+        top: 126px;
+        font-size: 27px;
+        transform: rotate(12deg);
+    }
+    .sections:first-child > aside:nth-child(5) {
+        top: 544px;
+        left: 525px;
+
+    }
+
 }
+
