@@ -1292,7 +1292,7 @@ header > nav > ul > li {
         display: inline-block;
         padding-top: 25px;
         position: absolute;
-        left: 539px;
+        left: 662px;
         margin: 0;
     }
 
@@ -1300,6 +1300,10 @@ header > nav > ul > li {
         margin: 0px;
         display: inline-block;
         width: 900px;
+    }
+
+    header > nav > ul>li{
+        font-size:13px ;
     }
 
     .sections:first-child > aside:nth-child(4) > h1 {
@@ -1511,6 +1515,13 @@ header > nav > ul > li {
         position: absolute;
         top: 0px;
         left: 663px;
+    }
+
+    .sections:nth-child(5) > div:first-of-type > h1:nth-of-type(4) {
+        font-size: 12px;
+        top: 87px;
+        left: 98px;
+        width: 123px;
     }
 }
 
