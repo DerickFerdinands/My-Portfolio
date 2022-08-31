@@ -1504,7 +1504,7 @@ header > nav > ul > li {
     .sections:nth-child(5) > div:first-of-type > div:first-of-type {
         height: 200px;
         width: 205px;
-        top: 3px;
+        top: 10px;
         left: 665px;
     }
     .sections:nth-child(5) > div:first-of-type > div:nth-of-type(2) {
@@ -1513,7 +1513,7 @@ header > nav > ul > li {
         height: 185px;
         width: 210px;
         position: absolute;
-        top: 0px;
+        top: 8px;
         left: 663px;
     }
 
@@ -1523,5 +1523,23 @@ header > nav > ul > li {
         left: 98px;
         width: 123px;
     }
+    .sections:nth-child(5) > div:first-of-type > h1:nth-of-type(6) {
+        font-size: 31px;
+        top: 73px;
+        left: 15px;
+    }
+
+    .sections:nth-child(5) > div:first-of-type > h1:nth-of-type(6) > i {
+        font-size: 15px;
+        margin-right: 27px;
+        bottom: 1px;
+    }
+
+    .sections:nth-child(5) > div:first-of-type > h1:nth-of-type(5) {
+        font-size: 20px;
+        top: 41px;
+        left: 173px;
+    }
+
 }
 
