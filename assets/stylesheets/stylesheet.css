@@ -1336,6 +1336,12 @@ header > nav > ul > li {
         left: 525px;
 
     }
-
+    .sections:first-child > aside:nth-child(5) > ol > li {
+        font-family: 'Roboto', sans-serif;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        mix-blend-mode: darken;
+    }
 }
 
