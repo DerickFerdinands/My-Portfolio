@@ -1491,5 +1491,26 @@ header > nav > ul > li {
         left: 8px;
         width: 139px;
     }
+    .sections:nth-child(5) > div:first-of-type > img:first-of-type {
+        top: -50px;
+        left: 616px;
+        width: 160px;
+    }
+
+    .sections:nth-child(5) > div:first-of-type > div:first-of-type {
+        height: 200px;
+        width: 205px;
+        top: 3px;
+        left: 665px;
+    }
+    .sections:nth-child(5) > div:first-of-type > div:nth-of-type(2) {
+        border: 3px solid White;
+        border-radius: 100%;
+        height: 185px;
+        width: 210px;
+        position: absolute;
+        top: 0px;
+        left: 663px;
+    }
 }
 
