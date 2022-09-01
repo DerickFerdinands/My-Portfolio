@@ -1814,6 +1814,7 @@ header > nav > ul > li {
         font-size: 20px;
         border-radius: 11px;
     }
+
     .sections:nth-child(8) > button {
         width: 127px;
         height: 34px;
@@ -1822,6 +1823,7 @@ header > nav > ul > li {
         font-size: 16px;
         border-radius: 20px;
     }
+
     .sections:nth-child(8) > h1:nth-of-type(2) {
         left: 58px;
         top: 606px;
@@ -1841,6 +1843,7 @@ header > nav > ul > li {
     .sections:nth-child(8) > address > h3:nth-child(even) {
         font-size: 15px;
     }
+
     .sections:nth-child(8) > div:nth-of-type(2) {
         width: 211px;
         top: 689px;
@@ -1859,20 +1862,24 @@ header > nav > ul > li {
         left: 1219px;
         top: 457px;
     }
+
     .sections:nth-child(8) > div:first-of-type > div {
         width: 200px;
         height: 200px;
         right: 0;
         bottom: 0;
     }
+
     .sections:nth-child(8) > div:first-of-type > div:nth-of-type(2) {
         left: 1152px;
         top: 585px;
     }
+
     .sections:nth-child(8) > div:first-of-type > div:nth-of-type(3) {
         left: 1297px;
         top: 598px;
     }
+
     .sections:nth-child(8) > div:first-of-type > div:last-of-type {
         width: 200px;
         height: 200px;
@@ -1885,12 +1892,15 @@ header > nav > ul > li {
         top: 352px;
         height: 414px;
     }
+
     .sections:nth-child(8) > form > input:nth-of-type(2) {
         top: 429px;
     }
+
     header > nav > ul {
         width: 718px;
     }
+
     .sections:nth-child(7) > section > div:hover {
         height: 610px;
         width: 363px;
@@ -1898,6 +1908,59 @@ header > nav > ul > li {
 }
 
 @media all and (max-width: 1024px) {
+    header > nav {
+        left: 279px;
+    }
+    .sections:first-child > aside:nth-child(4) > h1 {
+        left: 42px;
+        top: 217px;
+        font-size: 130px;
+    }
+    .sections:first-child > img:nth-child(2) {
+        height: 463px;
+        width: 378px;
+        left: 496px;
+        top: 30px;
+    }
 
+    .sections:first-child > img:first-child {
+        width: 396px;
+        left: 604px;
+        top: 195px;
+    }
+    .sections:first-child > aside:nth-child(5) {
+        top: 544px;
+        left: 79px;
+    }
+    .sections:first-child > h1:nth-child(3) {
+        left: 732px;
+        top: 152px;
+        font-size: 25px;
+    }
+    .sections:first-child > div {
+        top: 528px;
+        left: 956px;
+    }
 
+    .sections:first-child > div {
+        width: 28px;
+    }
+    .sections:nth-child(2) > section:nth-child(1) > img:nth-child(2) {
+        left: 78px;
+        top: 85px;
+        height: 551px;
+    }
+
+    .sections:nth-child(2) > section:nth-child(2) > h1:first-child {
+        font-size: 42px;
+        left: 96px;
+        top: 37px;
+        width: 300px;
+    }
+    .sections:nth-child(2) > section:nth-child(2) > p {
+        font-size: 18px;
+        width: 375px;
+        left: 98px;
+        top: 15px;
+    }
 }
