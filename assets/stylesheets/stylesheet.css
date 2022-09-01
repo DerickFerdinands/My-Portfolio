@@ -1763,14 +1763,17 @@ header > nav > ul > li {
         font-size: 35px;
         top: 143px;
     }
+
     .sections:nth-child(8) > form > label {
         font-size: 16px;
         position: absolute;
     }
+
     .sections:nth-child(8) > form > label:nth-of-type(1) {
         left: 360px;
         top: 321px;
     }
+
     .sections:nth-child(8) > form > label:nth-of-type(2) {
         left: 359px;
         top: 405px;
@@ -1779,6 +1782,45 @@ header > nav > ul > li {
     .sections:nth-child(8) > form > label:nth-of-type(3) {
         left: 752px;
         top: 264px;
+    }
+
+    .sections:nth-child(8) > form > input {
+        width: 329px;
+        left: 338px;
+        top: 347px;
+    }
+
+    .sections:nth-child(8) > form > textarea {
+        width: 440px;
+        left: 727px;
+        top: 289px;
+    }
+
+    .sections:nth-child(8) > form > img:first-of-type {
+        left: 673px;
+        top: 450px;
+    }
+
+    .sections:nth-child(8) > form > img:nth-of-type(2) {
+        left: 984px;
+        top: 514px;
+    }
+
+    .sections:nth-child(8) > form > button {
+        width: 132px;
+        height: 34px;
+        left: 1022px;
+        top: 511px;
+        font-size: 20px;
+        border-radius: 11px;
+    }
+    .sections:nth-child(8) > button {
+        width: 127px;
+        height: 34px;
+        left: 58px;
+        top: 562px;
+        font-size: 16px;
+        border-radius: 20px;
     }
 }
 
