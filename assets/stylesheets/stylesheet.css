@@ -1822,5 +1822,24 @@ header > nav > ul > li {
         font-size: 16px;
         border-radius: 20px;
     }
+    .sections:nth-child(8) > h1:nth-of-type(2) {
+        left: 58px;
+        top: 606px;
+        font-size: 25px;
+    }
+
+    .sections:nth-child(8) > address {
+        width: 400px;
+        left: 60px;
+        top: 645px;
+    }
+
+    .sections:nth-child(8) > address > h3:nth-child(odd) {
+        font-size: 15px;
+    }
+
+    .sections:nth-child(8) > address > h3:nth-child(even) {
+        font-size: 15px;
+    }
 }
 
