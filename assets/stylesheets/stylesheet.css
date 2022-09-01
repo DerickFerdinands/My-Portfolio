@@ -1963,4 +1963,18 @@ header > nav > ul > li {
         left: 98px;
         top: 15px;
     }
+    .sections:nth-child(3) > section:nth-of-type(3) > img {
+        padding: 30px;
+        width: 221px;
+    }
+    .sections:nth-child(4) > div > img:first-of-type {
+        top: 29px;
+        left: 69px;
+        width: 400px;
+    }
+    .sections:nth-child(4) > div > img:last-of-type {
+        top: 307px;
+        left: 71px;
+        width: 400px;
+    }
 }
