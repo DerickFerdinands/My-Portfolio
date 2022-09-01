@@ -1885,5 +1885,19 @@ header > nav > ul > li {
         top: 352px;
         height: 414px;
     }
+    .sections:nth-child(8) > form > input:nth-of-type(2) {
+        top: 429px;
+    }
+    header > nav > ul {
+        width: 718px;
+    }
+    .sections:nth-child(7) > section > div:hover {
+        height: 610px;
+        width: 363px;
+    }
 }
 
+@media all and (max-width: 1024px) {
+
+
+}
