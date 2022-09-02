@@ -3,8 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+  <link rel="stylesheet" href="../../../../assets/fonts/fontawesome-free-6.1.2-web/css/all.min.css">
+  <style>
+    body>section{
+      width: 95vw;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      color: black;
+    }
+    body>section>div{
+      display: flex;
+      align-items: center;
+      color: black;
+      background-color: Gold;
+      border-radius: 10px;
+      width: 160px;
+      height: 50px;
+      color: white;
+      position: relative;
+      left: -120px;
+      transition-property: all;
+      transition-duration: 1s;
+      font-family:'Poppins', sans-serif;
+      font-size:20px;
+      align-items: center;
+      justify-content: space-around;
+    }
+    body>section>div>i{
+      font-size: 30px;
+      color: black;
+      padding-left: 10px;
+
+    }
+    body>section>div:hover{
+      left: 0;
+      transition-property: all;
+      transition-duration: 1s;
+    }
+  </style>
 </head>
 <body>
-
+<section>
+  <div>Menu One <i class="fa-solid fa-house"></i></div>
+  <div>Menu Two <i class="fa-brands fa-spotify"></i></div>
+  <div>Menu Three <i class="fa-brands fa-github"></i></div>
+  <div>Menu Four <i class="fa-brands fa-kickstarter"></i></div>
+  <div>Menu Five <i class="fa-brands fa-telegram"></i></div>
+</section>
 </body>
 </html>
