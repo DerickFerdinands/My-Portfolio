@@ -23,7 +23,8 @@ body{
       left: 10px;
       border-radius: 20px;
       animation-name:my-animation;
-      animation-duration: 10s;
+      animation-duration: 5s;
+      animation-direction: alternate;
       animation-iteration-count: infinite;
     }
 
@@ -34,27 +35,27 @@ body{
         left: 10px;
         background-color: red;
     }
-      15%{
+      25%{
         transform: rotate(-180deg);
         top: 90vh;
         left: 10px;
         background-color: #6F1919;
       }
-      25%{
+      50%{
         transform: rotate(180deg);
         top: 90vh;
         left: 85vw;
         background-color: deeppink;
       }
 
-      35%{
+      75%{
         transform: rotate(-180deg);
         top: 10px;
         left: 85vw;
         background-color: #6a6047;
       }
 
-      45%{
+   /*   100%{
         transform: rotate(180deg);
         top: 10px;
         left: 10px;
@@ -86,7 +87,7 @@ body{
         top: 10px;
         left: 10px;
         background-color: red;
-      }
+      }*/
     }
   </style>
 </head>
