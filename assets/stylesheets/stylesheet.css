@@ -1977,4 +1977,11 @@ header > nav > ul > li {
         left: 71px;
         width: 400px;
     }
+    .sections:nth-child(4) > section:first-of-type {
+        width: 464px;
+        top: -31px;
+    }
+    .sections:nth-child(4) > div:nth-of-type(2) {
+        width: 456px;
+    }
 }
