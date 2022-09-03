@@ -1739,6 +1739,23 @@ header > nav > ul > li {
     .sections:nth-child(8) > div:nth-of-type(2) > div > img {
         width: 39px;
     }
+    .sections:nth-child(8) > div:first-of-type > img {
+        left: 1909px;
+        top: 431px;
+        height: 815px;
+    }
+    .sections:nth-child(8) > div:first-of-type > div:first-of-type {
+        left: 2072px;
+        top: 622px;
+    }
+    .sections:nth-child(8) > div:first-of-type > div {
+        width: 401px;
+        height: 407px;
+    }
+    .sections:nth-child(8) > div:first-of-type > div:nth-of-type(2) {
+        left: 1931px;
+        top: 944px;
+    }
 }
 
 @media all and (max-width: 1440px) {
