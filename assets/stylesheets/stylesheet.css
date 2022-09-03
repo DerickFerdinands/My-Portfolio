@@ -1659,7 +1659,10 @@ header > nav > ul > li {
         width: 495px;
         height: 528px;
     }
-
+    .sections:nth-child(6) > section:first-of-type > div > img {
+        width: 495px;
+        height: 528px;
+    }
 }
 
 @media all and (max-width: 1440px) {
