@@ -1714,6 +1714,13 @@ header > nav > ul > li {
         top: 295px;
         left: 559px;
     }
+
+    .sections:nth-child(6) > section:first-of-type > div > h3 {
+        font-size: 25px;
+    }
+    .sections:nth-child(6) > section:first-of-type > div > h5 {
+        font-size: 20px;
+    }
 }
 
 @media all and (max-width: 1440px) {
