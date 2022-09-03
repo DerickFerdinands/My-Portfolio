@@ -1732,6 +1732,13 @@ header > nav > ul > li {
         width: 357px;
         top: 1140px;
     }
+    .sections:nth-child(8) > div:nth-of-type(2) > div {
+        height: 80px;
+        width: 80px;
+    }
+    .sections:nth-child(8) > div:nth-of-type(2) > div > img {
+        width: 39px;
+    }
 }
 
 @media all and (max-width: 1440px) {
