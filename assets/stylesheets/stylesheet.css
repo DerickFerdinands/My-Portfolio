@@ -1675,6 +1675,10 @@ header > nav > ul > li {
     .sections:nth-child(7) > h1:first-of-type {
         font-size: 60px;
     }
+    .sections:nth-child(7) > section > div {
+        height: 887px;
+        width: 593px;
+    }
 }
 
 @media all and (max-width: 1440px) {
