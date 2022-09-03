@@ -1679,6 +1679,11 @@ header > nav > ul > li {
         height: 887px;
         width: 593px;
     }
+
+    .sections:nth-child(7) > section > div:hover {
+        height: 962px;
+        width: 615px;
+    }
 }
 
 @media all and (max-width: 1440px) {
