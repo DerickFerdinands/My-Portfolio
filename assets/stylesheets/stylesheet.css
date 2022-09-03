@@ -1663,6 +1663,11 @@ header > nav > ul > li {
         width: 495px;
         height: 528px;
     }
+    .sections:nth-child(6) > div {
+        width: 763px;
+        top: 230px;
+        left: 559px;
+    }
 }
 
 @media all and (max-width: 1440px) {
