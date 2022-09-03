@@ -1649,6 +1649,17 @@ header > nav > ul > li {
         height: 45px;
         width: 117px;
     }
+
+    .sections:nth-child(6) > section > h1 {
+        font-size: 40px;
+        width: 247px;
+    }
+
+    .sections:nth-child(6) > section:first-of-type > div > img {
+        width: 495px;
+        height: 528px;
+    }
+
 }
 
 @media all and (max-width: 1440px) {
