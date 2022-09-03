@@ -1668,6 +1668,9 @@ header > nav > ul > li {
         top: 230px;
         left: 559px;
     }
+    .sections:nth-child(6) > div > h2 {
+        font-size: 25px;
+    }
 }
 
 @media all and (max-width: 1440px) {
