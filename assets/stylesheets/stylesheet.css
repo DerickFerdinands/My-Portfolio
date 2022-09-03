@@ -1416,10 +1416,12 @@ header > nav > ul > li {
     .sections:nth-child(4) > section:first-of-type {
         width: 826px;
     }
+
     .sections:nth-child(4) > section:first-of-type > h1:first-of-type {
         font-size: 75px;
         background-size: 376px 112px;
     }
+
     header > nav {
         left: 185px;
     }
@@ -1446,15 +1448,17 @@ header > nav > ul > li {
     .sections:nth-child(4) > div:nth-of-type(2) > h2:first-of-type {
         font-size: 24px;
     }
+
     .sections:nth-child(4) > div:nth-of-type(2) > div {
         width: 628px;
         align-items: center;
 
     }
+
     .sections:nth-child(4) > div:nth-of-type(2) > div > img {
         height: 20px;
         position: relative;
-         top: 0px;
+        top: 0px;
     }
 
     .sections:nth-child(4) > div:nth-of-type(2) > div > h2 {
@@ -1471,7 +1475,8 @@ header > nav > ul > li {
         width: 531px;
         margin: 0;
         bottom: 25px;
-        left: 62px;]
+        left: 62px;
+    ]
     }
 
     .duration {
@@ -1493,6 +1498,7 @@ header > nav > ul > li {
         font-size: 95px;
         background-size: 409px 120px;
     }
+
     .sections:nth-child(5) > aside:nth-of-type(2) > div:first-of-type {
         height: 237px;
         top: 150px;
@@ -1517,6 +1523,7 @@ header > nav > ul > li {
         top: 180px;
         left: -26px;
     }
+
     .sections:nth-child(5) > div:first-of-type > div:nth-of-type(2) {
         height: 355px;
         width: 386px;
@@ -1530,6 +1537,7 @@ header > nav > ul > li {
         top: 50px;
         left: 971px;
     }
+
     .sections:nth-child(5) > div:first-of-type > img:first-of-type {
         top: -106px;
         left: 884px;
@@ -1541,11 +1549,13 @@ header > nav > ul > li {
         top: 150px;
         left: 40px;
     }
+
     .sections:nth-child(5) > div:first-of-type > h1:nth-of-type(4) {
         font-size: 26px;
         top: 170px;
         left: 275px;
     }
+
     .sections:nth-child(5) > div:first-of-type > h1:nth-of-type(6) {
         font-size: 55px;
         top: 160px;
@@ -1615,19 +1625,22 @@ header > nav > ul > li {
         height: 1131px;
         align-items: center;
     }
+
     .sections:nth-child(5) > aside:nth-of-type(3) > div {
         child-align: middle;
         text-align: center;
         align-items: center;
     }
+
     .sections:nth-child(5) > aside:nth-of-type(3) > div > h1 {
         font-size: 28px;
     }
 
-    .sections:nth-child(5) > aside:nth-of-type(3){
+    .sections:nth-child(5) > aside:nth-of-type(3) {
         right: 80px;
         height: 1107px;
     }
+
     .sections:nth-child(5) > aside:nth-of-type(3) h3 {
         font-size: 18px;
         width: 100%;
@@ -1659,15 +1672,18 @@ header > nav > ul > li {
         width: 495px;
         height: 528px;
     }
+
     .sections:nth-child(6) > section:first-of-type > div > img {
         width: 495px;
         height: 528px;
     }
+
     .sections:nth-child(6) > div {
         width: 763px;
         top: 230px;
         left: 559px;
     }
+
     .sections:nth-child(6) > div > h2 {
         font-size: 25px;
     }
@@ -1675,6 +1691,7 @@ header > nav > ul > li {
     .sections:nth-child(7) > h1:first-of-type {
         font-size: 60px;
     }
+
     .sections:nth-child(7) > section > div {
         height: 887px;
         width: 593px;
@@ -1690,6 +1707,12 @@ header > nav > ul > li {
         height: 695px;
         top: 180px;
         left: 154px;
+    }
+
+    .sections:nth-child(6) > div {
+        width: 763px;
+        top: 295px;
+        left: 559px;
     }
 }
 
