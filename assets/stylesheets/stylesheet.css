@@ -1718,71 +1718,147 @@ header > nav > ul > li {
     .sections:nth-child(6) > section:first-of-type > div > h3 {
         font-size: 25px;
     }
+
     .sections:nth-child(6) > section:first-of-type > div > h5 {
         font-size: 20px;
     }
+
     .sections:nth-child(6) > section:first-of-type {
         height: 735px;
     }
- /*   .sections:nth-child(8) > address > h3:nth-child(1){
-        position: relative;
-        bottom: 30px;
-    }*/
+
+    /*   .sections:nth-child(8) > address > h3:nth-child(1){
+           position: relative;
+           bottom: 30px;
+       }*/
     .sections:nth-child(8) > div:nth-of-type(2) {
         width: 357px;
         top: 1140px;
     }
+
     .sections:nth-child(8) > div:nth-of-type(2) > div {
         height: 80px;
         width: 80px;
     }
+
     .sections:nth-child(8) > div:nth-of-type(2) > div > img {
         width: 39px;
     }
+
     .sections:nth-child(8) > div:first-of-type > img {
         left: 1909px;
         top: 431px;
         height: 815px;
     }
+
     .sections:nth-child(8) > div:first-of-type > div:first-of-type {
         left: 2072px;
         top: 622px;
     }
+
     .sections:nth-child(8) > div:first-of-type > div {
         width: 401px;
         height: 407px;
     }
+
     .sections:nth-child(8) > div:first-of-type > div:nth-of-type(2) {
         left: 1931px;
         top: 944px;
     }
+
     .sections:nth-child(8) > div:first-of-type > div:nth-of-type(3) {
         left: 2234px;
         top: 936px;
     }
+
     .sections:nth-child(8) > div:first-of-type > div:last-of-type {
         width: 385px;
         height: 382px;
         left: 2043.5px;
         top: 602.13px;
     }
+
     .sections:nth-child(8) > h1:first-child {
         font-size: 60px;
         top: 200px;
     }
+
     .sections:nth-child(8) > address {
         width: 568px;
         position: absolute;
         left: 60px;
         top: 1033px;
     }
+
     .sections:nth-child(8) > address > h3:nth-child(odd) {
         font-size: 30px;
     }
+
     .sections:nth-child(8) > address > h3:nth-child(even) {
         font-size: 30px;
         width: 443px;
     }
+
+    .sections:nth-child(8) > h1:nth-of-type(2) {
+        top: 983px;
+        font-size: 39px;
+    }
+
+    .sections:nth-child(8) > button {
+        width: 189px;
+        height: 43px;
+        left: 58px;
+        top: 914px;
+        font-size: 30px;
+    }
+    .sections:nth-child(8) > form > label:nth-of-type(1) {
+        left: 774px;
+        top: 476px;
+    }
+
+    .sections:nth-child(8) > form > label {
+        font-size: 25px;
+    }
+    .sections:nth-child(8) > form > input {
+        width: 434px;
+        height: 52px;
+        left: 753px;
+        top: 515px;
+    }
+    .sections:nth-child(8) > form > label:nth-of-type(2) {
+        left: 773px;
+        top: 588px;
+    }
+    .sections:nth-child(8) > form > input:nth-of-type(2) {
+        top: 624px;
+    }
+    .sections:nth-child(8) > form > label:nth-of-type(3) {
+        left: 1317px;
+        top: 388px;
+    }
+    .sections:nth-child(8) > form > textarea {
+        width: 561px;
+        height: 247px;
+        left: 1288px;
+        top: 436px;
+    }
+    .sections:nth-child(8) > form > img:first-of-type {
+        left: 1195px;
+        top: 654px;
+        width: 406px;
+    }
+    .sections:nth-child(8) > form > img:nth-of-type(2) {
+        left: 1601px;
+        top: 740px;
+    }
+    .sections:nth-child(8) > form > button {
+        width: 160px;
+        height: 44px;
+        left: 1660px;
+        top: 732px;
+        font-size: 30px;
+    }
+
 }
 
 @media all and (max-width: 1440px) {
