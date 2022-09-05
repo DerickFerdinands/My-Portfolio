@@ -2,11 +2,11 @@
     width: 0px;
     height: max-content;
 }
-@media (-webkit-device-pixel-ratio: 1.25) {
+/*@media (-webkit-device-pixel-ratio: 1.25) {
     * {
         zoom: 0.8;
     }
-}
+}*/
 body {
     margin: 0px;
 }
