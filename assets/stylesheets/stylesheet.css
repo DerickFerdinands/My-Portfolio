@@ -3168,4 +3168,28 @@ header > nav > ul > li {
         position: relative;
         top: 9px;
     }
+
+    .sections:nth-child(5) > div:first-of-type > h1:first-of-type {
+        height: max-content;
+        top: 48px;
+        left: 51px;
+        width: 114px;
+        font-size: 14px;
+    }
+
+    .sections:nth-child(5) > div:first-of-type > h1:nth-of-type(2) {
+        top: 24px;
+        left: -2px;
+        font-size: 42px;
+        width: max-content;
+        height: max-content;
+        background-size: 176px 56px;
+    }
+
+    .sections:nth-child(5) > div:first-of-type > h1:nth-of-type(6) {
+        top: -151px;
+        left: 314px;
+        font-size: 30px;
+        height: max-content;
+    }
 }
