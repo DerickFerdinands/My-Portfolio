@@ -3141,4 +3141,8 @@ header > nav > ul > li {
     .sections:nth-child(4) > div:nth-of-type(2) > div {
         width: 247px;
     }
+
+    .sections:nth-child(4) > div:nth-of-type(2) > div > h2 {
+        font-size: 10px;
+    }
 }
