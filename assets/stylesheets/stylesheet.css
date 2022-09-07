@@ -3096,4 +3096,9 @@ header > nav > ul > li {
         width: 30px;
         top: 112px;
     }
+
+    .sections:nth-child(4) > section:first-of-type {
+        width: 327px;
+        top: -31px;
+    }
 }
