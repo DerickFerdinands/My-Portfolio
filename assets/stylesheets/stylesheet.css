@@ -3233,4 +3233,36 @@ header > nav > ul > li {
         bottom: 18px;
         margin: 0;
     }
+    .sections:nth-child(5) > div:first-of-type > h4:first-of-type > time {
+        left: -63px;
+        top: 39px;
+        font-size: 10px;
+    }
+    .sections:nth-child(5) > div:first-of-type > h1:nth-of-type(3) {
+        visibility: hidden;
+    }
+
+    .sections:nth-child(5) > aside:first-of-type {
+        width: 0;
+        visibility: hidden;
+    }
+    .sections:nth-child(5) > aside:nth-of-type(2) > div:first-of-type {
+        height: 0;
+        visibility: hidden;
+    }
+
+    .sections:nth-child(5) > aside:nth-of-type(2) > div:nth-of-type(2) {
+        height: 0;
+        visibility: hidden;
+    }
+    .sections:nth-child(5) > div:first-of-type > h1:nth-of-type(6) > i {
+        font-size: 10px;
+    }
+
+    .sections:nth-child(5) > div:first-of-type > h1:nth-of-type(6) {
+        top: -26px;
+        left: 314px;
+        font-size: 30px;
+        height: max-content;
+    }
 }
