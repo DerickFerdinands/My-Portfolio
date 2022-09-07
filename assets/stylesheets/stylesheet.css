@@ -3207,4 +3207,30 @@ header > nav > ul > li {
         font-size: 10px;
         margin-right: 30px;
     }
+
+    .fa-solid, .fas {
+        font-size: 8px;
+    }
+    .college {
+        bottom: 26px;
+        left: 48px;
+        font-size: 12px;
+    }
+
+    .duration {
+        font-size: 9px;
+        width: 56px;
+        bottom: 23px;
+        left: 48px;
+        margin: 0;
+        height: 12px;
+    }
+    .program {
+        font-size: 11px;
+        width: 319px;
+        height: 35px;
+        left: 49px;
+        bottom: 18px;
+        margin: 0;
+    }
 }
