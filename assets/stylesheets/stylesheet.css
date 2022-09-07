@@ -3145,4 +3145,19 @@ header > nav > ul > li {
     .sections:nth-child(4) > div:nth-of-type(2) > div > h2 {
         font-size: 10px;
     }
+    .sections:nth-child(4) > div > img:first-of-type {
+        top: 29px;
+        left: 31px;
+        width: 238px;
+    }
+    .sections:nth-child(4) > div > img:last-of-type {
+        top: 134px;
+        left: 143px;
+        width: 238px;
+    }
+
+    .sections:nth-child(4) > div > h1:first-of-type {
+        visibility: hidden;
+        width: 0;
+    }
 }
