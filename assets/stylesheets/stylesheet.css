@@ -3479,6 +3479,87 @@ header > nav > ul > li {
         width: 192px;
         height: 196px;
     }
+    .sections:nth-child(7) > h1:first-of-type {
+        font-size: 25px;
+    }
 
+    .sections:nth-child(7) > section {
+        width: 91vw;
+        top: 18px;
+        left: 10px;
+        align-items: center;
+    }
+    .sections:nth-child(7) > section > div:hover {
+        height: 273px;
+        width: 166px;
+    }
+
+    .sections:nth-child(7) > section {
+        width: 91vw;
+        top: 18px;
+        left: 10px;
+        align-items: center;
+        height: max-content;
+    }
+
+    .sections:nth-child(7) > section > div {
+        height: 270px;
+        width: 170px;
+    }
+    .sections:nth-child(8) > h1:first-child {
+        font-size: 28px;
+        top: 6px;
+    }
+    .sections:nth-child(8) > form > label:nth-of-type(1) {
+        left: 134px;
+        font-size: 14px;
+        top: 102px;
+    }
+    .sections:nth-child(8) > form > input {
+        width: 204px;
+        height: 31px;
+        left: 114px;
+        top: 122px;
+    }
+
+    .sections:nth-child(8) > form > label:nth-of-type(2) {
+        left: 135px;
+        top: 170px;
+    }
+
+    .sections:nth-child(8) > form > input:nth-of-type(2) {
+        top: 190px;
+    }
+    .sections:nth-child(8) > form > label:nth-of-type(3) {
+        left: 396px;
+        top: 84px;
+    }
+
+    .sections:nth-child(8) > form > textarea {
+        width: 242px;
+        left: 376px;
+        top: 104px;
+        height: 128px;
+    }
+
+    .sections:nth-child(8) > form > img:first-of-type {
+        left: 325px;
+        width: 191px;
+        top: 211px;
+    }
+
+    .sections:nth-child(8) > form > img:nth-of-type(2) {
+        left: 517px;
+        width: 20px;
+        top: 250px;
+    }
+
+    .sections:nth-child(8) > form > button {
+        width: 70px;
+        height: max-content;
+        left: 548px;
+        font-size: 12px;
+        top: 253px;
+    }
 
 }
