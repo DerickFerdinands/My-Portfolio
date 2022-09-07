@@ -3067,4 +3067,33 @@ header > nav > ul > li {
     .sections:nth-child(3) > section:nth-of-type(2) > img {
         height: 21px;
     }
+    .sections:nth-child(3) > h1:first-child {
+        font-size: 20px;
+        margin-bottom: 5px;
+    }
+    .sections:nth-child(3) > section:nth-of-type(2) > img:nth-of-type(2) {
+        height: 42px !important;
+        bottom: 10px !important;
+    }
+    .sections:nth-child(3) > h1:nth-of-type(2) {
+        font-size: 18px;
+        margin-bottom: 5px;
+    }
+    .sections:nth-child(3) > section:nth-of-type(3) > img {
+        padding: 4px;
+        height: 96px;
+        width: 142px;
+    }
+    .sections:nth-child(3) > section:nth-of-type(3) > img:nth-of-type(4) {
+        left: 136px;
+        height: auto;
+        width: 30px;
+        top: 112px;
+    }
+    .sections:nth-child(3) > section:nth-of-type(3) > img:nth-of-type(5) {
+        left: 600px;
+        height: auto;
+        width: 30px;
+        top: 112px;
+    }
 }
