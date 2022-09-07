@@ -3581,4 +3581,55 @@ header > nav > ul > li {
         top: 281px;
         font-size: 15px;
     }
+    .sections:nth-child(8) > address {
+        width: 369px;
+        left: 18px;
+        top: 307px;
+    }
+    h3:nth-child(odd) {
+        font-size: 12px;
+    }
+
+    .sections:nth-child(8) > address > h3:nth-child(even) {
+        font-size: 12px;
+    }
+
+    .sections:nth-child(8) > button {
+        width: 86px;
+        height: 21px;
+        left: 18px;
+        top: 262px;
+        font-size: 10px;
+    }
+    .sections:nth-child(8) > address > h3:nth-child(odd) {
+        font-size: 12px;
+    }
+    .sections:nth-child(8) > div:first-of-type > div{
+        height: 100px;
+        width: 100px;
+    }
+    .sections:nth-child(8) > div:first-of-type > div:first-of-type {
+        left: 701px;
+        top: 312px;
+    }
+    .sections:nth-child(8) > div:first-of-type > div:nth-of-type(2) {
+        left: 628px;
+        top: 313px;
+    }
+    .sections:nth-child(8) > div:first-of-type > div:nth-of-type(3) {
+        left: 656px;
+        top: 238px;
+    }
+
+    .sections:nth-child(8) > div:first-of-type > div:last-of-type {
+        width: 100px;
+        height: 100px;
+        left: 645.5px;
+        top: 224.13px;
+    }
+    .sections:nth-child(8) > div:first-of-type > img {
+        left: 594px;
+        top: 184px;
+        height: 218px;
+    }
 }
