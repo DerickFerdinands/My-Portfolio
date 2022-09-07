@@ -3163,4 +3163,9 @@ header > nav > ul > li {
     .sections:nth-child(4) > section:first-of-type > h3 > a {
         font-size: 10px;
     }
+    .sections:nth-child(4) > div:nth-of-type(2) > div > img {
+        height: 12px;
+        position: relative;
+        top: 9px;
+    }
 }
