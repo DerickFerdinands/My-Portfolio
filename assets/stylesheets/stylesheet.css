@@ -3510,9 +3510,12 @@ header > nav > ul > li {
         font-size: 28px;
         top: 6px;
     }
+
+    .sections:nth-child(8) > form > label{
+        font-size: 14px;
+    }
     .sections:nth-child(8) > form > label:nth-of-type(1) {
         left: 134px;
-        font-size: 14px;
         top: 102px;
     }
     .sections:nth-child(8) > form > input {
@@ -3561,5 +3564,21 @@ header > nav > ul > li {
         font-size: 12px;
         top: 253px;
     }
+    .sections:nth-child(8) > div:nth-of-type(2) {
+        width: 164px;
+        top: 345px;
+    }
 
+    .sections:nth-child(8) > div:nth-of-type(2) > div {
+        height: 35px;
+        width: 35px;
+    }
+    .sections:nth-child(8) > div:nth-of-type(2) > div > img {
+        width: 20px;
+    }
+    .sections:nth-child(8) > h1:nth-of-type(2) {
+        left: 19px;
+        top: 281px;
+        font-size: 15px;
+    }
 }
