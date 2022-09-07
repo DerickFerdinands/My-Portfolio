@@ -3101,4 +3101,44 @@ header > nav > ul > li {
         width: 327px;
         top: -31px;
     }
+    .sections:nth-child(4) > section:first-of-type > h1:first-of-type {
+        font-size: 27px;
+        background-size: 142px 32px;
+        position: relative;
+        top: 18px;
+    }
+
+    .sections:nth-child(4) > section:first-of-type > p {
+        width: 304px;
+        padding-bottom: 30px;
+        font-size: 12px;
+    }
+    .sections:nth-child(4) > section:first-of-type > h3 {
+        margin: 0px;
+        height: 23px;
+        position: relative;
+        right: 395px;
+        bottom: 30px;
+        width: 336px;
+    }
+    .sections:nth-child(4) > section:first-of-type > h3 > a > i {
+        font-size: 20px;
+    }
+    .sections:nth-child(4) > div:nth-of-type(2) {
+        width: 314px;
+        position: absolute;
+        bottom: 0;
+        rgiht: 0;
+        height: max-content;
+    }
+
+    .sections:nth-child(4) > div:nth-of-type(2) > h2:first-of-type {
+        font-size: 11px;
+        position: relative;
+        padding-right: 30px;
+        bottom: 5px;
+    }
+    .sections:nth-child(4) > div:nth-of-type(2) > div {
+        width: 247px;
+    }
 }
