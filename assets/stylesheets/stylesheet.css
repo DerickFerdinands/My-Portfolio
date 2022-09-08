@@ -3736,4 +3736,55 @@ header > nav > ul > li {
         height: max-content;
     }
 
+    .sections{
+        overflow: hidden;
+        width: 768px;
+    }
+}
+
+@media all and (max-width: 425px){
+    .sections:first-child > aside:nth-child(4) > h1 {
+        left: 50px;
+        top: 164px;
+        font-size: 66px;
+        width: 294px;
+    }
+    .sections:first-child > div {
+        width: max-content;
+        top: 127px;
+        left: 33px;
+    }
+    .sections:first-child > aside:nth-child(5) > ol > li {
+        font-size: 14px;
+    }
+    .sections:first-child > img:first-child {
+        width: 155px;
+        left: 214px;
+        top: 153px;
+    }
+    .sections:first-child > img:nth-child(2) {
+        height: 214px;
+        width: 177px;
+        left: 150px;
+        top: 55px;
+    }
+
+    .sections:first-child > h1:nth-child(3) {
+        left: 261px;
+        top: 127px;
+        font-size: 13px;
+        transform: rotate(11deg);
+    }
+    .sections{
+        width: 100vw;
+        overflow: visible;
+    }
+    .sections:first-child > aside:nth-child(5) {
+        top: 293px;
+        left: 221px;
+    }
+
+    .sections:first-child{
+        height: 350px;
+    }
 }
