@@ -3787,4 +3787,61 @@ header > nav > ul > li {
     .sections:first-child{
         height: 350px;
     }
+
+    .sections :nth-of-type(2){
+        height: 500px;
+    }
+    .sections:nth-child(2) > section:nth-child(2) {
+        left: 0;
+        width: 100vw;
+    }
+
+    .sections:nth-child(2) > section:nth-child(2) > h1:first-child {
+        left: 23px;
+        top: 29px;
+        width: 200px;
+    }
+
+    .sections:nth-child(2) > section:nth-child(2) > p {
+        font-size: 14px;
+        width: 163px;
+        left: 24px;
+        top: 18px;
+    }
+
+    .sections:nth-child(2) > section:nth-child(2) > p:nth-of-type(3) {
+        left: 24px;
+        top: 15px;
+        width: 388px;
+    }
+    .sections:nth-child(2) > section:nth-child(2) > p:nth-of-type(4) {
+        left: 25px;
+        top: 7px;
+        width: 363px;
+    }
+
+    .sections:nth-child(2) > section:nth-child(2) > p:nth-of-type(5) {
+        left: 24px;
+        top: 2px;
+        width: 403px;
+    }
+
+    .sections:nth-child(2) > section {
+        position: static;
+    }
+
+    .sections:nth-child(2) > section:nth-child(1) > img:first-child {
+        width: 202px;
+        height: 267px;
+        z-index: 1;
+        right: 18px;
+        top: 34px;
+    }
+
+    .sections:nth-child(2) > section:nth-child(1) > img:nth-child(2) {
+        left: 244px;
+        top: 67px;
+        height: 204px;
+        width: auto;
+    }
 }
