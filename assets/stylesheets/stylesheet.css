@@ -3950,4 +3950,45 @@ header > nav > ul > li {
         top: 324px;
     }
 
+    .sections:nth-child(4) > div {
+        width: 100vw;
+    }
+
+    .sections:nth-child(5){
+        height: 560px;
+    }
+    .sections:nth-child(5) > div:first-of-type > h1:first-of-type {
+        height: max-content;
+        top: 48px;
+        left: 88px;
+        width: 114px;
+        font-size: 14px;
+    }
+    .sections:nth-child(5) > div:first-of-type > h1:nth-of-type(2) {
+        top: 24px;
+        left: 38px;
+        font-size: 42px;
+        width: max-content;
+        height: max-content;
+        background-size: 176px 56px;
+    }
+    .sections:nth-child(5) > div:first-of-type > h4:first-of-type > time {
+        left: -23px;
+        top: 39px;
+        font-size: 10px;
+    }
+
+    .sections:nth-child(5) > div:first-of-type > h1:nth-of-type(5) {
+        font-size: 0;
+        height: max-content;
+        visibility: hidden;
+    }
+
+    .sections:nth-child(5) > div:first-of-type > h1:nth-of-type(6) > i {
+        font-size: 0;
+        visibility: hidden;
+    }
+
+
+
 }
