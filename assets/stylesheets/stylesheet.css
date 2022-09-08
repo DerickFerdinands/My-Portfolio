@@ -3989,6 +3989,37 @@ header > nav > ul > li {
         visibility: hidden;
     }
 
+    .sections:nth-child(5) > div:first-of-type > h1:nth-of-type(6) {
+        top: -6px;
+        left: 41px;
+        font-size: 31px;
+        height: max-content;
+    }
+    .sections:nth-child(5) > div:first-of-type {
+        height: max-content;
+    }
+
+    .sections:nth-child(5) > aside:nth-of-type(2) {
+        top: 106px;
+        left: 76px;
+        width: 350px;
+    }
+
+    .college {
+        bottom: 26px;
+        left: 48px;
+        font-size: 12px;
+        width: 261px;
+    }
+    .program {
+        font-size: 11px;
+        width: 280px;
+        height: 34px;
+        left: 49px;
+        bottom: 18px;
+        margin: 0;
+    }
+
 
 
 }
