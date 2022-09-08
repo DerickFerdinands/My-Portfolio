@@ -4240,6 +4240,23 @@ header > nav > ul > li {
         top: 74px;
         height: 194px;
     }
+    .sections:nth-child(3) > section:first-of-type {
+        left: 18px;
+    }
+    .sections:nth-child(4) > section:first-of-type > h1:first-of-type {
+        left: -30px;
+    }
+
+    .sections:nth-child(4) > div > img:first-of-type {
+        top: 93px;
+        left: 14px;
+        width: 238px;
+    }
+    .sections:nth-child(4) > div > img:last-of-type {
+        top: 197px;
+        left: 111px;
+        width: 238px;
+    }
 }
 
 
