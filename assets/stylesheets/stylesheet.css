@@ -3783,7 +3783,6 @@ header > nav > ul > li {
 
     .sections {
         width: 100vw;
-        overflow: visible;
     }
 
     .sections:first-child > aside:nth-child(5) {
@@ -4103,4 +4102,105 @@ header > nav > ul > li {
     .sections:nth-child(8){
         height: 560px;
     }
+    .sections:nth-child(8) > h1:first-child {
+        font-size: 28px;
+        top: 6px;
+        width: 340px;
+        text-align: right;
+    }
+
+    .sections:nth-child(8) > form > label:nth-of-type(1) {
+        left: 76px;
+        top: 102px;
+    }
+    .sections:nth-child(8) > form > input {
+        width: 221px;
+        height: 31px;
+        left: 56px;
+        top: 126px;
+    }
+    .sections:nth-child(8) > form > label:nth-of-type(3) {
+        left: 73px;
+        top: 163px;
+    }
+    .sections:nth-child(8) > form > textarea {
+        width: 339px;
+        left: 51px;
+        top: 182px;
+        height: 105px;
+    }
+    .sections:nth-child(8) > form > label:nth-of-type(2) {
+        left: 76px;
+        top: 298px;
+    }
+    .sections:nth-child(8) > form > input:nth-of-type(2) {
+        top: 323px;
+    }
+    .sections:nth-child(8) > form > button {
+        width: 80px;
+        height: 29px;
+        left: 302px;
+        font-size: 12px;
+        top: 323px;
+    }
+    .sections:nth-child(8) > button {
+        width: 86px;
+        height: 21px;
+        left: 18px;
+        top: 393px;
+        font-size: 10px;
+    }
+    .sections:nth-child(8) > h1:nth-of-type(2) {
+        left: 19px;
+        top: 411px;
+        font-size: 15px;
+    }
+    .sections:nth-child(8) > address {
+        width: 369px;
+        left: 18px;
+        top: 439px;
+    }
+    .sections:nth-child(8) > div:nth-of-type(2) {
+        width: 164px;
+        top: 507px;
+        left: -223px;
+    }
+    .sections:nth-child(8) > div:first-of-type > img {
+        left: 251px;
+        top: 345px;
+        height: 218px;
+    }
+    .sections:nth-child(8) > div:first-of-type > div:first-of-type {
+        left: 344px;
+        top: 456px;
+    }
+    .sections:nth-child(8) > div:first-of-type > div:nth-of-type(2) {
+        left: 267px;
+        top: 458px;
+    }
+    .sections:nth-child(8) > div:first-of-type > div:nth-of-type(3) {
+        left: 298px;
+        top: 388px;
+    }
+    .sections:nth-child(8) > div:first-of-type > div:last-of-type {
+        width: 100px;
+        height: 100px;
+        left: 293.5px;
+        top: 373.13px;
+    }
+    .sections:nth-child(8) > form > img:first-of-type,.sections:nth-child(8) > form > img:nth-of-type(2) {
+        width: 0;
+    }
+
+    .sections:nth-child(5) > aside:nth-of-type(3) > div {
+        left: -174px;
+    }
+    .sections:nth-child(6) > section:first-of-type {
+        left: 119px;
+    }
+    .sections:nth-child(6) > div {
+        left: 37px;
+    }
 }
+
+
