@@ -3917,8 +3917,8 @@ header > nav > ul > li {
     }
 
     .sections:nth-child(4) > section:first-of-type > p:nth-of-type(2) {
-         width: 0;
-         visibility: hidden;
+        width: 0;
+        visibility: hidden;
     }
 
     .sections:nth-child(4) > div > img:first-of-type {
@@ -3954,9 +3954,10 @@ header > nav > ul > li {
         width: 100vw;
     }
 
-    .sections:nth-child(5){
+    .sections:nth-child(5) {
         height: 560px;
     }
+
     .sections:nth-child(5) > div:first-of-type > h1:first-of-type {
         height: max-content;
         top: 48px;
@@ -3964,6 +3965,7 @@ header > nav > ul > li {
         width: 114px;
         font-size: 14px;
     }
+
     .sections:nth-child(5) > div:first-of-type > h1:nth-of-type(2) {
         top: 24px;
         left: 38px;
@@ -3972,6 +3974,7 @@ header > nav > ul > li {
         height: max-content;
         background-size: 176px 56px;
     }
+
     .sections:nth-child(5) > div:first-of-type > h4:first-of-type > time {
         left: -23px;
         top: 39px;
@@ -3995,6 +3998,7 @@ header > nav > ul > li {
         font-size: 31px;
         height: max-content;
     }
+
     .sections:nth-child(5) > div:first-of-type {
         height: max-content;
     }
@@ -4011,6 +4015,7 @@ header > nav > ul > li {
         font-size: 12px;
         width: 261px;
     }
+
     .program {
         font-size: 11px;
         width: 280px;
@@ -4019,6 +4024,7 @@ header > nav > ul > li {
         bottom: 18px;
         margin: 0;
     }
+
     .sections:nth-child(5) > aside:nth-of-type(3) > div {
         top: 353px;
         left: -179px;
@@ -4040,6 +4046,7 @@ header > nav > ul > li {
         left: 135px;
         margin: 0;
     }
+
     .sections:nth-child(6) > section:first-of-type {
         width: 278px;
         height: 333px;
@@ -4058,6 +4065,7 @@ header > nav > ul > li {
         position: relative;
         left: 0px;
     }
+
     .sections:nth-child(6) > div {
         width: 340px;
         top: 22px;
@@ -4072,6 +4080,7 @@ header > nav > ul > li {
         /* height: 107px; */
         margin: 0;
     }
+
     .sections:nth-child(6) > section:first-of-type {
         width: 186px;
         height: 328px;
@@ -4082,6 +4091,16 @@ header > nav > ul > li {
         justify-content: flex-start;
     }
 
+    .sections:nth-child(7) > section {
+        width: 87vw;
+        top: 18px;
+        left: 38px;
+        align-items: center;
+        overflow: scroll;
+        height: max-content;
+    }
 
-
+    .sections:nth-child(8){
+        height: 560px;
+    }
 }
