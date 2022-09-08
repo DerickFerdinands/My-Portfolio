@@ -4257,6 +4257,54 @@ header > nav > ul > li {
         left: 111px;
         width: 238px;
     }
+    .sections:nth-child(4) > section:first-of-type > p {
+        width: 366px;
+        padding-bottom: 30px;
+        font-size: 12px;
+        position: relative;
+        left: -40px;
+        top: 324px;
+    }
+    .sections:nth-child(4) > div:nth-of-type(2) {
+        width: 340px;
+        bottom: 10px;
+    }
+    .sections:nth-child(5) > div:first-of-type > h1:first-of-type {
+        left: 65px;
+    }
+    .sections:nth-child(5) > div:first-of-type > h1:nth-of-type(2) {
+        left: 4px;
+    }
+    .sections:nth-child(5) > div:first-of-type > h4:first-of-type > time {
+        left: -56px;
+        top: 39px;
+        font-size: 10px;
+    }
+    .sections:nth-child(5) > div:first-of-type > h1:nth-of-type(6) {
+        top: -6px;
+        left: 9px;
+        font-size: 31px;
+        height: max-content;
+    }
+    .sections:nth-child(5) > aside:nth-of-type(2) {
+        top: 106px;
+        left: 57px;
+        width: 350px;
+    }
+    .sections:nth-child(5) > aside:nth-of-type(3) > div {
+        left: -152px;
+    }
+    .sections:nth-child(5) > aside:nth-of-type(4) {
+        left: -4px;
+        top: 424px;
+        width: 398px;
+    }
+    .sections:nth-child(5) > aside:nth-of-type(4) > h1:first-of-type {
+        font-size: 8px;
+        width: max-content;
+        left: 13px;
+        position: relative;
+    }
 }
 
 
