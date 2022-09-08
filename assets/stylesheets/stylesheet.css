@@ -4203,4 +4203,43 @@ header > nav > ul > li {
     }
 }
 
+@media all and (max-width: 375px) {
+    .sections:first-child > aside:nth-child(4) > h1 {
+        left: 27px;
+    }
+
+    .sections:first-child > div {
+        left: 21px;
+    }
+
+    .sections:first-child > img:nth-child(2) {
+        left: 131px;
+    }
+    .sections:first-child > img:first-child {
+        left: 189px;
+    }
+
+    .sections:first-child > h1:nth-child(3) {
+        left: 237px;
+        top: 127px;
+        font-size: 13px;
+        transform: rotate(20deg);
+    }
+    .sections:first-child > aside:nth-child(5) {
+        top: 293px;
+        left: 172px;
+    }
+    .sections:nth-child(2) > section:nth-child(1) > img:first-child {
+        width: 165px;
+        height: 267px;
+        right: 8px;
+        top: 35px;
+    }
+    .sections:nth-child(2) > section:nth-child(1) > img:nth-child(2) {
+        left: 224px;
+        top: 74px;
+        height: 194px;
+    }
+}
+
 
