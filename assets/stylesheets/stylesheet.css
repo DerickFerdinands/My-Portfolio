@@ -3855,7 +3855,7 @@ header > nav > ul > li {
     }
 
     .sections:nth-of-type(3) {
-        height: 500px;
+        height: 520px;
     }
 
     .sections:nth-child(3) > section:nth-of-type(3) > img:nth-of-type(1), .sections:nth-child(3) > section:nth-of-type(3) > img:nth-of-type(3) {
@@ -3886,6 +3886,7 @@ header > nav > ul > li {
         left: 32px;
         width: 82vw;
         height: 65px;
+        margin-bottom: 25px;
         flex-wrap: wrap;
     }
 
@@ -3904,6 +3905,49 @@ header > nav > ul > li {
         height: 10px;
         margin: 0;
         width: auto;
+    }
+
+    .sections:nth-of-type(4) {
+        height: 520px;
+    }
+
+    .sections:nth-child(4) > div:nth-of-type(2) {
+        width: 389px;
+        bottom: 10px;
+    }
+
+    .sections:nth-child(4) > section:first-of-type > p:nth-of-type(2) {
+         width: 0;
+         visibility: hidden;
+    }
+
+    .sections:nth-child(4) > div > img:first-of-type {
+        top: 93px;
+        left: 31px;
+        width: 238px;
+    }
+
+    .sections:nth-child(4) > div > img:last-of-type {
+        top: 197px;
+        left: 161px;
+        width: 238px;
+    }
+
+    .sections:nth-child(4) > section:first-of-type > h1:first-of-type {
+        font-size: 27px;
+        background-size: 142px 32px;
+        position: relative;
+        top: 34px;
+        left: -68px;
+    }
+
+    .sections:nth-child(4) > section:first-of-type > p {
+        width: 366px;
+        padding-bottom: 30px;
+        font-size: 12px;
+        position: relative;
+        left: -62px;
+        top: 324px;
     }
 
 }
