@@ -4019,6 +4019,68 @@ header > nav > ul > li {
         bottom: 18px;
         margin: 0;
     }
+    .sections:nth-child(5) > aside:nth-of-type(3) > div {
+        top: 353px;
+        left: -179px;
+    }
+
+    .sections:nth-child(5) > aside:nth-of-type(4) {
+        position: absolute;
+        left: 26px;
+        top: 424px;
+        width: 398px;
+        height: max-content;
+        z-index: 1;
+    }
+
+    .sections:nth-child(6) > section > h1 {
+        font-size: 15px;
+        width: max-content;
+        top: -150px;
+        left: 135px;
+        margin: 0;
+    }
+    .sections:nth-child(6) > section:first-of-type {
+        width: 278px;
+        height: 333px;
+        align-items: center;
+        top: 34px;
+        left: 39px;
+        overflow: hidden;
+        justify-content: flex-start;
+    }
+
+    .sections:nth-child(6) > section:first-of-type > div {
+        width: 197px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+        left: 0px;
+    }
+    .sections:nth-child(6) > div {
+        width: 340px;
+        top: 22px;
+        left: 52px;
+    }
+
+    .sections:nth-child(6) > section > h1 {
+        font-size: 15px;
+        width: max-content;
+        top: 3px;
+        left: 46px;
+        /* height: 107px; */
+        margin: 0;
+    }
+    .sections:nth-child(6) > section:first-of-type {
+        width: 186px;
+        height: 328px;
+        align-items: center;
+        top: 34px;
+        left: 135px;
+        overflow: hidden;
+        justify-content: flex-start;
+    }
 
 
 
