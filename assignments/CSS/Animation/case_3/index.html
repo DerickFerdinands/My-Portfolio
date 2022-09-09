@@ -7,44 +7,63 @@
 
         body {
             margin: 0;
+            background-color: #e7e3e3;
         }
 
         section {
-            height: 100vh;
-            width: 100vw;
+            height: 500px;
+            width: 1000px;
             display: flex;
             overflow: hidden;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+            left: 0;
+            right: 0;
+            box-shadow: 0 0 5px 5px black;
         }
 
         section > div {
-            height: 100vh;
-            width: 100vw;
             position: relative;
+            height: 500px ;
+            width: 1000px ;
+            flex-shrink: 0;
+            background-size: cover ;
+            display: inline-block;
             animation-name: my-animation;
             animation-iteration-count: infinite;
+            animation-fill-mode: forwards;
             animation-direction: alternate;
             animation-duration: 10s;
         }
 
-        section > div > img {
-            width: 100vw;
-            height: 100vh;
+        section > div:nth-of-type(1) {
+            background: url("assets/1.jpg") center;
+        }
+        section > div:nth-of-type(2) {
+            background: url("assets/10-of-the-most-beautiful-places-to-visit-in-Laos.jpg") center;
+        }
+        section > div:nth-of-type(3) {
+            background: url("assets/Simple_Landscape_Photography_Tips_With_Tons_of_Impact-2.jpg") center;
+        }
+        section > div:nth-of-type(4) {
+            background: url("assets/image-slideshow-04.webp") center;
         }
 
+
         @keyframes my-animation {
-            0%{
-                right: 0vw;
+            0%,20%{
+                transform: translateX(0);
             }
-            10% {
-                right: 100vw;
+            30%,50% {
+                transform: translateX(-100%);
             }
-
-            20% {
-                right: 200vw;
+            60%,80% {
+                transform: translateX(-200%);
             }
-
-            30% {
-                right: 300vw;
+            90%,100% {
+                transform: translateX(-300%);
             }
 
         }
@@ -53,10 +72,10 @@
 </head>
 <body>
 <section>
-    <div><img src="assets/4a2ea202a3038a4043fc8f8c8cb835a9.webp" alt=""></div>
-    <div><img src="assets/490ea818d93dd7afaed3088d880622d5.gif" alt=""></div>
-    <div><img src="assets/d455543db7924b09398c1b6165874274.webp" alt=""></div>
-    <div><img src="assets/original-45c74fbc95ed2d2d618cee2cc8195802.webp" alt=""></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
 </section>
 </body>
 </html>
