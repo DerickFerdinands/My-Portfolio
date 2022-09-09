@@ -4305,6 +4305,90 @@ header > nav > ul > li {
         left: 13px;
         position: relative;
     }
+    .sections:nth-child(6) > section:first-of-type {
+        left: 94px;
+    }
+    .sections:nth-child(6) > div {
+        left: 15px;
+    }
+    .sections:nth-child(7) > section {
+        width: 99vw;
+        top: 18px;
+        left: 8px;
+        align-items: center;
+        overflow: scroll;
+        height: max-content;
+    }
+    .sections:nth-child(8) > form > label:nth-of-type(1) {
+        left: 40px;
+        top: 102px;
+    }
+    .sections:nth-child(8) > form > input {
+        width: 221px;
+        height: 31px;
+        left: 23px;
+        top: 126px;
+    }
+    .sections:nth-child(8) > form > label:nth-of-type(2) {
+        left: 42px;
+        top: 298px;
+    }
+    .sections:nth-child(8) > form > input:nth-of-type(2) {
+        top: 321px;
+    }
+    .sections:nth-child(8) > form > label:nth-of-type(3) {
+        left: 40px;
+        top: 163px;
+    }
+    .sections:nth-child(8) > form > textarea {
+        width: 339px;
+        left: 20px;
+        top: 182px;
+        height: 105px;
+    }
+    .sections:nth-child(8) > form > button {
+        width: 80px;
+        height: 29px;
+        left: 264px;
+        font-size: 12px;
+        top: 323px;
+    }
+    .sections:nth-child(8) > div:first-of-type > div:first-of-type {
+        left: 344px;
+        top: 492px;
+    }
+    .sections:nth-child(8) > div:first-of-type > div:nth-of-type(2) {
+        left: 267px;
+        top: 485px;
+    }
+    .sections:nth-child(8) > div:first-of-type > div:nth-of-type(3) {
+        left: 298px;
+        top: 428px;
+    }
+    .sections:nth-child(8) > div:first-of-type > div:last-of-type {
+        width: 100px;
+        height: 100px;
+        left: 293.5px;
+        top: 417.13px;
+    }
+    .sections:nth-child(8) > div:first-of-type > img {
+        left: 253px;
+        top: 405px;
+        height: 154px;
+    }
+    .sections:nth-child(8) > div:nth-of-type(2) {
+        width: 164px;
+        top: 507px;
+        left: -179px;
+    }
+    .sections:nth-child(8) > address {
+        width: 369px;
+        left: 18px;
+        top: 439px;
+    }
+    .sections{
+        overflow: hidden;
+    }
 }
 
 
