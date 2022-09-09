@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Title</title>
     <style>
         ::-webkit-scrollbar {
@@ -11,6 +12,11 @@
 
         body {
             margin: 0;
+        }
+        @media (-webkit-device-pixel-ratio: 1.25) {
+            section > aside > aside {
+                left: 650px !important;
+            }
         }
 
         section {
