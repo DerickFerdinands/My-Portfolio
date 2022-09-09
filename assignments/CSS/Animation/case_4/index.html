@@ -31,7 +31,9 @@
             background: url("assets/city.png") center;
             background-repeat: space;
             background-size: 100vw 30vh;
-
+            animation-name: background;
+            animation-duration:10s;
+            animation-timing-function: ease-out;
         }
 
         section > section:nth-of-type(2) {
@@ -41,6 +43,9 @@
             width: 200vw;
             background: url("assets/road.jpg") center;
             background-size: cover;
+            animation-name: background;
+            animation-duration:10s;
+            animation-timing-function: ease-out;
         }
 
         section>aside>img:first-of-type{
@@ -63,6 +68,19 @@
             height: 55px;
             margin-right: 120px;
         }
+
+        @keyframes background{
+            from{
+                transform: translate(0vw);
+            }
+
+            to{
+                transform: translate(-100vw);
+            }
+
+        }
+
+
     </style>
 </head>
 <body>
