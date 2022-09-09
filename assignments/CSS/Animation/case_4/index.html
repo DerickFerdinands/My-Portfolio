@@ -32,7 +32,7 @@
             background-repeat: space;
             background-size: 100vw 30vh;
             animation-name: background;
-            animation-duration:10s;
+            animation-duration: 10s;
             animation-timing-function: ease-out;
         }
 
@@ -44,11 +44,11 @@
             background: url("assets/road.jpg") center;
             background-size: cover;
             animation-name: background;
-            animation-duration:10s;
+            animation-duration: 10s;
             animation-timing-function: ease-out;
         }
 
-        section>aside>img:first-of-type{
+        section > aside > img:first-of-type {
             height: 120px;
             position: absolute;
             left: 0;
@@ -57,29 +57,52 @@
             bottom: 20vh;
         }
 
-        section>aside>aside{
+        section > aside > aside {
             display: flex;
             position: absolute;
             bottom: 20vh;
             left: 520px;
             margin: auto;
         }
-        section>aside>aside>img{
+
+        section > aside > aside > img {
             height: 55px;
             margin-right: 120px;
+            animation-name:wheels;
+            animation-duration: 35s;
+            animation-timing-function: ease-out;
         }
 
-        @keyframes background{
-            from{
+        @keyframes background {
+            from {
                 transform: translate(0vw);
             }
 
-            to{
+            to {
                 transform: translate(-100vw);
             }
 
         }
 
+        @keyframes wheels {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            25% {
+                transform: rotate(360deg);
+            }
+            50% {
+                transform: rotate(360deg);
+            }
+
+            75% {
+                transform: rotate(360deg);
+            }
+            100% {
+                transform: rotate(360deg);
+            }
+        }
 
     </style>
 </head>
