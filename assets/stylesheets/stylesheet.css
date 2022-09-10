@@ -194,9 +194,9 @@ header > nav > ul > li {
 .sections:first-child > img:nth-child(2) {
     position: absolute;
     height: 600px;
-    width: 500px;
+    width: auto;
     left: 1064px;
-    top: 18px;
+    top: 35px;
 }
 
 .sections:first-child > h1:nth-child(3) {
@@ -1406,6 +1406,10 @@ header > nav > ul > li {
 }
 
 @media all and (min-width: 1921px) and (max-width: 2560px) {
+    .sections{
+        height: 1240px;
+        width: 2560px;
+    }
     header > nav > ul > li {
         font-size: 20px;
     }
@@ -1997,7 +2001,10 @@ header > nav > ul > li {
 }
 
 @media all and (max-width: 1440px) {
-
+    .sections{
+        height: 800px;
+        width: 1440px;
+    }
 
     header > h1 {
         font-size: 25px;
@@ -2606,7 +2613,7 @@ header > nav > ul > li {
 
     .sections:nth-child(8) > div:first-of-type > img {
         left: 1109px;
-        top: 352px;
+        top: 385px;
         height: 414px;
     }
 
@@ -2625,6 +2632,10 @@ header > nav > ul > li {
 }
 
 @media all and (max-width: 1024px) {
+    .sections{
+        height: 750px;
+        width: 1024px;
+    }
     header > nav {
         left: 279px;
     }
@@ -2922,6 +2933,7 @@ header > nav > ul > li {
 @media all and (max-width: 768px) {
     .sections {
         height: 400px;
+        width: 768px;
     }
 
     header > nav {
@@ -3744,6 +3756,9 @@ header > nav > ul > li {
 }
 
 @media all and (max-width: 425px) {
+    .sections{
+        width: 425px;
+    }
     .sections:first-child > aside:nth-child(4) > h1 {
         left: 50px;
         top: 164px;
@@ -4204,6 +4219,14 @@ header > nav > ul > li {
 }
 
 @media all and (max-width: 375px) {
+    .sections{
+        width: 375px;
+    }
+
+    header>nav>ul>li{
+        padding-right: 0;
+    }
+
     .sections:first-child > aside:nth-child(4) > h1 {
         left: 27px;
     }
@@ -4229,6 +4252,9 @@ header > nav > ul > li {
         top: 293px;
         left: 172px;
     }
+    .sections:nth-of-type(2) {
+        height: 547px;
+    }
     .sections:nth-child(2) > section:nth-child(1) > img:first-child {
         width: 165px;
         height: 267px;
@@ -4239,6 +4265,30 @@ header > nav > ul > li {
         left: 224px;
         top: 74px;
         height: 194px;
+    }
+    .sections:nth-child(2) > section:nth-child(1) > img:nth-child(2) {
+        left: 216px;
+        top: 66px;
+        height: 209px;
+    }
+
+    .sections:nth-child(2) > section:nth-child(1) > img:first-child {
+        width: 176px;
+        height: 267px;
+        right: 8px;
+        top: 35px;
+    }
+
+    .sections:nth-child(2) > section:nth-child(2) > p:nth-of-type(3) {
+        left: 24px;
+        top: 15px;
+        width: 349px;
+    }
+
+    .sections:nth-child(2) > section:nth-child(2) > p:nth-of-type(5) {
+        left: 24px;
+        top: 2px;
+        width: 351px;
     }
     .sections:nth-child(3) > section:first-of-type {
         left: 18px;
@@ -4388,6 +4438,84 @@ header > nav > ul > li {
     }
     .sections{
         overflow: hidden;
+    }
+}
+
+@media all and (max-width: 320px) {
+
+    .sections{
+        width: 320px;
+    }
+    .sections:first-child > aside:nth-child(4) > h1 {
+        left: 19px;
+    }
+    .sections:first-child > img:nth-child(2) {
+        left: 92px;
+    }
+    .sections:first-child > img:first-child {
+        left: 147px;
+    }
+    .sections:first-child > h1:nth-child(3) {
+        left: 185px;
+        top: 110px;
+        transform: rotate(21deg);
+    }
+    .sections:first-child > aside:nth-child(5) {
+        left: 121px;
+    }
+    .sections:nth-child(2) > section:nth-child(2) > p {
+        width: 159px;
+        left: 24px;
+        top: 21px;
+    }
+    .sections:nth-child(2) > section:nth-child(2) > p:nth-of-type(3) {
+        left: 24px;
+        top: 15px;
+        width: 291px;
+    }
+    .sections:nth-child(2) > section:nth-child(2) > p:nth-of-type(5) {
+        left: 24px;
+        top: 2px;
+        width: 294px;
+    }
+
+    .sections:nth-child(2) > section:nth-child(1) > img:first-child {
+        width: 125px;
+        height: 213px;
+        right: 4px;
+        top: 100px;
+    }
+
+    .sections:nth-child(2) > section:nth-child(1) > img:nth-child(2) {
+        left: 199px;
+        top: 120px;
+        height: 179px;
+    }
+    .sections:nth-child(3) > section:first-of-type {
+        justify-content: space-evenly;
+        margin-top: 10px;
+        flex-wrap: wrap;
+        width: 100%;
+        position: relative;
+        left: 0;
+    }
+
+    .sections:nth-child(4) > section:first-of-type > h1:first-of-type {
+        left: 20px;
+        width: max-content;
+    }
+    .sections:nth-child(4) > section:first-of-type > p {
+        width: 305px;
+        left: 17px;
+        top: 324px;
+    }
+
+    .sections:nth-child(4) > div:nth-of-type(2) {
+        width: 296px;
+    }
+
+    .sections:nth-child(4) > div > img:last-of-type {
+        left: 65px;
     }
 }
 
