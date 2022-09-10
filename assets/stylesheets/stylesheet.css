@@ -4517,6 +4517,25 @@ header > nav > ul > li {
     .sections:nth-child(4) > div > img:last-of-type {
         left: 65px;
     }
+    .sections:nth-child(5) > div:first-of-type > h1:first-of-type {
+        left: 45px;
+    }
+    .sections:nth-child(5) > div:first-of-type > h1:nth-of-type(2) {
+        left: -14px;
+    }
+    .sections:nth-child(5) > div:first-of-type > h4:first-of-type > time {
+        left: 217px;
+        top: -8px;
+        font-size: 10px;
+    }
+    .sections:nth-child(5) > aside:nth-of-type(2) {
+        top: 106px;
+        left: 22px;
+        width: 350px;
+    }
+    .sections:nth-child(5) > aside:nth-of-type(3) > div {
+        left: -126px;
+    }
 }
 
 
