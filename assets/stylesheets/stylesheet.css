@@ -1,6 +1,10 @@
 ::-webkit-scrollbar {
-    width: 0px;
-    height: max-content;
+    width: 0;
+    height: 0;
+}
+
+div {
+    text-decoration: none !important;
 }
 
 header > img {
@@ -8,9 +12,21 @@ header > img {
     position: absolute;
     width: 0px;
 }
+header{
+    z-index: 1;
+}
+header> nav >ul>li:hover, header > img:hover{
+    color: #0f315e;
+    cursor: pointer;
+
+}
+
+.sections {
+    width: 100vw;
+}
 
 @media (-webkit-device-pixel-ratio: 1.25) {
-    .sections:nth-child(7) > section > div, img, h1, p, ol, ul,
+  /*  .sections:nth-child(7) > section > div, img, h1, p, ol, ul,
     .sections:nth-child(6) > section:first-of-type,
     .sections:nth-child(6) > div, address, form,
     .sections:nth-child(8) > div:nth-of-type(2),
@@ -24,7 +40,7 @@ header > img {
 
     .sections {
         height: 750px !important;
-        width: 100vw !important;
+        width: 100vw;
     }
 
     .sections:nth-child(5) > aside:nth-of-type(4) {
@@ -85,7 +101,7 @@ header > img {
         left: 30px !important;
     }
 
-    .sections:nth-child(6) > section:first-of-type > div > img {
+    .sections:nth-child(6) > section:first-of-type > a > div > img {
         zoom: 1;
     }
 
@@ -123,15 +139,70 @@ header > img {
         left: 1420px !important;
         top: 710px !important;
     }
+    @media all and (min-width: 1921px) and (max-width: 2560px) {
+        .sections {
+            height: 1240px !important;
+            width: 2560px !important;
+            overflow: hidden;
+        }}
 
-    .sections
-
-    /*    * {
-            -webkit-device-pixel-ratio: 1.00;
+    @media all and (max-width: 1440px) {
+        .sections {
+            height: 800px !important;
+            width: 1440px !important;
         }
+    }
 
-        ::*/
+    @media all and (max-width: 1024px) {
+        .sections {
+            height: 750px !important;
+            width: 1024px !important;
+        }
+    }
 
+    @media all and (max-width: 768px) {
+        .sections {
+            height: 400px !important;
+            width: 768px !important;
+        }
+    }*/
+    html:not(.sections){
+        zoom: 80%;
+    }
+    header{
+        width: 1920px !important;
+
+    }
+    .sections{
+        width: 1920px !important;
+    }
+
+    @media all and (min-width: 1920px) and (max-width: 2560px) {
+        .sections {
+            height: 1240px !important;
+            width: 2560px !important;
+            overflow: hidden;
+        }}
+
+    @media all and (max-width: 1440px) {
+        .sections {
+            height: 800px !important;
+            width: 1440px !important;
+        }
+    }
+
+    @media all and (max-width: 1024px) {
+        .sections {
+            height: 750px !important;
+            width: 1024px !important;
+        }
+    }
+
+    @media all and (max-width: 768px) {
+        .sections {
+            height: 400px !important;
+            width: 768px !important;
+        }}
 }
 
 body {
@@ -1018,7 +1089,7 @@ header > nav > ul > li {
     left: 70px;
 }
 
-.sections:nth-child(6) > section:first-of-type > div {
+.sections:nth-child(6) > section:first-of-type > a > div {
     width: 400px;
     display: flex;
     flex-direction: column;
@@ -1027,7 +1098,16 @@ header > nav > ul > li {
     left: 0px;
 }
 
-.sections:nth-child(6) > section:first-of-type > div > img {
+.sections:nth-child(6) > section:first-of-type > a > div {
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    left: 0px;
+}
+
+.sections:nth-child(6) > section:first-of-type > a > div > img {
     border-radius: 10px;
     width: 372px;
     height: 391px;
@@ -1035,7 +1115,7 @@ header > nav > ul > li {
     transition-duration: 0.3s;
 }
 
-.sections:nth-child(6) > section:first-of-type > div > img:hover {
+.sections:nth-child(6) > section:first-of-type > a > div > img:hover {
     width: 403px;
     height: 425px;
     transition: height, width;
@@ -1043,7 +1123,7 @@ header > nav > ul > li {
 }
 
 
-.sections:nth-child(6) > section:first-of-type > div > h3 {
+.sections:nth-child(6) > section:first-of-type > a > div > h3 {
     font-family: 'Raleway', sans-serif;
     font-style: normal;
     font-weight: 800;
@@ -1054,7 +1134,7 @@ header > nav > ul > li {
 
 }
 
-.sections:nth-child(6) > section:first-of-type > div > h5 {
+.sections:nth-child(6) > section:first-of-type > a > div > h5 {
     font-family: 'Raleway', sans-serif;
     font-style: normal;
     font-weight: 400;
@@ -1406,10 +1486,12 @@ header > nav > ul > li {
 }
 
 @media all and (min-width: 1921px) and (max-width: 2560px) {
-    .sections{
+    .sections {
         height: 1240px;
-        width: 2560px;
+        width: 100vw;
+        overflow: hidden;
     }
+
     header > nav > ul > li {
         font-size: 20px;
     }
@@ -1798,12 +1880,12 @@ header > nav > ul > li {
         width: 247px;
     }
 
-    .sections:nth-child(6) > section:first-of-type > div > img {
+    .sections:nth-child(6) > section:first-of-type > a > div > img {
         width: 495px;
         height: 528px;
     }
 
-    .sections:nth-child(6) > section:first-of-type > div > img {
+    .sections:nth-child(6) > section:first-of-type > a > div > img {
         width: 495px;
         height: 528px;
     }
@@ -1845,11 +1927,11 @@ header > nav > ul > li {
         left: 559px;
     }
 
-    .sections:nth-child(6) > section:first-of-type > div > h3 {
+    .sections:nth-child(6) > section:first-of-type > a > div > h3 {
         font-size: 25px;
     }
 
-    .sections:nth-child(6) > section:first-of-type > div > h5 {
+    .sections:nth-child(6) > section:first-of-type > a > div > h5 {
         font-size: 20px;
     }
 
@@ -2001,7 +2083,7 @@ header > nav > ul > li {
 }
 
 @media all and (max-width: 1440px) {
-    .sections{
+    .sections {
         height: 800px;
         width: 1440px;
     }
@@ -2437,7 +2519,7 @@ header > nav > ul > li {
         left: 84px;
     }
 
-    .sections:nth-child(6) > section:first-of-type > div > img {
+    .sections:nth-child(6) > section:first-of-type > a > div > img {
         width: 257px;
         height: 266px;
     }
@@ -2455,11 +2537,11 @@ header > nav > ul > li {
         width: 154px;
     }
 
-    .sections:nth-child(6) > section:first-of-type > div > h3 {
+    .sections:nth-child(6) > section:first-of-type > a > div > h3 {
         font-size: 17px;
     }
 
-    .sections:nth-child(6) > section:first-of-type > div > h5 {
+    .sections:nth-child(6) > section:first-of-type > a > div > h5 {
         font-size: 12px;
     }
 
@@ -2469,7 +2551,7 @@ header > nav > ul > li {
         left: 255px;
     }
 
-    .sections:nth-child(6) > section:first-of-type > div > img:hover {
+    .sections:nth-child(6) > section:first-of-type > a > div > img:hover {
         width: 298px;
         height: 313px;
     }
@@ -2629,13 +2711,23 @@ header > nav > ul > li {
         height: 610px;
         width: 363px;
     }
+    .sections:nth-child(6) > section:first-of-type > a > div {
+        width: 307px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+        left: 0px;
+    }
 }
 
+
 @media all and (max-width: 1024px) {
-    .sections{
+    .sections {
         height: 750px;
         width: 1024px;
     }
+
     header > nav {
         left: 279px;
     }
@@ -3504,7 +3596,7 @@ header > nav > ul > li {
         left: 30px;
     }
 
-    .sections:nth-child(6) > section:first-of-type > div {
+    .sections:nth-child(6) > section:first-of-type > a > div {
         width: 400px;
         display: flex;
         flex-direction: column;
@@ -3513,7 +3605,7 @@ header > nav > ul > li {
         left: 0px;
     }
 
-    .sections:nth-child(6) > section:first-of-type > div > img {
+    .sections:nth-child(6) > section:first-of-type > a > div > img {
         width: 186px;
         height: 196px;
     }
@@ -3540,7 +3632,7 @@ header > nav > ul > li {
         right: 90px;
     }
 
-    .sections:nth-child(6) > section:first-of-type > div > img:hover {
+    .sections:nth-child(6) > section:first-of-type > a > div > img:hover {
         width: 192px;
         height: 196px;
     }
@@ -3753,12 +3845,21 @@ header > nav > ul > li {
         overflow: hidden;
         width: 768px;
     }
+    .sections:nth-child(6) > section:first-of-type > a > div {
+        width: 241px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+        left: 0px;
+    }
 }
 
-@media all and (max-width: 425px) {
-    .sections{
+@media all and (max-width: 426px) {
+    .sections {
         width: 425px;
     }
+
     .sections:first-child > aside:nth-child(4) > h1 {
         left: 50px;
         top: 164px;
@@ -4071,7 +4172,7 @@ header > nav > ul > li {
         justify-content: flex-start;
     }
 
-    .sections:nth-child(6) > section:first-of-type > div {
+    .sections:nth-child(6) > section:first-of-type > a > div {
         width: 197px;
         display: flex;
         flex-direction: column;
@@ -4114,9 +4215,10 @@ header > nav > ul > li {
         height: max-content;
     }
 
-    .sections:nth-child(8){
+    .sections:nth-child(8) {
         height: 560px;
     }
+
     .sections:nth-child(8) > h1:first-child {
         font-size: 28px;
         top: 6px;
@@ -4128,29 +4230,35 @@ header > nav > ul > li {
         left: 76px;
         top: 102px;
     }
+
     .sections:nth-child(8) > form > input {
         width: 221px;
         height: 31px;
         left: 56px;
         top: 126px;
     }
+
     .sections:nth-child(8) > form > label:nth-of-type(3) {
         left: 73px;
         top: 163px;
     }
+
     .sections:nth-child(8) > form > textarea {
         width: 339px;
         left: 51px;
         top: 182px;
         height: 105px;
     }
+
     .sections:nth-child(8) > form > label:nth-of-type(2) {
         left: 76px;
         top: 298px;
     }
+
     .sections:nth-child(8) > form > input:nth-of-type(2) {
         top: 323px;
     }
+
     .sections:nth-child(8) > form > button {
         width: 80px;
         height: 29px;
@@ -4158,6 +4266,7 @@ header > nav > ul > li {
         font-size: 12px;
         top: 323px;
     }
+
     .sections:nth-child(8) > button {
         width: 86px;
         height: 21px;
@@ -4165,65 +4274,76 @@ header > nav > ul > li {
         top: 393px;
         font-size: 10px;
     }
+
     .sections:nth-child(8) > h1:nth-of-type(2) {
         left: 19px;
         top: 411px;
         font-size: 15px;
     }
+
     .sections:nth-child(8) > address {
         width: 369px;
         left: 18px;
         top: 439px;
     }
+
     .sections:nth-child(8) > div:nth-of-type(2) {
         width: 164px;
         top: 507px;
         left: -223px;
     }
+
     .sections:nth-child(8) > div:first-of-type > img {
         left: 251px;
         top: 345px;
         height: 218px;
     }
+
     .sections:nth-child(8) > div:first-of-type > div:first-of-type {
         left: 344px;
         top: 456px;
     }
+
     .sections:nth-child(8) > div:first-of-type > div:nth-of-type(2) {
         left: 267px;
         top: 458px;
     }
+
     .sections:nth-child(8) > div:first-of-type > div:nth-of-type(3) {
         left: 298px;
         top: 388px;
     }
+
     .sections:nth-child(8) > div:first-of-type > div:last-of-type {
         width: 100px;
         height: 100px;
         left: 293.5px;
         top: 373.13px;
     }
-    .sections:nth-child(8) > form > img:first-of-type,.sections:nth-child(8) > form > img:nth-of-type(2) {
+
+    .sections:nth-child(8) > form > img:first-of-type, .sections:nth-child(8) > form > img:nth-of-type(2) {
         width: 0;
     }
 
     .sections:nth-child(5) > aside:nth-of-type(3) > div {
         left: -174px;
     }
+
     .sections:nth-child(6) > section:first-of-type {
         left: 119px;
     }
+
     .sections:nth-child(6) > div {
         left: 37px;
     }
 }
 
-@media all and (max-width: 375px) {
-    .sections{
+@media all and (max-width: 376px) {
+    .sections {
         width: 375px;
     }
 
-    header>nav>ul>li{
+    header > nav > ul > li {
         padding-right: 0;
     }
 
@@ -4238,6 +4358,7 @@ header > nav > ul > li {
     .sections:first-child > img:nth-child(2) {
         left: 131px;
     }
+
     .sections:first-child > img:first-child {
         left: 189px;
     }
@@ -4248,24 +4369,29 @@ header > nav > ul > li {
         font-size: 13px;
         transform: rotate(20deg);
     }
+
     .sections:first-child > aside:nth-child(5) {
         top: 293px;
         left: 172px;
     }
+
     .sections:nth-of-type(2) {
         height: 547px;
     }
+
     .sections:nth-child(2) > section:nth-child(1) > img:first-child {
         width: 165px;
         height: 267px;
         right: 8px;
         top: 35px;
     }
+
     .sections:nth-child(2) > section:nth-child(1) > img:nth-child(2) {
         left: 224px;
         top: 74px;
         height: 194px;
     }
+
     .sections:nth-child(2) > section:nth-child(1) > img:nth-child(2) {
         left: 216px;
         top: 66px;
@@ -4290,9 +4416,11 @@ header > nav > ul > li {
         top: 2px;
         width: 351px;
     }
+
     .sections:nth-child(3) > section:first-of-type {
         left: 18px;
     }
+
     .sections:nth-child(4) > section:first-of-type > h1:first-of-type {
         left: -30px;
     }
@@ -4302,11 +4430,13 @@ header > nav > ul > li {
         left: 14px;
         width: 238px;
     }
+
     .sections:nth-child(4) > div > img:last-of-type {
         top: 197px;
         left: 111px;
         width: 238px;
     }
+
     .sections:nth-child(4) > section:first-of-type > p {
         width: 366px;
         padding-bottom: 30px;
@@ -4315,52 +4445,64 @@ header > nav > ul > li {
         left: -40px;
         top: 324px;
     }
+
     .sections:nth-child(4) > div:nth-of-type(2) {
         width: 340px;
         bottom: 10px;
     }
+
     .sections:nth-child(5) > div:first-of-type > h1:first-of-type {
         left: 65px;
     }
+
     .sections:nth-child(5) > div:first-of-type > h1:nth-of-type(2) {
         left: 4px;
     }
+
     .sections:nth-child(5) > div:first-of-type > h4:first-of-type > time {
         left: -56px;
         top: 39px;
         font-size: 10px;
     }
+
     .sections:nth-child(5) > div:first-of-type > h1:nth-of-type(6) {
         top: -6px;
         left: 9px;
         font-size: 31px;
         height: max-content;
     }
+
     .sections:nth-child(5) > aside:nth-of-type(2) {
         top: 106px;
         left: 57px;
         width: 350px;
     }
+
     .sections:nth-child(5) > aside:nth-of-type(3) > div {
         left: -152px;
     }
+
     .sections:nth-child(5) > aside:nth-of-type(4) {
         left: -4px;
         top: 424px;
         width: 398px;
     }
+
     .sections:nth-child(5) > aside:nth-of-type(4) > h1:first-of-type {
         font-size: 8px;
         width: max-content;
         left: 13px;
         position: relative;
     }
+
     .sections:nth-child(6) > section:first-of-type {
         left: 94px;
     }
+
     .sections:nth-child(6) > div {
         left: 15px;
     }
+
     .sections:nth-child(7) > section {
         width: 99vw;
         top: 18px;
@@ -4369,33 +4511,40 @@ header > nav > ul > li {
         overflow: scroll;
         height: max-content;
     }
+
     .sections:nth-child(8) > form > label:nth-of-type(1) {
         left: 40px;
         top: 102px;
     }
+
     .sections:nth-child(8) > form > input {
         width: 221px;
         height: 31px;
         left: 23px;
         top: 126px;
     }
+
     .sections:nth-child(8) > form > label:nth-of-type(2) {
         left: 42px;
         top: 298px;
     }
+
     .sections:nth-child(8) > form > input:nth-of-type(2) {
         top: 321px;
     }
+
     .sections:nth-child(8) > form > label:nth-of-type(3) {
         left: 40px;
         top: 163px;
     }
+
     .sections:nth-child(8) > form > textarea {
         width: 339px;
         left: 20px;
         top: 182px;
         height: 105px;
     }
+
     .sections:nth-child(8) > form > button {
         width: 80px;
         height: 29px;
@@ -4403,76 +4552,92 @@ header > nav > ul > li {
         font-size: 12px;
         top: 323px;
     }
+
     .sections:nth-child(8) > div:first-of-type > div:first-of-type {
         left: 344px;
         top: 492px;
     }
+
     .sections:nth-child(8) > div:first-of-type > div:nth-of-type(2) {
         left: 267px;
         top: 485px;
     }
+
     .sections:nth-child(8) > div:first-of-type > div:nth-of-type(3) {
         left: 298px;
         top: 428px;
     }
+
     .sections:nth-child(8) > div:first-of-type > div:last-of-type {
         width: 100px;
         height: 100px;
         left: 293.5px;
         top: 417.13px;
     }
+
     .sections:nth-child(8) > div:first-of-type > img {
         left: 253px;
         top: 405px;
         height: 154px;
     }
+
     .sections:nth-child(8) > div:nth-of-type(2) {
         width: 164px;
         top: 507px;
         left: -179px;
     }
+
     .sections:nth-child(8) > address {
         width: 369px;
         left: 18px;
         top: 439px;
     }
-    .sections{
+
+    .sections {
         overflow: hidden;
     }
 }
 
 @media all and (max-width: 320px) {
 
-    .sections{
+    .sections {
         width: 320px;
     }
+
     .sections:first-child > aside:nth-child(4) > h1 {
         left: 19px;
     }
+
     .sections:first-child > img:nth-child(2) {
         left: 92px;
     }
+
     .sections:first-child > img:first-child {
         left: 147px;
     }
+
     .sections:first-child > h1:nth-child(3) {
         left: 185px;
         top: 110px;
         transform: rotate(21deg);
     }
+
     .sections:first-child > aside:nth-child(5) {
         left: 121px;
     }
+
     .sections:nth-child(2) > section:nth-child(2) > p {
         width: 159px;
         left: 24px;
         top: 21px;
     }
+
     .sections:nth-child(2) > section:nth-child(2) > p:nth-of-type(3) {
         left: 24px;
         top: 15px;
         width: 291px;
     }
+
     .sections:nth-child(2) > section:nth-child(2) > p:nth-of-type(5) {
         left: 24px;
         top: 2px;
@@ -4491,6 +4656,7 @@ header > nav > ul > li {
         top: 120px;
         height: 179px;
     }
+
     .sections:nth-child(3) > section:first-of-type {
         justify-content: space-evenly;
         margin-top: 10px;
@@ -4504,6 +4670,7 @@ header > nav > ul > li {
         left: 20px;
         width: max-content;
     }
+
     .sections:nth-child(4) > section:first-of-type > p {
         width: 305px;
         left: 17px;
@@ -4517,30 +4684,36 @@ header > nav > ul > li {
     .sections:nth-child(4) > div > img:last-of-type {
         left: 65px;
     }
+
     .sections:nth-child(5) > div:first-of-type > h1:first-of-type {
         left: 45px;
     }
+
     .sections:nth-child(5) > div:first-of-type > h1:nth-of-type(2) {
         left: -14px;
     }
+
     .sections:nth-child(5) > div:first-of-type > h4:first-of-type > time {
         left: 217px;
         top: -8px;
         font-size: 10px;
     }
+
     .sections:nth-child(5) > aside:nth-of-type(2) {
         top: 106px;
         left: 22px;
         width: 350px;
     }
+
     .sections:nth-child(5) > aside:nth-of-type(3) > div {
         left: -126px;
     }
 
-    header>nav>ul>li{
+    header > nav > ul > li {
         width: 0;
     }
-    header{
+
+    header {
         height: 55px;
         overflow: hidden;
     }
@@ -4551,44 +4724,53 @@ header > nav > ul > li {
         font-size: 31px;
         height: max-content;
     }
+
     .sections:nth-child(5) > aside:nth-of-type(4) > img {
         padding: 5px;
-        border-radius:8px !important;
+        border-radius: 8px !important;
     }
+
     .sections:nth-child(5) > aside:nth-of-type(4) > img:nth-of-type(1) {
         width: 92px;
         height: 66px;
     }
+
     .sections:nth-child(5) > aside:nth-of-type(4) > img:nth-of-type(2) {
         width: auto;
         height: 66px;
     }
+
     .sections:nth-child(5) > aside:nth-of-type(4) > img:nth-of-type(3) {
         width: auto;
         height: 66px;
     }
+
     .sections:nth-child(5) > aside:nth-of-type(4) {
         left: 2px;
         top: 442px;
         width: 398px;
     }
+
     .sections:nth-child(5) > aside:nth-of-type(4) > h3:nth-of-type(1) {
         top: 52px;
         left: 23px;
         width: 54px;
     }
+
     .sections:nth-child(5) > aside:nth-of-type(4) > h3:nth-of-type(2) {
         left: 121px;
         width: 72px;
         top: 52px;
         right: 0;
     }
+
     .sections:nth-child(5) > aside:nth-of-type(4) > h3:nth-of-type(3) {
         right: 0;
         left: 230px;
         width: 69px;
         top: 52px;
     }
+
     .sections:nth-child(5) > aside:nth-of-type(4) > h6 {
         font-size: 9px;
         padding-right: 43px;
@@ -4603,6 +4785,7 @@ header > nav > ul > li {
     .sections:nth-child(6) > div {
         left: -6px;
     }
+
     .sections:nth-child(7) > section {
         width: 53vw;
         top: 18px;
@@ -4611,6 +4794,57 @@ header > nav > ul > li {
         overflow: scroll;
         height: max-content;
     }
+
+    .sections:nth-child(8) > h1:first-child {
+        left: -32px;
+    }
+
+    .sections:nth-child(8) > div:first-of-type {
+        visibility: hidden;
+    }
+
+    .sections:nth-child(8) > div:nth-of-type(2) {
+        left: -119px;
+    }
+
+    .sections:nth-child(8) > form > input {
+        width: 203px;
+        height: 26px;
+        left: 23px;
+        top: 126px;
+    }
+
+    .sections:nth-child(8) > form > textarea {
+        width: 279px;
+        left: 20px;
+        top: 182px;
+        height: 99px;
+    }
+
+    .sections:nth-child(8) > form > label:nth-of-type(3) {
+        left: 32px;
+        top: 161px;
+    }
+
+    .sections:nth-child(8) > form > label:nth-of-type(1) {
+        left: 31px;
+        top: 102px;
+    }
+
+    .sections:nth-child(8) > form > label:nth-of-type(2) {
+        left: 29px;
+        top: 299px;
+    }
+
+    .sections:nth-child(8) > form > button {
+        width: 80px;
+        height: 29px;
+        left: 234px;
+        font-size: 12px;
+        top: 323px;
+    }
 }
+
+
 
 

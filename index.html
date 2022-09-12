@@ -24,8 +24,8 @@
     <h1 id="lbl1">Portfolio</h1>
     <nav class="headerNav">
         <ul>
-            <li>Home</li>
-            <li>Projects</li>
+            <a href="#home"><li>Home</li></a>
+            <a href="#projects" > <li>Projects</li></a>
             <li>Assignments</li>
             <li>Gallery</li>
             <li>Skills</li>
@@ -36,9 +36,9 @@
     </nav>
 </header>
 <main>
-    <section class="sections">
-        <img id="img1" src="assets/images/4c28c6e78862af3507319c7cc7b3b949.webp" >
-        <img id="img2" src="assets/images/wewwew.png" >
+    <section class="sections" id="home">
+        <img id="img1" src="assets/images/4c28c6e78862af3507319c7cc7b3b949.webp">
+        <img id="img2" src="assets/images/wewwew.png">
         <h1 id="name">#Derick Andrew Ferdinands</h1>
         <aside>
             <h1 id="lbl2">I'm many things.</h1>
@@ -210,7 +210,7 @@
         </section>
 
     </section>
-    <section class="sections" id="projects">
+    <section class="sections" data-bs-spy="scroll" data-bs-target="#navbar-example3" data-bs-smooth-scroll="true"  id="projects">
         <img id="project-background-img" src="assets/images/osman-rana-G7VN8NadjO0-unsplash.jpg" alt="">
         <div>
             <h1>01</h1>
@@ -339,21 +339,27 @@
 
         <section>
             <h1>Assign<span class="index-color">Ments</span></h1>
-            <div>
-                <img width="403px" src="assets/images/25699250_7096657.jpg" alt="">
-                <h3>Assignment <span class="index-color">01</span></h3>
-                <h5>View Assignment ></h5>
-            </div>
-            <div>
-                <img width="403px" src="assets/images/24372223_6928106.jpg" alt="">
-                <h3>Assignment <span class="index-color">02</span></h3>
-                <h5>View Assignment ></h5>
-            </div>
-            <div>
-                <img width="403px" src="assets/images/23848832_6849067.jpg" alt="">
-                <h3>Assignment <span class="index-color">03</span></h3>
-                <h5>View Assignment ></h5>
-            </div>
+            <a href="assignments/CSS/Animation/case_4/index.html" target="_blank">
+                <div>
+                    <img width="403px" src="assets/images/25699250_7096657.jpg" alt="">
+                    <h3>Assignment <span class="index-color">01</span></h3>
+                    <h5>View Assignment ></h5>
+                </div>
+            </a>
+            <a href="assignments/CSS/Animation/case_3/index.html" target="_blank">
+                <div>
+                    <img width="403px" src="assets/images/24372223_6928106.jpg" alt="">
+                    <h3>Assignment <span class="index-color">02</span></h3>
+                    <h5>View Assignment ></h5>
+                </div>
+            </a>
+            <a href="assignments/CSS/Animation/case_2/index.html" target="_blank">
+                <div>
+                    <img width="403px" src="assets/images/23848832_6849067.jpg" alt="">
+                    <h3>Assignment <span class="index-color">03</span></h3>
+                    <h5>View Assignment ></h5>
+                </div>
+            </a>
         </section>
 
         <div>
@@ -380,7 +386,7 @@
     </section>
     <!--   <section class="sections" id="activities"></section>-->
     <section class="sections" id="contact-me">
-        <h1>Take A Moment To,  <span> Say Hi!</span></h1>
+        <h1>Take A Moment To, <span> Say Hi!</span></h1>
         <h1>Derick Andrew Ferdinands</h1>
         <address>
             <h3>ADDRESS:</h3>
