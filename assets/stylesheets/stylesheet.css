@@ -4434,6 +4434,16 @@ header > nav > ul > a > li:visited {
         top: 353px;
         left: -42.118vw;
     }
+
+    .sections:nth-child(4) > section:first-of-type > h3 {
+        margin: 0px;
+        height: 23px;
+        position: relative;
+        right: -30px;
+        bottom: 615px;
+        z-index: 1;
+        width: 336px;
+    }
 }
 
 @media all and (max-width: 376px) {
@@ -4690,12 +4700,15 @@ header > nav > ul > a > li:visited {
         left: 4.800vw;
         top: 439px;
     }
+
     .sections:nth-child(3) > section:first-of-type {
         left: 9.8vw;
     }
+
     .sections:nth-child(3) {
         height: 542px;
     }
+
     .sections:first-child > aside:nth-child(5) {
         top: 293px;
         left: 49.2vw;
@@ -4722,6 +4735,31 @@ header > nav > ul > a > li:visited {
         left: 3.933vw;
         top: 448px;
         width: 106.133vw;
+    }
+
+    .sections:nth-child(5) > div:first-of-type > h1:first-of-type {
+        left: 13.332999999999998vw;
+    }
+
+    .sections:nth-child(6) > section:first-of-type > a > div {
+        width: 51.353vw;
+    }
+
+    .sections:nth-child(6) > section:first-of-type > a > div > img:hover {
+        width: 159px;
+    }
+
+    .sections:nth-child(6) > div {
+        left: 11vw;
+    }
+
+    .sections:nth-child(4) > section:first-of-type > h3 {
+        position: relative;
+        bottom: 3000px;
+        z-index: 2;
+        bottom: 615px;
+        width: max-content;
+
     }
 }
 
@@ -4969,6 +5007,55 @@ header > nav > ul > a > li:visited {
         left: 234px;
         font-size: 12px;
         top: 323px;
+    }
+
+    .sections:nth-child(5) > div:first-of-type > h1:first-of-type {
+        left: 17px;
+    }
+
+    .sections:nth-child(4) > section:first-of-type > h3 {
+        position: relative;
+        bottom: 3000px;
+        right: -10px;
+        z-index: 2;
+        bottom: 648px;
+        width: max-content;
+    }
+
+    .sections:nth-child(6) > section:first-of-type > a > div > img:hover {
+        width: 162px;
+    }
+
+    .sections:nth-child(6) > section:first-of-type > a > div {
+        width: 60.353vw;
+    }
+
+    .sections:nth-child(6) > div {
+        left: 37px;
+    }
+
+    .sections:nth-child(8) > h1:first-child {
+        left: 4px;
+    }
+
+    .sections:nth-child(8) > address {
+        width: 69.4vw;
+        left: 4.8vw;
+        top: 439px;
+    }
+
+    .sections:nth-child(8) > div:nth-of-type(2) {
+        left: -140px;
+    }
+
+    .sections:nth-child(8) > div:nth-of-type(2) {
+        width: 47.733vw;
+        top: 507px;
+        left: -47.733vw;
+    }
+    .sections:nth-child(8) > address > h3:nth-child(even) {
+        font-size: 12px;
+        width: max-content;
     }
 }
 
