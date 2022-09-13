@@ -23,7 +23,7 @@ header > nav > ul > a > li:hover, header > img:hover {
 
 }
 
-header > nav > ul > a ::before{
+header > nav > ul > a ::before {
     content: "";
     width: 0px;
     height: 10px;
@@ -3049,18 +3049,17 @@ header > nav > ul > a > li:visited {
         font-size: 14px;
         padding-right: 18px;
     }
+
     header > nav {
         padding-top: 40px;
     }
 }
+
 .sections:nth-child(7) > section {
- overflow: scroll !important;
+    overflow: scroll !important;
 }
 
-header {
-    overflow: hidden;
-    height: 58px;
-}
+
 @media all and (max-width: 768px) {
     .sections {
         height: 400px;
@@ -3900,8 +3899,18 @@ header {
         width: 100vw;
     }
 
+    header {
+        width: 100vw;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 500;
+        position: absolute;
+        top: 0px;
+        overflow: hidden;
+        height: 62px !important;
+    }
+
     .sections:first-child > aside:nth-child(4) > h1 {
-        left:11.765vw;
+        left: 11.765vw;
         top: 164px;
         font-size: 66px;
         width: 294px;
@@ -4186,7 +4195,6 @@ header {
     }
 
 
-
     .sections:nth-child(5) > aside:nth-of-type(4) {
         position: absolute;
         left: 6.118vw;
@@ -4195,6 +4203,7 @@ header {
         height: max-content;
         z-index: 1;
     }
+
     .sections:nth-child(5) > aside:nth-of-type(4) > img:nth-of-type(1) {
         width: 25.176vw;
         height: 17.412vw;
@@ -4202,12 +4211,12 @@ header {
 
     .sections:nth-child(5) > aside:nth-of-type(4) > img:nth-of-type(2) {
         width: auto;
-        height:  17.412vw;
+        height: 17.412vw;
     }
 
     .sections:nth-child(5) > aside:nth-of-type(4) > img:nth-of-type(3) {
         width: auto;
-        height:  17.412vw;
+        height: 17.412vw;
     }
 
     .sections:nth-child(5) > aside:nth-of-type(4) > h3:nth-of-type(1) {
@@ -4236,6 +4245,7 @@ header {
         left: 8vw;
         top: -16px;
     }
+
     .sections:nth-child(6) > section > h1 {
         font-size: 15px;
         width: max-content;
@@ -4306,34 +4316,35 @@ header {
         top: 6px;
         width: 300px;
         text-align: right;
+        left: 10px;
     }
 
     .sections:nth-child(8) > form > label:nth-of-type(1) {
-        left: 76px;
+        left: 17.882vw;
         top: 102px;
     }
 
     .sections:nth-child(8) > form > input {
-        width: 221px;
+        width: 52vw;
         height: 31px;
-        left: 56px;
+        left: 13.176vw;
         top: 126px;
     }
 
     .sections:nth-child(8) > form > label:nth-of-type(3) {
-        left: 73px;
+        left: 17.176vw;
         top: 163px;
     }
 
     .sections:nth-child(8) > form > textarea {
-        width: 339px;
-        left: 51px;
+        width: 79.765vw;
+        left: 12vw;
         top: 182px;
         height: 105px;
     }
 
     .sections:nth-child(8) > form > label:nth-of-type(2) {
-        left: 76px;
+        left: 17.882vw;
         top: 298px;
     }
 
@@ -4342,64 +4353,64 @@ header {
     }
 
     .sections:nth-child(8) > form > button {
-        width: 80px;
+        width: 18.824vw;
         height: 29px;
-        left: 302px;
+        left: 71.059vw;
         font-size: 12px;
         top: 323px;
     }
 
     .sections:nth-child(8) > button {
-        width: 86px;
+        width: 20.235vw;
         height: 21px;
-        left: 18px;
+        left: 4.235vw;
         top: 393px;
         font-size: 10px;
     }
 
     .sections:nth-child(8) > h1:nth-of-type(2) {
-        left: 19px;
+        left: 4.471vw;
         top: 411px;
         font-size: 15px;
     }
 
     .sections:nth-child(8) > address {
-        width: 369px;
-        left: 18px;
+        width: 86.824vw;
+        left: 4.235vw;
         top: 439px;
     }
 
     .sections:nth-child(8) > div:nth-of-type(2) {
-        width: 164px;
+        width: 38.588vw;
         top: 507px;
-        left: -223px;
+        left: -54.824vw;
     }
 
     .sections:nth-child(8) > div:first-of-type > img {
-        left: 251px;
+        left: 59.059vw;
         top: 345px;
         height: 218px;
     }
 
     .sections:nth-child(8) > div:first-of-type > div:first-of-type {
-        left: 344px;
+        left: 80.941vw;
         top: 456px;
     }
 
     .sections:nth-child(8) > div:first-of-type > div:nth-of-type(2) {
-        left: 267px;
+        left: 62.824vw;
         top: 458px;
     }
 
     .sections:nth-child(8) > div:first-of-type > div:nth-of-type(3) {
-        left: 298px;
+        left: 70.118vw;
         top: 388px;
     }
 
     .sections:nth-child(8) > div:first-of-type > div:last-of-type {
-        width: 100px;
+        width: 23.529vw;
         height: 100px;
-        left: 293.5px;
+        left: 69.059vw;
         top: 373.13px;
     }
 
@@ -4418,15 +4429,16 @@ header {
     .sections:nth-child(6) > div {
         left: 37px;
     }
+
     .sections:nth-child(5) > aside:nth-of-type(3) > div {
         top: 353px;
-        left: -42.118vw ;
+        left: -42.118vw;
     }
 }
 
 @media all and (max-width: 376px) {
     .sections {
-        width: 375px;
+        width: 100vw;
     }
 
     header > nav > ul > li {
@@ -4434,23 +4446,23 @@ header {
     }
 
     .sections:first-child > aside:nth-child(4) > h1 {
-        left: 27px;
+        left: 7.200vw;
     }
 
     .sections:first-child > div {
-        left: 21px;
+        left: 5.600vw;
     }
 
     .sections:first-child > img:nth-child(2) {
-        left: 131px;
+        left: 34.933vw;
     }
 
     .sections:first-child > img:first-child {
-        left: 189px;
+        left: 50.400vw;
     }
 
     .sections:first-child > h1:nth-child(3) {
-        left: 237px;
+        left: 63.200vw;
         top: 127px;
         font-size: 13px;
         transform: rotate(20deg);
@@ -4458,36 +4470,36 @@ header {
 
     .sections:first-child > aside:nth-child(5) {
         top: 293px;
-        left: 172px;
+        left: 63.200vw;
     }
 
     .sections:nth-of-type(2) {
-        height: 547px;
+        height: max-content;
     }
 
     .sections:nth-child(2) > section:nth-child(1) > img:first-child {
-        width: 165px;
+        width: 44vw;
         height: 267px;
-        right: 8px;
+        right: 2.133vw;
         top: 35px;
     }
 
     .sections:nth-child(2) > section:nth-child(1) > img:nth-child(2) {
-        left: 224px;
+        left: 59.733vw;
         top: 74px;
         height: 194px;
     }
 
     .sections:nth-child(2) > section:nth-child(1) > img:nth-child(2) {
-        left: 216px;
+        left: 57.600vw;
         top: 66px;
         height: 209px;
     }
 
     .sections:nth-child(2) > section:nth-child(1) > img:first-child {
-        width: 176px;
+        width: 46.933vw;
         height: 267px;
-        right: 8px;
+        right: 2.133vw;
         top: 35px;
     }
 
@@ -4498,120 +4510,120 @@ header {
     }
 
     .sections:nth-child(2) > section:nth-child(2) > p:nth-of-type(5) {
-        left: 24px;
+        left: 6.400vw;
         top: 2px;
-        width: 351px;
+        width: 93.600vw;
     }
 
     .sections:nth-child(3) > section:first-of-type {
-        left: 18px;
+        left: 4.800vw;
     }
 
     .sections:nth-child(4) > section:first-of-type > h1:first-of-type {
-        left: -30px;
+        left: -8vw;
     }
 
     .sections:nth-child(4) > div > img:first-of-type {
         top: 93px;
-        left: 14px;
-        width: 238px;
+        left: 3.733vw;
+        width: 63.467vw;
     }
 
     .sections:nth-child(4) > div > img:last-of-type {
         top: 197px;
-        left: 111px;
-        width: 238px;
+        left: 29.600vw;
+        width: 63.467vw;
     }
 
     .sections:nth-child(4) > section:first-of-type > p {
-        width: 366px;
+        width: 97.600vw;
         padding-bottom: 30px;
         font-size: 12px;
         position: relative;
-        left: -40px;
+        left: 10.667vw;
         top: 324px;
     }
 
     .sections:nth-child(4) > div:nth-of-type(2) {
-        width: 340px;
+        width: 90.667vw;
         bottom: 10px;
     }
 
     .sections:nth-child(5) > div:first-of-type > h1:first-of-type {
-        left: 65px;
+        left: 17.333vw;
     }
 
     .sections:nth-child(5) > div:first-of-type > h1:nth-of-type(2) {
-        left: 4px;
+        left: 1.067vw;
     }
 
     .sections:nth-child(5) > div:first-of-type > h4:first-of-type > time {
-        left: -56px;
+        left: -14.933vw;
         top: 39px;
         font-size: 10px;
     }
 
     .sections:nth-child(5) > div:first-of-type > h1:nth-of-type(6) {
         top: -6px;
-        left: 9px;
+        left: 2.400vw;
         font-size: 31px;
         height: max-content;
     }
 
     .sections:nth-child(5) > aside:nth-of-type(2) {
         top: 106px;
-        left: 57px;
-        width: 350px;
+        left: 15.200vw;
+        width: 93.333vw;
     }
 
     .sections:nth-child(5) > aside:nth-of-type(3) > div {
-        left: -152px;
+        left: -40.533vw;
     }
 
     .sections:nth-child(5) > aside:nth-of-type(4) {
-        left: -4px;
+        left: -1.067vw;
         top: 424px;
-        width: 398px;
+        width: 106.133vw;
     }
 
     .sections:nth-child(5) > aside:nth-of-type(4) > h1:first-of-type {
         font-size: 8px;
         width: max-content;
-        left: 13px;
+        left: 3.467vw;
         position: relative;
     }
 
     .sections:nth-child(6) > section:first-of-type {
-        left: 94px;
+        left: 25.067vw;
     }
 
     .sections:nth-child(6) > div {
-        left: 15px;
+        left: 4vw;
     }
 
     .sections:nth-child(7) > section {
         width: 99vw;
         top: 18px;
-        left: 8px;
+        left: 2.133vw;
         align-items: center;
         overflow: scroll;
         height: max-content;
     }
 
     .sections:nth-child(8) > form > label:nth-of-type(1) {
-        left: 40px;
+        left: 10.667vw;
         top: 102px;
     }
 
     .sections:nth-child(8) > form > input {
-        width: 221px;
+        width: 58.933vw;
         height: 31px;
-        left: 23px;
+        left: 6.133vw;
         top: 126px;
     }
 
     .sections:nth-child(8) > form > label:nth-of-type(2) {
-        left: 42px;
+        left: 11.200vw;
         top: 298px;
     }
 
@@ -4620,67 +4632,96 @@ header {
     }
 
     .sections:nth-child(8) > form > label:nth-of-type(3) {
-        left: 40px;
+        left: 10.667vw;
         top: 163px;
     }
 
     .sections:nth-child(8) > form > textarea {
-        width: 339px;
-        left: 20px;
+        width: 90.400vw;
+        left: 5.333vw;
         top: 182px;
         height: 105px;
     }
 
     .sections:nth-child(8) > form > button {
-        width: 80px;
+        width: 21.333vw;
         height: 29px;
-        left: 264px;
+        left: 70.400vw;
         font-size: 12px;
         top: 323px;
     }
 
     .sections:nth-child(8) > div:first-of-type > div:first-of-type {
-        left: 344px;
+        left: 91.733vw;
         top: 492px;
     }
 
     .sections:nth-child(8) > div:first-of-type > div:nth-of-type(2) {
-        left: 267px;
+        left: 71.200vw;
         top: 485px;
     }
 
     .sections:nth-child(8) > div:first-of-type > div:nth-of-type(3) {
-        left: 298px;
+        left: 79.467vw;
         top: 428px;
     }
 
     .sections:nth-child(8) > div:first-of-type > div:last-of-type {
-        width: 100px;
+        width: 26.667vw;
         height: 100px;
-        left: 293.5px;
+        left: 78.267vw;
         top: 417.13px;
     }
 
     .sections:nth-child(8) > div:first-of-type > img {
-        left: 253px;
+        left: 67.467vw;
         top: 405px;
         height: 154px;
     }
 
     .sections:nth-child(8) > div:nth-of-type(2) {
-        width: 164px;
+        width: 43.733vw;
         top: 507px;
-        left: -179px;
+        left: -47.733vw;
     }
 
     .sections:nth-child(8) > address {
-        width: 369px;
-        left: 18px;
+        width: 98.400vw;
+        left: 4.800vw;
         top: 439px;
+    }
+    .sections:nth-child(3) > section:first-of-type {
+        left: 9.8vw;
+    }
+    .sections:nth-child(3) {
+        height: 542px;
+    }
+    .sections:first-child > aside:nth-child(5) {
+        top: 293px;
+        left: 49.2vw;
+    }
+
+    .sections:nth-child(4) > section:first-of-type > p {
+        width: 90.6vw;
+        padding-bottom: 30px;
+        font-size: 12px;
+        position: relative;
+        left: 3.667vw;
+        top: 324px;
+    }
+
+    .sections:nth-child(4) > section:first-of-type > h1:first-of-type {
+        left: 5vw;
     }
 
     .sections {
         overflow: hidden;
+    }
+
+    .sections:nth-child(5) > aside:nth-of-type(4) {
+        left: 3.933vw;
+        top: 448px;
+        width: 106.133vw;
     }
 }
 
@@ -4800,7 +4841,7 @@ header {
     }
 
     header {
-        height: 55px;
+        height: 80px;
         overflow: hidden;
     }
 
