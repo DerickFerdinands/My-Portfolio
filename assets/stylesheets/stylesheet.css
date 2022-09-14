@@ -4375,7 +4375,7 @@ header > nav > ul > a > li:visited {
     }
 
     .sections:nth-child(8) > address {
-        width: 86.824vw;
+        width: 350px;
         left: 4.235vw;
         top: 439px;
     }
@@ -4440,7 +4440,7 @@ header > nav > ul > a > li:visited {
         height: 23px;
         position: relative;
         right: -30px;
-        bottom: 615px;
+        bottom: 640px;
         z-index: 1;
         width: 336px;
     }
@@ -4696,7 +4696,7 @@ header > nav > ul > a > li:visited {
     }
 
     .sections:nth-child(8) > address {
-        width: 98.400vw;
+        width: 350px;
         left: 4.800vw;
         top: 439px;
     }
@@ -4757,7 +4757,7 @@ header > nav > ul > a > li:visited {
         position: relative;
         bottom: 3000px;
         z-index: 2;
-        bottom: 615px;
+        bottom: 625px;
         width: max-content;
 
     }
