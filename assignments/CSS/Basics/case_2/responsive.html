@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Case 02</title>
+  <link href="https://fonts.googleapis.com/css2?family=Allura&family=Bebas+Neue&family=Poppins:wght@300;400;500;600&family=Raleway:wght@500;600;700;800;900&family=Roboto:wght@300;400;500;700;900&display=swap"
+        rel="stylesheet">
+  <meta content="width=device-width initial-scale=1  user-scalable=no" name="viewport">
+  <link href="assets/normalize.css" rel="stylesheet">
+  <link href="../../../../assets/fonts/fontawesome-free-6.1.2-web/css/all.min.css" rel="stylesheet">
+  <style>
+    p,li,h1{
+      font-family: 'Raleway', Sans-serif !important;
+    }
+    header{
+      z-index: 2;
+      position: fixed;
+      background: white;
+      box-shadow: 0px -1px 8px 2px #1c1717e8;
+      top: 0;
+      width: 100%;
+      height: 50px;
+    }
+    header>img{
+      width: 130px;
+      position: relative;
+      top: 10px;
+      left: 10px;
+    }
+    header>nav{
+      position: absolute;
+      right: 10px;
+      top: 0;
+    }
+
+    header>nav>ul>li{
+      font-family: 'Raleway', sans-serif;
+      padding-left: 10px;
+      font-size: 14px;
+      padding-right: 2px;
+      display: inline-block;
+    }
+    main{
+      z-index: 1;
+      position:relative;
+      margin-top: 57px;
+
+
+    }
+    main>aside{
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      width: 210px;
+      background-color: #000039;
+    }
+
+
+    aside>ul>li{
+      font-family: 'Raleway', sans-serif;
+      font-size: 20px;
+      color: white;
+      padding-top: 20px;
+
+    }
+
+    header ul>li>i{
+      padding-right: 5px;
+      color: #2c3e50;
+    }
+    header ul>li>a{
+      color: #2c3e50;
+      text-decoration: none;
+    }
+    main ul>li>i{
+      padding-right: 5px;
+      color: white;
+    }
+    main ul>li>a{
+      color: white;
+      text-decoration: none;
+    }
+    main>aside>ul{
+      padding-left: 20px;
+      list-style-type: none;
+    }
+    main ul>li:hover a{
+      color: #20C4CB;
+    }
+    main ul>li:hover i{
+      color: #20C4CB;
+    }
+    header ul>li:hover a{
+      color: #000039;
+    }
+    header ul>li:hover i{
+      color: #000039;
+    }
+
+    main > section {
+      position: relative;
+      display: inline-block;
+
+    }
+    main>section>section:first-child{
+      height: 150px;
+      position: relative;
+    }
+    main>section>section:first-child>div{
+      height: 100%;
+      width: calc(100% / 3);
+      position: absolute;
+      border: 1px solid rgba(0, 0, 0, 0.33);
+    }
+
+    main > section > section:first-child > div:nth-child(1) {
+      background: url("assets/2ba160192820f5455364dc7ab4a0a09a.webp");
+      background-size:cover;
+      background-position:center;
+      left: 0;
+    }
+
+    main > section > section:first-child > div:nth-child(2) {
+      background: url("assets/c8215a54580b82fe03bb71c1a914158e.webp");
+      background-size:cover;
+      background-position:center;
+      left: calc(100%/3);
+
+    }
+
+    main > section > section:first-child > div:nth-child(3) {
+      background: url("assets/9abfd2e03251c98cb5340a677ac219f1.webp");
+      background-size:cover;
+      background-position:center;
+      right: 0;
+    }
+    main>section:nth-child(2){
+      margin-left: 145px;
+      margin-left: 211px;
+    }
+    main>section:nth-child(2)>div{
+
+      display: inline-block;
+      width: calc(100%/3);
+      border-right: 2px solid red;
+    }
+    main>section:nth-child(2)>div>img{
+      position: absolute;
+
+    }
+    footer{
+
+      background-color:grey;
+    }
+    footer{
+      text-align: center;
+      padding-top: 5px;
+      padding-bottom: 5px;
+    }
+    p{
+      padding-left: 15px;
+      margin-top: 5px;
+      margin-bottom: 0px;
+      font-family: 'Raleway', sans-serif;
+      font-size: 18px;
+    }
+
+    @media all and (max-width: 475px) {
+      header{
+        height: 100px;
+      }
+      header>img{
+        left: 0;
+        right: 0;
+        margin: auto;
+        position: absolute;
+      }
+      header > nav {
+        top: 32px;
+        left: 0;
+        right: 0;
+        margin: auto;
+        width: max-content;
+      }
+      header > nav > ul > li {
+        padding-left: 2px;
+        font-size: 11px;
+      }
+      header > nav > ul {
+        padding: 0;
+      }
+      main>aside{
+        display: none;
+      }
+      main>section:nth-child(2){
+        margin: 0;
+      }
+      main > section > section:first-child {
+        height: 604px;
+        position: relative;
+      }
+      main>section>section:first-child>div {
+        position: relative;
+        border: 1px solid rgba(0, 0, 0, 0.33);
+        height: 200px;
+        width: 100%;
+      }
+
+
+
+      main > section > section:first-child > div:nth-child(1) {
+        background-position: center;
+        left: 0;
+      }
+
+      main > section > section:first-child > div:nth-child(2) {
+        background-position: center;
+        left: 0;
+      }
+
+      main > section > section:first-child > div:nth-child(3) {
+        background-position: center;
+        left: 0;
+      }
+
+
+    }
+
+    @media all and (max-width: 375px) {
+      header > nav > ul > li {
+        padding-left: 2px;
+        font-size: 10px;
+      }
+      main>section>section:first-child>div {
+        position: relative;
+        border: 1px solid rgba(0, 0, 0, 0.33);
+      }
+    }
+    @media all and (max-width: 320px) {
+      header > nav > ul > li {
+        padding-left: 2px;
+        font-size: 8px;
+      }
+      main>section>section:first-child>div {
+        position: relative;
+        border: 1px solid rgba(0, 0, 0, 0.33);
+      }
+    }
+
+
+
+
+
+  </style>
+</head>
+<body>
+<header>
+  <img src="assets/ijse-logo%201.png">
+
+  <nav>
+    <ul>
+      <li> <i class="fa-solid fa-house">  </i><a href="https://ijse.lk" target="_blank">Home</a> </li>
+      <li> <i class="fa-solid fa-earth-asia">  </i><a href="#">Services</a> </li>
+      <li> <i class="fa-solid fa-headphones-simple"></i><a href="#">Contact</a> </li>
+      <li> <i class="fa-solid fa-address-card"></i><a href="#">About Us</a> </li>
+    </ul>
+  </nav></header>
+<main>
+  <aside>
+    <ul>
+      <li> <i class="fa-solid fa-house"></i><a href="https://ijse.lk" target="_blank">Home</a> </li>
+      <li> <i class="fa-solid fa-earth-asia"></i><a href="#">Services</a> </li>
+      <li> <i class="fa-solid fa-headphones-simple"></i><a href="#">Contact</a> </li>
+      <li> <i class="fa-solid fa-address-card"></i><a href="#">About Us</a> </li>
+    </ul>
+  </aside>
+  <section>
+    <section>
+      <div>
+
+      </div>
+      <div>
+      </div>
+      <div>
+      </div>
+    </section>
+
+    <section>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium aut, cupiditate dolores doloribus
+        earum fuga ipsa laboriosam magnam minus, non odit quod recusandae rem sed sint veritatis voluptatem
+        voluptates voluptatibus.
+
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium aut, cupiditate dolores doloribus
+        earum fuga ipsa laboriosam magnam minus, non odit quod recusandae rem sed sint veritatis voluptatem
+        voluptates voluptatibus.
+
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium aut, cupiditate dolores doloribus
+        earum fuga ipsa laboriosam magnam minus, non odit quod recusandae rem sed sint veritatis voluptatem
+        voluptates voluptatibus.
+
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium aut, cupiditate dolores doloribus
+        earum fuga ipsa laboriosam magnam minus, non odit quod recusandae rem sed sint veritatis voluptatem voluptates voluptatibus.
+
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium aut, cupiditate dolores doloribus
+        earum fuga ipsa laboriosam magnam minus, non odit quod recusandae rem sed sint veritatis voluptatem voluptates voluptatibus.
+
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium aut, cupiditate dolores doloribus
+        earum fuga ipsa laboriosam magnam minus, non odit quod recusandae rem sed sint veritatis voluptatem voluptates voluptatibus.
+
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium aut, cupiditate dolores doloribus
+        earum fuga ipsa laboriosam magnam minus, non odit quod recusandae rem sed sint veritatis voluptatem voluptates voluptatibus.
+
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium aut, cupiditate dolores doloribus
+        earum fuga ipsa laboriosam magnam minus, non odit quod recusandae rem sed sint veritatis voluptatem voluptates voluptatibus.
+
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium aut, cupiditate dolores doloribus
+        earum fuga ipsa laboriosam magnam minus, non odit quod recusandae rem sed sint veritatis voluptatem voluptates voluptatibus.
+
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium aut, cupiditate dolores doloribus
+        earum fuga ipsa laboriosam magnam minus, non odit quod recusandae rem sed sint veritatis voluptatem voluptates voluptatibus.
+
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium aut, cupiditate dolores doloribus
+        earum fuga ipsa laboriosam magnam minus, non odit quod recusandae rem sed sint veritatis voluptatem voluptates voluptatibus.
+
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium aut, cupiditate dolores doloribus
+        earum fuga ipsa laboriosam magnam minus, non odit quod recusandae rem sed sint veritatis voluptatem voluptates voluptatibus.
+
+
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium aut, cupiditate dolores doloribus
+        earum fuga ipsa laboriosam magnam minus, non odit quod recusandae rem sed sint veritatis voluptatem voluptates voluptatibus.
+
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium aut, cupiditate dolores doloribus
+        earum fuga ipsa laboriosam magnam minus, non odit quod recusandae rem sed sint veritatis voluptatem voluptates voluptatibus.
+
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium aut, cupiditate dolores doloribus
+        earum fuga ipsa laboriosam magnam minus, non odit quod recusandae rem sed sint veritatis voluptatem voluptates voluptatibus.
+
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium aut, cupiditate dolores doloribus
+        earum fuga ipsa laboriosam magnam minus, non odit quod recusandae rem sed sint veritatis voluptatem voluptates voluptatibus.
+
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium aut, cupiditate dolores doloribus
+        earum fuga ipsa laboriosam magnam minus, non odit quod recusandae rem sed sint veritatis voluptatem voluptates voluptatibus.
+
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium aut, cupiditate dolores doloribus
+        earum fuga ipsa laboriosam magnam minus, non odit quod recusandae rem sed sint veritatis voluptatem voluptates voluptatibus.
+
+
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium aut, cupiditate dolores doloribus
+        earum fuga ipsa laboriosam magnam minus, non odit quod recusandae rem sed sint veritatis voluptatem voluptates voluptatibus.
+
+      </p>
+      <h1>Derick Andrew Ferdinands</h1>
+    </section>
+  </section>
+
+</main>
+<footer>
+  <b>Developed by ijse</b>
+</footer>
+</body>
+</html>

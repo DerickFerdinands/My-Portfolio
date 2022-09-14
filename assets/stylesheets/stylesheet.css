@@ -18,16 +18,58 @@ header {
 }
 
 header > nav > ul > a > li:hover, header > img:hover {
-    color: #0f315e;
     cursor: pointer;
-
+    color: #000000;
+    animation-name: nav-li-animation;
+    animation-duration: 0.3s;
+    animation-iteration-count: 1;
+    font-size: 18px !important;
+    position: relative;
+    bottom: 1px;
+    transition-property: font-size, bottom;
+    transition-duration: 0.2s;
 }
 
-header > nav > ul > a ::before {
+header > nav > ul {
+    margin: 0px;
+    display: flex;
+    justify-content: space-between;
+    width: 850px;
+}
+header > nav > ul > a{
+    position: relative;
+    width: max-content;
+}
+header > nav > ul > a>li{
+    width: max-content;
+    padding: 0 !important;
+}
+header > nav > ul > a > li:hover::before {
     content: "";
-    width: 0px;
-    height: 10px;
-    background-color: Gold;
+    position: absolute;
+    right:0;
+    left:0;
+    margin: auto;
+    top: 25px;
+    height: 3px;
+    width: 5px;
+    border-radius: 10px;
+    background-color: #242323;
+    animation-name: nav-animation;
+    animation-duration: 0.2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes nav-animation {
+    from{
+        width: 5px;
+        font-size: 15px !important;
+    }
+    to{
+        width: 30px;
+        font-size: 18px !important;
+    }
 }
 
 .sections {
