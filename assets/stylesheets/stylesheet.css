@@ -80,7 +80,7 @@ header > nav > ul > a > li:hover::before {
 
     header {
         width: 1920px !important;
-
+        left: 60px;
     }
 
     .sections {
