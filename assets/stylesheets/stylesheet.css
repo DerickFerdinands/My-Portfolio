@@ -1277,7 +1277,7 @@ header > nav > ul > a > li:visited {
     position: absolute;
     width: 160px;
     height: 34px;
-    left: 58px;
+    left: 3.021vw;
     top: 700px;
     font-family: 'Raleway', sans-serif;
     font-style: normal;
@@ -1298,26 +1298,26 @@ header > nav > ul > a > li:visited {
 
 .sections:nth-child(8) > form > label:nth-of-type(1) {
 
-    left: 522px;
+    left: 27.188vw;
     top: 371px;
 }
 
 .sections:nth-child(8) > form > label:nth-of-type(2) {
-    left: 522px;
+    left: 27.188vw;
     top: 448px;
 }
 
 .sections:nth-child(8) > form > label:nth-of-type(3) {
-    left: 901px;
+    left: 46.927vw;
     top: 321px;
 
 }
 
 .sections:nth-child(8) > form > input {
     position: absolute;
-    width: 329px;
+    width: 17.135vw;
     height: 40px;
-    left: 506px;
+    left: 26.354vw;
     top: 401px;
     border: none;
     background: #2B2D2E;
@@ -1332,7 +1332,7 @@ header > nav > ul > a > li:visited {
     position: absolute;
     width: 466px;
     height: 184px;
-    left: 883px;
+    left: 45.990vw;
     top: 349px;
     background: #2B2D2E;
     border-radius: 20px;
@@ -1343,7 +1343,7 @@ header > nav > ul > a > li:visited {
     position: absolute;
     width: 160px;
     height: 34px;
-    left: 1189px;
+    left: 61.927vw;
     top: 557px;
     font-family: 'Raleway', sans-serif;
     font-style: normal;
@@ -1358,12 +1358,12 @@ header > nav > ul > a > li:visited {
 }
 
 .sections:nth-child(8) > form > img:first-of-type {
-    left: 840px;
+    left: 43.750vw;
     top: 500px;
 }
 
 .sections:nth-child(8) > form > img:nth-of-type(2) {
-    left: 1150px;
+    left: 59.896vw;
     top: 560px;
 }
 
