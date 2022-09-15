@@ -80,11 +80,15 @@ header > nav > ul > a > li:hover::before {
 
     header {
         width: 1920px !important;
-        left: 60px;
     }
 
     .sections {
-        width: 1920px !important;
+        width: 125vw !important;
+    }
+
+    header > nav{
+        position: relative;
+        left:60px;
     }
     header > nav > ul {
         margin: 0px;
@@ -103,34 +107,6 @@ header > nav > ul > a > li:hover::before {
         padding: 0 !important;
     }
 
-    @media all and (min-width: 1920px) and (max-width: 2560px) {
-        .sections {
-            height: 1240px !important;
-            width: 2560px !important;
-            overflow: hidden;
-        }
-    }
-
-    @media all and (max-width: 1440px) {
-        .sections {
-            height: 800px !important;
-            width: 1440px !important;
-        }
-    }
-
-    @media all and (max-width: 1024px) {
-        .sections {
-            height: 750px !important;
-            width: 1024px !important;
-        }
-    }
-
-    @media all and (max-width: 768px) {
-        .sections {
-            height: 400px !important;
-            width: 768px !important;
-        }
-    }
 }
 
 body {
@@ -1124,7 +1100,7 @@ header > nav > ul > a > li:visited {
 .sections:nth-child(7) > section {
     display: grid;
     height: 80vh;
-    width: 90vw;
+    width: 96vw;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(2, 1fr);
     grid-gap: 20px;
