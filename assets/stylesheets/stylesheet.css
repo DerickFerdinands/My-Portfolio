@@ -88,7 +88,7 @@ header > nav > ul > a > li:hover::before {
 
     header > nav{
         position: relative;
-        left:60px;
+        left:0.260vw;
     }
     header > nav > ul {
         margin: 0px;
@@ -133,7 +133,7 @@ header > h1 {
     margin: 0px;
     position: relative;
     top: 23px;
-    left: 128px;
+    left: 6.667vw;
     font-weight: 500;
 }
 
@@ -155,7 +155,7 @@ header > nav > ul > a > li {
     list-style: none;
     font-size: 17px;
     mix-blend-mode: darken;
-    padding-right: 35px;
+    padding-right: 1.823vw;
     cursor: pointer;
 }
 
@@ -166,7 +166,7 @@ header > nav > ul > a > li:visited {
 .sections:first-child > img:first-child {
     position: absolute;
     width: 515px;
-    left: 1208px;
+    left: 62.917vw;
     top: 250px;
     border-radius: 23px;
 }
@@ -175,13 +175,13 @@ header > nav > ul > a > li:visited {
     position: absolute;
     height: 600px;
     width: auto;
-    left: 1064px;
+    left: 55.417vw;
     top: 35px;
 }
 
 .sections:first-child > h1:nth-child(3) {
     position: absolute;
-    left: 1386px;
+    left: 72.188vw;
     top: 178px;
     color: black;
     font-family: 'Allura', cursive;
@@ -195,7 +195,7 @@ header > nav > ul > a > li:visited {
 .sections:first-child > aside:nth-child(4) > h1 {
 
     position: absolute;
-    left: 132px;
+    left: 6.875vw;
     top: 258px;
     margin: 0px;
     width: 900px;
@@ -215,13 +215,13 @@ header > nav > ul > a > li:visited {
     flex-flow: row;
     position: absolute;
     bottom: 140px;
-    right: 205px;
+    right: 10.677vw;
     /*justify-content: center;*/
 }
 
 .sections:first-child > aside:nth-child(5) > ol {
     list-style: none;
-    padding-left: 90px;
+    padding-left: 4.688vw;
 }
 
 .sections:first-child > aside:nth-child(5) > ol > li {
@@ -236,9 +236,9 @@ header > nav > ul > a > li:visited {
     position: absolute;
     display: flex;
     flex-direction: column;
-    width: 34px;
+    width: 1.771vw;
     bottom: 10px;
-    right: 25px;
+    right: 1.302vw;
 }
 
 .sections:first-child > div > img {
@@ -260,7 +260,7 @@ header > nav > ul > a > li:visited {
 
 .sections:nth-child(2) > section:nth-child(1) > img:nth-child(2) {
     position: absolute;
-    left: 220px;
+    left: 11.458vw;
     top: 70px;
     z-index: 1;
 }
@@ -277,7 +277,7 @@ header > nav > ul > a > li:visited {
     font-weight: 800;
     font-size: 60px;
     position: relative;
-    left: 270px;
+    left: 14.063vw;
     top: 17px;
     width: 300px;
 }
@@ -285,9 +285,9 @@ header > nav > ul > a > li:visited {
 .sections:nth-child(2) > section:nth-child(2) > p {
     font-weight: 300;
     font-size: 25px;
-    width: 450px;
+    width: 450.01px;
     position: relative;
-    left: 270px;
+    left: 14.063vw;
     top: -20px;
 }
 
@@ -329,14 +329,14 @@ header > nav > ul > a > li:visited {
     font-weight: 600;
     font-size: 20px;
     position: relative;
-    right: 30px;
+    right: 1.563vw;
     bottom: 20px;
     text-align: center;
 }
 
 .sections:nth-child(3) > section:first-of-type > div > span:last-of-type {
 
-    width: 92px;
+    width: 4.792vw;
     height: 24px;
     font-family: 'Raleway', sans-serif;
     font-style: normal;
@@ -351,7 +351,7 @@ header > nav > ul > a > li:visited {
 
 .sections:nth-child(3) > section:first-of-type > div > p {
     position: relative;
-    width: 189px;
+    width: 9.844vw;
     height: 150px;
     font-family: 'Raleway', sans-serif;
     font-weight: 600;
@@ -363,13 +363,13 @@ header > nav > ul > a > li:visited {
 .sections:nth-child(3) > section:first-of-type > div > img {
     height: 52px;
     position: relative;
-    left: -50px;
+    left: -2.604vw;
 }
 
 .sections:nth-child(3) > section:first-of-type > div > img:last-of-type {
     height: 20px;
     position: relative;
-    left: 15px;
+    left: 0.781vw;
     top: 5px;
 }
 
@@ -382,7 +382,7 @@ header > nav > ul > a > li:visited {
 
 .sections:nth-child(3) > section:nth-of-type(2) > img {
     height: 41px;
-    padding-left: 20px;
+    padding-left: 1.042vw;
 }
 
 .sections:nth-child(3) > h1:nth-of-type(2) {
@@ -399,20 +399,20 @@ header > nav > ul > a > li:visited {
 }
 
 .sections:nth-child(3) > section:nth-of-type(3) > img {
-    padding: 30px;
+    padding: 1.563vw;
 }
 
 .sections:nth-child(3) > section:nth-of-type(3) > img:nth-of-type(4) {
     padding: 0px;
     position: absolute;
-    left: 350px;
+    left: 18.229vw;
     transform: rotate(180deg);
 }
 
 .sections:nth-child(3) > section:nth-of-type(3) > img:nth-of-type(5) {
     padding: 0px;
     position: absolute;
-    right: 350px;
+    right: 18.229vw;
 }
 
 .sections:nth-child(4) > img:first-child {
@@ -426,7 +426,7 @@ header > nav > ul > a > li:visited {
     z-index: 1;
     position: absolute;
     height: 100%;
-    width: 1200px;
+    width: 62.500vw;
 }
 
 .sections:nth-child(4) > div > h1:first-of-type {
@@ -442,24 +442,24 @@ header > nav > ul > a > li:visited {
 
     position: absolute;
     bottom: 25px;
-    left: 75px;
+    left: 3.906vw;
 }
 
 .sections:nth-child(4) > div > img:first-of-type {
     position: absolute;
     top: 105px;
-    left: 75px;
+    left: 3.906vw;
 }
 
 .sections:nth-child(4) > div > img:last-of-type {
     position: absolute;
     bottom: 100px;
-    right: 20px;
+    right: 1.042vw;
 }
 
 .sections:nth-child(4) > section:first-of-type {
     height: 80%;
-    width: 650px;
+    width: 33.854vw;
     position: absolute;
     right: 0;
 }
@@ -476,7 +476,7 @@ header > nav > ul > a > li:visited {
 }
 
 .sections:nth-child(4) > section:first-of-type > p {
-    width: 520px;
+    width: 27.083vw;
     margin: 0;
     padding: 0;
     padding-bottom: 40px;
@@ -505,23 +505,23 @@ header > nav > ul > a > li:visited {
 .sections:nth-child(4) > section:first-of-type > h3 > a > i {
     color: white;
     font-size: 30px;
-    padding-right: 10px;
+    padding-right: 0.521vw;
 }
 
 .sections:nth-child(4) > div:nth-of-type(2) {
     display: flex;
     justify-content: space-around;
-    width: 650px;
+    width: 33.854vw;
     height: 50px;
     position: absolute;
     bottom: 80px;
-    right: 10px;
+    right: 0.521vw;
 }
 
 .sections:nth-child(4) > div:nth-of-type(2) > div {
     display: flex;
     justify-content: space-around;
-    width: 500px;
+    width: 26.042vw;
 }
 
 .sections:nth-child(4) > div:nth-of-type(2) > div > img {
@@ -545,7 +545,7 @@ header > nav > ul > a > li:visited {
     font-size: 18px;
     line-height: 22px;
     position: relative;
-    padding-right: 30px;
+    padding-right: 1.563vw;
     bottom: 5px;
     color: #EAE8E8;
 }
@@ -566,7 +566,7 @@ header > nav > ul > a > li:visited {
     font-size: 38px;
     position: relative;
     top: 150px;
-    left: 75px;
+    left: 3.906vw;
 }
 
 .sections:nth-child(5) > div:first-of-type > h1:nth-of-type(2) {
@@ -582,7 +582,7 @@ header > nav > ul > a > li:visited {
 
     position: relative;
     top: 110px;
-    left: 95px;
+    left: 4.948vw;
 }
 
 .sections:nth-child(5) > div:first-of-type > h4:first-of-type > time {
@@ -591,7 +591,7 @@ header > nav > ul > a > li:visited {
     font-size: 15px;
     position: relative;
     top: 180px;
-    left: 5px;
+    left: 0.260vw;
 }
 
 .sections:nth-child(5) > div:first-of-type > h1:nth-of-type(3) {
@@ -601,7 +601,7 @@ header > nav > ul > a > li:visited {
     font-size: 38px;
     position: relative;
     top: 150px;
-    left: 40px;
+    left: 2.083vw;
 }
 
 .sections:nth-child(5) > div:first-of-type > h1:nth-of-type(3) > i {
@@ -617,23 +617,23 @@ header > nav > ul > a > li:visited {
     width: 337px;
     position: absolute;
     top: 50px;
-    left: 890px;
+    left: 46.354vw;
 }
 
 .sections:nth-child(5) > div:first-of-type > div:nth-of-type(2) {
     border: 3px solid White;
     border-radius: 100%;
     height: 315px;
-    width: 337px;
+    width: 336.998px;
     position: absolute;
     top: 30px;
-    left: 870px;
+    left: 45.313vw;
 }
 
 .sections:nth-child(5) > div:first-of-type > img:first-of-type {
     position: absolute;
     top: -50px;
-    left: 42vw;
+    left: 42.188vw;
 }
 
 .sections:nth-child(5) > div:first-of-type > h1:nth-of-type(4) {
@@ -643,8 +643,8 @@ header > nav > ul > a > li:visited {
     font-size: 20px;
     position: relative;
     top: 170px;
-    left: 240px;
-    width: 200px;
+    left: 12.500vw;
+    width:200.006px;
 }
 
 .sections:nth-child(5) > div:first-of-type > h1:nth-of-type(5) {
@@ -654,7 +654,7 @@ header > nav > ul > a > li:visited {
     font-size: 34px;
     position: relative;
     top: 110px;
-    left: 320px;
+    left: 16.667vw;
 }
 
 .sections:nth-child(5) > div:first-of-type > h1:nth-of-type(6) {
@@ -664,13 +664,13 @@ header > nav > ul > a > li:visited {
     font-size: 44px;
     position: relative;
     top: 160px;
-    left: 70px;
+    left: 3.646vw;
 }
 
 .sections:nth-child(5) > div:first-of-type > h1:nth-of-type(6) > i {
     color: #259674;
     font-size: 20px;
-    margin-right: 40px;
+    margin-right: 2.083vw;
     position: relative;
     bottom: 10px;
 }
@@ -679,12 +679,12 @@ header > nav > ul > a > li:visited {
     align-items: center;
     border: 2px solid black;
     border-radius: 5px;
-    width: 570px;
+    width: 570.01px;
     font-family: 'Raleway', sans-serif;
     font-weight: 600;
     font-size: 22px;
     position: relative;
-    left: 75px;
+    left: 3.906vw;
     bottom: 80px;
 }
 
@@ -736,7 +736,7 @@ header > nav > ul > a > li:visited {
     justify-content: flex-start;
     position: absolute;
     top: 290px;
-    right: 175px;
+    right: 9.115vw;
     width: 500px;
     height: 502px;
 
@@ -752,13 +752,13 @@ header > nav > ul > a > li:visited {
 
 .dots {
     font-size: 12px;
-    margin-right: 50px;
+    margin-right: 2.604vw;
     position: relative;
 
 }
 
 .sections:nth-child(5) > aside:nth-of-type(2) > h2:nth-of-type(7) {
-    left: 6px;
+    left: 0.313vw;
 }
 
 .sections:nth-child(5) > aside:nth-of-type(2) > h2:first-of-type {
@@ -777,18 +777,18 @@ header > nav > ul > a > li:visited {
 
 .college {
     font-size: 18px;
-    width: 350px;
+    width: 349.997px;
     position: relative;
     margin: 0;
     bottom: 25px;
-    left: 62px;
+    left: 3.229vw;
     color: #000000;
 }
 
 .duration {
     font-size: 18px;
     text-align: center;
-    width: 103px;
+    width: 103.008px;
     background: #CBC7CC;
     border-radius: 5px;
     position: relative;
