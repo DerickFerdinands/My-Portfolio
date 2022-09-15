@@ -86,10 +86,11 @@ header > nav > ul > a > li:hover::before {
         width: 125vw !important;
     }
 
-    header > nav{
+    header > nav {
         position: relative;
-        left:0.260vw;
+        left: 0.260vw;
     }
+
     header > nav > ul {
         margin: 0px;
         display: flex;
@@ -563,7 +564,7 @@ header > nav > ul > a > li:visited {
     font-family: 'Raleway', sans-serif;
     font-style: normal;
     font-weight: 600;
-    font-size: 38px;
+    font-size: 1.979vw;
     position: relative;
     top: 150px;
     left: 3.906vw;
@@ -573,8 +574,8 @@ header > nav > ul > a > li:visited {
     font-family: 'Raleway', sans-serif;
     font-style: normal;
     font-weight: 600;
-    font-size: 89px;
-
+    font-size: 4.635vw;
+    width: max-content;
     background: url("../../assets/images/Flag_of_Sri_Lanka.svg.png");
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
@@ -588,7 +589,7 @@ header > nav > ul > a > li:visited {
 .sections:nth-child(5) > div:first-of-type > h4:first-of-type > time {
     font-family: 'Raleway', sans-serif;
     font-weight: 600;
-    font-size: 15px;
+    font-size: 0.781vw;
     position: relative;
     top: 180px;
     left: 0.260vw;
@@ -598,7 +599,7 @@ header > nav > ul > a > li:visited {
     font-family: 'Raleway', sans-serif;
     font-style: normal;
     font-weight: 600;
-    font-size: 38px;
+    font-size: 1.979vw;
     position: relative;
     top: 150px;
     left: 2.083vw;
@@ -606,7 +607,7 @@ header > nav > ul > a > li:visited {
 
 .sections:nth-child(5) > div:first-of-type > h1:nth-of-type(3) > i {
     color: #259674;
-    font-size: 20px;
+    font-size: 1.042vw;
     margin-right: 30px;
 }
 
@@ -640,18 +641,18 @@ header > nav > ul > a > li:visited {
     font-family: 'Raleway', sans-serif;
     font-style: normal;
     font-weight: 600;
-    font-size: 20px;
+    font-size: 1.042vw;
     position: relative;
     top: 170px;
     left: 12.500vw;
-    width:200.006px;
+    width: 200.006px;
 }
 
 .sections:nth-child(5) > div:first-of-type > h1:nth-of-type(5) {
     font-family: 'Raleway', sans-serif;
     font-style: normal;
     font-weight: 600;
-    font-size: 34px;
+    font-size: 1.771vw;
     position: relative;
     top: 110px;
     left: 16.667vw;
@@ -661,7 +662,7 @@ header > nav > ul > a > li:visited {
     font-family: 'Allura', sans-serif;
     font-style: normal;
     font-weight: 400;
-    font-size: 44px;
+    font-size: 2.292vw;
     position: relative;
     top: 160px;
     left: 3.646vw;
@@ -793,7 +794,7 @@ header > nav > ul > a > li:visited {
     border-radius: 5px;
     position: relative;
     bottom: 10px;
-    left: 60px;
+    left: 3.125vw;
     margin: 0;
     height: 70px;
     justify-content: center;
@@ -808,7 +809,7 @@ header > nav > ul > a > li:visited {
     margin: 0;
     margin-bottom: 30px;
     position: relative;
-    left: 65px;
+    left: 3.125vw;
 }
 
 .sections:nth-child(5) > aside:nth-of-type(2) > div:first-of-type {
@@ -817,7 +818,7 @@ header > nav > ul > a > li:visited {
     width: 3px;
     position: absolute;
     top: 109px;
-    left: 10px;
+    left: 0.521vw;
 }
 
 .sections:nth-child(5) > aside:nth-of-type(2) > div:nth-of-type(2) {
@@ -826,7 +827,7 @@ header > nav > ul > a > li:visited {
     width: 3px;
     position: absolute;
     top: 340px;
-    left: 10px;
+    left: 0.521vw;
 }
 
 .sections:nth-child(5) > aside:nth-of-type(3) {
@@ -837,7 +838,7 @@ header > nav > ul > a > li:visited {
     font-size: 13px;
     position: absolute;
     top: 0px;
-    right: 30px;
+    right: 1.563vw;
     width: 130px;
     text-align: center;
     child-align: middle;
@@ -856,20 +857,20 @@ header > nav > ul > a > li:visited {
 
 .sections:nth-child(5) > aside:nth-of-type(3) h3 {
     font-family: 'Raleway', sans-serif;
-    font-size: 13px;
+    font-size: 0.677vw;
     margin-bottom: 20px;
     width: 120px;
     position: relative;
-    left: 5px;
+    left: 0.260vw;
 }
 
 .sections:nth-child(5) > aside:nth-of-type(3) > div > h1 {
     font-family: 'Raleway', sans-serif;
     font-style: normal;
-    font-size: 22px;
+    font-size: 1.146vw;
     margin-bottom: 30px;
     position: relative;
-    right: 5px;
+    right: 0.260vw;
 }
 
 .sections:nth-child(5) > aside:nth-of-type(3) > div:nth-of-type(2) > img:nth-of-type(1) {
@@ -886,15 +887,15 @@ header > nav > ul > a > li:visited {
 
 .sections:nth-child(5) > aside:nth-of-type(4) {
     position: relative;
-    left: 75px;
+    left: 3.906vw;
     bottom: 15px;
-    width: 1000px;
+    width: 52.083vw;
     height: 300px;
 }
 
 .sections:nth-child(5) > aside:nth-of-type(4) > h1:first-of-type {
     font-family: 'Raleway', sans-serif;
-    font-size: 24px;
+    font-size: 1.250vw;
 }
 
 .sections:nth-child(5) > aside:nth-of-type(4) > img {
@@ -902,19 +903,19 @@ header > nav > ul > a > li:visited {
 }
 
 .sections:nth-child(5) > aside:nth-of-type(4) > img:nth-of-type(1) {
-    width: 311px;
+    width: 15.990vw;
     height: 218px;
     border-radius: 15px;
 }
 
 .sections:nth-child(5) > aside:nth-of-type(4) > img:nth-of-type(2) {
-    width: 307px;
+    width: 15.990vw;
     height: 218px;
     border-radius: 15px;
 }
 
 .sections:nth-child(5) > aside:nth-of-type(4) > img:nth-of-type(3) {
-    width: 307px;
+    width: 15.990vw;
     height: 218px;
     border-radius: 15px;
 }
@@ -924,7 +925,7 @@ header > nav > ul > a > li:visited {
     width: 157px;
     height: 20px;
     text-align: center;
-    font-size: 24px;
+    font-size: 1.250vw;
     position: absolute;
     top: 0;
     bottom: 0;
@@ -932,7 +933,7 @@ header > nav > ul > a > li:visited {
 }
 
 .sections:nth-child(5) > aside:nth-of-type(4) > h3:nth-of-type(1) {
-    left: 85px;
+    left: 4.427vw;
     font-weight: 700;
 }
 
@@ -943,19 +944,19 @@ header > nav > ul > a > li:visited {
 }
 
 .sections:nth-child(5) > aside:nth-of-type(4) > h3:nth-of-type(3) {
-    right: 90px;
+    right: 4.688vw;
 }
 
 .sections:nth-child(5) > aside:nth-of-type(4) > h6 {
     font-family: 'Raleway', sans-serif;
     font-style: normal;
     font-weight: 600;
-    font-size: 16px;
+    font-size: 0.833vw;
     display: inline-block;
     margin: 0;
-    padding-right: 220px;
+    padding-right: 11.458vw;
     position: relative;
-    left: 100px;
+    left: 5.208vw;
 }
 
 .sections:nth-child(6) {
@@ -967,7 +968,7 @@ header > nav > ul > a > li:visited {
 .sections:nth-child(6) > img:nth-of-type(1) {
     height: 100vh;
     position: absolute;
-    right: 90px;
+    right: 4.688vw;
 }
 
 .sections:nth-child(6) > section > h1 {
@@ -1103,17 +1104,17 @@ header > nav > ul > a > li:visited {
     width: 96vw;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(2, 1fr);
-    grid-gap: 20px;
+    grid-gap: 1.042vw;
     position: relative;
-    top: 20px;
-    left: 50px;
+    top: 3vh;
+    left: 2.604vw;
     align-items: center;
 
 }
 
 .sections:nth-child(7) > section > div {
-    height: 700px;
-    width: 440px;
+    height: 73vh;
+    width: 22.917vw;
     background-size: cover !important;
     background-position: center !important;
     border-radius: 5px;
@@ -1123,8 +1124,8 @@ header > nav > ul > a > li:visited {
 }
 
 .sections:nth-child(7) > section > div:hover {
-    height: 730px;
-    width: 470px;
+    height: 76vh;
+    width: 24.479vw;
     transition: height, width;
     transition-duration: 0.4s;
 }
@@ -1174,7 +1175,7 @@ header > nav > ul > a > li:visited {
     text-align: center;
     font-family: 'Poppins', sans-serif;
     font-weight: 800;
-    font-size: 47px;
+    font-size: 2.448vw;
     color: #FFFFFF;
     position: relative;
     top: 200px;
@@ -1183,7 +1184,7 @@ header > nav > ul > a > li:visited {
 
 .sections:nth-child(8) > h1:nth-of-type(2) {
     position: absolute;
-    left: 58px;
+    left: 3.021vw;
     top: 740px;
     margin: 0;
     font-family: 'Roboto', sans-serif;
@@ -1198,9 +1199,9 @@ header > nav > ul > a > li:visited {
 }
 
 .sections:nth-child(8) > address {
-    width: 400px;
+    width: 20.833vw;
     position: absolute;
-    left: 60px;
+    left: 3.125vw;
     top: 790px;
 
 }
@@ -1214,9 +1215,9 @@ header > nav > ul > a > li:visited {
     font-family: 'Bebas Neue', sans-serif;
     font-style: normal;
     font-weight: 400;
-    font-size: 20px;
+    font-size: 1.042vw;
     color: #B9B9B9;
-    padding-right: 10px;
+    padding-right: 0.521vw;
     padding-top: 5px;
 }
 
@@ -1224,15 +1225,15 @@ header > nav > ul > a > li:visited {
     font-family: 'Raleway', sans-serif;
     font-style: normal;
     font-weight: 400;
-    font-size: 20px;
+    font-size: 1.042vw;
     color: #B9B9B9;
-    width: 300px;
+    width: 15.625vw;
     padding-top: 5px;
 }
 
 .sections:nth-child(8) > div:first-of-type > div {
-    width: 330px;
-    height: 330px;
+    width: 310px;
+    height: 310px;
     border-radius: 100%;
     background-color: #D0AD41;
     position: absolute;
@@ -1246,28 +1247,28 @@ header > nav > ul > a > li:visited {
     border: 3px solid white;
     background-color: transparent;
     background: radial-gradient(50% 50% at 66.82% 47.1%, #AAAAAA 0%, rgba(170, 170, 170, 0.833333) 0.01%, rgba(170, 170, 170, 0) 100%);
-    left: 1549.5px;
+    left: 80.703vw;
     top: 504.13px;
 }
 
 .sections:nth-child(8) > div:first-of-type > div:first-of-type {
-    left: 1566px;
+    left: 81.563vw;
     top: 528px;
 }
 
 .sections:nth-child(8) > div:first-of-type > div:nth-of-type(2) {
-    left: 1513px;
+    left: 78.802vw;
     top: 708px;
 }
 
 .sections:nth-child(8) > div:first-of-type > div:nth-of-type(3) {
-    left: 1646px;
+    left: 85.729vw;
     top: 708px;
 }
 
 .sections:nth-child(8) > div:first-of-type > img {
     position: absolute;
-    left: 1467px;
+    left: 76.406vw;
     top: 431px;
     height: 559px;
 }
@@ -2976,7 +2977,7 @@ header > nav > ul > a > li:visited {
 
 
 @media all and (max-width: 768px) {
-     nav, header > nav > ul, header > nav > ul >a> li {
+    nav, header > nav > ul, header > nav > ul > a > li {
         width: 0px !important;
     }
 
