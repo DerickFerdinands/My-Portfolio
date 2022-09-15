@@ -20,13 +20,9 @@ header {
 header > nav > ul > a > li:hover, header > img:hover {
     cursor: pointer;
     color: #000000;
-    animation-name: nav-li-animation;
-    animation-duration: 0.3s;
-    animation-iteration-count: 1;
-    font-size: 18px !important;
     position: relative;
     bottom: 1px;
-    transition-property: font-size, bottom;
+    transition-property: bottom;
     transition-duration: 0.2s;
 }
 
@@ -36,24 +32,27 @@ header > nav > ul {
     justify-content: space-between;
     width: 850px;
 }
-header > nav > ul > a{
+
+header > nav > ul > a {
     position: relative;
     width: max-content;
 }
-header > nav > ul > a>li{
+
+header > nav > ul > a > li {
     width: max-content;
     padding: 0 !important;
 }
+
 header > nav > ul > a > li:hover::before {
     content: "";
     position: absolute;
-    right:0;
-    left:0;
+    right: 0;
+    left: 0;
     margin: auto;
     top: 25px;
-    height: 3px;
+    height: 2px;
     width: 5px;
-    border-radius: 10px;
+    border-radius: 20px;
     background-color: #242323;
     animation-name: nav-animation;
     animation-duration: 0.2s;
@@ -62,13 +61,11 @@ header > nav > ul > a > li:hover::before {
 }
 
 @keyframes nav-animation {
-    from{
+    from {
         width: 5px;
-        font-size: 15px !important;
     }
-    to{
+    to {
         width: 30px;
-        font-size: 18px !important;
     }
 }
 
@@ -2164,12 +2161,19 @@ header > nav > ul > a > li:visited {
 
     header > nav > ul {
         margin: 0px;
-        display: inline-block;
+        display: flex;
+        justify-content: space-between;
+        width: 850px !important;
+    }
+
+    header > nav > ul > a {
+        position: relative;
         width: max-content;
     }
 
-    header > nav > ul > li {
-        font-size: 13px;
+    header > nav > ul > a > li {
+        width: max-content;
+        padding: 0 !important;
     }
 
     .sections:first-child > aside:nth-child(4) > h1 {
@@ -2784,6 +2788,23 @@ header > nav > ul > a > li:visited {
 
 
 @media all and (max-width: 1024px) {
+    header > nav > ul {
+        margin: 0px;
+        display: flex;
+        justify-content: space-between;
+        width: 600px !important;
+    }
+
+    header > nav > ul > a {
+        position: relative;
+        width: max-content;
+    }
+
+    header > nav > ul > a > li {
+        width: max-content;
+        padding: 0 !important;
+    }
+
     .sections {
         height: 750px;
         width: 1024px;
@@ -3103,6 +3124,10 @@ header > nav > ul > a > li:visited {
 
 
 @media all and (max-width: 768px) {
+     nav, header > nav > ul, header > nav > ul >a> li {
+        width: 0px !important;
+    }
+
     .sections {
         height: 400px;
         width: 768px;
@@ -5095,6 +5120,7 @@ header > nav > ul > a > li:visited {
         top: 507px;
         left: -47.733vw;
     }
+
     .sections:nth-child(8) > address > h3:nth-child(even) {
         font-size: 12px;
         width: max-content;
