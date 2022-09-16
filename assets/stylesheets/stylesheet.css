@@ -1846,7 +1846,7 @@ header > nav > ul > a > li:visited {
     .sections:nth-child(6) > div {
         width: 763px;
         top: 295px;
-        left: 559px;
+        left: 21.836vw;
     }
 
     .sections:nth-child(6) > section:first-of-type > a > div > h3 {
@@ -1880,13 +1880,13 @@ header > nav > ul > a > li:visited {
     }
 
     .sections:nth-child(8) > div:first-of-type > img {
-        left: 1909px;
+        left: 74.570vw;
         top: 431px;
         height: 815px;
     }
 
     .sections:nth-child(8) > div:first-of-type > div:first-of-type {
-        left: 2072px;
+        left: 80.938vw;
         top: 622px;
     }
 
@@ -1896,12 +1896,12 @@ header > nav > ul > a > li:visited {
     }
 
     .sections:nth-child(8) > div:first-of-type > div:nth-of-type(2) {
-        left: 1931px;
+        left: 75.430vw;
         top: 944px;
     }
 
     .sections:nth-child(8) > div:first-of-type > div:nth-of-type(3) {
-        left: 2234px;
+        left: 87.266vw;
         top: 936px;
     }
 
@@ -1941,13 +1941,13 @@ header > nav > ul > a > li:visited {
     .sections:nth-child(8) > button {
         width: 189px;
         height: 43px;
-        left: 58px;
+        left: 2.266vw;
         top: 914px;
         font-size: 30px;
     }
 
     .sections:nth-child(8) > form > label:nth-of-type(1) {
-        left: 774px;
+        left: 30.234vw;
         top: 476px;
     }
 
@@ -1956,14 +1956,14 @@ header > nav > ul > a > li:visited {
     }
 
     .sections:nth-child(8) > form > input {
-        width: 434px;
+        width: 16.953vw;
         height: 52px;
-        left: 753px;
+        left: 29.414vw;
         top: 515px;
     }
 
     .sections:nth-child(8) > form > label:nth-of-type(2) {
-        left: 773px;
+        left: 30.195vw;
         top: 588px;
     }
 
@@ -1972,32 +1972,32 @@ header > nav > ul > a > li:visited {
     }
 
     .sections:nth-child(8) > form > label:nth-of-type(3) {
-        left: 1317px;
+        left: 51.445vw;
         top: 388px;
     }
 
     .sections:nth-child(8) > form > textarea {
-        width: 561px;
+        width: 21.914vw;
         height: 247px;
-        left: 1288px;
+        left: 50.313vw;
         top: 436px;
     }
 
     .sections:nth-child(8) > form > img:first-of-type {
-        left: 1195px;
+        left: 46.680vw;
         top: 654px;
-        width: 406px;
+        width: 15.859vw;
     }
 
     .sections:nth-child(8) > form > img:nth-of-type(2) {
-        left: 1601px;
+        left: 62.539vw;
         top: 740px;
     }
 
     .sections:nth-child(8) > form > button {
         width: 160px;
         height: 44px;
-        left: 1660px;
+        left: 64.844vw;
         top: 732px;
         font-size: 30px;
     }
@@ -2007,20 +2007,20 @@ header > nav > ul > a > li:visited {
 @media all and (max-width: 1440px) {
     .sections {
         height: 800px;
-        width: 1440px;
+        width: 100vw !important;
     }
 
     header > h1 {
         font-size: 25px;
         top: 34px;
-        left: 48px;
+        left: 3.333vw;
     }
 
     header > nav {
         display: inline-block;
         padding-top: 25px;
         position: absolute;
-        left: 490px;
+        left: 34.028vw;
         margin: 0;
     }
 
@@ -2028,7 +2028,7 @@ header > nav > ul > a > li:visited {
         margin: 0px;
         display: flex;
         justify-content: space-between;
-        width: 850px !important;
+        width: 59.028vw !important;
     }
 
     header > nav > ul > a {
@@ -2042,7 +2042,7 @@ header > nav > ul > a > li:visited {
     }
 
     .sections:first-child > aside:nth-child(4) > h1 {
-        left: 67px;
+        left: 4.653vw;
         top: 257px;
         margin: 0px;
         font-size: 160px;
@@ -2052,7 +2052,7 @@ header > nav > ul > a > li:visited {
     .sections:first-child > img:first-child {
         position: absolute;
         width: 450px;
-        left: 872px;
+        left: 60.556vw;
         top: 169px;
         border-radius: 23px;
     }
@@ -2061,12 +2061,12 @@ header > nav > ul > a > li:visited {
         position: absolute;
         height: 535px;
         width: 433px;
-        left: 734px;
+        left: 50.972vw;
         top: -29px;
     }
 
     .sections:first-child > h1:nth-child(3) {
-        left: 1033px;
+        left: 71.736vw;
         top: 126px;
         font-size: 27px;
         transform: rotate(12deg);
@@ -2074,7 +2074,7 @@ header > nav > ul > a > li:visited {
 
     .sections:first-child > aside:nth-child(5) {
         top: 544px;
-        left: 525px;
+        left: 36.458vw;
 
     }
 
@@ -2088,11 +2088,14 @@ header > nav > ul > a > li:visited {
 
     .sections:first-child > div {
         top: 528px;
-        left: 1383px;
+        left: 96.042vw;
+    }
+    .sections:first-child > div > img {
+        width: 27px;
     }
 
     .sections:nth-child(2) > section:nth-child(1) > img:nth-child(2) {
-        left: 163px;
+        left: 11.319vw;
         top: 82px;
         height: 618px;
     }
@@ -2101,7 +2104,7 @@ header > nav > ul > a > li:visited {
         font-weight: 800;
         font-size: 45px;
         position: relative;
-        left: 204px;
+        left: 14.167vw;
         top: 17px;
         width: 300px;
     }
@@ -2109,7 +2112,7 @@ header > nav > ul > a > li:visited {
     .sections:nth-child(2) > section:nth-child(2) > p {
         font-size: 21px;
         width: 375px;
-        left: 209px;
+        left: 14.514vw;
         top: -20px;
     }
 
@@ -2148,7 +2151,7 @@ header > nav > ul > a > li:visited {
 
     .sections:nth-child(3) > section:nth-of-type(3) > img {
         padding: 30px;
-        width: 282px;
+        width: 19.583vw;
     }
 
     .sections:nth-child(3) > img:nth-child(2) {
@@ -2168,30 +2171,30 @@ header > nav > ul > a > li:visited {
     .sections:nth-child(4) > div > img:first-of-type {
         position: absolute;
         top: 74px;
-        left: 55px;
-        width: 452px;
+        left: 3.819vw;
+        width: 31.389vw;
     }
 
     .sections:nth-child(4) > div > img:last-of-type {
         position: absolute;
         top: 307px;
-        left: 326px;
-        width: 452px;
+        left: 22.639vw;
+        width: 31.389vw;
     }
 
     .sections:nth-child(4) > div > h1:first-of-type {
         font-size: 50px;
         background-size: 64px 65px;
         bottom: 25px;
-        left: 75px;
+        left: 5.208vw;
     }
 
     .sections:nth-child(4) > div {
-        width: 792px;
+        width: 55vw;
     }
 
     .sections:nth-child(4) > section:first-of-type {
-        width: 550px;
+        width: 38.194vw;
     }
 
     .sections:nth-child(4) > section:first-of-type > h1:first-of-type {
@@ -2214,87 +2217,87 @@ header > nav > ul > a > li:visited {
     }
 
     .sections:nth-child(4) > div:nth-of-type(2) {
-        width: 543px;
+        width: 37.708vw;
     }
 
     .sections:nth-child(5) > div:first-of-type > h1:first-of-type {
-        font-size: 25px;
+        font-size: 1.736vw;
         top: 73px;
-        left: 51px;
-        width: 96px;
+        left: 3.542vw;
+        width: 6.667vw;
     }
 
     .sections:nth-child(5) > div:first-of-type > h1:nth-of-type(2) {
-        font-size: 69px;
+        font-size: 4.792vw;
         background-size: 287px 97px;
         top: 37px;
-        left: 67px;
-        width: 328px;
+        left: 4.653vw;
+        width: 22.778vw;
     }
 
     .sections:nth-child(5) > div:first-of-type > h4:first-of-type > time {
-        font-size: 14px;
+        font-size: 0.972vw;
         top: 84px;
-        left: -19px;
+        left: -1.319vw;
     }
 
     .sections:nth-child(5) > div:first-of-type > h1:nth-of-type(3) > i {
-        font-size: 15px;
+        font-size: 1.042vw;
     }
 
     .sections:nth-child(5) > div:first-of-type > h1:nth-of-type(3) {
-        font-size: 25px;
+        font-size: 1.736vw;
         top: 72px;
-        left: 8px;
-        width: 139px;
+        left: 0.556vw;
+        width: 9.653vw;
     }
 
     .sections:nth-child(5) > div:first-of-type > img:first-of-type {
         top: -50px;
-        left: 616px;
-        width: 160px;
+        left: 42.778vw;
+        width: 11.111vw;
     }
 
     .sections:nth-child(5) > div:first-of-type > div:first-of-type {
         height: 200px;
-        width: 205px;
+        width: 14.236vw;
         top: 10px;
-        left: 665px;
+        left: 46.181vw;
     }
 
     .sections:nth-child(5) > div:first-of-type > div:nth-of-type(2) {
         border: 3px solid White;
         border-radius: 100%;
         height: 185px;
-        width: 210px;
+        width: 14.583vw;
         position: absolute;
         top: 8px;
-        left: 663px;
+        left: 46.042vw;
     }
 
     .sections:nth-child(5) > div:first-of-type > h1:nth-of-type(4) {
-        font-size: 12px;
+        font-size: 0.833vw;
         top: 87px;
-        left: 98px;
-        width: 123px;
+        left: 6.806vw;
+        width: 8.542vw;
     }
 
     .sections:nth-child(5) > div:first-of-type > h1:nth-of-type(6) {
-        font-size: 31px;
+        font-size: 2.153vw;
         top: 73px;
-        left: 15px;
+        left: 1.042vw;
     }
 
     .sections:nth-child(5) > div:first-of-type > h1:nth-of-type(6) > i {
-        font-size: 15px;
-        margin-right: 27px;
+        font-size: 1.042vw;
+        margin-right: 1.875vw;
         bottom: 1px;
     }
 
     .sections:nth-child(5) > div:first-of-type > h1:nth-of-type(5) {
-        font-size: 20px;
+        font-size: 1.389vw;
         top: 41px;
-        left: 173px;
+        left: 12.014vwx;
     }
 
     .sections:nth-child(5) > aside:nth-of-type(3) img {
@@ -2302,7 +2305,7 @@ header > nav > ul > a > li:visited {
     }
 
     .sections:nth-child(5) > aside:nth-of-type(3) > div > h1 {
-        font-size: 18px;
+        font-size: 1.250vw;
     }
 
     .sections:nth-child(5) > aside:nth-of-type(3) {
@@ -2311,7 +2314,7 @@ header > nav > ul > a > li:visited {
 
     .sections:nth-child(5) > aside:nth-of-type(3) > div:nth-of-type(2) > img:nth-of-type(1) {
         height: 68px;
-        width: 53px;
+        width: 3.681vw;
     }
 
     .sections:nth-child(5) > aside:nth-of-type(3) h3 {
@@ -2320,39 +2323,39 @@ header > nav > ul > a > li:visited {
     }
 
     .sections:nth-child(5) > aside:nth-of-type(2) > h1:first-of-type > i {
-        font-size: 15px;
-        margin-right: 30px;
+        font-size: 1.042vw;
+        margin-right: 2.083vw;
     }
 
     .sections:nth-child(5) > aside:nth-of-type(2) {
         top: 126px;
-        left: 901px;
-        width: 500px;
+        left: 62.569vw;
+        width: 34.722vw;
     }
 
     .sections:nth-child(5) > aside:nth-of-type(2) > h1:first-of-type {
-        font-size: 25px;
+        font-size: 1.736vw;
     }
 
     .college {
         bottom: 26px;
-        left: 48px;
+        left: 3.333vw;
     }
 
     .duration {
-        font-size: 16px;
-        width: 91px;
+        font-size: 1.111vw;
+        width: 6.319vw;
         bottom: 23px;
-        left: 48px;
+        left: 3.333vw;
         margin: 0;
         height: 20px;
     }
 
     .program {
-        font-size: 15px;
-        width: 319px;
+        font-size: 1.042vw;
+        width: 22.153vw;
         height: 35px;
-        left: 49px;
+        left: 3.403vw;
         bottom: 18px;
     }
 
@@ -2382,8 +2385,8 @@ header > nav > ul > a > li:visited {
     }
 
     .dots {
-        font-size: 12px;
-        margin-right: 50px;
+        font-size: 0.833vw;
+        margin-right: 3.472vw;
         position: relative;
     }
 
@@ -2397,55 +2400,55 @@ header > nav > ul > a > li:visited {
     }
 
     .sections:nth-child(5) > aside:first-of-type {
-        width: 460px;
-        font-size: 15px;
-        left: 51px;
+        width: 31.944vw;
+        font-size: 1.042vw;
+        left: 3.542vw;
         bottom: 187px;
     }
 
     .sections:nth-child(5) > aside:nth-of-type(4) {
-        left: 51px;
+        left: 3.542vw;
         bottom: 90px;
-        width: 835px;
+        width: 57.986vw;
     }
 
     .sections:nth-child(5) > aside:nth-of-type(4) > img:nth-of-type(1) {
-        width: 252px;
+        width: 17.500vw;
         height: 186px;
     }
 
     .sections:nth-child(5) > aside:nth-of-type(4) > img:nth-of-type(2) {
-        width: 252px;
+        width: 17.500vw;
         height: 186px;
     }
 
     .sections:nth-child(5) > aside:nth-of-type(4) > img:nth-of-type(3) {
-        width: 252px;
+        width: 17.500vw;
         height: 186px;
     }
 
     .sections:nth-child(5) > aside:nth-of-type(4) > h1:first-of-type {
-        font-size: 18px;
+        font-size: 1.250vw;
     }
 
     .sections:nth-child(5) > aside:nth-of-type(4) > h3:nth-of-type(1) {
-        left: 75px;
+        left: 5.208vw;
     }
 
     .sections:nth-child(5) > aside:nth-of-type(4) > h3 {
-        width: 122px;
+        width: 8.472vw;
         height: 65px;
         font-size: 19px;
     }
 
     .sections:nth-child(5) > aside:nth-of-type(4) > h3:nth-of-type(3) {
-        right: 86px;
+        right: 5.972vw;
     }
 
     .sections:nth-child(5) > aside:nth-of-type(4) > h6 {
-        font-size: 15px;
-        padding-right: 169px;
-        left: 84px;
+        font-size: 1.042vw;
+        padding-right: 11.736vw;
+        left: 5.833vw;
     }
 
     .sections:nth-child(6) > section:first-of-type > a > div > img {
@@ -2490,8 +2493,8 @@ header > nav > ul > a > li:visited {
     }
 
     .sections:nth-child(7) > section > div {
-        height: 578px;
-        width: 320px;
+        height: 70.25vh;
+        width: 22.222vw;
     }
 
     .sections:nth-child(8) > h1:first-child {
@@ -2505,46 +2508,46 @@ header > nav > ul > a > li:visited {
     }
 
     .sections:nth-child(8) > form > label:nth-of-type(1) {
-        left: 360px;
+        left: 25vw;
         top: 321px;
     }
 
     .sections:nth-child(8) > form > label:nth-of-type(2) {
-        left: 359px;
+        left: 24.931vw;
         top: 405px;
     }
 
     .sections:nth-child(8) > form > label:nth-of-type(3) {
-        left: 752px;
+        left: 52.222vw;
         top: 264px;
     }
 
     .sections:nth-child(8) > form > input {
-        width: 329px;
-        left: 338px;
+        width: 22.847vw;
+        left: 23.472vw;
         top: 347px;
     }
 
     .sections:nth-child(8) > form > textarea {
-        width: 440px;
-        left: 727px;
+        width: 30.556vw;
+        left: 50.486vw;
         top: 289px;
     }
 
     .sections:nth-child(8) > form > img:first-of-type {
-        left: 673px;
+        left: 46.736vw;
         top: 450px;
     }
 
     .sections:nth-child(8) > form > img:nth-of-type(2) {
-        left: 984px;
+        left: 68.333vw;
         top: 514px;
     }
 
     .sections:nth-child(8) > form > button {
-        width: 132px;
+        width: 9.167vw;
         height: 34px;
-        left: 1022px;
+        left: 70.972vw;
         top: 511px;
         font-size: 20px;
         border-radius: 11px;
@@ -2566,7 +2569,7 @@ header > nav > ul > a > li:visited {
     }
 
     .sections:nth-child(8) > address {
-        width: 400px;
+        width: 300px;
         left: 60px;
         top: 645px;
     }
@@ -2594,7 +2597,7 @@ header > nav > ul > a > li:visited {
     }
 
     .sections:nth-child(8) > div:first-of-type > div:first-of-type {
-        left: 1219px;
+        left: 84.653vw;
         top: 457px;
     }
 
@@ -2606,24 +2609,24 @@ header > nav > ul > a > li:visited {
     }
 
     .sections:nth-child(8) > div:first-of-type > div:nth-of-type(2) {
-        left: 1152px;
+        left: 80vw;
         top: 585px;
     }
 
     .sections:nth-child(8) > div:first-of-type > div:nth-of-type(3) {
-        left: 1297px;
+        left: 90.069vw;
         top: 598px;
     }
 
     .sections:nth-child(8) > div:first-of-type > div:last-of-type {
         width: 200px;
         height: 200px;
-        left: 1205.5px;
+        left: 83.715vw;
         top: 444.13px;
     }
 
     .sections:nth-child(8) > div:first-of-type > img {
-        left: 1109px;
+        left: 77.014vw;
         top: 385px;
         height: 414px;
     }
@@ -2649,8 +2652,10 @@ header > nav > ul > a > li:visited {
         position: relative;
         left: 0px;
     }
+    .sections:nth-child(8) > address > h3:nth-child(even) {
+        width: 220px;
+    }
 }
-
 
 @media all and (max-width: 1024px) {
     header > nav > ul {
