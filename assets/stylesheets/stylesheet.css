@@ -1402,12 +1402,14 @@ header > nav > ul > a > li:visited {
         width: 100vw;
         overflow: hidden;
     }
-    header{
-     overflow: hidden;
+
+    header {
+        overflow: hidden;
         left: 0;
         height: 110px;
     }
-    header > nav > ul >a > li {
+
+    header > nav > ul > a > li {
         font-size: 20px;
     }
 
@@ -1460,6 +1462,7 @@ header > nav > ul > a > li:visited {
         left: 1000px;
         margin: 0;
     }
+
     header > nav > ul {
         margin: 0px;
         position: relative;
@@ -2090,6 +2093,7 @@ header > nav > ul > a > li:visited {
         top: 528px;
         left: 96.042vw;
     }
+
     .sections:first-child > div > img {
         width: 27px;
     }
@@ -2297,7 +2301,7 @@ header > nav > ul > a > li:visited {
     .sections:nth-child(5) > div:first-of-type > h1:nth-of-type(5) {
         font-size: 1.389vw;
         top: 41px;
-        left: 12.014vwx;
+        left: 12.014vw;
     }
 
     .sections:nth-child(5) > aside:nth-of-type(3) img {
@@ -2652,9 +2656,30 @@ header > nav > ul > a > li:visited {
         position: relative;
         left: 0px;
     }
+
     .sections:nth-child(8) > address > h3:nth-child(even) {
         width: 220px;
     }
+
+    .sections:nth-child(5) > aside:nth-of-type(4) {
+        left: 3.542vw;
+        bottom: 90px;
+        width: 60.05vw;
+    }
+
+
+    .sections:nth-child(5) > aside:nth-of-type(4) > h3:nth-of-type(3) {
+        right: 6.972vw;
+    }
+
+    .sections:nth-child(5) > aside:nth-of-type(4) {
+        width: 59.05vw;
+    }
+
+    .sections:nth-child(4) > section:first-of-type > p {
+        width: 31.25vw;
+    }
+
 }
 
 @media all and (max-width: 1024px) {
@@ -2662,7 +2687,7 @@ header > nav > ul > a > li:visited {
         margin: 0px;
         display: flex;
         justify-content: space-between;
-        width: 600px !important;
+        width: 58.594vw !important;
     }
 
     header > nav > ul > a {
@@ -2677,48 +2702,48 @@ header > nav > ul > a > li:visited {
 
     .sections {
         height: 750px;
-        width: 1024px;
+        width: 100vw;
     }
 
     header > nav {
-        left: 279px;
+        left: 27.246vw;
     }
 
     .sections:nth-child(8) > div:first-of-type > div {
-        width: 100px;
-        height: 100px;
+        width: 180px;
+        height: 180px;
     }
 
     .sections:nth-child(8) > div:first-of-type > div:first-of-type {
-        left: 930px;
-        top: 570px;
+        left: 730px;
+        top: 600px;
     }
 
     .sections:nth-child(8) > div:first-of-type > div:nth-of-type(2) {
-        left: 850px;
-        top: 570px;
+        left: 860px;
+        top: 600px;
     }
 
     .sections:nth-child(8) > div:first-of-type > div:nth-of-type(3) {
-        left: 890px;
-        top: 500px;
+        left: 800px;
+        top: 470px;
     }
 
     .sections:nth-child(8) > div:first-of-type > div:last-of-type {
-        width: 100px;
-        height: 100px;
-        left: 880px;
-        top: 490px;
+        width: 200px;
+        height: 200px;
+        left: 780px;
+        top: 450px;
     }
 
     .sections:nth-child(8) > div:first-of-type > img {
-        left: 850px;
-        top: 450px;
-        height: 218px;
+        left: 723px;
+        top: 376px;
+        height: 375px;
     }
 
     .sections:first-child > aside:nth-child(4) > h1 {
-        left: 42px;
+        left: 4.102vw;
         top: 217px;
         font-size: 130px;
     }
@@ -2726,30 +2751,30 @@ header > nav > ul > a > li:visited {
     .sections:first-child > img:nth-child(2) {
         height: 463px;
         width: 378px;
-        left: 496px;
+        left: 48.438vw;
         top: 30px;
     }
 
     .sections:first-child > img:first-child {
         width: 396px;
-        left: 604px;
+        left: 58.984vw;
         top: 195px;
     }
 
     .sections:first-child > aside:nth-child(5) {
         top: 544px;
-        left: 79px;
+        left: 7.715vw;
     }
 
     .sections:first-child > h1:nth-child(3) {
-        left: 732px;
+        left: 71.484vw;
         top: 152px;
         font-size: 25px;
     }
 
     .sections:first-child > div {
         top: 528px;
-        left: 956px;
+        left: 93.359vw;
     }
 
     .sections:first-child > div {
@@ -2757,40 +2782,40 @@ header > nav > ul > a > li:visited {
     }
 
     .sections:nth-child(2) > section:nth-child(1) > img:nth-child(2) {
-        left: 78px;
+        left: 7.617vw;
         top: 85px;
         height: 551px;
     }
 
     .sections:nth-child(2) > section:nth-child(2) > h1:first-child {
         font-size: 42px;
-        left: 96px;
+        left: 9.375vw;
         top: 37px;
         width: 300px;
     }
 
     .sections:nth-child(2) > section:nth-child(2) > p {
         font-size: 18px;
-        width: 375px;
-        left: 98px;
+        width: 36.621vw;
+        left: 7.813vw;
         top: 15px;
     }
 
     .sections:nth-child(3) > section:nth-of-type(3) > img {
         padding: 30px;
-        width: 221px;
+        width: 21.582vw;
     }
 
     .sections:nth-child(4) > div > img:first-of-type {
         top: 29px;
         left: 69px;
-        width: 400px;
+        width: 39.063vw;
     }
 
     .sections:nth-child(4) > div > img:last-of-type {
         top: 307px;
         left: 71px;
-        width: 400px;
+        width: 39.063vw;
     }
 
     .sections:nth-child(4) > section:first-of-type {
@@ -2799,25 +2824,32 @@ header > nav > ul > a > li:visited {
     }
 
     .sections:nth-child(4) > div:nth-of-type(2) {
-        width: 456px;
+        width: 44.531vw;
+    }
+
+    .sections:nth-child(4) > section:first-of-type > p {
+        width: 42.25vw;
     }
 
     .sections:nth-child(5) > div:first-of-type > h1:first-of-type {
         top: 73px;
-        left: 51px;
-        width: 114px;
+        left: 4.980vw;
+        width: 11.133vw;
     }
 
     .sections:nth-child(5) > div:first-of-type > h1:nth-of-type(2) {
-        top: 37px;
-        left: 67px;
-        width: 404px;
+        top: 45px;
+        left: 1.367vw;
+        width: max-content;
+        height: max-content;
+        background-size: 216px 68px;
+
     }
 
     .sections:nth-child(5) > div:first-of-type > h4:first-of-type > time {
-        font-size: 14px;
-        top: 84px;
-        left: -24px;
+        font-size: 1.367vw;
+        top: 75px;
+        left: -6.836vw;
     }
 
     .sections:nth-child(5) > div:first-of-type > h1:nth-of-type(3) {
@@ -2840,33 +2872,106 @@ header > nav > ul > a > li:visited {
         width: 0;
     }
 
+    .sections:nth-child(5) > aside:first-of-type {
+        bottom: 192px;
+    }
+
     .sections:nth-child(5) > aside:nth-of-type(2) {
-        top: 40px;
-        left: 519px;
-        width: 364px;
+        top: 108px;
+        left: 42.578vw;
+        width: 35.547vw;
+    }
+    .sections:nth-child(5) > aside:nth-of-type(2) > div:first-of-type {
+        height: 140px;
+        background-color: black;
+        width: 0.293vw;
+        position: absolute;
+        top: 75px;
+        left: 7.521000000000001px;
+    }
+    .sections:nth-child(5) > aside:nth-of-type(2) > div:nth-of-type(2) {
+        height: 105px;
+        top: 246px;
     }
 
     .sections:nth-child(5) > aside:nth-of-type(4) {
-        left: 51px;
-        bottom: 131px;
-        width: 835px;
+        left: 4.980vw;
+        bottom: 22px;
+        width: 72.484vw;
+    }
+    .sections:nth-child(5) > aside:nth-of-type(4) > img:nth-of-type(1) {
+        width: 21.5vw;
+        height: 186px;
+    }
+    .sections:nth-child(5) > aside:nth-of-type(4) > img:nth-of-type(2) {
+        width: 21.5vw;
+        height: 186px;
+    }
+    .sections:nth-child(5) > aside:nth-of-type(4) > img:nth-of-type(3) {
+        width: 21.5vw;
+        height: 186px;
     }
 
     .sections:nth-child(5) > aside:nth-of-type(3) {
-        height: 693px;
+        top: -91px;
+        left: 86.035vw;
+
+    }
+    .sections:nth-child(5) > aside:nth-of-type(4) > h3:nth-of-type(1) {
+        left: 5.207999999999998vw;
+        /* bottom: 25px; */
+    }
+    .sections:nth-child(5) > aside:nth-of-type(4) > h3 {
+        width: 13.472000000000001vw;
+        height: 87px;
+    }
+
+    .sections:nth-child(5) > aside:nth-of-type(4) > h3:nth-of-type(3) {
+        right: 4.972000000000001vw;
+    }
+
+    .sections:nth-child(5) > aside:nth-of-type(4) > h6 {
+        font-size: 1.042vw;
+        padding-right: 15.736vw;
+        left: 8.833vw;
+    }
+    .sections:nth-child(5) > aside:nth-of-type(4) > h6 {
+        font-size: 1.042vw;
+        padding-right: 15.736vw;
+        left: 8.833vw;
+    }
+    .sections:nth-child(5) > aside:nth-of-type(4) > h6 {
+        font-size: 1.042vw;
+        padding-right: 15.736vw;
+        left: 8.833vw;
     }
 
     .sections:nth-child(5) > aside:first-of-type {
-        bottom: 123px;
+        bottom: 192px;
+    }
+
+    .sections:nth-child(5) > div:first-of-type > h1:nth-of-type(5) {
+        top: 24px;
+        left: 5.469vw;
+        font-size: 2vw;
+        height: max-content;
+
+    }
+
+    .duration {
+        height: 15px;
     }
 
     .sections:nth-child(5) > div:first-of-type > h1:nth-of-type(6) {
-        top: -27px;
-        left: 56px;
+        top: 51px;
+        left: -9.082vw;
+        height: max-content;
+        width: max-content;
+        font-size: 4.153vw;
     }
 
     .sections:nth-child(5) > div:first-of-type > h4:first-of-type > time {
-        left: -122px;
+        left: -11.914vw;
     }
 
     .sections:nth-child(5) > div:first-of-type {
@@ -2875,27 +2980,27 @@ header > nav > ul > a > li:visited {
 
     .sections:nth-child(5) > div:first-of-type > h1:nth-of-type(5) {
         top: 148px;
-        left: -813px;
+        left: -79.395vw;
     }
 
     .sections:nth-child(7) > section > div {
         height: 361px;
-        width: 216px;
+        width: 21.094vw;
     }
 
     .sections:nth-child(7) > section > div:hover {
         height: 395px;
-        width: 246px;
+        width: 24.023vw;
     }
 
     .sections:nth-child(8) > h1:first-child {
-        font-size: 35px;
+        font-size: 3.418vw;
         top: 18px;
     }
 
     .sections:nth-child(8) > form > input {
-        width: 329px;
-        left: 195px;
+        width: 32.129vw;
+        left: 19.043vw;
         top: 227px;
     }
 
@@ -2904,55 +3009,55 @@ header > nav > ul > a > li:visited {
     }
 
     .sections:nth-child(8) > form > label:nth-of-type(2) {
-        left: 219px;
+        left: 21.387vw;
         top: 282px;
     }
 
     .sections:nth-child(8) > form > label:nth-of-type(1) {
-        left: 219px;
+        left: 21.387vw;
         top: 202px;
     }
 
     .sections:nth-child(8) > form > textarea {
-        width: 365px;
-        left: 576px;
+        width: 35.645vw;
+        left: 56.250vw;
         top: 173px;
     }
 
     .sections:nth-child(8) > form > img:first-of-type {
-        left: 531px;
+        left: 51.855vw;
         top: 334px;
     }
 
     .sections:nth-child(8) > form > label:nth-of-type(3) {
-        left: 602px;
+        left: 58.789vw;
         top: 147px;
     }
 
     .sections:nth-child(8) > form > img:nth-of-type(2) {
-        left: 842px;
+        left: 82.227vw;
         top: 396px;
     }
 
     .sections:nth-child(8) > form > button {
         width: 96px;
-        left: 883px;
+        left: 86.230vw;
         top: 393px;
     }
 
     .sections:nth-child(8) > div:nth-of-type(2) {
-        width: 211px;
+        width: 20.605vw;
         top: 602px;
     }
 
     .sections:nth-child(8) > address {
-        width: 400px;
+        width: 300px;
         left: 60px;
         top: 571px;
     }
 
     .sections:nth-child(8) > h1:nth-of-type(2) {
-        left: 58px;
+        left: 5.664vw;
         top: 537px;
         font-size: 25px;
     }
@@ -2974,7 +3079,7 @@ header > nav > ul > a > li:visited {
     }
 
     header > nav {
-        left: 329px;
+        left: 32.129vw;
         width: max-content;
     }
 
@@ -2985,6 +3090,17 @@ header > nav > ul > a > li:visited {
 
     header > nav {
         padding-top: 40px;
+    }
+
+    .sections:nth-child(6) > section:first-of-type {
+        width: 91.309vw;
+        left: 1.855vw;
+    }
+    .sections:nth-child(6) > section:first-of-type > a > div {
+        width: 29.980vw;
+    }
+    .sections:nth-child(6) > section:first-of-type > a > div > img {
+        width: 25.098vw;
     }
 }
 
@@ -3000,7 +3116,7 @@ header > nav > ul > a > li:visited {
 
     .sections {
         height: 400px;
-        width: 768px;
+        width: 100vw;
     }
 
     header > nav {
