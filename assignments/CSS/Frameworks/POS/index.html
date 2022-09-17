@@ -3,17 +3,109 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../../../../assets/fonts/fontawesome-free-6.1.2-web/css/all.min.css">
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;800&family=Public+Sans:wght@600&family=Raleway:wght@500;600;700;800;900&display=swap"
+          rel="stylesheet">
     <style>
-        body{
+        body {
             background-color: #FAE6E9;
+            height: 100vh;
+        }
+
+        section {
+            width: 100%;
+            height: 620px;
+            background: url("assets/images/Group 1.png") center;
+            background-size: cover;
+        }
+
+        header > nav > div > a > span {
+            font-family: 'Public Sans', Sans-serif;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 63px;
+            line-height: 30px;
+            text-align: right;
+            width: max-content;
+            height: max-content;
+            color: #000000;
+        }
+
+        header > nav > div > a > span:first-of-type::after {
+            content: "\a";
+            white-space: pre;
+        }
+
+        header > nav > div > a > span:nth-of-type(2)::before {
+            content: "\a";
+            white-space: pre;
+        }
+
+        header > nav > div > ul > li > a {
+            text-decoration: none;
+            color: #000000 !important;
+        }
+
+        header > nav > div > ul > li {
+
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 18px;
+            color: #000000 !important;
+        }
+
+        header > nav > div > ul > li > a > i {
+            padding-right: 10px;
+        }
+
+        main>section>div{
+            height: 350px;
+        }
+
+        main>section>div:nth-of-type(1){
+
         }
     </style>
 </head>
 <body>
-<main class="container">
-    <section>
+<br>
+<br>
+<br>
+<header class="position-relative top-0">
+    <nav class="navbar" style="background-color: #FAE6E9;">
+        <!-- Navbar content -->
+        <div class="container">
+            <a class="navbar-brand " href="#"><span>FerdFolio</span> <span>POS</span></a>
+            <ul class="nav justify-content-end">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#"><i class="fa-solid fa-house"></i>Home</a>
+                </li>
 
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#"><i
+                            class="fa-solid fa-user"></i>Customers</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#"><i class="fa-solid fa-box"></i>Items</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#"><i class="fa-solid fa-cart-shopping"></i>Orders</a>
+                </li>
+
+            </ul>
+        </div>
+    </nav>
+</header>
+<main class="container ">
+    <section class="row justify-content-around">
+        <div class="col-3 align-self-center"></div>
+        <div class="col-3 align-self-center"></div>
+        <div class="col-3 align-self-center"></div>
     </section>
 </main>
 <script src="assets/js/bootstrap.min.js"></script>
