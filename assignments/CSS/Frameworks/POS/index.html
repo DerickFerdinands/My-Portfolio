@@ -16,7 +16,7 @@
 
         section {
             width: 100%;
-            height: 620px;
+            height: 600px;
             background: url("assets/images/Group 1.png") center;
             background-size: cover;
         }
@@ -60,36 +60,68 @@
         header > nav > div > ul > li > a > i {
             padding-right: 10px;
         }
-
-        main>section>div{
+        main > section > a  {
             height: 60%;
+            color: #000000 !important;
+        }
+        main > section > a > div {
+            height: 100%;
         }
 
-        main>section>div:nth-of-type(1)>div{
-        background: url("assets/images/394bc8af881be508e2aebe67649478a6-removebg-preview.png") center;
+        main > section > a:nth-of-type(1) > div > div {
+            background: url("assets/images/394bc8af881be508e2aebe67649478a6-removebg-preview.png") center;
             background-size: cover;
             height: 130%;
             width: 120%;
+            transition-property: height, width;
+            transition-duration: 0.5s;
         }
 
-        main>section>div:nth-of-type(2)>div{
+        main > section > a:nth-of-type(1) > div > div:hover {
+            height: 135%;
+            width: 125%;
+            transition-property: height, width;
+            transition-duration: 0.3s;
+        }
+
+        main > section > a:nth-of-type(2) > div > div {
             background: url("assets/images/original-dcce7af1d1c56279058e826191e58e0c-removebg-preview.png") center;
             background-size: cover;
             height: 110%;
             width: 110%;
+            transition-property: height, width;
+            transition-duration: 0.5s;
         }
 
-        main>section>div:nth-of-type(3)>div{
+        main > section > a:nth-of-type(2) > div > div:hover {
+            height: 115%;
+            width: 115%;
+            transition-property: height, width;
+            transition-duration: 0.3s;
+        }
+
+        main > section > a:nth-of-type(3) > div > div {
             background: url("assets/images/original-71a8ee474c541a2030af7628f22db700-removebg-preview.png") center;
             background-size: cover;
             height: 100%;
             width: 118%;
+            transition-property: height, width;
+            transition-duration: 0.5s;
         }
-        main>section>div>h4{
+
+        main > section > a:nth-of-type(3) > div > div:hover {
+            height: 105%;
+            width: 123%;
+            transition-property: height, width;
+            transition-duration: 0.3s;
+        }
+
+        main > section > a > div > h4 {
             font-family: 'Poppins', sans-serif;
             font-style: normal;
             font-weight: 600;
             font-size: 25px;
+            cursor: pointer;
         }
     </style>
 </head>
@@ -123,22 +155,29 @@
     </nav>
 </header>
 <main class="container  justify-content-center">
-    <section class="row  justify-content-center">
-        <div class="col-3 align-self-center m-3 position-relative" style="background-color: #F0A762;">
-            <div class="position-absolute bottom-0 start-0"></div>
-            <h4 class=" col-6 position-absolute top-100 start-0 text-start " >CUSTOMERS</h4>
-            <h4 class=" col-6 position-absolute top-100 end-0 text-end " > > </h4>
-        </div>
-        <div class="col-3 align-self-center m-3 position-relative justify-content-center" style="background-color: #3D8B90;">
-            <div class=" position-absolute bottom-0 end-0"></div>
-            <h4 class=" col-6 position-absolute top-100 start-0 text-start " >ORDER</h4>
-            <h4 class=" col-6 position-absolute top-100 end-0 text-end " > > </h4>
-        </div>
-        <div class="col-3 align-self-center m-3 position-relative" style="background-color: #E58D8D;">
-            <div class=" position-absolute end-0 bottom-0"></div>
-            <h4 class=" col-6 position-absolute top-100 start-0 text-start " >ITEMS</h4>
-            <h4 class=" col-6 position-absolute top-100 end-0 text-end " > > </h4>
-        </div>
+    <section class="row   mt-md-5 justify-content-center ">
+        <a href="#" class="col-xxl-3 col-xl-4 col-lg-8 col-md-7 col-sm-9 align-self-center m-3 position-relative">
+            <div class="col-12 position-relative " style="background-color: #F0A762;">
+                <div class="position-absolute bottom-0 start-0"></div>
+                <h4 class=" col-6 position-absolute top-100 start-0 text-start ">CUSTOMERS</h4>
+                <h4 class=" col-6 position-absolute top-100 end-0 text-end "> > </h4>
+            </div>
+        </a>
+        <a href="#" class="col-xxl-3 col-xl-4 col-lg-8 col-md-7 col-sm-9 align-self-center m-3 position-relative">
+            <div class=" col-12 position-relative"
+                 style="background-color: #3D8B90;">
+                <div class=" position-absolute bottom-0 end-0"></div>
+                <h4 class=" col-6 position-absolute top-100 start-0 text-start ">ORDER</h4>
+                <h4 class=" col-6 position-absolute top-100 end-0 text-end "> > </h4>
+            </div>
+        </a>
+        <a href="#" class="col-xxl-3 col-xl-4 col-lg-8 col-md-7 col-sm-9 align-self-center  m-3 position-relative">
+            <div class="col-12 position-relative" style="background-color: #E58D8D;">
+                <div class=" position-absolute end-0 bottom-0 col-lg-6"></div>
+                <h4 class=" col-6 position-absolute top-100 start-0 text-start ">ITEMS</h4>
+                <h4 class=" col-6 position-absolute top-100 end-0 text-end "> > </h4>
+            </div>
+        </a>
     </section>
 </main>
 <script src="assets/js/bootstrap.min.js"></script>
