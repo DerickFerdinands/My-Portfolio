@@ -62,11 +62,34 @@
         }
 
         main>section>div{
-            height: 350px;
+            height: 60%;
         }
 
-        main>section>div>div:nth-of-type(1){
-        background: url("");
+        main>section>div:nth-of-type(1)>div{
+        background: url("assets/images/394bc8af881be508e2aebe67649478a6-removebg-preview.png") center;
+            background-size: cover;
+            height: 130%;
+            width: 120%;
+        }
+
+        main>section>div:nth-of-type(2)>div{
+            background: url("assets/images/original-dcce7af1d1c56279058e826191e58e0c-removebg-preview.png") center;
+            background-size: cover;
+            height: 110%;
+            width: 110%;
+        }
+
+        main>section>div:nth-of-type(3)>div{
+            background: url("assets/images/original-71a8ee474c541a2030af7628f22db700-removebg-preview.png") center;
+            background-size: cover;
+            height: 100%;
+            width: 118%;
+        }
+        main>section>div>h4{
+            font-family: 'Poppins', sans-serif;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 25px;
         }
     </style>
 </head>
@@ -76,7 +99,7 @@
     <nav class="navbar" style="background-color: #FAE6E9;">
         <!-- Navbar content -->
         <div class="container">
-            <a class="navbar-brand m-sm-5" href="#"><span>FerdFolio</span> <span>POS</span></a>
+            <a class="navbar-brand m-sm-5 text-end" href="#"><span>FerdFolio</span> <span>POS</span></a>
             <ul class="nav justify-content-end me-5">
                 <li class="nav-item">
                     <a class="nav-link active" aria-current="page" href="#"><i class="fa-solid fa-house"></i>Home</a>
@@ -101,11 +124,21 @@
 </header>
 <main class="container  justify-content-center">
     <section class="row  justify-content-center">
-        <div class="col-3 align-self-center m-3" style="background-color: #F0A762;">
-            <div></div>
+        <div class="col-3 align-self-center m-3 position-relative" style="background-color: #F0A762;">
+            <div class="position-absolute bottom-0 start-0"></div>
+            <h4 class=" col-6 position-absolute top-100 start-0 text-start " >CUSTOMERS</h4>
+            <h4 class=" col-6 position-absolute top-100 end-0 text-end " > > </h4>
         </div>
-        <div class="col-3 align-self-center m-3" style="background-color: #3D8B90;"></div>
-        <div class="col-3 align-self-center m-3" style="background-color: #E58D8D;"></div>
+        <div class="col-3 align-self-center m-3 position-relative justify-content-center" style="background-color: #3D8B90;">
+            <div class=" position-absolute bottom-0 end-0"></div>
+            <h4 class=" col-6 position-absolute top-100 start-0 text-start " >ORDER</h4>
+            <h4 class=" col-6 position-absolute top-100 end-0 text-end " > > </h4>
+        </div>
+        <div class="col-3 align-self-center m-3 position-relative" style="background-color: #E58D8D;">
+            <div class=" position-absolute end-0 bottom-0"></div>
+            <h4 class=" col-6 position-absolute top-100 start-0 text-start " >ITEMS</h4>
+            <h4 class=" col-6 position-absolute top-100 end-0 text-end " > > </h4>
+        </div>
     </section>
 </main>
 <script src="assets/js/bootstrap.min.js"></script>
