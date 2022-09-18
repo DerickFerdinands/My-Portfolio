@@ -18,6 +18,7 @@
             font-family: 'Poppins', Sans-serif;
             font-style: normal;
             font-weight: 600;
+
         }
 
         main > h1 {
@@ -29,10 +30,37 @@
     </style>
 </head>
 <body>
+<img src="../assets/images/Group%2011.png" alt="" class="position-absolute start-50" style="width: 50%; height: 50%; z-index: -1;">
+
 <main class="container mt-5">
-    <h1>CUSTOMERS</h1>
+    <div class="position-absolute ">
+        <button class="btn btn-primary bg-transparent border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions"><i class="fa-solid fa-bars text-dark " style="font-size:30px;"></i></button>
+        <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">Menu</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <ul class="nav flex-column">
+                    <li class="nav-item">
+                        <a class="nav-link "  href="../index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="customers.html">Customers</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Items</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="#">Order</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <h1 class="ms-5 position-relative" style="bottom: 3px; left: 10px;">CUSTOMERS</h1>
     <section class="row">
-        <div class="col-4 mt-5">
+        <div class="col-sm-12 col-4 col-lg-5 mt-5 col-xl-4">
             <h4 class="rounded-3 p-2 bg-opacity-25 bg-success"
                 style="  border: 1px solid black;">Search Customer</h4>
 
@@ -57,7 +85,7 @@
             <button type="button" class="btn btn-success me-2">Clear</button>
         </div>
 
-        <div class="row col-6">
+        <div class="row col-sm-12 col-6 col-lg-6 col-xl-6">
             <section class="col-5"
                      style="background: url('../assets/images/37896b78d803dd8290581130b999c866-removebg-preview.png') center; background-size: cover; height: 120%"></section>
             <div class="col-6 position-relative " style="top:40px;">
@@ -81,10 +109,143 @@
             </div>
         </div>
 
-        <div class="col-2">
-            <button type="button" class="btn btn-dark col-12">+ Add Customer</button>
+        <div class="col-sm-5 col-2 col-xl-2">
+            <!-- Button trigger modal -->
+            <button type="button" class="btn btn-dark col-sm-12" data-bs-toggle="modal" data-bs-target="#exampleModal">+ Add Customer</button>
+
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Add Customer</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <section class="container">
+                                <div class="form-floating mb-3">
+                                    <input type="text" class="form-control" id="customerCode" placeholder="C00-001">
+                                    <label for="customerCode">Customer Code</label>
+                                </div>
+
+                                <div class="form-floating mb-3">
+                                    <input type="text" class="form-control" id="customerName" placeholder="John Santiago">
+                                    <label for="customerName">Customer Name</label>
+                                </div>
+
+                                <div class="form-floating mb-3">
+                                    <input type="text" class="form-control" id="customerNIC" placeholder="200016803088">
+                                    <label for="customerNIC">Customer NIC</label>
+                                </div>
+
+                                <div class="form-floating mb-3">
+                                    <input type="date" class="form-control" id="customerDOB" placeholder="John Santiago">
+                                    <label for="customerDOB">Customer DOB</label>
+                                </div>
+
+                                <div class="form-floating mb-3">
+                                    <input type="text" class="form-control" id="customerAddress" placeholder="Colombia">
+                                    <label for="customerAddress">Customer Address</label>
+                                </div>
+
+                                <div class="form-floating mb-3">
+                                    <input type="text" class="form-control" id="customerSalary" placeholder="120,000,000">
+                                    <label for="customerSalary">Customer Salary</label>
+                                </div>
+                            </section>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-success">Save Customer</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="row mt-sm-2 ">
+        <div class="col-12   text-sm-end text-lg-start ">
+            <button type="button" class="btn btn-primary text-sm-end ">View All Customers</button>
+        </div>
+        <div class="col-12 mt-5">
+            <table class="table mt-3 table-hover">
+                <thead class="" style="border-radius: 5px; background-color: #F18789;">
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Customer Code</th>
+                    <th scope="col">Customer Name</th>
+                    <th scope="col">Customer NIC</th>
+                    <th scope="col">Customer DOB</th>
+                    <th scope="col">Customer Address</th>
+                    <th scope="col">Customer Salary</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <th scope="row">1</th>
+                    <td>C00-001</td>
+                    <td>Derick Andrew Ferdinands</td>
+                    <td>200416803088</td>
+                    <td>2004-06-16</td>
+                    <td>Colombo</td>
+                    <td>110,000,000</td>
+                </tr>
+                <tr>
+                    <th scope="row">2</th>
+                    <td>C00-002</td>
+                    <td>Derick Andrew Ferdinands</td>
+                    <td>200416803088</td>
+                    <td>2004-06-16</td>
+                    <td>Colombo</td>
+                    <td>110,000,000</td>
+                </tr>
+                <tr>
+                    <th scope="row">3</th>
+                    <td>C00-003</td>
+                    <td>Derick Andrew Ferdinands</td>
+                    <td>200416803088</td>
+                    <td>2004-06-16</td>
+                    <td>Colombo</td>
+                    <td>110,000,000</td>
+                </tr>
+
+                <tr>
+                    <th scope="row">4</th>
+                    <td>C00-004</td>
+                    <td>Derick Andrew Ferdinands</td>
+                    <td>200416803088</td>
+                    <td>2004-06-16</td>
+                    <td>Colombo</td>
+                    <td>110,000,000</td>
+                </tr>
+
+                <tr>
+                    <th scope="row">5</th>
+                    <td>C00-005</td>
+                    <td>Derick Andrew Ferdinands</td>
+                    <td>200416803088</td>
+                    <td>2004-06-16</td>
+                    <td>Colombo</td>
+                    <td>110,000,000</td>
+                </tr>
+
+                <tr>
+                    <th scope="row">6</th>
+                    <td>C00-006</td>
+                    <td>Derick Andrew Ferdinands</td>
+                    <td>200416803088</td>
+                    <td>2004-06-16</td>
+                    <td>Colombo</td>
+                    <td>110,000,000</td>
+                </tr>
+                </tbody>
+            </table>
         </div>
     </section>
 </main>
+<script src="../assets/js/bootstrap.min.js"></script>
+
 </body>
 </html>
