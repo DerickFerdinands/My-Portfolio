@@ -14,6 +14,7 @@
             background-color: #FAE6E9;
             height: 90vh;
         }
+
         * {
             font-family: 'Poppins', Sans-serif;
             font-style: normal;
@@ -27,7 +28,8 @@
             font-weight: 600;
             font-size: 43px;
         }
-        main:first-of-type>section {
+
+        main:first-of-type > section {
             width: 100%;
             height: 600px;
             background: url("assets/images/Group 1.png") center;
@@ -63,10 +65,12 @@
         header > nav > div > ul > li > a > i {
             padding-right: 10px;
         }
-        main:first-of-type > section > a  {
+
+        main:first-of-type > section > a {
             height: 60%;
             color: #000000 !important;
         }
+
         main:first-of-type > section > a > div {
             height: 100%;
         }
@@ -135,24 +139,25 @@
 <header class="position-relative top-0 justify-content-sm-center">
     <nav class="navbar" style="background-color: #FAE6E9;">
         <!-- Navbar content -->
-        <div class="container  justify-content-sm-center" >
-            <a class="navbar-brand m-sm-5 text-sm-center text-wrap position-relative start-0 text-xl-end" href="#">FerdFolio POS</a>
+        <div class="container  justify-content-sm-center">
+            <a class="navbar-brand m-sm-5 text-sm-center text-wrap position-relative start-0 text-xl-end" href="#">FerdFolio
+                POS</a>
             <ul class="nav justify-content-end justify-content-sm-center me-5">
-                <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="index.html"><i class="fa-solid fa-house"></i>Home</a>
+                <li class="nav-item home">
+                    <a class="nav-link active" aria-current="page" href="#"><i class="fa-solid fa-house"></i>Home</a>
                 </li>
 
-                <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="pages/customers.html"><i
+                <li class="nav-item customer">
+                    <a class="nav-link active" aria-current="page" href="#"><i
                             class="fa-solid fa-user"></i>Customers</a>
                 </li>
 
-                <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="pages/items.html"><i class="fa-solid fa-box"></i>Items</a>
+                <li class="nav-item item">
+                    <a class="nav-link active" aria-current="page" href="#"><i class="fa-solid fa-box"></i>Items</a>
                 </li>
 
-                <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="pages/orders.html"><i class="fa-solid fa-cart-shopping"></i>Orders</a>
+                <li class="nav-item order">
+                    <a class="nav-link active" aria-current="page" href="#"><i class="fa-solid fa-cart-shopping"></i>Orders</a>
                 </li>
 
             </ul>
@@ -161,14 +166,15 @@
 </header>
 <main class="container  justify-content-center">
     <section class="row mt-sm-5  mt-md-5 justify-content-center ">
-        <a href="pages/customers.html" class="col-xxl-3 col-xl-4 col-lg-8 col-md-7 col-sm-9 align-self-center m-3 position-relative">
+        <a href="#"
+           class="col-xxl-3 col-xl-4 col-lg-8 col-md-7 col-sm-9 align-self-center m-3 position-relative customer">
             <div class="col-12 position-relative " style="background-color: #F0A762;">
                 <div class="position-absolute bottom-0 start-0"></div>
                 <h4 class=" col-6 position-absolute top-100 start-0 text-start ">CUSTOMERS</h4>
                 <h4 class=" col-6 position-absolute top-100 end-0 text-end "> > </h4>
             </div>
         </a>
-        <a href="pages/orders.html" class="col-xxl-3 col-xl-4 col-lg-8 col-md-7 col-sm-9 align-self-center m-3 position-relative">
+        <a href="#" class="col-xxl-3 col-xl-4 col-lg-8 col-md-7 col-sm-9 align-self-center m-3 position-relative order">
             <div class=" col-12 position-relative"
                  style="background-color: #3D8B90;">
                 <div class=" position-absolute bottom-0 end-0"></div>
@@ -176,7 +182,7 @@
                 <h4 class=" col-6 position-absolute top-100 end-0 text-end "> > </h4>
             </div>
         </a>
-        <a href="pages/items.html" class="col-xxl-3 col-xl-4 col-lg-8 col-md-7 col-sm-9 align-self-center  m-3 position-relative">
+        <a href="#" class="col-xxl-3 col-xl-4 col-lg-8 col-md-7 col-sm-9 align-self-center  m-3 position-relative item">
             <div class="col-12 position-relative" style="background-color: #E58D8D;">
                 <div class=" position-absolute end-0 bottom-0 col-lg-6"></div>
                 <h4 class=" col-6 position-absolute top-100 start-0 text-start ">ITEMS</h4>
@@ -191,10 +197,14 @@
 <!--CUSTOMERS MAIN-->
 
 <main class="container mt-5">
-    <img src="assets/images/Group%2011.png" alt="" class="position-absolute start-50" style="width: 50%; height: 50%; z-index: -1;">
+    <img src="assets/images/Group%2011.png" alt="" class="position-absolute start-50"
+         style="width: 50%; height: 50%; z-index: -1;">
     <div class="position-absolute ">
-        <button class="btn btn-primary bg-transparent border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions"><i class="fa-solid fa-bars text-dark " style="font-size:30px;"></i></button>
-        <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
+        <button class="btn btn-primary bg-transparent border-0" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions"><i
+                class="fa-solid fa-bars text-dark " style="font-size:30px;"></i></button>
+        <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions"
+             aria-labelledby="offcanvasWithBothOptionsLabel">
             <div class="offcanvas-header">
                 <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">Menu</h5>
                 <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
@@ -202,16 +212,16 @@
             <div class="offcanvas-body">
                 <ul class="nav flex-column">
                     <li class="nav-item">
-                        <a class="nav-link "  href="../index.html">Home</a>
+                        <a class="nav-link home" href="#">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="customers.html">Customers</a>
+                        <a class="nav-link active customer" aria-current="page" href="#">Customers</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="items.html">Items</a>
+                        <a class="nav-link item" href="#">Items</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link " href="orders.html">Order</a>
+                        <a class="nav-link order" href="#">Order</a>
                     </li>
                 </ul>
             </div>
@@ -270,10 +280,13 @@
 
         <div class="col-sm-5 col-2 col-xl-2">
             <!-- Button trigger modal -->
-            <button type="button" class="btn btn-dark col-sm-12" data-bs-toggle="modal" data-bs-target="#exampleModal2">+ Add Customer</button>
+            <button type="button" class="btn btn-dark col-sm-12" data-bs-toggle="modal" data-bs-target="#exampleModal2">
+                + Add Customer
+            </button>
 
             <!-- Modal -->
-            <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel2" aria-hidden="true">
+            <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel2"
+                 aria-hidden="true">
                 <div class="modal-dialog">
                     <div class="modal-content">
                         <div class="modal-header">
@@ -288,7 +301,8 @@
                                 </div>
 
                                 <div class="form-floating mb-3">
-                                    <input type="text" class="form-control" id="customerName" placeholder="John Santiago">
+                                    <input type="text" class="form-control" id="customerName"
+                                           placeholder="John Santiago">
                                     <label for="customerName">Customer Name</label>
                                 </div>
 
@@ -298,7 +312,8 @@
                                 </div>
 
                                 <div class="form-floating mb-3">
-                                    <input type="date" class="form-control" id="customerDOB" placeholder="John Santiago">
+                                    <input type="date" class="form-control" id="customerDOB"
+                                           placeholder="John Santiago">
                                     <label for="customerDOB">Customer DOB</label>
                                 </div>
 
@@ -308,7 +323,8 @@
                                 </div>
 
                                 <div class="form-floating mb-3">
-                                    <input type="text" class="form-control" id="customerSalary" placeholder="120,000,000">
+                                    <input type="text" class="form-control" id="customerSalary"
+                                           placeholder="120,000,000">
                                     <label for="customerSalary">Customer Salary</label>
                                 </div>
                             </section>
@@ -425,16 +441,16 @@
             <div class="offcanvas-body">
                 <ul class="nav flex-column">
                     <li class="nav-item">
-                        <a class="nav-link " href="../index.html">Home</a>
+                        <a class="nav-link home" href="#">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link " aria-current="page" href="customers.html">Customers</a>
+                        <a class="nav-link customer" aria-current="page" href="#">Customers</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" href="items.html">Items</a>
+                        <a class="nav-link active item" href="#">Items</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link " href="orders.html">Order</a>
+                        <a class="nav-link order" href="#">Order</a>
                     </li>
                 </ul>
             </div>
@@ -456,7 +472,7 @@
 
             <div class="form-floating input-group mt-1 mb-3 col-10">
                 <input type="email" class="form-control bg-transparent" id="floatingInput3" placeholder="200016803088">
-                <label for="floatingInput3">tem Name/Code</label>
+                <label for="floatingInput3">Item Name/Code</label>
                 <button class="btn btn-outline-secondary text-dark bg-opacity-75" type="button" id="button-addon2"
                         style="background-color: #905FCAC7">Search
                 </button>
@@ -467,7 +483,8 @@
         </div>
 
         <div class="row col-sm-12 col-6 col-lg-6 col-xl-6">
-            <section class="col-5" style="background: url('assets/images/770e20a748c4df3906285bdf0678c073-removebg-preview.png') center; background-size: cover; height: 120%"></section>
+            <section class="col-5"
+                     style="background: url('assets/images/770e20a748c4df3906285bdf0678c073-removebg-preview.png') center; background-size: cover; height: 120%"></section>
             <div class="col-6 position-relative " style="top:40px;">
                 <h5>Item Code</h5>
                 <h6 class="text-muted">I00-001</h6>
@@ -528,7 +545,8 @@
                                 </div>
 
                                 <div class="form-floating mb-3">
-                                    <input type="text" class="form-control" id="itemSellingPrice" placeholder="Rs.20000/=">
+                                    <input type="text" class="form-control" id="itemSellingPrice"
+                                           placeholder="Rs.20000/=">
                                     <label for="itemSellingPrice">Item Selling-Price</label>
                                 </div>
 
@@ -572,7 +590,7 @@
                     <th scope="row">1</th>
                     <td>I00-001</td>
                     <td>Sample Item</td>
-                    <td>Lorem ipsum dolor sit </td>
+                    <td>Lorem ipsum dolor sit</td>
                     <td>1000</td>
                     <td>2000</td>
                     <td>10000</td>
@@ -581,7 +599,7 @@
                     <th scope="row">2</th>
                     <td>I00-001</td>
                     <td>Sample Item</td>
-                    <td>Lorem ipsum dolor sit </td>
+                    <td>Lorem ipsum dolor sit</td>
                     <td>1000</td>
                     <td>2000</td>
                     <td>10000</td>
@@ -590,7 +608,7 @@
                     <th scope="row">3</th>
                     <td>I00-001</td>
                     <td>Sample Item</td>
-                    <td>Lorem ipsum dolor sit </td>
+                    <td>Lorem ipsum dolor sit</td>
                     <td>1000</td>
                     <td>2000</td>
                     <td>10000</td>
@@ -600,7 +618,7 @@
                     <th scope="row">4</th>
                     <td>I00-001</td>
                     <td>Sample Item</td>
-                    <td>Lorem ipsum dolor sit </td>
+                    <td>Lorem ipsum dolor sit</td>
                     <td>1000</td>
                     <td>2000</td>
                     <td>10000</td>
@@ -610,7 +628,7 @@
                     <th scope="row">5</th>
                     <td>I00-001</td>
                     <td>Sample Item</td>
-                    <td>Lorem ipsum dolor sit </td>
+                    <td>Lorem ipsum dolor sit</td>
                     <td>1000</td>
                     <td>2000</td>
                     <td>10000</td>
@@ -620,7 +638,7 @@
                     <th scope="row">6</th>
                     <td>I00-001</td>
                     <td>Sample Item</td>
-                    <td>Lorem ipsum dolor sit </td>
+                    <td>Lorem ipsum dolor sit</td>
                     <td>1000</td>
                     <td>2000</td>
                     <td>10000</td>
@@ -636,13 +654,12 @@
 <!--ORDERS MAIN-->
 
 
-
 <main class="container mt-5">
     <img src="assets/images/Group%2011.png" alt="" class="position-absolute start-50"
          style="width: 50%; height: 50%; z-index: -1;">
     <div class="position-absolute ">
         <button class="btn btn-primary bg-transparent border-0" type="button" data-bs-toggle="offcanvas"
-                data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions3"><i
+                data-bs-target="#offcanvasWithBothOptions3" aria-controls="offcanvasWithBothOptions3"><i
                 class="fa-solid fa-bars text-dark " style="font-size:30px;"></i></button>
         <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions3"
              aria-labelledby="offcanvasWithBothOptionsLabel3">
@@ -653,16 +670,16 @@
             <div class="offcanvas-body">
                 <ul class="nav flex-column">
                     <li class="nav-item">
-                        <a class="nav-link " href="../index.html">Home</a>
+                        <a class="nav-link home" href="#">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="customers.html">Customers</a>
+                        <a class="nav-link active customer" aria-current="page" href="#">Customers</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="items.html">Items</a>
+                        <a class="nav-link item" href="#">Items</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link " href="orders.html">Order</a>
+                        <a class="nav-link order" href="#">Order</a>
                     </li>
                 </ul>
             </div>
@@ -672,7 +689,8 @@
     <section class="row">
 
         <div class="row col-sm-12 col-4 col-lg-5 mt-5 ms-3 col-xl-4">
-            <h4 class="rounded-3 p-2 bg-opacity-25 bg-success" style="border: 1px solid black; height: max-content; margin: 0;">Invoice Details</h4>
+            <h4 class="rounded-3 p-2 bg-opacity-25 bg-success"
+                style="border: 1px solid black; height: max-content; margin: 0;">Invoice Details</h4>
 
             <div class="col-6">
                 <div class="form-floating input-group mt-1 ">
@@ -699,7 +717,8 @@
 
             <div class="col-6">
                 <div class="form-floating input-group mt-1 ">
-                    <input type="text" class="form-control bg-transparent " id="customerName2" placeholder="D.A.Ferdinands">
+                    <input type="text" class="form-control bg-transparent " id="customerName2"
+                           placeholder="D.A.Ferdinands">
                     <label for="customerName2">Customer Name</label>
                 </div>
             </div>
@@ -707,14 +726,16 @@
 
             <div class="col-12">
                 <div class="form-floating input-group mt-1 mb-3">
-                    <input type="text" class="form-control bg-transparent " id="customerAddress2" placeholder="D.A.Ferdinands">
+                    <input type="text" class="form-control bg-transparent " id="customerAddress2"
+                           placeholder="D.A.Ferdinands">
                     <label for="customerAddress2">Customer Address</label>
                 </div>
             </div>
         </div>
 
         <div class="row col-sm-12 col-4 col-lg-5 mt-5 ms-3 col-xl-4 justify-content-end">
-            <h4 class="rounded-3 p-2 bg-opacity-25 bg-success" style="border: 1px solid black; height: max-content; margin: 0;">Select Items</h4>
+            <h4 class="rounded-3 p-2 bg-opacity-25 bg-success"
+                style="border: 1px solid black; height: max-content; margin: 0;">Select Items</h4>
             <div class=" col-6 mt-4 mb-5 ">
                 <select class="form-select bg-transparent " aria-label="Default select example">
                     <option selected class="col-6">Item</option>
@@ -732,7 +753,8 @@
 
             <div class="col-12">
                 <div class="form-floating input-group mt-1 mb-3">
-                    <input type="text" class="form-control bg-transparent " id="itemDescription" placeholder="D.A.Ferdinands">
+                    <input type="text" class="form-control bg-transparent " id="itemDescription"
+                           placeholder="D.A.Ferdinands">
                     <label for="itemDescription">Item Description</label>
                 </div>
             </div>
@@ -751,10 +773,11 @@
                     <label for="QtyOnHand">Qty On Hand</label>
                 </div>
             </div>
-            <button type="button" class="btn btn-success col-4 mt-3" data-bs-toggle="modal" data-bs-target="#exampleModal">Add To Cart</button>
+            <button type="button" class="btn btn-success col-4 mt-3" >Add To Cart</button>
         </div>
 
-        <div class="row col-sm-12  col-lg-6 col-xl-3 justify-content-center align-items-center ms-3 position-relative" style="top: 40px;">
+        <div class="row col-sm-12  col-lg-6 col-xl-3 justify-content-center align-items-center ms-3 position-relative"
+             style="top: 40px;">
             <h4 class="col-5">Sub-Total:</h4>
             <h4 class="col-5 text-danger text-start">100,000/=</h4>
 
@@ -778,7 +801,9 @@
             <h4 class="col-5">Balance:</h4>
             <h4 class="col-5 text-danger text-success">1,000/=</h4>
 
-            <button type="button" class="btn btn-dark col-10 " data-bs-toggle="modal" data-bs-target="#exampleModal">Place Order</button>
+            <button type="button" class="btn btn-dark col-10 " >
+                Place Order
+            </button>
         </div>
     </section>
 
@@ -807,7 +832,9 @@
                     <td>5000/=</td>
                     <td>5</td>
                     <td>25,000/=</td>
-                    <td> <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#exampleModal">Remove</button></td>
+                    <td>
+                        <button type="button" class="btn btn-danger">Remove</button>
+                    </td>
                 </tr>
                 <tr>
                     <th scope="row">2</th>
@@ -817,7 +844,9 @@
                     <td>5000/=</td>
                     <td>5</td>
                     <td>25,000/=</td>
-                    <td> <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#exampleModal">Remove</button></td>
+                    <td>
+                        <button type="button" class="btn btn-danger" >Remove</button>
+                    </td>
                 </tr>
                 <tr>
                     <th scope="row">3</th>
@@ -827,7 +856,9 @@
                     <td>5000/=</td>
                     <td>5</td>
                     <td>25,000/=</td>
-                    <td> <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#exampleModal">Remove</button></td>
+                    <td>
+                        <button type="button" class="btn btn-danger" >Remove</button>
+                    </td>
                 </tr>
 
                 <tr>
@@ -838,7 +869,9 @@
                     <td>5000/=</td>
                     <td>5</td>
                     <td>25,000/=</td>
-                    <td> <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#exampleModal">Remove</button></td>
+                    <td>
+                        <button type="button" class="btn btn-danger" >Remove</button>
+                    </td>
                 </tr>
 
                 <tr>
@@ -849,7 +882,9 @@
                     <td>5000/=</td>
                     <td>5</td>
                     <td>25,000/=</td>
-                    <td> <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#exampleModal">Remove</button></td>
+                    <td>
+                        <button type="button" class="btn btn-danger" >Remove</button>
+                    </td>
                 </tr>
 
                 <tr>
@@ -860,7 +895,9 @@
                     <td>5000/=</td>
                     <td>5</td>
                     <td>25,000/=</td>
-                    <td> <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#exampleModal">Remove</button></td>
+                    <td>
+                        <button type="button" class="btn btn-danger" >Remove</button>
+                    </td>
                 </tr>
                 </tbody>
             </table>
@@ -869,7 +906,43 @@
 </main>
 
 <!--END OF ORDERS MAIN-->
-
+<script src="assets/js/jquery-3.6.1.min.js"></script>
 <script src="assets/js/bootstrap.min.js"></script>
+<script>
+    $("main").eq(1).css('display', 'none');
+    $("main").eq(2).css('display', 'none');
+    $("main").eq(3).css('display', 'none');
+    $(".home").click(function () {
+        $("header").css('display', 'block');
+        $("main").eq(0).css('display', 'block');
+        $("main").eq(1).css('display', 'none');
+        $("main").eq(2).css('display', 'none');
+        $("main").eq(3).css('display', 'none');
+    });
+
+    $(".customer").click(function () {
+        $("header").css('display', 'none');
+        $("main").eq(0).css('display', 'none');
+        $("main").eq(1).css('display', 'block');
+        $("main").eq(2).css('display', 'none');
+        $("main").eq(3).css('display', 'none');
+    });
+
+    $(".item").click(function () {
+        $("header").css('display', 'none');
+        $("main").eq(0).css('display', 'none');
+        $("main").eq(1).css('display', 'none');
+        $("main").eq(2).css('display', 'block');
+        $("main").eq(3).css('display', 'none');
+    });
+
+    $(".order").click(function () {
+        $("header").css('display', 'none');
+        $("main").eq(0).css('display', 'none');
+        $("main").eq(1).css('display', 'none');
+        $("main").eq(2).css('display', 'none');
+        $("main").eq(3).css('display', 'block');
+    });
+</script>
 </body>
 </html>
