@@ -82,78 +82,79 @@
 <script src="assets/js/jquery-3.6.1.min.js"></script>
 <script src="assets/js/bootstrap.min.js"></script>
 <script>
+    let input =$("#txtInput");
     let value="";
     $("#btnClear").click(function () {
-        $("#txtInput").val("");
+        input.val("");
         value = "";
     });
     $("#num0").click(function () {
-        $("#txtInput").val($("#txtInput").val() + 0);
+        input.val(input.val() + 0);
     });
 
     $("#num1").click(function () {
-        $("#txtInput").val($("#txtInput").val() + 1);
+        input.val(input.val() + 1);
     });
 
     $("#num2").click(function () {
-        $("#txtInput").val($("#txtInput").val() + 2);
+        input.val(input.val() + 2);
     });
 
     $("#num3").click(function () {
-        $("#txtInput").val($("#txtInput").val() + 3);
+        input.val(input.val() + 3);
     });
 
     $("#num4").click(function () {
-        $("#txtInput").val($("#txtInput").val() + 4);
+        input.val(input.val() + 4);
     });
 
     $("#num5").click(function () {
-        $("#txtInput").val($("#txtInput").val() + 5);
+        input.val(input.val() + 5);
     });
 
     $("#num6").click(function () {
-        $("#txtInput").val($("#txtInput").val() + 6);
+        input.val(input.val() + 6);
     });
 
     $("#num7").click(function () {
-        $("#txtInput").val($("#txtInput").val() + 7);
+        input.val(input.val() + 7);
     });
 
     $("#num8").click(function () {
-        $("#txtInput").val($("#txtInput").val() + 8);
+        input.val(input.val() + 8);
     });
 
     $("#num9").click(function () {
-        $("#txtInput").val($("#txtInput").val() + 9);
+        input.val(input.val() + 9);
     });
 
     $("#numMin").click(function () {
-        value += $("#txtInput").val() + "-";
-        $("#txtInput").val("");
+        value += input.val() + "-";
+        input.val("");
     });
 
     $("#numPlus").click(function () {
-        value += $("#txtInput").val() + "+";
-        $("#txtInput").val("");
+        value += input.val() + "+";
+        input.val("");
     });
 
     $("#numMul").click(function () {
-        value += $("#txtInput").val() + "*";
-        $("#txtInput").val("");
+        value += input.val() + "*";
+        input.val("");
     });
 
     $("#numDiv").click(function () {
-        value += $("#txtInput").val() + "/";
-        $("#txtInput").val("");
+        value += input.val() + "/";
+        input.val("");
     });
 
     $("#numDot").click(function () {
-        $("#txtInput").val($("#txtInput").val() + ".");
+        input.val(input.val() + ".");
     });
 
     $("#numEq").click(function () {
-        value += ($("#txtInput").val());
-        $("#txtInput").val(eval(value));
+        value += (input.val());
+        input.val(eval(value));
         console.log(value)
         value="";
     });
