@@ -124,24 +124,42 @@
     });
 
     $("#numPlus").click(function () {
-        $("#txtInput").val( $("#txtInput").val()+"+");
+        let temp= parseInt($("#txtInput").val());
+        $("#txtInput").val("");
+
+        $("#numEq").click(function () {
+            $("#txtInput").val(temp + (+$("#txtInput").val()));
+        });
     });
 
     $("#numMin").click(function () {
+        let temp= parseInt($("#txtInput").val());
+        $("#txtInput").val("");
 
+        $("#numEq").click(function () {
+            $("#txtInput").val(temp - parseInt($("#txtInput").val()));
+        });
     });
 
     $("#numMul").click(function () {
+        let temp= parseInt($("#txtInput").val());
+        $("#txtInput").val("");
 
+        $("#numEq").click(function () {
+            $("#txtInput").val(temp * parseInt($("#txtInput").val()));
+        });
     });
 
     $("#numDiv").click(function () {
+        let temp= parseInt($("#txtInput").val());
+        $("#txtInput").val("");
 
+        $("#numEq").click(function () {
+            $("#txtInput").val(temp / parseInt($("#txtInput").val()));
+        });
     });
 
-    $("#numEq").click(function () {
 
-    });
 
     $("#numDot").click(function () {
         $("#txtInput").val( $("#txtInput").val()+".");
