@@ -82,7 +82,7 @@
 <script src="assets/js/jquery-3.6.1.min.js"></script>
 <script src="assets/js/bootstrap.min.js"></script>
 <script>
-
+    let value="";
     $("#btnClear").click(function () {
         $("#txtInput").val("");
         value = "";
@@ -127,7 +127,6 @@
         $("#txtInput").val($("#txtInput").val() + 9);
     });
 
-    let value;
     $("#numMin").click(function () {
         value += $("#txtInput").val() + "-";
         $("#txtInput").val("");
@@ -153,8 +152,10 @@
     });
 
     $("#numEq").click(function () {
-        $("#txtInput").val(eval(value += ($("#txtInput").val())));
+        value += ($("#txtInput").val());
+        $("#txtInput").val(eval(value));
         console.log(value)
+        value="";
     });
 </script>
 </body>
