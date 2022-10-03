@@ -1219,7 +1219,7 @@ header > nav > ul > a > li:visited {
 }
 
 .sections:nth-child(7) > section > div:nth-child(1) {
-    background: url("../../assets/images/_MG_6012.JPG");
+    background: url("../../assets/images/_MG_6012.jpeg");
     grid-column: 1/2;
     grid-row: 1/3;
 }

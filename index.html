@@ -493,21 +493,20 @@
     });
     if (window.innerWidth >= 1024) {
         $(window).on('scroll', function () {
-            console.log("Scrolling")
+            $('.sections:nth-child(2) > section:nth-child(2)').css({'animation-name': 'none'});
+            $('.sections:nth-child(2) > section:nth-child(1)').css({'animation-name': 'none'});
+            $('.sections:nth-child(2) > section:nth-child(1) > img:nth-child(2),.sections:nth-child(2) > section:nth-child(2) > h1:first-child,.sections:nth-child(2) > section:nth-child(2) > p').css({'animation-name': 'none'});
             // let sections = [$('.sections:nth-of-type(2)')];
             let element = document.querySelector('.sections:nth-of-type(2)');
             let position = element.getBoundingClientRect();
             // checking for partial visibility
             if (position.top < window.innerHeight && position.bottom >= 0) {
-                console.log('Element is partially visible in screen');
                 $('.sections:nth-child(2) > section:nth-child(2)').css({
                     'animation-name': 'intro-black',
                     'animation-duration': '1.5s',
                     'animation-timing-function': 'ease-out',
                     'animation-iteration-count': '1',
                 });
-                let content2 = $('.sections:nth-child(2) > section:nth-child(2)');
-
 
                 $('.sections:nth-child(2) > section:nth-child(1)').css({
                     'animation-name': 'intro-colored',
