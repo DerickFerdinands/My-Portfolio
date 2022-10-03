@@ -3,12 +3,50 @@
     height: 0;
 }
 
+@keyframes intro-black {
+    0% {
+        left: 0;
+        width: 150px;
+        z-index: 100;
+    }
+    50% {
+        left: calc(100% / 2);
+        width: 150px;
+    }
+    100% {
+        width: calc(100% / 2);
+        z-index: 100;
+    }
+}
+
+@keyframes intro-colored {
+    0% {
+        width: 150px;
+        z-index: 100;
+    }
+
+    100% {
+        width: calc(100% / 2);
+    }
+}
+
+
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
 @keyframes onLoad_animation_lbl2 {
     0% {
         visibility: hidden;
         left: -900px;
     }
-    40%{
+    40% {
         visibility: visible;
 
     }
@@ -17,7 +55,7 @@
     }
 }
 
-@keyframes onLoad_animation_img1{
+@keyframes onLoad_animation_img1 {
     0% {
         left: 1920px;
     }
@@ -26,12 +64,12 @@
     }
 }
 
-@keyframes onLoad_animation_img2{
+@keyframes onLoad_animation_img2 {
     0% {
         visibility: hidden;
         left: 1920px;
     }
-    20%{
+    20% {
         visibility: visible;
 
     }
@@ -40,35 +78,33 @@
     }
 }
 
-@keyframes onLoad_animation_hashtagAside{
+@keyframes onLoad_animation_hashtagAside {
     0% {
-       visibility: hidden;
+        visibility: hidden;
         bottom: -160px;
     }
-    60%{
+    60% {
         visibility: visible;
     }
     100% {
         bottom: 140px;
     }
 }
-#name{
-    width: max-content;
-    animation-fill-mode: both;
-}
-@keyframes onLoad_animation_name{
+
+@keyframes onLoad_animation_name {
     0% {
         visibility: hidden;
         left: 1920px;
     }
-    20%{
+    20% {
         visibility: visible;
     }
     100% {
         left: 1386px;
     }
 }
-@keyframes onLoad_animation_social_groups{
+
+@keyframes onLoad_animation_social_groups {
     0% {
         right: -34px;
     }

@@ -456,10 +456,8 @@
         $("header").mouseenter(function () {
             $("header").css('visibility','visible');
         });*/
-
+    console.log(window.innerWidth);
     $(window).on('load', function () {
-
-
         $('#img1').css({
             'animation-name': 'onLoad_animation_img1',
             'animation-duration': '1s',
@@ -489,13 +487,45 @@
         $('#hashtagAside').css({
             'animation-name': 'onLoad_animation_hashtagAside',
             'animation-duration': '1.5s',
-            'animation-timing-function': 'ease-out',
-            'animation-fill-mode':'both'
+            'animation-timing-function': 'ease-out'
         });
 
     });
+    if (window.innerWidth >= 1024) {
+        $(window).on('scroll', function () {
+            console.log("Scrolling")
+            // let sections = [$('.sections:nth-of-type(2)')];
+            let element = document.querySelector('.sections:nth-of-type(2)');
+            let position = element.getBoundingClientRect();
+            // checking for partial visibility
+            if (position.top < window.innerHeight && position.bottom >= 0) {
+                console.log('Element is partially visible in screen');
+                $('.sections:nth-child(2) > section:nth-child(2)').css({
+                    'animation-name': 'intro-black',
+                    'animation-duration': '1.5s',
+                    'animation-timing-function': 'ease-out',
+                    'animation-iteration-count': '1',
+                });
+                let content2 = $('.sections:nth-child(2) > section:nth-child(2)');
 
 
+                $('.sections:nth-child(2) > section:nth-child(1)').css({
+                    'animation-name': 'intro-colored',
+                    'animation-duration': '0.75s',
+                    'animation-timing-function': 'ease-out',
+                    'animation-iteration-count': '1'
+                });
+
+                $('.sections:nth-child(2) > section:nth-child(1) > img:nth-child(2),.sections:nth-child(2) > section:nth-child(2) > h1:first-child,.sections:nth-child(2) > section:nth-child(2) > p').css({
+                    'animation-name': 'fade-in',
+                    'animation-duration': '2.5s',
+                    'animation-timing-function': 'ease-out',
+                    'animation-iteration-count': '1'
+                });
+
+            }
+        });
+    }
 
 
 </script>
