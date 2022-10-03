@@ -12,7 +12,7 @@
 
     <title>Portfolio | Derick Andrew Ferdinands </title>
     <link rel="icon" type="image/x-icon" href="assets/images/Logo.png">
-    <link rel="stylesheet" href="assets/normalize.css">
+    <link rel="stylesheet" href="assets/stylesheets/normalize.css">
     <link rel="stylesheet" href="assets/stylesheets/stylesheet.css">
     <link rel="stylesheet" href="assets/fonts/fontawesome-free-6.1.2-web/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Allura&family=Bebas+Neue&family=Poppins:wght@300;400;500;600;800&family=Raleway:wght@500;600;700;800;900&family=Roboto:wght@300;400;500;700;900&display=swap"
@@ -24,14 +24,30 @@
     <h1 id="lbl1">Portfolio</h1>
     <nav class="headerNav">
         <ul>
-            <a href="#home"><li>Home</li></a>
-            <a href="#projects" > <li>Projects</li></a>
-            <a href="#assignments"><li>Assignments</li></a>
-            <a href="#Gallery"><li>Gallery</li></a>
-            <a href="#skills"><li>Skills</li></a>
-            <a href="#intro"><li>Introduction</li></a>
-            <a href="#about-me"><li>About Me</li></a>
-            <a href="#contact-me"><li>Contact Me</li></a>
+            <a href="#home">
+                <li>Home</li>
+            </a>
+            <a href="#projects">
+                <li>Projects</li>
+            </a>
+            <a href="#assignments">
+                <li>Assignments</li>
+            </a>
+            <a href="#Gallery">
+                <li>Gallery</li>
+            </a>
+            <a href="#skills">
+                <li>Skills</li>
+            </a>
+            <a href="#intro">
+                <li>Introduction</li>
+            </a>
+            <a href="#about-me">
+                <li>About Me</li>
+            </a>
+            <a href="#contact-me">
+                <li>Contact Me</li>
+            </a>
         </ul>
     </nav>
 </header>
@@ -210,7 +226,8 @@
         </section>
 
     </section>
-    <section class="sections" data-bs-spy="scroll" data-bs-target="#navbar-example3" data-bs-smooth-scroll="true"  id="projects">
+    <section class="sections" data-bs-spy="scroll" data-bs-target="#navbar-example3" data-bs-smooth-scroll="true"
+             id="projects">
         <img id="project-background-img" src="assets/images/osman-rana-G7VN8NadjO0-unsplash.jpg" alt="">
         <div>
             <h1>01</h1>
@@ -428,7 +445,59 @@
     </section>
 </main>
 
+<script src="assets/JS/jquery-3.6.1.min.js"></script>
 <script>
+    /*    $("main").scroll(function () {
+            $("header").css('animation-name','header-scroll-animation');
+            $("header").css('animation-duration','1s');
+            $("header").css('animation-iteration-count','1');
+
+        });
+        $("header").mouseenter(function () {
+            $("header").css('visibility','visible');
+        });*/
+
+    $(window).on('load', function () {
+
+
+        $('#img1').css({
+            'animation-name': 'onLoad_animation_img1',
+            'animation-duration': '1s',
+            'animation-timing-function': 'ease-out'
+        });
+        $('#img2').css({
+            'animation-name': 'onLoad_animation_img2',
+            'animation-duration': '1.2s',
+            'animation-timing-function': 'ease-out'
+        });
+        $('#lbl2').css({
+            'animation-name': 'onLoad_animation_lbl2',
+            'animation-duration': '1.4s',
+            'animation-timing-function': 'ease-out'
+        });
+
+        $('#name').css({
+            'animation-name': 'onLoad_animation_name',
+            'animation-duration': '1.3s',
+            'animation-timing-function': 'ease-out'
+        });
+        $('#social_groups').css({
+            'animation-name': 'onLoad_animation_social_groups',
+            'animation-duration': '1s',
+            'animation-timing-function': 'ease-out'
+        });
+        $('#hashtagAside').css({
+            'animation-name': 'onLoad_animation_hashtagAside',
+            'animation-duration': '1.5s',
+            'animation-timing-function': 'ease-out',
+            'animation-fill-mode':'both'
+        });
+
+    });
+
+
+
+
 </script>
 </body>
 </html>
