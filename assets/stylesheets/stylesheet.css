@@ -1484,6 +1484,77 @@ header > nav > ul > a > li:visited {
 }
 
 @media all and (min-width: 1921px) and (max-width: 2560px) {
+    @keyframes onLoad_animation_lbl2 {
+        0% {
+            visibility: hidden;
+            left: -900px;
+        }
+        40% {
+            visibility: visible;
+
+        }
+        100% {
+            left: 132px;
+        }
+    }
+
+    @keyframes onLoad_animation_img1 {
+        0% {
+            left: 2560px;
+        }
+        100% {
+            left: 1640px;
+        }
+    }
+
+    @keyframes onLoad_animation_img2 {
+        0% {
+            visibility: hidden;
+            left: 2560px;
+        }
+        20% {
+            visibility: visible;
+
+        }
+        100% {
+            left: 1433px;
+        }
+    }
+
+    @keyframes onLoad_animation_hashtagAside {
+        0% {
+            visibility: hidden;
+            bottom: -160px;
+        }
+        60% {
+            visibility: visible;
+        }
+        100% {
+            bottom: 67px;
+        }
+    }
+
+    @keyframes onLoad_animation_name {
+        0% {
+            visibility: hidden;
+            left: 2560px;
+        }
+        20% {
+            visibility: visible;
+        }
+        100% {
+            left: 1883px;
+        }
+    }
+
+    @keyframes onLoad_animation_social_groups {
+        0% {
+            right: -34px;
+        }
+        100% {
+            right: 25px;
+        }
+    }
     .sections {
         height: 1240px;
         width: 100vw;
@@ -2083,10 +2154,73 @@ header > nav > ul > a > li:visited {
 @media all and (max-width: 1440px) {
     @keyframes onLoad_animation_lbl2 {
         0% {
-            left: -132px;
+            visibility: hidden;
+            left: -900px;
+        }
+        40% {
+            visibility: visible;
+
         }
         100% {
-            left: 67px;
+            left: 132px;
+        }
+    }
+
+    @keyframes onLoad_animation_img1 {
+        0% {
+            left: 2560px;
+        }
+        100% {
+            left: 1640px;
+        }
+    }
+
+    @keyframes onLoad_animation_img2 {
+        0% {
+            visibility: hidden;
+            left: 2560px;
+        }
+        20% {
+            visibility: visible;
+
+        }
+        100% {
+            left: 1433px;
+        }
+    }
+
+    @keyframes onLoad_animation_hashtagAside {
+        0% {
+            visibility: hidden;
+            bottom: -160px;
+        }
+        60% {
+            visibility: visible;
+        }
+        100% {
+            bottom: 67px;
+        }
+    }
+
+    @keyframes onLoad_animation_name {
+        0% {
+            visibility: hidden;
+            left: 2560px;
+        }
+        20% {
+            visibility: visible;
+        }
+        100% {
+            left: 1883px;
+        }
+    }
+
+    @keyframes onLoad_animation_social_groups {
+        0% {
+            right: -34px;
+        }
+        100% {
+            right: 25px;
         }
     }
     .sections {
