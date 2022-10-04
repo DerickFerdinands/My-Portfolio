@@ -226,8 +226,7 @@
         </section>
 
     </section>
-    <section class="sections" data-bs-spy="scroll" data-bs-target="#navbar-example3" data-bs-smooth-scroll="true"
-             id="projects">
+    <section class="sections" id="projects">
         <img id="project-background-img" src="assets/images/osman-rana-G7VN8NadjO0-unsplash.jpg" alt="">
         <div>
             <h1>01</h1>
@@ -401,7 +400,6 @@
         </section>
 
     </section>
-    <!--   <section class="sections" id="activities"></section>-->
     <section class="sections" id="contact-me">
         <h1>Take A Moment To, <span> Say Hi!</span></h1>
         <h1>Derick Andrew Ferdinands</h1>
@@ -447,85 +445,111 @@
 
 <script src="assets/JS/jquery-3.6.1.min.js"></script>
 <script>
-    /*    $("main").scroll(function () {
-            $("header").css('animation-name','header-scroll-animation');
-            $("header").css('animation-duration','1s');
-            $("header").css('animation-iteration-count','1');
-
-        });
-        $("header").mouseenter(function () {
-            $("header").css('visibility','visible');
-        });*/
     console.log(window.innerWidth);
     $(window).on('load', function () {
         $('#img1').css({
             'animation-name': 'onLoad_animation_img1',
-            'animation-duration': '1s',
+            'animation-duration': '0.5s',
             'animation-timing-function': 'ease-out'
         });
         $('#img2').css({
             'animation-name': 'onLoad_animation_img2',
-            'animation-duration': '1.2s',
+            'animation-duration': '0.7s',
             'animation-timing-function': 'ease-out'
         });
         $('#lbl2').css({
             'animation-name': 'onLoad_animation_lbl2',
-            'animation-duration': '1.4s',
+            'animation-duration': '0.9s',
             'animation-timing-function': 'ease-out'
         });
 
         $('#name').css({
             'animation-name': 'onLoad_animation_name',
-            'animation-duration': '1.3s',
+            'animation-duration': '0.8s',
             'animation-timing-function': 'ease-out'
         });
         $('#social_groups').css({
             'animation-name': 'onLoad_animation_social_groups',
-            'animation-duration': '1s',
+            'animation-duration': '0.5s',
             'animation-timing-function': 'ease-out'
         });
         $('#hashtagAside').css({
             'animation-name': 'onLoad_animation_hashtagAside',
-            'animation-duration': '1.5s',
+            'animation-duration': '0.75s',
             'animation-timing-function': 'ease-out'
         });
 
     });
+
     if (window.innerWidth >= 1024) {
+        let sections = [document.querySelector('#intro'), document.querySelector('#skills'), document.querySelector('#projects'), document.querySelector('#about-me'), document.querySelector('#assignments'), document.querySelector('#Gallery'), document.querySelector('#contact-me')];
+
         $(window).on('scroll', function () {
-            $('.sections:nth-child(2) > section:nth-child(2)').css({'animation-name': 'none'});
-            $('.sections:nth-child(2) > section:nth-child(1)').css({'animation-name': 'none'});
-            $('.sections:nth-child(2) > section:nth-child(1) > img:nth-child(2),.sections:nth-child(2) > section:nth-child(2) > h1:first-child,.sections:nth-child(2) > section:nth-child(2) > p').css({'animation-name': 'none'});
-            // let sections = [$('.sections:nth-of-type(2)')];
-            let element = document.querySelector('.sections:nth-of-type(2)');
-            let position = element.getBoundingClientRect();
-            // checking for partial visibility
-            if (position.top < window.innerHeight && position.bottom >= 0) {
-                $('.sections:nth-child(2) > section:nth-child(2)').css({
-                    'animation-name': 'intro-black',
-                    'animation-duration': '1.5s',
-                    'animation-timing-function': 'ease-out',
-                    'animation-iteration-count': '1',
-                });
+            for (section of sections) {
+                let element = section;
+                let position = element.getBoundingClientRect();
+                // checking for partial visibility
+                if (position.top < (window.innerHeight + 50) && position.bottom >= 0) {
+                    if (String(element.id) == String('intro')) {
 
-                $('.sections:nth-child(2) > section:nth-child(1)').css({
-                    'animation-name': 'intro-colored',
-                    'animation-duration': '0.75s',
-                    'animation-timing-function': 'ease-out',
-                    'animation-iteration-count': '1'
-                });
+                        $('.sections:nth-child(2) > section:nth-child(2)').css({
+                            'animation-name': 'intro-black',
+                            'animation-duration': '1s',
+                            'animation-timing-function': 'ease-out',
+                            'animation-iteration-count': '1',
+                        });
 
-                $('.sections:nth-child(2) > section:nth-child(1) > img:nth-child(2),.sections:nth-child(2) > section:nth-child(2) > h1:first-child,.sections:nth-child(2) > section:nth-child(2) > p').css({
-                    'animation-name': 'fade-in',
-                    'animation-duration': '2.5s',
-                    'animation-timing-function': 'ease-out',
-                    'animation-iteration-count': '1'
-                });
+                        $('.sections:nth-child(2) > section:nth-child(1)').css({
+                            'animation-name': 'intro-colored',
+                            'animation-duration': '0.5s',
+                            'animation-timing-function': 'ease-out',
+                            'animation-iteration-count': '1'
+                        });
 
+                        $('.sections:nth-child(2) > section:nth-child(1) > img:nth-child(2),.sections:nth-child(2) > section:nth-child(2) > h1:first-child,.sections:nth-child(2) > section:nth-child(2) > p').css({
+                            'animation-name': 'fade-in',
+                            'animation-duration': '1.5s',
+                            'animation-timing-function': 'ease-out',
+                            'animation-iteration-count': '1'
+                        });
+                    } else {
+                        $(element).css({
+                            'animation-name': 'fade-in',
+                            'animation-duration': '.5s',
+                            'animation-timing-function': 'ease-out',
+                            'animation-iteration-count': '1'
+                        });
+                    }
+                }
             }
         });
-    }
 
+
+        // Add smooth scrolling to all links
+        /*   $(window).on('scroll', function(event) {
+
+                // Make sure this.hash has a value before overriding default behavior
+                if (this.hash !== "") {
+                    // Prevent default anchor click behavior
+                    event.preventDefault();
+
+                    // Store hash
+                    var hash = this.hash;
+
+                    // Using jQuery's animate() method to add smooth page scroll
+                    // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+                    $('html, body').animate({
+                        scrollTop: $('#intro').offset().top
+                    }, 800, function(){
+
+                        // Add hash (#) to URL when done scrolling (default click behavior)
+                        window.location.hash = hash;
+                    });
+                } // End if
+            });
+
+    }*/
+    }
 
 </script>
 </body>
