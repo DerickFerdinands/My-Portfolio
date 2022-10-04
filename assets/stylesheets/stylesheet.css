@@ -3,6 +3,10 @@
     height: 0;
 }
 
+*{
+    text-decoration: none !important;
+}
+
 @keyframes intro-black {
     0% {
         left: 0;
@@ -30,22 +34,20 @@
     }
 }
 
-
-
 @keyframes fade-in {
     0% {
         opacity: 0;
-        transform: scale3d(.75,.75,1);
+        transform: scale3d(.75, .75, 1);
     }
 
     40% {
         opacity: 0;
-        transform: scale3d(.75,.75,1);
+        transform: scale3d(.75, .75, 1);
     }
 
     100% {
         opacity: 1;
-        transform: scale3d(1,1,1);
+        transform: scale3d(1, 1, 1);
     }
 }
 
@@ -157,6 +159,7 @@ header > nav > ul > a ::before {
     height: 10px;
     background-color: Gold;
 }
+
 /*
 html{
     scroll-snap-type: y mandatory;
@@ -3466,7 +3469,7 @@ header > nav > ul > a > li:visited {
         width: 314px;
         position: absolute;
         bottom: 0;
-        rgiht: 0;
+        right: 0;
         height: max-content;
     }
 

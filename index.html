@@ -108,13 +108,17 @@
             <h1>Let's Chat!</h1>
             <p class="intro-paras">Originally from Sri Lanka, I am Derick Andrew Ferdinands and I am currently an
                 Undergraduate Student at Institute Of Java & Software Engineering .</p>
-            <p class="intro-paras">A proud Sebastianite who started his education at St.Sebastian’s College Moratuwa and
+            <p class="intro-paras">A proud Sebastianite who started his education at St.Sebastian’s College Moratuwa
+                and
                 had many opportunities to present myself in college,</p>
-            <p class="intro-paras"> Initially I was recognized for sports, won the National Karate championship and was
-                chosen to the national team at age 12, afterwards i was able to represent Sri Lanka At the South Asian
+            <p class="intro-paras"> Initially I was recognized for sports, won the National Karate championship and
+                was
+                chosen to the national team at age 12, afterwards i was able to represent Sri Lanka At the South
+                Asian
                 Games Karate Division and won a Silver Medal in 2019 .</p>
             <p class="intro-paras">Also engaged in Tennis, Swmming & Athletics.</p>
-            <p class="intro-paras">I was driven by a passion for coding during my sophomore year, so I started learning
+            <p class="intro-paras">I was driven by a passion for coding during my sophomore year, so I started
+                learning
                 Java as my initial coding language.</p>
         </section>
     </section>
@@ -285,7 +289,8 @@
                 <li>Selected to the national karate pool in 8th grade</li>
                 <li>3 time National karate Champion</li>
                 <li>Selected to the national karate pool in 8th grade</li>
-                <li>Represented Sri Lanka at the 2019 South Asian Games Karate Division obtained a silver medal.</li>
+                <li>Represented Sri Lanka at the 2019 South Asian Games Karate Division obtained a silver medal.
+                </li>
             </ul>
 
             <div>
@@ -445,7 +450,6 @@
 
 <script src="assets/JS/jquery-3.6.1.min.js"></script>
 <script>
-    console.log(window.innerWidth);
     $(window).on('load', function () {
         $('#img1').css({
             'animation-name': 'onLoad_animation_img1',
@@ -484,13 +488,127 @@
     if (window.innerWidth >= 1024) {
         let sections = [document.querySelector('#intro'), document.querySelector('#skills'), document.querySelector('#projects'), document.querySelector('#about-me'), document.querySelector('#assignments'), document.querySelector('#Gallery'), document.querySelector('#contact-me')];
 
+        // Add smooth scrolling to all links
+        // $('a').on('click', function (event) {
+        //
+        //     // Make sure this.hash has a value before overriding default behavior
+        //     if (this.hash !== "") {
+        //         // Prevent default anchor click behavior
+        //         event.preventDefault();
+        //
+        //         // Store hash
+        //         var hash = this.hash;
+        //
+        //         // Using jQuery's animate() method to add smooth page scroll
+        //         // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+        //         $('html, body').animate({
+        //             scrollTop: $('#intro').offset().top
+        //         }, 0, function () {
+        //
+        //             // Add hash (#) to URL when done scrolling (default click behavior)
+        //             window.location.hash = hash;
+        //         });
+        //     } // End if
+        // });
+
+        $("#home").click(function() {
+            window.location.hash=this.hash;
+            window.location.hash = "#intro";
+            $('.sections:nth-child(2) > section:nth-child(2)').css({'animation-name': 'none'});
+            $('.sections:nth-child(2) > section:nth-child(1)').css({'animation-name': 'none'});
+            $('.sections:nth-child(2) > section:nth-child(1) > img:nth-child(2),.sections:nth-child(2) > section:nth-child(2) > h1:first-child,.sections:nth-child(2) > section:nth-child(2) > p').css({'animation-name': 'none'});
+
+        });
+
+        $("#intro").click(function() {
+            window.location.hash=this.hash;
+            window.location.hash = "#skills";
+            $('#skills').css({
+                'animation-name': 'none',
+            });
+        });
+
+        $("#skills").click(function() {
+            window.location.hash=this.hash;
+            window.location.hash = "#projects";
+            $('#projects').css({
+                'animation-name': 'none',
+            });
+        });
+
+        $("#projects").click(function() {
+            window.location.hash=this.hash;
+            window.location.hash = "#about-me";
+            $('#about-me').css({
+                'animation-name': 'none',
+            });
+        });
+
+        $("#about-me").click(function() {
+            window.location.hash=this.hash;
+            window.location.hash = "#assignments";
+            $('#assignments').css({
+                'animation-name': 'none',
+            });
+        });
+
+        $("#assignments").click(function() {
+            window.location.hash=this.hash;
+            window.location.hash = "#Gallery";
+            $('#Gallery').css({
+                'animation-name': 'none',
+            });
+        });
+
+        $("#Gallery").click(function() {
+            window.location.hash=this.hash;
+            window.location.hash = "#contact-me";
+            $('#contact-me').css({
+                'animation-name': 'none',
+            });
+        });
+        $("#contact-me").click(function() {
+            window.location.hash=this.hash;
+            window.location.hash = "#home";
+            $('#img1').css({
+                'animation-name': 'none'
+            });
+            $('#img2').css({
+                'animation-name': 'none'
+            });
+            $('#lbl2').css({
+                'animation-name': 'none'
+            });
+            $('#name').css({
+                'animation-name': 'none'
+            });
+            $('#social_groups').css({
+                'animation-name': 'none'
+            });
+            $('#hashtagAside').css({
+                'animation-name': 'none'
+            });
+        });
+
+        function fade_in(element){
+            element.css({
+                'animation-name': 'fade-in',
+                'animation-duration': '.5s',
+                'animation-timing-function': 'ease-out',
+                'animation-iteration-count': '1'
+            });
+        }
         $(window).on('scroll', function () {
             for (section of sections) {
                 let element = section;
                 let position = element.getBoundingClientRect();
                 // checking for partial visibility
-                if (position.top < (window.innerHeight + 50) && position.bottom >= 0) {
-                    if (String(element.id) == String('intro')) {
+                if (position.top < (window.innerHeight ) && position.bottom >= 0) {
+                    if (String(element.id) === String('intro')) {
+
+                        $('.sections:nth-child(2) > section:nth-child(2)').css({'animation-name': 'none'});
+                        $('.sections:nth-child(2) > section:nth-child(1)').css({'animation-name': 'none'});
+                        $('.sections:nth-child(2) > section:nth-child(1) > img:nth-child(2),.sections:nth-child(2) > section:nth-child(2) > h1:first-child,.sections:nth-child(2) > section:nth-child(2) > p').css({'animation-name': 'none'});
 
                         $('.sections:nth-child(2) > section:nth-child(2)').css({
                             'animation-name': 'intro-black',
@@ -525,31 +643,8 @@
         });
 
 
-        // Add smooth scrolling to all links
-        /*   $(window).on('scroll', function(event) {
-
-                // Make sure this.hash has a value before overriding default behavior
-                if (this.hash !== "") {
-                    // Prevent default anchor click behavior
-                    event.preventDefault();
-
-                    // Store hash
-                    var hash = this.hash;
-
-                    // Using jQuery's animate() method to add smooth page scroll
-                    // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-                    $('html, body').animate({
-                        scrollTop: $('#intro').offset().top
-                    }, 800, function(){
-
-                        // Add hash (#) to URL when done scrolling (default click behavior)
-                        window.location.hash = hash;
-                    });
-                } // End if
-            });
-
-    }*/
     }
+
 
 </script>
 </body>
