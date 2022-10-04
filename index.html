@@ -446,11 +446,23 @@
             <div><img src="assets/images/Social%20Links/Twitter.svg" alt=""></div>
         </div>
     </section>
+    <div class="container">
+        <div class="item item-1"></div>
+        <div class="item item-2"></div>
+        <div class="item item-3"></div>
+        <div class="item item-4"></div>
+    </div>
 </main>
 
 <script src="assets/JS/jquery-3.6.1.min.js"></script>
 <script>
+
+    $('document').ready(function(){
+        $('.sections, header').css('visibility', 'hidden');
+    });
     $(window).on('load', function () {
+        $('.container').fadeOut();
+        $('.sections, header').css('visibility', 'visible');
         $('#img1').css({
             'animation-name': 'onLoad_animation_img1',
             'animation-duration': '0.5s',
@@ -511,64 +523,63 @@
         //     } // End if
         // });
 
-        $("#home").click(function() {
-            window.location.hash=this.hash;
-            window.location.hash = "#intro";
+        $("#home").click(function () {
+            window.location.hash = this.hash;
             $('.sections:nth-child(2) > section:nth-child(2)').css({'animation-name': 'none'});
             $('.sections:nth-child(2) > section:nth-child(1)').css({'animation-name': 'none'});
             $('.sections:nth-child(2) > section:nth-child(1) > img:nth-child(2),.sections:nth-child(2) > section:nth-child(2) > h1:first-child,.sections:nth-child(2) > section:nth-child(2) > p').css({'animation-name': 'none'});
-
+            window.location.hash = "#intro";
         });
 
-        $("#intro").click(function() {
-            window.location.hash=this.hash;
+        $("#intro").click(function () {
+            window.location.hash = this.hash;
             window.location.hash = "#skills";
             $('#skills').css({
                 'animation-name': 'none',
             });
         });
 
-        $("#skills").click(function() {
-            window.location.hash=this.hash;
+        $("#skills").click(function () {
+            window.location.hash = this.hash;
             window.location.hash = "#projects";
             $('#projects').css({
                 'animation-name': 'none',
             });
         });
 
-        $("#projects").click(function() {
-            window.location.hash=this.hash;
+        $("#projects").click(function () {
+            window.location.hash = this.hash;
             window.location.hash = "#about-me";
             $('#about-me').css({
                 'animation-name': 'none',
             });
         });
 
-        $("#about-me").click(function() {
-            window.location.hash=this.hash;
+        $("#about-me").click(function () {
+            window.location.hash = this.hash;
             window.location.hash = "#assignments";
             $('#assignments').css({
                 'animation-name': 'none',
             });
         });
 
-        $("#assignments").click(function() {
-            window.location.hash=this.hash;
+        $("#assignments").click(function () {
+            window.location.hash = this.hash;
             window.location.hash = "#Gallery";
             $('#Gallery').css({
                 'animation-name': 'none',
             });
         });
 
-        $("#Gallery").click(function() {
-            window.location.hash=this.hash;
+        $("#Gallery").click(function () {
+            window.location.hash = this.hash;
             window.location.hash = "#contact-me";
             $('#contact-me').css({
                 'animation-name': 'none',
             });
         });
-        $("#contact-me").click(function() {
-            window.location.hash=this.hash;
+        $("#contact-me").click(function () {
+            window.location.hash = this.hash;
             window.location.hash = "#home";
             $('#img1').css({
                 'animation-name': 'none'
@@ -590,7 +601,7 @@
             });
         });
 
-        function fade_in(element){
+        function fade_in(element) {
             element.css({
                 'animation-name': 'fade-in',
                 'animation-duration': '.5s',
@@ -598,18 +609,15 @@
                 'animation-iteration-count': '1'
             });
         }
+
         $(window).on('scroll', function () {
             for (section of sections) {
                 let element = section;
                 let position = element.getBoundingClientRect();
                 // checking for partial visibility
-                if (position.top < (window.innerHeight ) && position.bottom >= 0) {
+                if (position.top < (window.innerHeight) && position.bottom >= 0) {
                     if (String(element.id) === String('intro')) {
-
-                        $('.sections:nth-child(2) > section:nth-child(2)').css({'animation-name': 'none'});
-                        $('.sections:nth-child(2) > section:nth-child(1)').css({'animation-name': 'none'});
-                        $('.sections:nth-child(2) > section:nth-child(1) > img:nth-child(2),.sections:nth-child(2) > section:nth-child(2) > h1:first-child,.sections:nth-child(2) > section:nth-child(2) > p').css({'animation-name': 'none'});
-
+                        // document.getElementById('intro').scrollIntoView();
                         $('.sections:nth-child(2) > section:nth-child(2)').css({
                             'animation-name': 'intro-black',
                             'animation-duration': '1s',
@@ -641,8 +649,6 @@
                 }
             }
         });
-
-
     }
 
 
