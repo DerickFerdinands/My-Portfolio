@@ -281,14 +281,7 @@ html{
 
 }
 
-body {
-    margin: 0px;
-}
 
-.sections {
-    height: 960px;
-    position: relative
-}
 
 body {
     margin: 0px;
@@ -304,6 +297,9 @@ header {
     font-weight: 500;
     position: absolute;
     top: 0px;
+    display: flex !important;
+    width: 100%;
+    justify-content: space-between;
 }
 
 header > h1 {
@@ -318,7 +314,7 @@ header > h1 {
 
 header > nav {
     display: inline-block;
-    margin-left: 52vw;
+    margin-left: 0%;
     margin-right: 1.5vw;
     padding-top: 30px;
 }
@@ -1386,7 +1382,7 @@ header > nav > ul > a > li:visited {
     text-align: center;
     font-family: 'Poppins', sans-serif;
     font-weight: 800;
-    font-size: 2.448vw;
+    font-size: 47.002px;
     color: #FFFFFF;
     position: relative;
     top: 200px;
@@ -1395,7 +1391,7 @@ header > nav > ul > a > li:visited {
 
 .sections:nth-child(8) > h1:nth-of-type(2) {
     position: absolute;
-    left: 3.021vw;
+    left: 3.021%;
     top: 740px;
     margin: 0;
     font-family: 'Roboto', sans-serif;
@@ -1410,9 +1406,9 @@ header > nav > ul > a > li:visited {
 }
 
 .sections:nth-child(8) > address {
-    width: 20.833vw;
+    width: 22%;
     position: absolute;
-    left: 3.125vw;
+    left: 3.125%;
     top: 790px;
 
 }
@@ -1422,23 +1418,24 @@ header > nav > ul > a > li:visited {
     margin: 0;
 }
 
-.sections:nth-child(8) > address > h3:nth-child(odd) {
+.sections:nth-child(8) > address > h3:nth-of-type(odd) {
     font-family: 'Bebas Neue', sans-serif;
     font-style: normal;
     font-weight: 400;
-    font-size: 1.042vw;
+    font-size: 20.006px;
     color: #B9B9B9;
     padding-right: 0.521vw;
     padding-top: 5px;
+    width: max-content;
 }
 
-.sections:nth-child(8) > address > h3:nth-child(even) {
+.sections:nth-child(8) > address > h3:nth-of-type(even) {
     font-family: 'Raleway', sans-serif;
     font-style: normal;
     font-weight: 400;
-    font-size: 1.042vw;
+    font-size: 20.006px;
     color: #B9B9B9;
-    width: 15.625vw;
+    width: max-content;
     padding-top: 5px;
 }
 
@@ -1458,28 +1455,28 @@ header > nav > ul > a > li:visited {
     border: 3px solid white;
     background-color: transparent;
     background: radial-gradient(50% 50% at 66.82% 47.1%, #AAAAAA 0%, rgba(170, 170, 170, 0.833333) 0.01%, rgba(170, 170, 170, 0) 100%);
-    left: 80.703vw;
+    left: 80.703%;
     top: 504.13px;
 }
 
 .sections:nth-child(8) > div:first-of-type > div:first-of-type {
-    left: 81.563vw;
+    left: 81.563%;
     top: 528px;
 }
 
 .sections:nth-child(8) > div:first-of-type > div:nth-of-type(2) {
-    left: 78.802vw;
+    left: 78.802%;
     top: 708px;
 }
 
 .sections:nth-child(8) > div:first-of-type > div:nth-of-type(3) {
-    left: 85.729vw;
+    left: 85.729%;
     top: 708px;
 }
 
 .sections:nth-child(8) > div:first-of-type > img {
     position: absolute;
-    left: 76.406vw;
+    left: 76.406%;
     top: 431px;
     height: 559px;
 }
@@ -1488,7 +1485,7 @@ header > nav > ul > a > li:visited {
     position: absolute;
     width: 160px;
     height: 34px;
-    left: 3.021vw;
+    left: 3.021%;
     top: 700px;
     font-family: 'Raleway', sans-serif;
     font-style: normal;
@@ -1509,26 +1506,26 @@ header > nav > ul > a > li:visited {
 
 .sections:nth-child(8) > form > label:nth-of-type(1) {
 
-    left: 27.188vw;
+    left: 27.188%;
     top: 371px;
 }
 
 .sections:nth-child(8) > form > label:nth-of-type(2) {
-    left: 27.188vw;
+    left: 27.188%;
     top: 448px;
 }
 
 .sections:nth-child(8) > form > label:nth-of-type(3) {
-    left: 46.927vw;
+    left: 46.927%;
     top: 321px;
 
 }
 
 .sections:nth-child(8) > form > input {
     position: absolute;
-    width: 17.135vw;
+    width: 17.135%;
     height: 40px;
-    left: 26.354vw;
+    left: 26.354%;
     top: 401px;
     border: none;
     background: #2B2D2E;
@@ -1543,7 +1540,7 @@ header > nav > ul > a > li:visited {
     position: absolute;
     width: 466px;
     height: 184px;
-    left: 45.990vw;
+    left: 45.990%;
     top: 349px;
     background: #2B2D2E;
     border-radius: 20px;
@@ -1554,7 +1551,7 @@ header > nav > ul > a > li:visited {
     position: absolute;
     width: 160px;
     height: 34px;
-    left: 61.927vw;
+    left: 61.927%;
     top: 557px;
     font-family: 'Raleway', sans-serif;
     font-style: normal;
@@ -1569,12 +1566,12 @@ header > nav > ul > a > li:visited {
 }
 
 .sections:nth-child(8) > form > img:first-of-type {
-    left: 43.750vw;
+    left: 43.750%;
     top: 500px;
 }
 
 .sections:nth-child(8) > form > img:nth-of-type(2) {
-    left: 59.896vw;
+    left: 59.896%;
     top: 560px;
 }
 
