@@ -268,23 +268,8 @@ html{
 
 
 @media (-webkit-device-pixel-ratio: 1.25) {
-    html {
+    body {
         zoom: 80%;
-    }
-
-    header {
-        width: 125vw !important;
-        margin: 0 !important;
-        padding: 0 !important;
-        overflow: hidden;
-    }
-
-    .sections {
-        width: 125vw !important;
-    }
-
-    main {
-        height: 1240px !important;
     }
 
 }
@@ -294,13 +279,12 @@ body {
 }
 
 .sections {
-    width: 100vw;
     height: 960px;
     position: relative
 }
 
 header {
-    width: 100vw;
+    /*width: 100vw;*/
     font-family: 'Roboto', sans-serif;
     font-weight: 500;
     position: absolute;
@@ -2242,76 +2226,76 @@ header > nav > ul > a > li:visited {
 
 }
 
-@media all and (max-width: 1440px) {
+@media all and (max-width: 1441px) {
     @keyframes onLoad_animation_lbl2 {
         0% {
             visibility: hidden;
-            left: -900px;
+            left: -67px;
         }
         40% {
             visibility: visible;
 
         }
         100% {
-            left: 132px;
+            left: 67px;
         }
     }
 
     @keyframes onLoad_animation_img1 {
         0% {
-            left: 2560px;
+            left: 1440px;
         }
         100% {
-            left: 1640px;
+            left: 872px;
         }
     }
 
     @keyframes onLoad_animation_img2 {
         0% {
             visibility: hidden;
-            left: 2560px;
+            left: 1440px;
         }
         20% {
             visibility: visible;
 
         }
         100% {
-            left: 1433px;
+            left: 734px;
         }
     }
 
     @keyframes onLoad_animation_hashtagAside {
         0% {
             visibility: hidden;
-            bottom: -160px;
+            top: 800px;
         }
         60% {
             visibility: visible;
         }
         100% {
-            bottom: 67px;
+            top: 544px;
         }
     }
 
     @keyframes onLoad_animation_name {
         0% {
             visibility: hidden;
-            left: 2560px;
+            left: 1440px;
         }
         20% {
             visibility: visible;
         }
         100% {
-            left: 1883px;
+            left: 1033px;
         }
     }
 
     @keyframes onLoad_animation_social_groups {
         0% {
-            right: -34px;
+            left: 1440px;
         }
         100% {
-            right: 25px;
+            left: 1383px;
         }
     }
     .sections {
@@ -2955,6 +2939,78 @@ header > nav > ul > a > li:visited {
 
 
 @media all and (max-width: 1024px) {
+    @keyframes onLoad_animation_lbl2 {
+        0% {
+            visibility: hidden;
+            left: -42px;
+        }
+        40% {
+            visibility: visible;
+
+        }
+        100% {
+            left: 42px;
+        }
+    }
+
+    @keyframes onLoad_animation_img1 {
+        0% {
+            left: 1024px;
+        }
+        100% {
+            left: 604px;
+        }
+    }
+
+    @keyframes onLoad_animation_img2 {
+        0% {
+            visibility: hidden;
+            left: 1024px;
+        }
+        20% {
+            visibility: visible;
+
+        }
+        100% {
+            left: 496px;
+        }
+    }
+
+    @keyframes onLoad_animation_hashtagAside {
+        0% {
+            visibility: hidden;
+            top: 750px;
+        }
+        60% {
+            visibility: visible;
+        }
+        100% {
+            top: 544px;
+        }
+    }
+
+    @keyframes onLoad_animation_name {
+        0% {
+            visibility: hidden;
+            left: 1024px;
+        }
+        20% {
+            visibility: visible;
+        }
+        100% {
+            left: 732px;
+        }
+    }
+
+    @keyframes onLoad_animation_social_groups {
+        0% {
+            left: 1024px;
+        }
+        100% {
+            left: 956px;
+        }
+    }
+
     .sections {
         height: 750px;
         width: 1024px;
@@ -3274,6 +3330,77 @@ header > nav > ul > a > li:visited {
 
 
 @media all and (max-width: 768px) {
+    @keyframes onLoad_animation_lbl2 {
+        0% {
+            visibility: hidden;
+            left: -42px;
+        }
+        40% {
+            visibility: visible;
+
+        }
+        100% {
+            left: 42px;
+        }
+    }
+
+    @keyframes onLoad_animation_img1 {
+        0% {
+            left: 768px;
+        }
+        100% {
+            left: 488px;
+        }
+    }
+
+    @keyframes onLoad_animation_img2 {
+        0% {
+            visibility: hidden;
+            left: 768px;
+        }
+        20% {
+            visibility: visible;
+
+        }
+        100% {
+            left: 428px;
+        }
+    }
+
+    @keyframes onLoad_animation_hashtagAside {
+        0% {
+            visibility: hidden;
+            top: 750px;
+        }
+        60% {
+            visibility: visible;
+        }
+        100% {
+            top: 334px;
+        }
+    }
+
+    @keyframes onLoad_animation_name {
+        0% {
+            visibility: hidden;
+            left: 768px;
+        }
+        20% {
+            visibility: visible;
+        }
+        100% {
+            left: 573px;
+        }
+    }
+
+    @keyframes onLoad_animation_social_groups {
+        0% {
+            top: 500px;
+        }
+        100% {
+            top: 345px;
+        }
+    }
     .sections {
         height: 400px;
         width: 768px;
@@ -4108,6 +4235,77 @@ header > nav > ul > a > li:visited {
 }
 
 @media all and (max-width: 426px) {
+    @keyframes onLoad_animation_lbl2 {
+        0% {
+            visibility: hidden;
+            left: -11.765vw;
+        }
+        40% {
+            visibility: visible;
+
+        }
+        100% {
+            left: 11.765vw;
+        }
+    }
+
+    @keyframes onLoad_animation_img1 {
+        0% {
+            left: 426px;
+        }
+        100% {
+            left: 50.353vw;
+        }
+    }
+
+    @keyframes onLoad_animation_img2 {
+        0% {
+            visibility: hidden;
+            left: 426px;
+        }
+        20% {
+            visibility: visible;
+
+        }
+        100% {
+            left: 35.294vw;
+        }
+    }
+
+    @keyframes onLoad_animation_hashtagAside {
+        0% {
+            visibility: hidden;
+            top: 350px;
+        }
+        60% {
+            visibility: visible;
+        }
+        100% {
+            top: 293px;
+        }
+    }
+
+    @keyframes onLoad_animation_name {
+        0% {
+            visibility: hidden;
+            left: 426px;
+        }
+        20% {
+            visibility: visible;
+        }
+        100% {
+            left: 61.412vw;
+        }
+    }
+
+    @keyframes onLoad_animation_social_groups {
+        0% {
+            top: -127px;
+        }
+        100% {
+            top: 127px;
+        }
+    }
     .sections {
         width: 100vw;
     }
@@ -4660,6 +4858,77 @@ header > nav > ul > a > li:visited {
 }
 
 @media all and (max-width: 376px) {
+    @keyframes onLoad_animation_lbl2 {
+        0% {
+            visibility: hidden;
+            left: -7.200vw;
+        }
+        40% {
+            visibility: visible;
+
+        }
+        100% {
+            left: 7.200vw;
+        }
+    }
+
+    @keyframes onLoad_animation_img1 {
+        0% {
+            left: 376px;
+        }
+        100% {
+            left: 50.400vw;
+        }
+    }
+
+    @keyframes onLoad_animation_img2 {
+        0% {
+            visibility: hidden;
+            left: 376px;
+        }
+        20% {
+            visibility: visible;
+
+        }
+        100% {
+            left: 34.933vw;
+        }
+    }
+
+    @keyframes onLoad_animation_hashtagAside {
+        0% {
+            visibility: hidden;
+            top: 350px;
+        }
+        60% {
+            visibility: visible;
+        }
+        100% {
+            top: 293px;
+        }
+    }
+
+    @keyframes onLoad_animation_name {
+        0% {
+            visibility: hidden;
+            left: 376px;
+        }
+        20% {
+            visibility: visible;
+        }
+        100% {
+            left: 63.200vw;
+        }
+    }
+
+    @keyframes onLoad_animation_social_groups {
+        0% {
+            top: -127px;
+        }
+        100% {
+            top: 127px;
+        }
+    }
     .sections {
         width: 100vw;
     }
@@ -4977,6 +5246,57 @@ header > nav > ul > a > li:visited {
 }
 
 @media all and (max-width: 320px) {
+    @keyframes onLoad_animation_lbl2 {
+        0% {
+            visibility: hidden;
+            left: -19px;
+        }
+        40% {
+            visibility: visible;
+
+        }
+        100% {
+            left: 19px;
+        }
+    }
+
+    @keyframes onLoad_animation_img1 {
+        0% {
+            left: 320px;
+        }
+        100% {
+            left: 147px;
+        }
+    }
+
+    @keyframes onLoad_animation_img2 {
+        0% {
+            visibility: hidden;
+            left: 320px;
+        }
+        20% {
+            visibility: visible;
+
+        }
+        100% {
+            left: 92px;
+        }
+    }
+
+    @keyframes onLoad_animation_name {
+        0% {
+            visibility: hidden;
+            left: 320px;
+        }
+        20% {
+            visibility: visible;
+        }
+        100% {
+            left: 185px;
+        }
+    }
+
+
 
     .sections {
         width: 320px;

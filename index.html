@@ -460,6 +460,7 @@
     $('document').ready(function(){
         $('.sections, header').css('display', 'none');
     });
+
     $(window).on('load', function () {
         $('.container').css('display', 'none');
         $('.container').fadeOut(2000);
@@ -501,28 +502,7 @@
     if (window.innerWidth >= 1024) {
         let sections = [document.querySelector('#intro'), document.querySelector('#skills'), document.querySelector('#projects'), document.querySelector('#about-me'), document.querySelector('#assignments'), document.querySelector('#Gallery'), document.querySelector('#contact-me')];
 
-        // Add smooth scrolling to all links
-        // $('a').on('click', function (event) {
-        //
-        //     // Make sure this.hash has a value before overriding default behavior
-        //     if (this.hash !== "") {
-        //         // Prevent default anchor click behavior
-        //         event.preventDefault();
-        //
-        //         // Store hash
-        //         var hash = this.hash;
-        //
-        //         // Using jQuery's animate() method to add smooth page scroll
-        //         // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-        //         $('html, body').animate({
-        //             scrollTop: $('#intro').offset().top
-        //         }, 0, function () {
-        //
-        //             // Add hash (#) to URL when done scrolling (default click behavior)
-        //             window.location.hash = hash;
-        //         });
-        //     } // End if
-        // });
+
 
         $("#home").click(function () {
             window.location.hash = this.hash;
