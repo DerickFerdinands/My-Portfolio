@@ -272,9 +272,13 @@ html{
         zoom: 82%;
     }
 
-    .sections:first-child > aside:nth-child(4) > h1 {
-        font-size: 12.938vw;
+  /*  .sections:first-child > aside:nth-child(4) > h1 {
+        font-size: 200px !important;
     }
+    .sections:first-child > img:first-child {
+        left: 75.917vw !important;
+    }*/
+
 }
 
 body {
@@ -314,7 +318,7 @@ header > h1 {
 
 header > nav {
     display: inline-block;
-    margin-left: 44vw;
+    margin-left: 52vw;
     margin-right: 1.5vw;
     padding-top: 30px;
 }
@@ -336,13 +340,13 @@ header > nav > ul > a > li {
 }
 
 header > nav > ul > a > li:visited {
-    color: black;
+
 }
 
 .sections:first-child > img:first-child {
     position: absolute;
     width: 515px;
-    left: 62.917vw;
+    left: 62.917%;
     top: 250px;
     border-radius: 23px;
 }
@@ -351,19 +355,19 @@ header > nav > ul > a > li:visited {
     position: absolute;
     height: 600px;
     width: auto;
-    left: 55.417vw;
+    left: 55.417%;
     top: 35px;
 }
 
 .sections:first-child > h1:nth-child(3) {
     position: absolute;
-    left: 72.188vw;
+    left: 72.188%;
     top: 178px;
     color: black;
     font-family: 'Allura', cursive;
     font-style: normal;
     font-weight: 400;
-    font-size: 1.667vw;
+    font-size: 32px;
     mix-blend-mode: darken;
     transform: rotate(16.6deg);
 }
@@ -378,7 +382,7 @@ header > nav > ul > a > li:visited {
     font-family: 'Raleway', sans-serif;
     font-style: normal;
     font-weight: 600;
-    font-size: 10.938vw;
+    font-size: 210.01px;
     line-height: 12.865vw;
 
     color: #181818;
@@ -391,7 +395,7 @@ header > nav > ul > a > li:visited {
     flex-flow: row;
     position: absolute;
     bottom: 140px;
-    right: 10.677vw;
+    right: 10.677%;
     /*justify-content: center;*/
 }
 
@@ -405,16 +409,16 @@ header > nav > ul > a > li:visited {
     font-style: normal;
     font-weight: 500;
     font-size: 22px;
-    mix-blend-mode: darken;
+
 }
 
 .sections:first-child > div {
     position: absolute;
     display: flex;
     flex-direction: column;
-    width: 1.771vw;
-    bottom: 10px;
-    right: 1.302vw;
+    width: 34.003px;
+    bottom: 50px;
+    right: 1.302%;
 }
 
 .sections:first-child > div > img {
@@ -512,7 +516,7 @@ header > nav > ul > a > li:visited {
 
 .sections:nth-child(3) > section:first-of-type > div > span:last-of-type {
 
-    width: 4.792vw;
+    width: 4.792%;
     height: 24px;
     font-family: 'Raleway', sans-serif;
     font-style: normal;
@@ -527,13 +531,14 @@ header > nav > ul > a > li:visited {
 
 .sections:nth-child(3) > section:first-of-type > div > p {
     position: relative;
-    width: 9.844vw;
+    width: 65%;
     height: 150px;
     font-family: 'Raleway', sans-serif;
     font-weight: 600;
     font-size: 15px;
     text-align: center;
     color: #262222;
+    padding-left: 20%;
 }
 
 .sections:nth-child(3) > section:first-of-type > div > img {
@@ -545,7 +550,7 @@ header > nav > ul > a > li:visited {
 .sections:nth-child(3) > section:first-of-type > div > img:last-of-type {
     height: 20px;
     position: relative;
-    left: 0.781vw;
+    left: 0.781%;
     top: 5px;
 }
 
