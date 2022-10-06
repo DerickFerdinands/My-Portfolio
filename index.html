@@ -609,11 +609,12 @@
     $('#as-arrow-left').click(function (){
         $('#as-view').scrollLeft($('#as-view').scrollLeft()-400);
         $('#ass-nav-num').scrollLeft(0);
-        $('#ass-nav-num').scrollLeft($('#ass-nav-num').width());
+
     });
 
     $('#as-arrow-right').click(function (){
         $('#as-view').scrollLeft($('#as-view').scrollLeft()+400);
+        $('#ass-nav-num').scrollLeft(100);
     });
 
     for (let i=0;i<15;i++){
