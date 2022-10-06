@@ -3056,9 +3056,9 @@ body{
         left: 0px;
     }
 
-    .sections:nth-child(8) > address > h3:nth-child(even) {
+ /*   .sections:nth-child(8) > address > h3:nth-child(even) {
         width: 220px;
-    }
+    }*/
 
     .sections:nth-child(5) > aside:nth-of-type(4) {
         left: 3.542vw;
@@ -3786,7 +3786,7 @@ body{
     }
 
     .sections:nth-child(2) > section:nth-child(2) > p {
-        font-size: 1.823vw;
+        font-size: 14px;
         width: 26.172vw;
         left: 3.125vw;
         top: -7px;
@@ -4883,7 +4883,7 @@ body{
 
     .sections:nth-child(5) > aside:nth-of-type(2) {
         top: 106px;
-        left: 17.882vw;
+        left: 13.882vw;
         width: 82.353vw;
     }
 
@@ -5140,13 +5140,15 @@ body{
     .sections:nth-child(6) > div {
         left: 37px;
     }
-
+    .sections:nth-child(5) > aside:nth-of-type(3){
+        position: static;
+    }
     .sections:nth-child(5) > aside:nth-of-type(3) > div {
         top: 60%;
         position:absolute;
-        left: -60vw;
-      /*  right: 0;
-        margin:auto;*/
+        left: 50px;
+        right: 0;
+        margin:auto;
         /*width: max-content;*/
     }
 
@@ -5359,12 +5361,12 @@ body{
         font-size: 10px;
     }
 
-    .sections:nth-child(5) > div:first-of-type > h1:nth-of-type(6) {
+ /*   .sections:nth-child(5) > div:first-of-type > h1:nth-of-type(6) {
         top: -6px;
         left: 2.400vw;
         font-size: 31px;
         height: max-content;
-    }
+    }*/
 
     .sections:nth-child(5) > aside:nth-of-type(2) {
         top: 106px;
@@ -5373,7 +5375,7 @@ body{
     }
 
     .sections:nth-child(5) > aside:nth-of-type(3) > div {
-        left: -40.533vw;
+      /*  left: -40.533vw;*/
     }
 
     .sections:nth-child(5) > aside:nth-of-type(4) {
@@ -5708,7 +5710,7 @@ body{
     }
 
     .sections:nth-child(5) > aside:nth-of-type(3) > div {
-        left: -126px;
+        /*left: -126px;*/
     }
 
     header > nav > ul > li {
@@ -5789,7 +5791,6 @@ body{
     }
 
     .sections:nth-child(7) > section {
-        width: 53vw;
         top: 18px;
         left: 80px;
         align-items: center;
