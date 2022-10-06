@@ -1187,7 +1187,7 @@ header > nav > ul > a > li:visited {
     right: 4.688vw;
 }
 
-.sections:nth-child(6) > section > h1 {
+.sections:nth-child(6)  > h1 {
     font-family: 'Raleway', sans-serif;
     font-style: normal;
     font-size: 31px;
@@ -1195,9 +1195,8 @@ header > nav > ul > a > li:visited {
     color: #FFFFFF;
     width: 190px;
     position: absolute;
-    top: 0;
-    right: 0;
-    left: 0;
+    top: 20%;
+    left: 31%;
     margin: auto;
 
 }
@@ -1213,6 +1212,7 @@ header > nav > ul > a > li:visited {
     justify-content: space-between;
     top: 130px;
     left: 70px;
+    overflow: scroll;
 }
 
 .sections:nth-child(6) > section:first-of-type > a > div {
@@ -1270,7 +1270,7 @@ header > nav > ul > a > li:visited {
 }
 
 
-.sections:nth-child(6) > section:first-of-type .index-color {
+ .index-color {
     color: #D0AD41;
 }
 
