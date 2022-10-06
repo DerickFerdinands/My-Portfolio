@@ -1274,30 +1274,53 @@ header > nav > ul > a > li:visited {
     color: #D0AD41;
 }
 
-.sections:nth-child(6) > div {
+ .assignments-nav{
+     cursor: pointer;
+ }
+
+ #as-view{
+     scroll-behavior: smooth;
+ }
+.sections:nth-child(6) > div{
+    display: flex;
+    width:max-content;
+    top: 20%;
+    left: 10%;
+    position: relative;
+}
+
+.sections:nth-child(6)  >div>img{
+    height: 20px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.sections:nth-child(6) > div>div {
     color: #A6A4A4;
     display: flex;
     z-index: 5;
-    position: relative;
     justify-content: space-around;
     margin: 0;
-    width: 525px;
-    top: 230px;
-    left: 410px;
+    width: 50vw;
+    overflow: scroll;
 }
-
-.sections:nth-child(6) > div > h2 {
+.sections:nth-child(6) > div >div> h2 {
     font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 17px;
     margin: 0;
+    padding-left: 5px;
+    padding-right:5px;
 }
 
-.sections:nth-child(6) > div > img {
-    height: 20px;
-    margin: 0;
+
+
+/*.sections:nth-child(6)  > img:nth-of-type(2){
+    left: 8%;
 }
+.sections:nth-child(6)  > img:nth-of-type(3){
+    left: 61%;
+}*/
 
 .sections:nth-child(7) {
     background-size: cover !important;
