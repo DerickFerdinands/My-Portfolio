@@ -606,7 +606,27 @@
     });
 
     $('.ig').click(function () {
-        
+        let url = "https://instagram.com/derick_ferdinands?igshid=YmMyMTA2M2Y=";
+        window.location = url;
+        window.open(url);
+    });
+
+    $('.gitHub').click(function () {
+        let url = "https://github.com/DerickFerdinands";
+        window.location = url;
+        window.open(url);
+    });
+
+    $('.linkedIn').click(function () {
+        let url = "https://www.linkedin.com/in/derick-andrew-ferdinands-827448243/";
+        window.location = url;
+        window.open(url);
+    });
+
+    $('.Twitter').click(function () {
+        let url = "https://twitter.com/fe1_andrew?t=72MxfyuEByaokyTXAeWb9A&s=09";
+        window.location = url;
+        window.open(url);
     });
 
     //Assignment Navigation
@@ -630,7 +650,25 @@
     if (window.innerWidth >= 1024) {
         let sections = [document.querySelector('#intro'), document.querySelector('#skills'), document.querySelector('#projects'), document.querySelector('#about-me'), document.querySelector('#assignments'), document.querySelector('#Gallery'), document.querySelector('#contact-me')];
 
+     /*   let lastKnownScrollPosition = 0;
+        let ticking = false;
 
+        function doSomething(scrollPos) {
+            // $(document).scrollTop(100);
+        }
+
+        document.addEventListener('scroll', (e) => {
+            lastKnownScrollPosition = window.scrollY;
+
+            if (!ticking) {
+                window.requestAnimationFrame(() => {
+                    doSomething(lastKnownScrollPosition);
+                    ticking = false;
+                });
+
+                ticking = true;
+            }
+        });*/
 
       /*  $("#home").click(function () {
             window.location.hash = this.hash;
