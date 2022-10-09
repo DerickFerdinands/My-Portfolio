@@ -773,7 +773,7 @@
                     <label for="QtyOnHand">Qty On Hand</label>
                 </div>
             </div>
-            <button type="button" class="btn btn-success col-4 mt-3" >Add To Cart</button>
+            <button type="button" class="btn btn-success col-4 mt-3">Add To Cart</button>
         </div>
 
         <div class="row col-sm-12  col-lg-6 col-xl-3 justify-content-center align-items-center ms-3 position-relative"
@@ -801,7 +801,7 @@
             <h4 class="col-5">Balance:</h4>
             <h4 class="col-5 text-danger text-success">1,000/=</h4>
 
-            <button type="button" class="btn btn-dark col-10 " >
+            <button type="button" class="btn btn-dark col-10 ">
                 Place Order
             </button>
         </div>
@@ -845,7 +845,7 @@
                     <td>5</td>
                     <td>25,000/=</td>
                     <td>
-                        <button type="button" class="btn btn-danger" >Remove</button>
+                        <button type="button" class="btn btn-danger">Remove</button>
                     </td>
                 </tr>
                 <tr>
@@ -857,7 +857,7 @@
                     <td>5</td>
                     <td>25,000/=</td>
                     <td>
-                        <button type="button" class="btn btn-danger" >Remove</button>
+                        <button type="button" class="btn btn-danger">Remove</button>
                     </td>
                 </tr>
 
@@ -870,7 +870,7 @@
                     <td>5</td>
                     <td>25,000/=</td>
                     <td>
-                        <button type="button" class="btn btn-danger" >Remove</button>
+                        <button type="button" class="btn btn-danger">Remove</button>
                     </td>
                 </tr>
 
@@ -883,7 +883,7 @@
                     <td>5</td>
                     <td>25,000/=</td>
                     <td>
-                        <button type="button" class="btn btn-danger" >Remove</button>
+                        <button type="button" class="btn btn-danger">Remove</button>
                     </td>
                 </tr>
 
@@ -896,7 +896,7 @@
                     <td>5</td>
                     <td>25,000/=</td>
                     <td>
-                        <button type="button" class="btn btn-danger" >Remove</button>
+                        <button type="button" class="btn btn-danger">Remove</button>
                     </td>
                 </tr>
                 </tbody>
@@ -908,41 +908,14 @@
 <!--END OF ORDERS MAIN-->
 <script src="assets/js/jquery-3.6.1.min.js"></script>
 <script src="assets/js/bootstrap.min.js"></script>
-<script>
-    $("main").eq(1).css('display', 'none');
-    $("main").eq(2).css('display', 'none');
-    $("main").eq(3).css('display', 'none');
-    $(".home").click(function () {
-        $("header").css('display', 'block');
-        $("main").eq(0).css('display', 'block');
-        $("main").eq(1).css('display', 'none');
-        $("main").eq(2).css('display', 'none');
-        $("main").eq(3).css('display', 'none');
-    });
-
-    $(".customer").click(function () {
-        $("header").css('display', 'none');
-        $("main").eq(0).css('display', 'none');
-        $("main").eq(1).css('display', 'block');
-        $("main").eq(2).css('display', 'none');
-        $("main").eq(3).css('display', 'none');
-    });
-
-    $(".item").click(function () {
-        $("header").css('display', 'none');
-        $("main").eq(0).css('display', 'none');
-        $("main").eq(1).css('display', 'none');
-        $("main").eq(2).css('display', 'block');
-        $("main").eq(3).css('display', 'none');
-    });
-
-    $(".order").click(function () {
-        $("header").css('display', 'none');
-        $("main").eq(0).css('display', 'none');
-        $("main").eq(1).css('display', 'none');
-        $("main").eq(2).css('display', 'none');
-        $("main").eq(3).css('display', 'block');
-    });
-</script>
+<script src="controller/IndexController.js"></script>
+<script src="controller/CustomerController.js"></script>
+<script src="controller/ItemController.js"></script>
+<script src="controller/OrderController.js"></script>
+<script src="db/DB.js"></script>
+<script src="model/Customer.js"></script>
+<script src="model/Item.js"></script>
+<script src="model/Order.js"></script>
+<script src="model/OrderDetail.js"></script>
 </body>
 </html>

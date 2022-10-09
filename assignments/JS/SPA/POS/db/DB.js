@@ -1,0 +1,4 @@
+customers=[];
+items=[];
+orders=[];
+orderDetails=[];
