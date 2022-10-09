@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;800&family=Public+Sans:wght@600&family=Raleway:wght@500;600;700;800;900&display=swap"
           rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/alerts.css">
     <style>
         /*Home Styling*/
         body {
@@ -296,42 +297,42 @@
                         <div class="modal-body">
                             <section class="container">
                                 <div class="form-floating mb-3">
-                                    <input type="text" class="form-control" id="customerCode" placeholder="C00-001">
-                                    <label for="customerCode">Customer Code</label>
+                                    <input type="text" class="form-control" id="txtCustomerCode" placeholder="C00-001">
+                                    <label for="txtCustomerCode">Customer Code</label>
                                 </div>
 
                                 <div class="form-floating mb-3">
-                                    <input type="text" class="form-control" id="customerName"
+                                    <input type="text" class="form-control" id="txtCustomerName"
                                            placeholder="John Santiago">
-                                    <label for="customerName">Customer Name</label>
+                                    <label for="txtCustomerName">Customer Name</label>
                                 </div>
 
                                 <div class="form-floating mb-3">
-                                    <input type="text" class="form-control" id="customerNIC" placeholder="200016803088">
-                                    <label for="customerNIC">Customer NIC</label>
+                                    <input type="text" class="form-control" id="txtCustomerNIC" placeholder="200016803088">
+                                    <label for="txtCustomerNIC">Customer NIC</label>
                                 </div>
 
                                 <div class="form-floating mb-3">
-                                    <input type="date" class="form-control" id="customerDOB"
+                                    <input type="date" class="form-control" id="txtCustomerDOB"
                                            placeholder="John Santiago">
-                                    <label for="customerDOB">Customer DOB</label>
+                                    <label for="txtCustomerDOB">Customer DOB</label>
                                 </div>
 
                                 <div class="form-floating mb-3">
-                                    <input type="text" class="form-control" id="customerAddress" placeholder="Colombia">
-                                    <label for="customerAddress">Customer Address</label>
+                                    <input type="text" class="form-control" id="txtCustomerAddress" placeholder="Colombia">
+                                    <label for="txtCustomerAddress">Customer Address</label>
                                 </div>
 
                                 <div class="form-floating mb-3">
-                                    <input type="text" class="form-control" id="customerSalary"
+                                    <input type="text" class="form-control" id="txtCustomerSalary"
                                            placeholder="120,000,000">
-                                    <label for="customerSalary">Customer Salary</label>
+                                    <label for="txtCustomerSalary">Customer Salary</label>
                                 </div>
                             </section>
                         </div>
                         <div class="modal-footer">
                             <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                            <button type="button" class="btn btn-success">Save Customer</button>
+                            <button type="button" id="btnAddCustomer" class="btn btn-success">Save Customer</button>
                         </div>
                     </div>
                 </div>
@@ -345,7 +346,7 @@
             <button type="button" class="btn btn-primary text-sm-end ">View All Customers</button>
         </div>
         <div class="col-12 mt-5">
-            <table class="table mt-3 table-hover">
+            <table id="tableCustomer" class="table mt-3 table-hover">
                 <thead class="" style="border-radius: 5px; background-color: #F18789;">
                 <tr>
                     <th scope="col">#</th>
@@ -358,63 +359,6 @@
                 </tr>
                 </thead>
                 <tbody>
-                <tr>
-                    <th scope="row">1</th>
-                    <td>C00-001</td>
-                    <td>Derick Andrew Ferdinands</td>
-                    <td>200416803088</td>
-                    <td>2004-06-16</td>
-                    <td>Colombo</td>
-                    <td>110,000,000</td>
-                </tr>
-                <tr>
-                    <th scope="row">2</th>
-                    <td>C00-002</td>
-                    <td>Derick Andrew Ferdinands</td>
-                    <td>200416803088</td>
-                    <td>2004-06-16</td>
-                    <td>Colombo</td>
-                    <td>110,000,000</td>
-                </tr>
-                <tr>
-                    <th scope="row">3</th>
-                    <td>C00-003</td>
-                    <td>Derick Andrew Ferdinands</td>
-                    <td>200416803088</td>
-                    <td>2004-06-16</td>
-                    <td>Colombo</td>
-                    <td>110,000,000</td>
-                </tr>
-
-                <tr>
-                    <th scope="row">4</th>
-                    <td>C00-004</td>
-                    <td>Derick Andrew Ferdinands</td>
-                    <td>200416803088</td>
-                    <td>2004-06-16</td>
-                    <td>Colombo</td>
-                    <td>110,000,000</td>
-                </tr>
-
-                <tr>
-                    <th scope="row">5</th>
-                    <td>C00-005</td>
-                    <td>Derick Andrew Ferdinands</td>
-                    <td>200416803088</td>
-                    <td>2004-06-16</td>
-                    <td>Colombo</td>
-                    <td>110,000,000</td>
-                </tr>
-
-                <tr>
-                    <th scope="row">6</th>
-                    <td>C00-006</td>
-                    <td>Derick Andrew Ferdinands</td>
-                    <td>200416803088</td>
-                    <td>2004-06-16</td>
-                    <td>Colombo</td>
-                    <td>110,000,000</td>
-                </tr>
                 </tbody>
             </table>
         </div>
@@ -917,5 +861,6 @@
 <script src="model/Item.js"></script>
 <script src="model/Order.js"></script>
 <script src="model/OrderDetail.js"></script>
+<script src="assets/js/alerts.js"></script>
 </body>
 </html>

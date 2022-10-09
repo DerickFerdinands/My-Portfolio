@@ -1,48 +1,41 @@
+function saveCustomer(code, name, nic, dob, address, salary) {
+    customer.code = code;
+    customer.name = name;
+    customer.nic = nic;
+    customer.dob = dob;
+    customer.address = address;
+    customer.salary = salary;
+}
 
-$(document).ready(function () {
-    $('main').css('visibility', 'hidden');
+function updateCustomer(code, name, nic, dob, address, salary) {
+    let customer =getCustomer(code);
+    if(customer!=null){
+        customer.name=name;
+        customer.nic=nic;
+        customer.dob=dob;
+        customer.address=address;
+        customer.salary=salary;
+    }else{
+    //    Customer Not Found Alert
+    }
+}
 
-    $('body').append(``);
-    $('body>img:last-child').css({
-        'height': '100px',
-        'width': '100px',
-        'border-radius': '100%',
-        'background-color': 'red',
-        'position': 'absolute',
-        'left': '0',
-        'right': '0',
-        'top': '0',
-        'bottom': '0',
-        'margin': 'auto'
-    });
-});
-
-
-$(window).on('load', function () {
-    $('*').css('visibility', 'visible');
-});
-
-let myArray = [];
-$("#btnAddCustomer").click(function () {
-    let cCode = $("#txtCustomerCode").val();
-    let cName = $("#txtCustomerName").val();
-    let cNIC = $("#txtCustomerNIC").val();
-    let cDOB = $("#txtCustomerDOB").val();
-    let cAddress = $("#txtCustomerAddress").val();
-    let cSalary = $("#txtCustomerSalary").val();
-    if (String($('#btnAddCustomer').text()) === String("Save Customer")) {
-        var customer = {
-            code: cCode,
-            name: cName,
-            nic: cNIC,
-            dob: cDOB,
-            address: cAddress,
-            salary: cSalary
+function getCustomer(code) {
+    for (customer of customers){
+        if(customer.code===code){
+            return customer;
         }
-        myArray.push(customer);
+    }
+    return null;
+}
+$("#btnAddCustomer").click(function () {
+     saveButton = $('#btnAddCustomer');
+    if (String(saveButton.text()) === String("Save Customer")) {
+        saveCustomer($("#txtCustomerCode").val(),$("#txtCustomerName").val(),$("#txtCustomerNIC").val(),$("#txtCustomerDOB").val(),$("#txtCustomerAddress").val(),$("#txtCustomerSalary").val())
+        customers.push(customer);
     } else {
-        for (customer of myArray) {
-            if (String(customer.code) === String($("#txtCustomerCode").val())) {
+        for (customer of customers) {
+            if (String(customer.code) === String(cCode)){
                 customer.name = cName;
                 customer.nic = cNIC;
                 customer.dob = cDOB;
@@ -53,14 +46,14 @@ $("#btnAddCustomer").click(function () {
     }
     loadCustomers();
     $('#modalTitle').text("Add Customer");
-    $('#btnAddCustomer').text("Save Customer");
+    saveButton.text("Save Customer");
 });
 
 function loadCustomers() {
     $("#tableCustomer>tbody").empty();
     let index = 1;
-    for (let customer of myArray) {
-        var row = `<tr class="clickRows"><th scope="row">${index}</th><td>${customer.code}</td><td>${customer.name}</td><td>${customer.nic}</td><td>${customer.dob}</td><td>${customer.address}</td><td>${customer.salary}</td></tr> script`;
+    for (let customer of customers) {
+        var row = `<tr class="clickRows"><th scope="row">${index}</th><td>${customer.code}</td><td>${customer.name}</td><td>${customer.nic}</td><td>${customer.dob}</td><td>${customer.address}</td><td>${customer.salary}</td></tr> `;
 
         $("#tableCustomer>tbody").append(row);
         index++;
@@ -91,7 +84,7 @@ $('#btnSearch').click(function () {
     let searchValue = $("#floatingInput").val();
     $('#tableCustomer>tbody').empty();
     let index = 1;
-    for (let customer of myArray) {
+    for (let customer of customers) {
         if (String(customer.code) === String(searchValue)) {
             $("#lblCode").text(customer.code);
             $("#lblName").text(customer.name);
@@ -140,10 +133,10 @@ function clearFields() {
 
 
 $('#btnDelete').click(function () {
-    for (customer of myArray) {
+    for (customer of customers) {
         if (String(customer.code) === String($("#floatingInput").val())) {
-            let index = myArray.indexOf(customer);
-            myArray.splice(index, 1);
+            let index = customers.indexOf(customer);
+            customers.splice(index, 1);
         }
     }
     $("#floatingInput").val("");
@@ -156,7 +149,7 @@ $('#btnUpdate').click(function () {
     $('#modalTitle').text("Update Customer");
     $('#btnAddCustomer').text("Update Customer");
 
-    for (customer of myArray) {
+    for (customer of customers) {
         if (String(customer.code) === String($("#floatingInput").val())) {
             $("#txtCustomerCode").val(customer.code);
             $("#txtCustomerName").val(customer.name);

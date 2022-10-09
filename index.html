@@ -478,25 +478,25 @@
 
         </section>
         <div>
-        <img class="assignments-nav" id="as-arrow-left"  src="assets/images/Vector-1.png" alt="">
-        <div id="ass-nav-num">
-            <h2 class="assignments-nav">01</h2>
-            <h2 class="assignments-nav">02</h2>
-            <h2 class="assignments-nav">03</h2>
-            <h2 class="assignments-nav">04</h2>
-            <h2 class="assignments-nav">05</h2>
-            <h2 class="assignments-nav">06</h2>
-            <h2 class="assignments-nav">07</h2>
-            <h2 class="assignments-nav">08</h2>
-            <h2 class="assignments-nav">09</h2>
-            <h2 class="assignments-nav">10</h2>
-            <h2 class="assignments-nav">11</h2>
-            <h2 class="assignments-nav">12</h2>
-            <h2 class="assignments-nav">13</h2>
-            <h2 class="assignments-nav">14</h2>
-            <h2 class="assignments-nav">15</h2>
-        </div>
-        <img class="assignments-nav" id="as-arrow-right" src="assets/images/arrow-right.png" alt="">
+            <img class="assignments-nav" id="as-arrow-left" src="assets/images/Vector-1.png" alt="">
+            <div id="ass-nav-num">
+                <h2 class="assignments-nav">01</h2>
+                <h2 class="assignments-nav">02</h2>
+                <h2 class="assignments-nav">03</h2>
+                <h2 class="assignments-nav">04</h2>
+                <h2 class="assignments-nav">05</h2>
+                <h2 class="assignments-nav">06</h2>
+                <h2 class="assignments-nav">07</h2>
+                <h2 class="assignments-nav">08</h2>
+                <h2 class="assignments-nav">09</h2>
+                <h2 class="assignments-nav">10</h2>
+                <h2 class="assignments-nav">11</h2>
+                <h2 class="assignments-nav">12</h2>
+                <h2 class="assignments-nav">13</h2>
+                <h2 class="assignments-nav">14</h2>
+                <h2 class="assignments-nav">15</h2>
+            </div>
+            <img class="assignments-nav" id="as-arrow-right" src="assets/images/arrow-right.png" alt="">
         </div>
     </section>
     <section class="sections" id="Gallery">
@@ -563,7 +563,7 @@
 <script src="assets/JS/jquery-3.6.1.min.js"></script>
 <script>
 
-    $('document').ready(function(){
+    $('document').ready(function () {
         $('.sections, header').css('display', 'none');
     });
 
@@ -630,123 +630,122 @@
     });
 
     //Assignment Navigation
-    $('#as-arrow-left').click(function (){
-        $('#as-view').scrollLeft($('#as-view').scrollLeft()-400);
+    $('#as-arrow-left').click(function () {
+        $('#as-view').scrollLeft($('#as-view').scrollLeft() - 400);
         $('#ass-nav-num').scrollLeft(0);
 
     });
 
-    $('#as-arrow-right').click(function (){
-        $('#as-view').scrollLeft($('#as-view').scrollLeft()+400);
+    $('#as-arrow-right').click(function () {
+        $('#as-view').scrollLeft($('#as-view').scrollLeft() + 400);
         $('#ass-nav-num').scrollLeft(100);
     });
 
-    for (let i=0;i<15;i++){
-        $('.assignments-nav').eq(i+1).click(function (){
-            $('#as-view').scrollLeft((i*400));
+    for (let i = 0; i < 15; i++) {
+        $('.assignments-nav').eq(i + 1).click(function () {
+            $('#as-view').scrollLeft((i * 400));
         });
     }
 
     if (window.innerWidth >= 1024) {
         let sections = [document.querySelector('#intro'), document.querySelector('#skills'), document.querySelector('#projects'), document.querySelector('#about-me'), document.querySelector('#assignments'), document.querySelector('#Gallery'), document.querySelector('#contact-me')];
 
-     /*   let lastKnownScrollPosition = 0;
-        let ticking = false;
+        /*   let lastKnownScrollPosition = 0;
+           let ticking = false;
 
-        function doSomething(scrollPos) {
-            // $(document).scrollTop(100);
-        }
+           function doSomething(scrollPos) {
+               // $(document).scrollTop(100);
+           }
 
-        document.addEventListener('scroll', (e) => {
-            lastKnownScrollPosition = window.scrollY;
+           document.addEventListener('scroll', (e) => {
+               lastKnownScrollPosition = window.scrollY;
 
-            if (!ticking) {
-                window.requestAnimationFrame(() => {
-                    doSomething(lastKnownScrollPosition);
-                    ticking = false;
-                });
+               if (!ticking) {
+                   window.requestAnimationFrame(() => {
+                       doSomething(lastKnownScrollPosition);
+                       ticking = false;
+                   });
 
-                ticking = true;
-            }
-        });*/
+                   ticking = true;
+               }
+           });*/
+        /*  $("#home").click(function () {
+              window.location.hash = this.hash;
+              $('.sections:nth-child(2) > section:nth-child(2)').css({'animation-name': 'none'});
+              $('.sections:nth-child(2) > section:nth-child(1)').css({'animation-name': 'none'});
+              $('.sections:nth-child(2) > section:nth-child(1) > img:nth-child(2),.sections:nth-child(2) > section:nth-child(2) > h1:first-child,.sections:nth-child(2) > section:nth-child(2) > p').css({'animation-name': 'none'});
+              window.location.hash = "#intro";
+          });
 
-      /*  $("#home").click(function () {
-            window.location.hash = this.hash;
-            $('.sections:nth-child(2) > section:nth-child(2)').css({'animation-name': 'none'});
-            $('.sections:nth-child(2) > section:nth-child(1)').css({'animation-name': 'none'});
-            $('.sections:nth-child(2) > section:nth-child(1) > img:nth-child(2),.sections:nth-child(2) > section:nth-child(2) > h1:first-child,.sections:nth-child(2) > section:nth-child(2) > p').css({'animation-name': 'none'});
-            window.location.hash = "#intro";
-        });
+          $("#intro").click(function () {
+              window.location.hash = this.hash;
+              window.location.hash = "#skills";
+              $('#skills').css({
+                  'animation-name': 'none',
+              });
+          });
 
-        $("#intro").click(function () {
-            window.location.hash = this.hash;
-            window.location.hash = "#skills";
-            $('#skills').css({
-                'animation-name': 'none',
-            });
-        });
+          $("#skills").click(function () {
+              window.location.hash = this.hash;
+              window.location.hash = "#projects";
+              $('#projects').css({
+                  'animation-name': 'none',
+              });
+          });
 
-        $("#skills").click(function () {
-            window.location.hash = this.hash;
-            window.location.hash = "#projects";
-            $('#projects').css({
-                'animation-name': 'none',
-            });
-        });
+          $("#projects").click(function () {
+              window.location.hash = this.hash;
+              window.location.hash = "#about-me";
+              $('#about-me').css({
+                  'animation-name': 'none',
+              });
+          });
 
-        $("#projects").click(function () {
-            window.location.hash = this.hash;
-            window.location.hash = "#about-me";
-            $('#about-me').css({
-                'animation-name': 'none',
-            });
-        });
+          $("#about-me").click(function () {
+              window.location.hash = this.hash;
+              window.location.hash = "#assignments";
+              $('#assignments').css({
+                  'animation-name': 'none',
+              });
+          });
 
-        $("#about-me").click(function () {
-            window.location.hash = this.hash;
-            window.location.hash = "#assignments";
-            $('#assignments').css({
-                'animation-name': 'none',
-            });
-        });
+          $("#assignments").click(function () {
+              window.location.hash = this.hash;
+              window.location.hash = "#Gallery";
+              $('#Gallery').css({
+                  'animation-name': 'none',
+              });
+          });
 
-        $("#assignments").click(function () {
-            window.location.hash = this.hash;
-            window.location.hash = "#Gallery";
-            $('#Gallery').css({
-                'animation-name': 'none',
-            });
-        });
-
-        $("#Gallery").click(function () {
-            window.location.hash = this.hash;
-            window.location.hash = "#contact-me";
-            $('#contact-me').css({
-                'animation-name': 'none',
-            });
-        });
-        $("#contact-me").click(function () {
-            window.location.hash = this.hash;
-            window.location.hash = "#home";
-            $('#img1').css({
-                'animation-name': 'none'
-            });
-            $('#img2').css({
-                'animation-name': 'none'
-            });
-            $('#lbl2').css({
-                'animation-name': 'none'
-            });
-            $('#name').css({
-                'animation-name': 'none'
-            });
-            $('#social_groups').css({
-                'animation-name': 'none'
-            });
-            $('#hashtagAside').css({
-                'animation-name': 'none'
-            });
-        });*/
+          $("#Gallery").click(function () {
+              window.location.hash = this.hash;
+              window.location.hash = "#contact-me";
+              $('#contact-me').css({
+                  'animation-name': 'none',
+              });
+          });
+          $("#contact-me").click(function () {
+              window.location.hash = this.hash;
+              window.location.hash = "#home";
+              $('#img1').css({
+                  'animation-name': 'none'
+              });
+              $('#img2').css({
+                  'animation-name': 'none'
+              });
+              $('#lbl2').css({
+                  'animation-name': 'none'
+              });
+              $('#name').css({
+                  'animation-name': 'none'
+              });
+              $('#social_groups').css({
+                  'animation-name': 'none'
+              });
+              $('#hashtagAside').css({
+                  'animation-name': 'none'
+              });
+          });*/
 
         function fade_in(element) {
             element.css({
