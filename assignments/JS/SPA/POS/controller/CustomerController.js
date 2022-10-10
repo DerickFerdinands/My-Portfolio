@@ -5,66 +5,82 @@ function saveCustomer(code, name, nic, dob, address, salary) {
     customer.dob = dob;
     customer.address = address;
     customer.salary = salary;
+    customers.push(customer);
+    loadCustomers();
+    $('#modalTitle').text("Add Customer");
+    saveButton.text("Save Customer");
 }
 
 function updateCustomer(code, name, nic, dob, address, salary) {
-    let customer =getCustomer(code);
-    if(customer!=null){
-        customer.name=name;
-        customer.nic=nic;
-        customer.dob=dob;
-        customer.address=address;
-        customer.salary=salary;
-    }else{
-    //    Customer Not Found Alert
+    let customer = getCustomer(code);
+    if (customer != null) {
+        if (confirm("No Take Backs, Wanna Proceed?")) {
+            customer.name = name;
+            customer.nic = nic;
+            customer.dob = dob;
+            customer.address = address;
+            customer.salary = salary;
+            loadCustomers();
+            $('#modalTitle').text("Add Customer");
+            saveButton.text("Save Customer");
+        }
+    } else {
+        // Customer Not Found Alert
+        alert("Customer Not Found")
+        // callAlert("alert","Error","Customer Not Found");
     }
 }
 
 function getCustomer(code) {
-    for (customer of customers){
-        if(customer.code===code){
+    for (customer of customers) {
+        if (customer.code === code) {
             return customer;
         }
     }
     return null;
 }
-$("#btnAddCustomer").click(function () {
-     saveButton = $('#btnAddCustomer');
-    if (String(saveButton.text()) === String("Save Customer")) {
-        saveCustomer($("#txtCustomerCode").val(),$("#txtCustomerName").val(),$("#txtCustomerNIC").val(),$("#txtCustomerDOB").val(),$("#txtCustomerAddress").val(),$("#txtCustomerSalary").val())
-        customers.push(customer);
-    } else {
-        for (customer of customers) {
-            if (String(customer.code) === String(cCode)){
-                customer.name = cName;
-                customer.nic = cNIC;
-                customer.dob = cDOB;
-                customer.address = cAddress;
-                customer.salary = cSalary;
-            }
+
+function deleteCustomer(code) {
+    let customer = getCustomer(code);
+    if (customer != null) {
+        if (confirm("No Take Backs, Wanna Proceed?")) {
+            customers.splice(customers.indexOf(customer));
+            loadCustomers();
         }
+    } else {
+        alert("Customer Not Found!")
     }
-    loadCustomers();
-    $('#modalTitle').text("Add Customer");
-    saveButton.text("Save Customer");
-});
+
+}
 
 function loadCustomers() {
     $("#tableCustomer>tbody").empty();
     let index = 1;
     for (let customer of customers) {
         var row = `<tr class="clickRows"><th scope="row">${index}</th><td>${customer.code}</td><td>${customer.name}</td><td>${customer.nic}</td><td>${customer.dob}</td><td>${customer.address}</td><td>${customer.salary}</td></tr> `;
-
         $("#tableCustomer>tbody").append(row);
         index++;
     }
 }
 
+$("#btnAddCustomer").click(function () {
+    saveButton = $('#btnAddCustomer');
+    if (String(saveButton.text()) === String("Save Customer")) {
+        saveCustomer($("#txtCustomerCode").val(), $("#txtCustomerName").val(), $("#txtCustomerNIC").val(), $("#txtCustomerDOB").val(), $("#txtCustomerAddress").val(), $("#txtCustomerSalary").val())
+
+    } else {
+        updateCustomer($("#txtCustomerCode").val(), $("#txtCustomerName").val(), $("#txtCustomerNIC").val(), $("#txtCustomerDOB").val(), $("#txtCustomerAddress").val(), $("#txtCustomerSalary").val())
+    }
+
+});
+
+
 $("#btnViewAll").click(function () {
     loadCustomers();
 });
 $('#tableCustomer').on('dblclick', '.clickRows', function () {
-    this.remove();
+    let row =
+        deleteCustomer($(this).children().eq(1).text());
 });
 $('#tableCustomer').on('click', '.clickRows', function () {
     let row = $(this).children();
@@ -110,7 +126,6 @@ $('#btnClear').click(function () {
     $("#lblDOB").text("-");
     $("#lblAddress").text("-");
     $("#lblSalary").text("-");
-    $('#tableCustomer>tbody').empty();
     clearFields();
 });
 
@@ -133,49 +148,60 @@ function clearFields() {
 
 
 $('#btnDelete').click(function () {
-    for (customer of customers) {
-        if (String(customer.code) === String($("#floatingInput").val())) {
-            let index = customers.indexOf(customer);
-            customers.splice(index, 1);
-        }
-    }
-    $("#floatingInput").val("");
-    loadCustomers();
+    deleteCustomer($("#floatingInput").val())
 });
-
 
 $('#btnUpdate').click(function () {
     $('#btnAdd').click();
     $('#modalTitle').text("Update Customer");
     $('#btnAddCustomer').text("Update Customer");
-
-    for (customer of customers) {
-        if (String(customer.code) === String($("#floatingInput").val())) {
-            $("#txtCustomerCode").val(customer.code);
-            $("#txtCustomerName").val(customer.name);
-            $("#txtCustomerNIC").val(customer.nic);
-            $("#txtCustomerDOB").val(customer.dob);
-            $("#txtCustomerAddress").val(customer.address);
-            $("#txtCustomerSalary").val(customer.salary);
-        }
-    }
-    loadCustomers();
+    updateCustomer($("#floatingInput").val());
 });
 
-function addError(element) {
-    element.css('border', '3px solid red');
-    element.parent().children('h6').css('display', 'block');
-}
 
-function removeError(element) {
-    element.css('border', '3px solid green');
-    element.parent().children('h6').css('display', 'none');
-}
 $('.modal div>h6').css('display', 'none');
 
-let list = [$("#txtCustomerCode"), $("#txtCustomerName"), $("#txtCustomerNIC"), $("#txtCustomerDOB"), $("#txtCustomerAddress"), $("#txtCustomerSalary")];
+const cusIdRegex = /^(C00-)[0-9]{1,3}$/;
+const cusNameRegEx = /^[A-z ]{5,20}$/;
+const cusNICRegEx = /^[0-9]{10,15}(v)?$/;
+const cusAddressRegEx = /^[0-9/A-z. ,]{7,}$/;
+const cusSalaryRegEx = /^[0-9]{1,}[.]?[0-9]{1,2}$/
+
+
+let customerValidation = [];
+customerValidation.push({
+    element: $("#txtCustomerCode"),
+    pattern: cusIdRegex,
+    error: 'Invalid Customer ID Pattern : C00-001'
+});
+
+customerValidation.push({
+    element:$("#txtCustomerName"),
+    pattern: cusNameRegEx,
+    error: 'Invalid Customer Name Pattern : A-z 5-20'
+});
+
+customerValidation.push({
+    element:$("#txtCustomerNIC"),
+    pattern: cusNICRegEx,
+    error: 'Invalid Customer NIC Pattern : 2xxxxxxxxxxx || 2xxxxxxxxxv'
+});
+
+customerValidation.push({
+    element:$("#txtCustomerAddress"),
+    pattern: cusAddressRegEx,
+    error:'Invalid Customer Address Pattern : A-z 0-9 ,/'
+});
+
+customerValidation.push({
+    element:$("#txtCustomerSalary"),
+    pattern: cusSalaryRegEx,
+    error:'Invalid Customer Salary Pattern : 100 or 100.00'
+});
+
+checkValidity(customerValidation);
+
 $("#exampleModal input").on('keyup', (function (event) {
-    console.log(event.key);
     if (event.key === "Tab") {
         event.preventDefault();
     }
@@ -254,11 +280,3 @@ $("#exampleModal input").on('keyup', (function (event) {
     }
 }));
 
-
-/*    $(window).mousemove(function (event) {
-         $("#heading").css('position','absolute');
-        $("#heading").css('width','max-content');
-        $("#heading").css('left',event.pageX-350);
-        $("#heading").css('top',event.pageY-50);
-        console.log(event);
-    });*/

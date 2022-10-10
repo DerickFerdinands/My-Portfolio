@@ -1,5 +1,5 @@
 var janelaPopUp = new Object();
-janelaPopUp.abre = function(id, classes, titulo, corpo, functionCancelar, functionEnviar, textoCancelar, textoEnviar){
+janelaPopUp.abre =  function(id, classes, titulo, corpo, functionCancelar, functionEnviar, textoCancelar, textoEnviar){
     var cancelar = (textoCancelar !== undefined)? textoCancelar: 'No';
     var enviar = (textoEnviar !== undefined)? textoEnviar: 'Yes';
     classes += ' ';
@@ -9,7 +9,7 @@ janelaPopUp.abre = function(id, classes, titulo, corpo, functionCancelar, functi
     var classBot = '';
     $.each(classArray, function(index, value){
         switch(value){
-            case 'alert' : classBot += ' alert '; break;
+            case 'alert' : {classBot += ' alert '; cancelar="Ok";break;}
             case 'blue' : classesFundo += this + ' ';
             case 'green' : classesFundo += this + ' ';
             case 'red' : classesFundo += this + ' ';
@@ -36,6 +36,7 @@ janelaPopUp.abre = function(id, classes, titulo, corpo, functionCancelar, functi
 
         }else{
             janelaPopUp.fecha(id);
+            return false;
         }
     });
     $("#" + id + '_enviar').on("click", function(){
@@ -43,6 +44,7 @@ janelaPopUp.abre = function(id, classes, titulo, corpo, functionCancelar, functi
             functionEnviar();
         }else{
             janelaPopUp.fecha(id);
+            return true;
         }
     });
 
@@ -73,7 +75,12 @@ janelaPopUp.fecha = function(id){
 
     }
 }
- function callAlert( mode,Title, text){
+let _promote;
+  async function callAlert( mode,Title, text){
     // janelaPopUp.abre( "asdf",  "small "  + $(this).html() + ' ' + mode,  Title ,  text)
-     janelaPopUp.abre( "example", 'm red '+mode,  Title ,  text);
+      let type;
+      var promise = new Promise((resolve) => { _promote = resolve });
+      await promise.then((result) => { type = result })
+     return await janelaPopUp.abre( "clicked", 'm red '+mode,  Title ,  text);
+
 }
