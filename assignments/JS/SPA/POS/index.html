@@ -244,15 +244,15 @@
             </div>
 
             <div class="form-floating input-group mt-1 mb-3 col-10">
-                <input type="email" class="form-control bg-transparent" id="floatingInput2" placeholder="200016803088">
-                <label for="floatingInput2">Customer Name/NIC/Code</label>
-                <button class="btn btn-outline-secondary text-dark bg-opacity-75" type="button" id="button-addon3"
+                <input type="email" class="form-control bg-transparent" id="floatingInput" placeholder="200016803088">
+                <label for="floatingInput">Customer Name/NIC/Code</label>
+                <button class="btn btn-outline-secondary text-dark bg-opacity-75" type="button" id="btnSearch"
                         style="background-color: #905FCAC7">Search
                 </button>
             </div>
-            <button type="button" class="btn btn-danger  me-2">Delete</button>
-            <button type="button" class="btn btn-warning me-2">Update</button>
-            <button type="button" class="btn btn-success me-2">Clear</button>
+            <button id="btnDelete" type="button" class="btn btn-danger  me-2">Delete</button>
+            <button id="btnUpdate" type="button" class="btn btn-warning me-2">Update</button>
+            <button id="btnClear" type="button" class="btn btn-success me-2">Clear</button>
         </div>
 
         <div class="row col-sm-12 col-12 col-lg-6 col-xl-6">
@@ -260,29 +260,29 @@
                      style="background: url('assets/images/37896b78d803dd8290581130b999c866-removebg-preview.png') center; background-size: cover; height: 120%"></section>
             <div class="col-6 position-relative " style="top:40px;">
                 <h5>Customer Code</h5>
-                <h6 class="text-muted">C00-001</h6>
+                <h6 id="lblCode" class="text-muted">-</h6>
 
                 <h5>Customer Name</h5>
-                <h6 class="text-muted">Derick Andrew Ferdinands</h6>
+                <h6 id="lblName" class="text-muted">-</h6>
 
                 <h5>Customer NIC</h5>
-                <h6 class="text-muted">200416803088</h6>
+                <h6 id="lblNIC" class="text-muted">-</h6>
 
                 <h5>Customer DOB</h5>
-                <h6 class="text-muted">2004-06-16</h6>
+                <h6 id="lblDOB" class="text-muted">-</h6>
 
                 <h5>Customer Address</h5>
-                <h6 class="text-muted">No.69/A/42, Hirana, Panadura.</h6>
+                <h6 id="lblAddress" class="text-muted">-</h6>
 
                 <h5>Customer Salary</h5>
-                <h6 class="text-muted">10,000,000/=</h6>
+                <h6 id="lblSalary" class="text-muted">-</h6>
             </div>
         </div>
 
         <div class="col-sm-5 col-5 col-xl-2">
             <!-- Button trigger modal -->
-            <button type="button" class="btn btn-dark col-sm-12" data-bs-toggle="modal" data-bs-target="#exampleModal2">
-                + Add Customer
+            <button id="btnAdd" type="button" class="btn btn-dark col-sm-12" data-bs-toggle="modal"
+                    data-bs-target="#exampleModal2">+ Add Customer
             </button>
 
             <!-- Modal -->
@@ -291,7 +291,7 @@
                 <div class="modal-dialog">
                     <div class="modal-content">
                         <div class="modal-header">
-                            <h5 class="modal-title" id="exampleModalLabel2">Add Customer</h5>
+                            <h5 class="modal-title" id="modalTitle">Add Customer</h5>
                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
                         <div class="modal-body">
@@ -299,17 +299,21 @@
                                 <div class="form-floating mb-3">
                                     <input type="text" class="form-control" id="txtCustomerCode" placeholder="C00-001">
                                     <label for="txtCustomerCode">Customer Code</label>
+                                    <h6>Invalid Customer ID Pattern : C00-001</h6>
                                 </div>
 
                                 <div class="form-floating mb-3">
                                     <input type="text" class="form-control" id="txtCustomerName"
                                            placeholder="John Santiago">
                                     <label for="txtCustomerName">Customer Name</label>
+                                    <h6>Invalid Customer Name Pattern : A-z 5-20</h6>
                                 </div>
 
                                 <div class="form-floating mb-3">
-                                    <input type="text" class="form-control" id="txtCustomerNIC" placeholder="200016803088">
+                                    <input type="text" class="form-control" id="txtCustomerNIC"
+                                           placeholder="200016803088">
                                     <label for="txtCustomerNIC">Customer NIC</label>
+                                    <h6>Invalid Customer NIC Pattern : 2xxxxxxxxxxx || 2xxxxxxxxxv</h6>
                                 </div>
 
                                 <div class="form-floating mb-3">
@@ -319,19 +323,24 @@
                                 </div>
 
                                 <div class="form-floating mb-3">
-                                    <input type="text" class="form-control" id="txtCustomerAddress" placeholder="Colombia">
+                                    <input type="text" class="form-control" id="txtCustomerAddress"
+                                           placeholder="Colombia">
                                     <label for="txtCustomerAddress">Customer Address</label>
+                                    <h6>Invalid Customer Address Pattern : A-z 0-9 ,/</h6>
                                 </div>
 
                                 <div class="form-floating mb-3">
                                     <input type="text" class="form-control" id="txtCustomerSalary"
                                            placeholder="120,000,000">
                                     <label for="txtCustomerSalary">Customer Salary</label>
+                                    <h6>Invalid Customer Salary Pattern : 100 or 100.00</h6>
                                 </div>
                             </section>
                         </div>
                         <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            <button type="button" id="cModalCloseBtn" class="btn btn-secondary" data-bs-dismiss="modal">
+                                Close
+                            </button>
                             <button type="button" id="btnAddCustomer" class="btn btn-success">Save Customer</button>
                         </div>
                     </div>
@@ -343,7 +352,7 @@
 
     <section class="row mt-sm-2 col-12 ">
         <div class="col-12   text-sm-end text-lg-start ">
-            <button type="button" class="btn btn-primary text-sm-end ">View All Customers</button>
+            <button id="btnViewAll" type="button" class="btn btn-primary text-sm-end ">View All Customers</button>
         </div>
         <div class="col-12 mt-5">
             <table id="tableCustomer" class="table mt-3 table-hover">
@@ -645,7 +654,7 @@
 
             <div class="col-6">
                 <div class="form-floating input-group mt-1 ">
-                    <input type="date" class="form-control bg-transparent " id="floatingInput">
+                    <input type="date" class="form-control bg-transparent " id="floatingInput2">
                     <label for="floatingInput">Invoice Date</label>
                 </div>
             </div>
@@ -853,12 +862,12 @@
 <script src="assets/js/alerts.js"></script>
 <script src="assets/js/jquery-3.6.1.min.js"></script>
 <script src="assets/js/bootstrap.min.js"></script>
-<script src="util/ValidateFields.js"></script>
 <script src="db/DB.js"></script>
 <script src="model/Customer.js"></script>
 <script src="model/Item.js"></script>
 <script src="model/Order.js"></script>
 <script src="model/OrderDetail.js"></script>
+<script src="util/ValidateFields.js"></script>
 <script src="controller/IndexController.js"></script>
 <script src="controller/CustomerController.js"></script>
 <script src="controller/ItemController.js"></script>

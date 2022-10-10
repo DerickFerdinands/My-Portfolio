@@ -1,10 +1,31 @@
+const cusIdRegex = /^(C00-)[0-9]{1,3}$/;
+const cusNameRegEx = /^[A-z ]{5,20}$/;
+const cusNICRegEx = /^[0-9]{10,15}(v)?$/;
+const cusDOBRegex = /^[0-9]{4}(-)[0-9]{2}(-)[0-9]{2}$/;
+const cusAddressRegEx = /^[0-9/A-z. ,]{7,}$/;
+const cusSalaryRegEx = /^[0-9]{1,}[.]?[0-9]{1,2}$/;
+
+
+let customerValidation = [];
+customerValidation.push({element: $("#txtCustomerCode"), pattern: cusIdRegex});
+customerValidation.push({element: $("#txtCustomerName"), pattern: cusNameRegEx});
+customerValidation.push({element: $("#txtCustomerNIC"), pattern: cusNICRegEx});
+customerValidation.push({element: $("#txtCustomerDOB"), pattern:cusDOBRegex });
+customerValidation.push({element: $("#txtCustomerAddress"), pattern: cusAddressRegEx});
+customerValidation.push({element: $("#txtCustomerSalary"), pattern: cusSalaryRegEx});
+checkValidity(customerValidation, $("#btnAddCustomer"));
+
+
 function saveCustomer(code, name, nic, dob, address, salary) {
-    customer.code = code;
-    customer.name = name;
-    customer.nic = nic;
-    customer.dob = dob;
-    customer.address = address;
-    customer.salary = salary;
+    customer = new Object({
+        code : code,
+        name: name,
+        nic: nic,
+        dob: dob,
+        address: address,
+        salary: salary
+    });
+
     customers.push(customer);
     loadCustomers();
     $('#modalTitle').text("Add Customer");
@@ -43,7 +64,7 @@ function getCustomer(code) {
 function deleteCustomer(code) {
     let customer = getCustomer(code);
     if (customer != null) {
-        if (confirm("No Take Backs, Wanna Proceed?")) {
+        if (confirm("No Take Backs, Do You Want To Delete Customer: "+code+" ?")) {
             customers.splice(customers.indexOf(customer));
             loadCustomers();
         }
@@ -71,7 +92,7 @@ $("#btnAddCustomer").click(function () {
     } else {
         updateCustomer($("#txtCustomerCode").val(), $("#txtCustomerName").val(), $("#txtCustomerNIC").val(), $("#txtCustomerDOB").val(), $("#txtCustomerAddress").val(), $("#txtCustomerSalary").val())
     }
-
+    clearFields();
 });
 
 
@@ -79,14 +100,10 @@ $("#btnViewAll").click(function () {
     loadCustomers();
 });
 $('#tableCustomer').on('dblclick', '.clickRows', function () {
-    let row =
-        deleteCustomer($(this).children().eq(1).text());
+    let row = deleteCustomer($(this).children().eq(1).text());
 });
 $('#tableCustomer').on('click', '.clickRows', function () {
     let row = $(this).children();
-    console.log(row.eq(1).text(), row.eq(2).text(), row.eq(3).text(), row.eq(4).text(), row.eq(5).text(), row.eq(6).text());
-    // let details = row.split("\t");
-
     $("#lblCode").text(row.eq(1).text());
     $("#lblName").text(row.eq(2).text());
     $("#lblNIC").text(row.eq(3).text());
@@ -151,132 +168,28 @@ $('#btnDelete').click(function () {
     deleteCustomer($("#floatingInput").val())
 });
 
+
+$('#cModalCloseBtn').click(function () {
+    $('#modalTitle').text("Add Customer");
+    $('#btnAddCustomer').text("Save Customer");
+});
+
 $('#btnUpdate').click(function () {
-    $('#btnAdd').click();
     $('#modalTitle').text("Update Customer");
     $('#btnAddCustomer').text("Update Customer");
-    updateCustomer($("#floatingInput").val());
+    let cus = getCustomer($("#floatingInput").val());
+    $("#txtCustomerCode").val(cus.code);
+    $("#txtCustomerName").val(cus.name);
+    $("#txtCustomerNIC").val(cus.nic);
+    $("#txtCustomerDOB").val(cus.dob);
+    $("#txtCustomerAddress").val(cus.address);
+    $("#txtCustomerSalary").val(cus.salary);
+    $('#btnAdd').click();
+
 });
 
 
 $('.modal div>h6').css('display', 'none');
 
-const cusIdRegex = /^(C00-)[0-9]{1,3}$/;
-const cusNameRegEx = /^[A-z ]{5,20}$/;
-const cusNICRegEx = /^[0-9]{10,15}(v)?$/;
-const cusAddressRegEx = /^[0-9/A-z. ,]{7,}$/;
-const cusSalaryRegEx = /^[0-9]{1,}[.]?[0-9]{1,2}$/
 
-
-let customerValidation = [];
-customerValidation.push({
-    element: $("#txtCustomerCode"),
-    pattern: cusIdRegex,
-    error: 'Invalid Customer ID Pattern : C00-001'
-});
-
-customerValidation.push({
-    element:$("#txtCustomerName"),
-    pattern: cusNameRegEx,
-    error: 'Invalid Customer Name Pattern : A-z 5-20'
-});
-
-customerValidation.push({
-    element:$("#txtCustomerNIC"),
-    pattern: cusNICRegEx,
-    error: 'Invalid Customer NIC Pattern : 2xxxxxxxxxxx || 2xxxxxxxxxv'
-});
-
-customerValidation.push({
-    element:$("#txtCustomerAddress"),
-    pattern: cusAddressRegEx,
-    error:'Invalid Customer Address Pattern : A-z 0-9 ,/'
-});
-
-customerValidation.push({
-    element:$("#txtCustomerSalary"),
-    pattern: cusSalaryRegEx,
-    error:'Invalid Customer Salary Pattern : 100 or 100.00'
-});
-
-checkValidity(customerValidation);
-
-$("#exampleModal input").on('keyup', (function (event) {
-    if (event.key === "Tab") {
-        event.preventDefault();
-    }
-    let txtId = event.currentTarget.id;
-    switch (txtId) {
-        case "txtCustomerCode": {
-            let regex = /^(C00-)[0-9]{3}$/;
-            if ($("#txtCustomerCode").val().match(regex)) {
-                removeError($('#txtCustomerCode'));
-                if (event.keyCode === 13) {
-                    $("#txtCustomerName").focus();
-                }
-            } else {
-                addError($('#txtCustomerCode'));
-            }
-            break;
-        }
-        case "txtCustomerName": {
-            let regex = /^[A-z ]{5,20}$/;
-            if ($("#txtCustomerName").val().match(regex)) {
-                removeError($("#txtCustomerName"));
-                if (event.keyCode === 13) {
-                    $("#txtCustomerNIC").focus();
-                }
-            } else {
-                addError($("#txtCustomerName"));
-            }
-            break;
-        }
-        case "txtCustomerNIC": {
-            let regex = /^[0-9]{10,15}(v)?$/;
-            if ($("#txtCustomerNIC").val().match(regex)) {
-                removeError($("#txtCustomerNIC"));
-                if (event.keyCode === 13) {
-                    // $("#txtCustomerDOB").datepicker();
-                    $("#txtCustomerDOB").focus();
-                }
-            } else {
-                addError($("#txtCustomerNIC"));
-            }
-            break;
-        }
-        case "txtCustomerDOB": {
-            if (event.keyCode === 13) {
-                $("#txtCustomerAddress").focus();
-            }
-            break;
-        }
-        case "txtCustomerAddress": {
-            let regex = /^[A-z0-9, /.]+$/;
-            if ($("#txtCustomerAddress").val().match(regex)) {
-                removeError($("#txtCustomerAddress"));
-                if (event.keyCode === 13) {
-                    $("#txtCustomerSalary").focus();
-                }
-            } else {
-                addError($("#txtCustomerAddress"));
-            }
-            break;
-        }
-        case "txtCustomerSalary": {
-            let regex = /^[0-9]+$/;
-            if ($("#txtCustomerSalary").val().match(regex)) {
-                removeError($("#txtCustomerSalary"));
-                if (event.keyCode === 13) {
-                    $("#btnAddCustomer").click();
-                    clearFields();
-                    $("#txtCustomerCode").focus();
-                }
-            } else {
-                addError($("#txtCustomerSalary"));
-            }
-            break;
-
-        }
-    }
-}));
 
