@@ -424,15 +424,15 @@
             </div>
 
             <div class="form-floating input-group mt-1 mb-3 col-10">
-                <input type="email" class="form-control bg-transparent" id="floatingInput3" placeholder="200016803088">
-                <label for="floatingInput3">Item Name/Code</label>
-                <button class="btn btn-outline-secondary text-dark bg-opacity-75" type="button" id="button-addon2"
+                <input type="email" class="form-control bg-transparent" id="txtItemSearch" placeholder="200016803088">
+                <label for="txtItemSearch">Item Name/Code</label>
+                <button class="btn btn-outline-secondary text-dark bg-opacity-75" type="button" id="btnItemSearch"
                         style="background-color: #905FCAC7">Search
                 </button>
             </div>
-            <button type="button" class="btn btn-danger  me-2">Delete</button>
-            <button type="button" class="btn btn-warning me-2">Update</button>
-            <button type="button" class="btn btn-success me-2">Clear</button>
+            <button id="btnItemDelete" type="button" class="btn btn-danger  me-2">Delete</button>
+            <button id="btnItemUpdate" type="button" class="btn btn-warning me-2">Update</button>
+            <button id="btnItemClear" type="button" class="btn btn-success me-2">Clear</button>
         </div>
 
         <div class="row col-sm-12 col-12 col-lg-6 col-xl-6">
@@ -440,28 +440,28 @@
                      style="background: url('assets/images/770e20a748c4df3906285bdf0678c073-removebg-preview.png') center; background-size: cover; height: 120%"></section>
             <div class="col-6 position-relative " style="top:40px;">
                 <h5>Item Code</h5>
-                <h6 class="text-muted">I00-001</h6>
+                <h6 id="lblItemCode" class="text-muted">-</h6>
 
                 <h5>Item Name</h5>
-                <h6 class="text-muted">Sample Item</h6>
+                <h6 id="lblItemName" class="text-muted">-</h6>
 
                 <h5>Item Description</h5>
-                <h6 class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing e...</h6>
+                <h6 id="lblItemDescription" class="text-muted">-</h6>
 
                 <h5>Item Buying-Price</h5>
-                <h6 class="text-muted">1000</h6>
+                <h6 id="lblItemBP" class="text-muted">-</h6>
 
                 <h5>Item Selling-Price</h5>
-                <h6 class="text-muted">2000</h6>
+                <h6 id="lblItemSP" class="text-muted">-</h6>
 
                 <h5>Item Qty</h5>
-                <h6 class="text-muted">1000</h6>
+                <h6 id="lblItemQty" class="text-muted">-</h6>
             </div>
         </div>
 
         <div class="col-sm-5 col-5 col-xl-2">
             <!-- Button trigger modal -->
-            <button type="button" class="btn btn-dark col-sm-12" data-bs-toggle="modal" data-bs-target="#exampleModal">+
+            <button id="btnItemModal" type="button" class="btn btn-dark col-sm-12" data-bs-toggle="modal" data-bs-target="#exampleModal">+
                 Add Item
             </button>
 
@@ -471,48 +471,54 @@
                 <div class="modal-dialog">
                     <div class="modal-content">
                         <div class="modal-header">
-                            <h5 class="modal-title" id="exampleModalLabel">Add Item</h5>
+                            <h5 id="itemModalTitle" class="modal-title" >Add Item</h5>
                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
                         <div class="modal-body">
                             <section class="container">
                                 <div class="form-floating mb-3">
-                                    <input type="text" class="form-control" id="itemCode" placeholder="I00-001">
+                                    <input id="txtItemCode" type="text" class="form-control" id="itemCode" placeholder="I00-001">
                                     <label for="itemCode">Item Code</label>
+                                    <h6>Invalid Item Code, Ex:(I00-001)</h6>
                                 </div>
 
                                 <div class="form-floating mb-3">
-                                    <input type="text" class="form-control" id="itemName2" placeholder="Biscuits">
+                                    <input id="txtItemName" type="text" class="form-control" id="itemName2" placeholder="Biscuits">
                                     <label for="itemName2">Item Name</label>
+                                    <h6>Invalid Item Name</h6>
                                 </div>
 
                                 <div class="form-floating mb-3">
-                                    <input type="text" class="form-control" id="itemDescription2"
+                                    <input id="txtItemDescription" type="text" class="form-control" id="itemDescription2"
                                            placeholder="Sample Description">
                                     <label for="itemDescription2">Item Description</label>
+                                    <h6>Invalid Item Description</h6>
                                 </div>
 
                                 <div class="form-floating mb-3">
-                                    <input type="text" class="form-control" id="itemPrice" placeholder="Rs.100000/=">
+                                    <input id="txtItemBP" type="text" class="form-control" id="itemPrice" placeholder="Rs.100000/=">
                                     <label for="itemPrice">Item Buying-Price</label>
+                                    <h6>Invalid Item Buying Price, Ex:(10000.00 OR 100000)</h6>
                                 </div>
 
                                 <div class="form-floating mb-3">
-                                    <input type="text" class="form-control" id="itemSellingPrice"
+                                    <input id="txtItemSP" type="text" class="form-control" id="itemSellingPrice"
                                            placeholder="Rs.20000/=">
                                     <label for="itemSellingPrice">Item Selling-Price</label>
+                                    <h6>Invalid Item Selling Price, Ex:(10000.00 OR 100000)</h6>
                                 </div>
 
                                 <div class="form-floating mb-3">
-                                    <input type="text" class="form-control" id="itemQty" placeholder="1000">
+                                    <input id="txtItemQty" type="text" class="form-control" id="itemQty" placeholder="1000">
                                     <label for="itemQty">Item Qty</label>
+                                    <h6>Invalid Item Qty, Ex:(10)</h6>
                                 </div>
 
                             </section>
                         </div>
                         <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                            <button type="button" class="btn btn-success">Save Customer</button>
+                            <button id="btnItemClose" type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            <button id="btnAddItem" type="button" class="btn btn-success">Save Item</button>
                         </div>
                     </div>
                 </div>
@@ -523,10 +529,10 @@
 
     <section class="row mt-sm-2 ">
         <div class="col-12   text-sm-end text-lg-start ">
-            <button type="button" class="btn btn-primary text-sm-end ">View All Items</button>
+            <button id="btnItemViewAll" type="button" class="btn btn-primary text-sm-end ">View All Items</button>
         </div>
         <div class="col-12 mt-5">
-            <table class="table mt-3 table-hover">
+            <table id="tableItem" class="table mt-3 table-hover">
                 <thead class="" style="border-radius: 5px; background-color: #F18789;">
                 <tr>
                     <th scope="col">#</th>
@@ -539,63 +545,7 @@
                 </tr>
                 </thead>
                 <tbody>
-                <tr>
-                    <th scope="row">1</th>
-                    <td>I00-001</td>
-                    <td>Sample Item</td>
-                    <td>Lorem ipsum dolor sit</td>
-                    <td>1000</td>
-                    <td>2000</td>
-                    <td>10000</td>
-                </tr>
-                <tr>
-                    <th scope="row">2</th>
-                    <td>I00-001</td>
-                    <td>Sample Item</td>
-                    <td>Lorem ipsum dolor sit</td>
-                    <td>1000</td>
-                    <td>2000</td>
-                    <td>10000</td>
-                </tr>
-                <tr>
-                    <th scope="row">3</th>
-                    <td>I00-001</td>
-                    <td>Sample Item</td>
-                    <td>Lorem ipsum dolor sit</td>
-                    <td>1000</td>
-                    <td>2000</td>
-                    <td>10000</td>
-                </tr>
 
-                <tr>
-                    <th scope="row">4</th>
-                    <td>I00-001</td>
-                    <td>Sample Item</td>
-                    <td>Lorem ipsum dolor sit</td>
-                    <td>1000</td>
-                    <td>2000</td>
-                    <td>10000</td>
-                </tr>
-
-                <tr>
-                    <th scope="row">5</th>
-                    <td>I00-001</td>
-                    <td>Sample Item</td>
-                    <td>Lorem ipsum dolor sit</td>
-                    <td>1000</td>
-                    <td>2000</td>
-                    <td>10000</td>
-                </tr>
-
-                <tr>
-                    <th scope="row">6</th>
-                    <td>I00-001</td>
-                    <td>Sample Item</td>
-                    <td>Lorem ipsum dolor sit</td>
-                    <td>1000</td>
-                    <td>2000</td>
-                    <td>10000</td>
-                </tr>
                 </tbody>
             </table>
         </div>
@@ -661,10 +611,8 @@
 
             <div class=" col-6 mt-4 mb-5 ">
                 <select class="form-select bg-transparent " aria-label="Default select example">
-                    <option selected class="col-6">Customer</option>
-                    <option value="1">C00-001</option>
-                    <option value="2">C00-002</option>
-                    <option value="3">C00-003</option>
+                    <option id="cmbCustomers" selected class="col-6">Customer</option>
+
                 </select>
             </div>
 
@@ -691,10 +639,8 @@
                 style="border: 1px solid black; height: max-content; margin: 0;">Select Items</h4>
             <div class=" col-6 mt-4 mb-5 ">
                 <select class="form-select bg-transparent " aria-label="Default select example">
-                    <option selected class="col-6">Item</option>
-                    <option value="1">I00-001</option>
-                    <option value="2">I00-002</option>
-                    <option value="3">I00-003</option>
+                    <option id="cmbItems" selected class="col-6">Item</option>
+
                 </select>
             </div>
             <div class="col-6">

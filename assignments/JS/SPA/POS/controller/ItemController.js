@@ -1,190 +1,190 @@
-const cusIdRegex = /^(C00-)[0-9]{1,3}$/;
-const cusNameRegEx = /^[A-z ]{5,20}$/;
-const cusNICRegEx = /^[0-9]{10,15}(v)?$/;
-const cusDOBRegex = /^[0-9]{4}(-)[0-9]{2}(-)[0-9]{2}$/;
-const cusAddressRegEx = /^[0-9/A-z. ,]{7,}$/;
-const cusSalaryRegEx = /^[0-9]{1,}[.]?[0-9]{1,2}$/;
+const itemIdRegex = /^(I00-)[0-9]{1,3}$/;
+const itemNameRegEx = /^[A-z ]{5,20}$/;
+const itemDescriptionRegEx = /^[0-9/A-z. ,-]{7,}$/;
+const itemBPRegEx = /^[0-9]{1,}[.]?[0-9]{1,2}$/;
+const itemSPRegEx = /^[0-9]{1,}[.]?[0-9]{1,2}$/;
+const itemQtyRegEx = /^[0-9]{1,}$/;
 
 
-let customerValidation = [];
-customerValidation.push({element: $("#txtCustomerCode"), pattern: cusIdRegex});
-customerValidation.push({element: $("#txtCustomerName"), pattern: cusNameRegEx});
-customerValidation.push({element: $("#txtCustomerNIC"), pattern: cusNICRegEx});
-customerValidation.push({element: $("#txtCustomerDOB"), pattern:cusDOBRegex });
-customerValidation.push({element: $("#txtCustomerAddress"), pattern: cusAddressRegEx});
-customerValidation.push({element: $("#txtCustomerSalary"), pattern: cusSalaryRegEx});
-checkValidity(customerValidation, $("#btnAddCustomer"));
+let itemValidation = [];
+itemValidation.push({element: $("#txtItemCode"), pattern: itemIdRegex});
+itemValidation.push({element: $("#txtItemName"), pattern: itemNameRegEx});
+itemValidation.push({element: $("#txtItemDescription"), pattern: itemDescriptionRegEx});
+itemValidation.push({element: $("#txtItemBP"), pattern:itemBPRegEx });
+itemValidation.push({element: $("#txtItemSP"), pattern: itemSPRegEx});
+itemValidation.push({element: $("#txtItemQty"), pattern: itemQtyRegEx});
+checkValidity(itemValidation, $("#btnAddItem"));
 
 
-function saveCustomer(code, name, nic, dob, address, salary) {
-    customer = new Object({
+function saveItem(code, name, description, BP, SP, Qty) {
+    item = new Object({
         code : code,
         name: name,
-        nic: nic,
-        dob: dob,
-        address: address,
-        salary: salary
+        description: description,
+        buyingPrice: BP,
+        sellingPrice: SP,
+        qty: Qty
     });
 
-    customers.push(customer);
-    loadCustomers();
-    $('#modalTitle').text("Add Customer");
-    saveButton.text("Save Customer");
+    items.push(item);
+    loadItems();
+    $('#itemModalTitle').text("Add Item");
+    $('#btnAddItem').text("Save Item");
 }
 
-function updateCustomer(code, name, nic, dob, address, salary) {
-    let customer = getCustomer(code);
-    if (customer != null) {
+function updateItem(code, name, description, BP, SP, Qty) {
+    let item = getItem(code);
+    if (item != null) {
         if (confirm("No Take Backs, Wanna Proceed?")) {
-            customer.name = name;
-            customer.nic = nic;
-            customer.dob = dob;
-            customer.address = address;
-            customer.salary = salary;
-            loadCustomers();
-            $('#modalTitle').text("Add Customer");
-            saveButton.text("Save Customer");
+            item.name = name;
+            item.description = description;
+            item.buyingPrice = BP;
+            item.sellingPrice = SP;
+            item.qty = Qty;
+            loadItems();
+            $('#itemModalTitle').text("Add Item");
+            $('#btnAddItem').text("Save Item");
         }
     } else {
-        // Customer Not Found Alert
-        alert("Customer Not Found")
+        // Item Not Found Alert
+        alert("Item Not Found")
         // callAlert("alert","Error","Customer Not Found");
     }
 }
 
-function getCustomer(code) {
-    for (customer of customers) {
-        if (customer.code === code) {
-            return customer;
+function getItem(code) {
+    for (item of items) {
+        if (item.code == code) {
+            return item;
         }
     }
     return null;
 }
 
-function deleteCustomer(code) {
-    let customer = getCustomer(code);
-    if (customer != null) {
-        if (confirm("No Take Backs, Do You Want To Delete Customer: "+code+" ?")) {
-            customers.splice(customers.indexOf(customer));
-            loadCustomers();
+function deleteItem(code) {
+    let item = getItem(code);
+    if (item != null) {
+        if (confirm("No Take Backs, Do You Want To Delete Item: "+code+" ?")) {
+            items.splice(items.indexOf(item));
+            loadItems();
         }
     } else {
-        alert("Customer Not Found!")
+        alert("Item Not Found!")
     }
 
 }
 
-function loadCustomers() {
-    $("#tableCustomer>tbody").empty();
+function loadItems() {
+    $("#tableItem>tbody").empty();
     let index = 1;
-    for (let customer of customers) {
-        var row = `<tr class="clickRows"><th scope="row">${index}</th><td>${customer.code}</td><td>${customer.name}</td><td>${customer.nic}</td><td>${customer.dob}</td><td>${customer.address}</td><td>${customer.salary}</td></tr> `;
-        $("#tableCustomer>tbody").append(row);
+    for (let item of items) {
+        var row = `<tr class="clickRows"><th scope="row">${index}</th><td>${item.code}</td><td>${item.name}</td><td>${item.description}</td><td>${item.buyingPrice}</td><td>${item.sellingPrice}</td><td>${item.qty}</td></tr> `;
+        $("#tableItem>tbody").append(row);
         index++;
     }
 }
 
-$("#btnAddCustomer").click(function () {
-    saveButton = $('#btnAddCustomer');
-    if (String(saveButton.text()) === String("Save Customer")) {
-        saveCustomer($("#txtCustomerCode").val(), $("#txtCustomerName").val(), $("#txtCustomerNIC").val(), $("#txtCustomerDOB").val(), $("#txtCustomerAddress").val(), $("#txtCustomerSalary").val())
+$("#btnAddItem").click(function () {
+    saveButton = $('#btnAddItem');
+    if (String(saveButton.text()) === String("Save Item")) {
+        saveItem($("#txtItemCode").val(), $("#txtItemName").val(), $("#txtItemDescription").val(), $("#txtItemBP").val(), $("#txtItemSP").val(), $("#txtItemQty").val());
 
     } else {
-        updateCustomer($("#txtCustomerCode").val(), $("#txtCustomerName").val(), $("#txtCustomerNIC").val(), $("#txtCustomerDOB").val(), $("#txtCustomerAddress").val(), $("#txtCustomerSalary").val())
+        updateItem($("#txtItemCode").val(), $("#txtItemName").val(), $("#txtItemDescription").val(), $("#txtItemBP").val(), $("#txtItemSP").val(), $("#txtItemQty").val());
     }
-    clearFields();
+    clearItemFields();
 });
 
 
-$("#btnViewAll").click(function () {
-    loadCustomers();
+$("#btnItemViewAll").click(function () {
+    loadItems();
 });
-$('#tableCustomer').on('dblclick', '.clickRows', function () {
-    let row = deleteCustomer($(this).children().eq(1).text());
+$('#tableItem').on('dblclick', '.clickRows', function () {
+    let row = deleteItem($(this).children().eq(1).text());
 });
-$('#tableCustomer').on('click', '.clickRows', function () {
+$('#tableItem').on('click', '.clickRows', function () {
     let row = $(this).children();
-    $("#lblCode").text(row.eq(1).text());
-    $("#lblName").text(row.eq(2).text());
-    $("#lblNIC").text(row.eq(3).text());
-    $("#lblDOB").text(row.eq(4).text());
-    $("#lblAddress").text(row.eq(5).text());
-    $("#lblSalary").text(row.eq(6).text());
-    $("#floatingInput").val(row.eq(1).text());
+    $("#lblItemCode").text(row.eq(1).text());
+    $("#lblItemName").text(row.eq(2).text());
+    $("#lblItemDescription").text(row.eq(3).text());
+    $("#lblItemBP").text(row.eq(4).text());
+    $("#lblItemSP").text(row.eq(5).text());
+    $("#lblItemQty").text(row.eq(6).text());
+    $("#txtItemSearch").val(row.eq(1).text());
 });
 
-$('#btnSearch').click(function () {
-    let searchValue = $("#floatingInput").val();
-    $('#tableCustomer>tbody').empty();
+$('#btnItemSearch').click(function () {
+    let searchValue = $("#txtItemSearch").val();
+    $('#tableItem>tbody').empty();
     let index = 1;
-    for (let customer of customers) {
-        if (String(customer.code) === String(searchValue)) {
-            $("#lblCode").text(customer.code);
-            $("#lblName").text(customer.name);
-            $("#lblNIC").text(customer.nic);
-            $("#lblDOB").text(customer.dob);
-            $("#lblAddress").text(customer.address);
-            $("#lblSalary").text(customer.salary);
+    for (let item of items) {
+        if (String(item.code) === String(searchValue)) {
+            $("#lblItemCode").text(item.code);
+            $("#lblItemName").text(item.name);
+            $("#lblItemDescription").text(item.description);
+            $("#lblItemBP").text(item.buyingPrice);
+            $("#lblItemSP").text(item.sellingPrice);
+            $("#lblItemQty").text(item.qty);
         }
 
-        if (customer.code.includes(searchValue) || customer.name.includes(searchValue) || customer.nic.includes(searchValue) || customer.dob.includes(searchValue) || customer.address.includes(searchValue) || customer.salary.includes(searchValue)) {
-            var row = `<tr class="clickRows"><th scope="row">${index}</th><td>${customer.code}</td><td>${customer.name}</td><td>${customer.nic}</td><td>${customer.dob}</td><td>${customer.address}</td><td>${customer.salary}</td></tr> script`;
-            $("#tableCustomer>tbody").append(row);
+        if (item.code.includes(searchValue) || item.name.includes(searchValue) || item.description.includes(searchValue) || item.buyingPrice.includes(searchValue) || item.sellingPrice.includes(searchValue) || item.qty.includes(searchValue)) {
+            var row = `<tr class="clickRows"><th scope="row">${index}</th><td>${item.code}</td><td>${item.name}</td><td>${item.description}</td><td>${item.buyingPrice}</td><td>${item.sellingPrice}</td><td>${item.qty}</td></tr> script`;
+            $("#tableItem>tbody").append(row);
             index++;
         }
     }
 });
 
-$('#btnClear').click(function () {
-    $("#floatingInput").val("");
-    $("#lblCode").text("-");
-    $("#lblName").text("-");
-    $("#lblNIC").text("-");
-    $("#lblDOB").text("-");
-    $("#lblAddress").text("-");
-    $("#lblSalary").text("-");
-    clearFields();
+$('#btnItemClear').click(function () {
+    $("#txtItemSearch").val("");
+    $("#lblItemCode").text("-");
+    $("#lblItemName").text("-");
+    $("#lblItemDescription").text("-");
+    $("#lblItemBP").text("-");
+    $("#lblItemSP").text("-");
+    $("#lblItemQty").text("-");
+    clearItemFields();
 });
 
-function clearFields() {
-    $("#txtCustomerCode").val("");
-    $("#txtCustomerName").val("");
-    $("#txtCustomerNIC").val("");
-    $("#txtCustomerDOB").val("");
-    $("#txtCustomerAddress").val("");
-    $("#txtCustomerSalary").val("");
-    $('#modalTitle').text("Add Customer");
-    $('#btnAddCustomer').text("Save Customer");
-    $("#txtCustomerCode").css('border', '1px solid grey');
-    $("#txtCustomerName").css('border', '1px solid grey');
-    $("#txtCustomerNIC").css('border', '1px solid grey');
-    $("#txtCustomerDOB").css('border', '1px solid grey');
-    $("#txtCustomerAddress").css('border', '1px solid grey');
-    $("#txtCustomerSalary").css('border', '1px solid grey');
+function clearItemFields() {
+    $("#txtItemCode").val("");
+    $("#txtItemName").val("");
+    $("#txtItemDescription").val("");
+    $("#txtItemBP").val("");
+    $("#txtItemSP").val("");
+    $("#txtItemQty").val("");
+    $('#itemModalTitle').text("Add Item");
+    $('#btnAddItem').text("Save Item");
+    $("#txtItemCode").css('border', '1px solid grey');
+    $("#txtItemName").css('border', '1px solid grey');
+    $("#txtItemDescription").css('border', '1px solid grey');
+    $("#txtItemBP").css('border', '1px solid grey');
+    $("#txtItemSP").css('border', '1px solid grey');
+    $("#txtItemQty").css('border', '1px solid grey');
 }
 
 
-$('#btnDelete').click(function () {
-    deleteCustomer($("#floatingInput").val())
+$('#btnItemDelete').click(function () {
+    deleteItem($("#txtItemSearch").val())
 });
 
 
-$('#cModalCloseBtn').click(function () {
-    $('#modalTitle').text("Add Customer");
-    $('#btnAddCustomer').text("Save Customer");
+$('#btnItemClose').click(function () {
+    $('#itemModalTitle').text("Add Item");
+    $('#btnAddItem').text("Save Item");
 });
 
-$('#btnUpdate').click(function () {
-    $('#modalTitle').text("Update Customer");
-    $('#btnAddCustomer').text("Update Customer");
-    let cus = getCustomer($("#floatingInput").val());
-    $("#txtCustomerCode").val(cus.code);
-    $("#txtCustomerName").val(cus.name);
-    $("#txtCustomerNIC").val(cus.nic);
-    $("#txtCustomerDOB").val(cus.dob);
-    $("#txtCustomerAddress").val(cus.address);
-    $("#txtCustomerSalary").val(cus.salary);
-    $('#btnAdd').click();
+$('#btnItemUpdate').click(function () {
+    $('#itemModalTitle').text("Update Item");
+    $('#btnAddItem').text("Update Item");
+    let item = getItem($("#txtItemSearch").val());
+    $("#txtItemCode").val(item.code);
+    $("#txtItemName").val(item.name);
+    $("#txtItemDescription").val(item.description);
+    $("#txtItemBP").val(item.buyingPrice);
+    $("#txtItemSP").val(item.sellingPrice);
+    $("#txtItemQty").val(item.qty);
+    $('#btnItemModal').click();
 
 });
 

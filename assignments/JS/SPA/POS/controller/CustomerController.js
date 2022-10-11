@@ -29,7 +29,7 @@ function saveCustomer(code, name, nic, dob, address, salary) {
     customers.push(customer);
     loadCustomers();
     $('#modalTitle').text("Add Customer");
-    saveButton.text("Save Customer");
+    $('#btnAddCustomer').text("Save Customer");
 }
 
 function updateCustomer(code, name, nic, dob, address, salary) {
