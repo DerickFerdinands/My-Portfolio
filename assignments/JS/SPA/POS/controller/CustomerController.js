@@ -30,24 +30,56 @@ function saveCustomer(code, name, nic, dob, address, salary) {
     loadCustomers();
     $('#modalTitle').text("Add Customer");
     $('#btnAddCustomer').text("Save Customer");
+
+    // swal("Success!", "Customer Added Successfully", "success");
+    Swal.fire({
+        position: 'bottom-end',
+        icon: 'success',
+        title: '"Customer Added Successfully',
+        showConfirmButton: false,
+        timer: 1000
+    });
 }
 
 function updateCustomer(code, name, nic, dob, address, salary) {
     let customer = getCustomer(code);
     if (customer != null) {
-        if (confirm("No Take Backs, Wanna Proceed?")) {
-            customer.name = name;
-            customer.nic = nic;
-            customer.dob = dob;
-            customer.address = address;
-            customer.salary = salary;
-            loadCustomers();
-            $('#modalTitle').text("Add Customer");
-            saveButton.text("Save Customer");
-        }
+        Swal.fire({
+            title: 'Are you sure?',
+            text: "No Take Backs, Wanna Proceed?",
+            icon: 'warning',
+            showCancelButton: true,
+            confirmButtonColor: '#3085d6',
+            cancelButtonColor: '#d33',
+            confirmButtonText: 'continue'
+        }).then((result) => {
+            if (result.isConfirmed) {
+                customer.name = name;
+                customer.nic = nic;
+                customer.dob = dob;
+                customer.address = address;
+                customer.salary = salary;
+                loadCustomers();
+                $('#modalTitle').text("Add Customer");
+                saveButton.text("Save Customer");
+                Swal.fire({
+                    position: 'bottom-end',
+                    icon: 'success',
+                    title: '"Customer Updated Successfully',
+                    showConfirmButton: false,
+                    timer: 1000
+                });
+            }
+        });
+
     } else {
         // Customer Not Found Alert
-        alert("Customer Not Found")
+        // alert("Customer Not Found")
+        Swal.fire({
+            icon: 'error',
+            title: 'Oops...',
+            text: 'Customer Not Found!'
+        })
         // callAlert("alert","Error","Customer Not Found");
     }
 }
@@ -64,12 +96,34 @@ function getCustomer(code) {
 function deleteCustomer(code) {
     let customer = getCustomer(code);
     if (customer != null) {
-        if (confirm("No Take Backs, Do You Want To Delete Customer: "+code+" ?")) {
-            customers.splice(customers.indexOf(customer));
-            loadCustomers();
-        }
+        Swal.fire({
+            title: 'Are you sure?',
+            text: "No Take Backs,Do You Want To Delete Customer: "+code+" ?",
+            icon: 'warning',
+            showCancelButton: true,
+            confirmButtonColor: '#3085d6',
+            cancelButtonColor: '#d33',
+            confirmButtonText: 'continue'
+        }).then((result) => {
+            if (result.isConfirmed) {
+                customers.splice(customers.indexOf(customer));
+                loadCustomers();
+                Swal.fire({
+                    position: 'bottom-end',
+                    icon: 'success',
+                    title: '"Customer Deleted Successfully',
+                    showConfirmButton: false,
+                    timer: 1000
+                });
+            }
+        });
+
     } else {
-        alert("Customer Not Found!")
+        Swal.fire({
+            icon: 'error',
+            title: 'Oops...',
+            text: 'Customer Not Found!'
+        })
     }
 
 }
@@ -82,6 +136,7 @@ function loadCustomers() {
         $("#tableCustomer>tbody").append(row);
         index++;
     }
+    loadAllCustomerCodes();
 }
 
 $("#btnAddCustomer").click(function () {
