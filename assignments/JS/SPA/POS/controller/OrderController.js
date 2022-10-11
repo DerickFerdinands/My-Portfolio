@@ -29,9 +29,15 @@ $('#cmbItems').change(function () {
     $('#txtOIDesc').val(item.description);
     $('#txtOIUnitPrice').val(item.sellingPrice);
     $('#txtOIQty').val(item.qty);
-    $('#btnAddToCart').attr('disabled', false);
 });
-
+$('#txtOQty').keyup(function (event) {
+    let qty = +$('#txtOQty').val();
+    if((+$('#cmbItems').val()>=0)&& (qty>0)){
+        $('#btnAddToCart').attr('disabled', false);
+    }else{
+        $('#btnAddToCart').attr('disabled', true);
+    }
+});
 $('#btnAddToCart').click(function () {
     let QtyOnHand = +$('#txtOIQty').val();
     let qty = +$('#txtOQty').val();
@@ -104,6 +110,30 @@ function loadCartItems() {
 
         itemTable.append(row);
         count++;
+    }
+    calculateTotal();
+}
+
+function calculateTotal() {
+    let total=0;
+    for (od of orderDetailList){
+        total+=+od.cost;
+    }
+    $('lblTotal').text(total);
+    let discount = +($('#txtDiscount').val());
+    let subTotal;
+    if(discount>=0){
+        subTotal=total-discount;
+        $('#lblSubTotal').text(subTotal);
+    }else{
+        subTotal=total;
+        $('#lblSubTotal').text(total);
+    }
+    let cash = +($('#txtCashAmount').val());
+    if(cash>0){
+        $('#lblBalance').text(cash-subTotal);
+    }else{
+        $('#lblBalance').text(0);
     }
 }
 

@@ -695,30 +695,30 @@
 
         <div class="row col-sm-12  col-lg-6 col-xl-3 justify-content-center align-items-center ms-3 position-relative"
              style="top: 40px;">
-            <h4 class="col-5">Sub-Total:</h4>
-            <h4 class="col-5 text-danger text-start">100,000/=</h4>
+            <h4 class="col-5">Total:</h4>
+            <h4 id="lblTotal" class="col-5 text-danger text-start"></h4>
 
             <div class="col-12">
                 <div class="form-floating input-group">
-                    <input type="text" class="form-control bg-transparent " id="cash" placeholder="D.A.Ferdinands">
-                    <label for="cash">Cash</label>
+                    <input id="txtCashAmount" type="text" class="form-control bg-transparent " id="cash" placeholder="D.A.Ferdinands">
+                    <label  for="cash">Cash</label>
                 </div>
             </div>
 
             <div class="col-12">
                 <div class="form-floating input-group  ">
-                    <input type="text" class="form-control bg-transparent " id="discount" placeholder="D.A.Ferdinands">
+                    <input id="txtDiscount" type="text" class="form-control bg-transparent " id="discount" placeholder="D.A.Ferdinands">
                     <label for="discount">Discount</label>
                 </div>
             </div>
 
-            <h4 class="col-5">Total:</h4>
-            <h4 class="col-5 text-danger text-start">99,000/=</h4>
+            <h4 class="col-5">Sub-Total:</h4>
+            <h4 id="lblSubTotal" class="col-5 text-danger text-start"></h4>
 
             <h4 class="col-5">Balance:</h4>
-            <h4 class="col-5 text-danger text-success">1,000/=</h4>
+            <h4 id="lblBalance" class="col-5 text-danger text-success"></h4>
 
-            <button type="button" class="btn btn-dark col-10 ">
+            <button id="btnPlaceOrder" disabled="true" type="button" class="btn btn-dark col-10 ">
                 Place Order
             </button>
         </div>
