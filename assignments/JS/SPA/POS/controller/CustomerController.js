@@ -25,20 +25,21 @@ function saveCustomer(code, name, nic, dob, address, salary) {
         address: address,
         salary: salary
     });
-
+    console.log('saveCustomer Ran Once');
     customers.push(customer);
     loadCustomers();
     $('#modalTitle').text("Add Customer");
     $('#btnAddCustomer').text("Save Customer");
 
     // swal("Success!", "Customer Added Successfully", "success");
-    Swal.fire({
+/*    Swal.fire({
         position: 'bottom-end',
         icon: 'success',
         title: '"Customer Added Successfully',
         showConfirmButton: false,
         timer: 1000
-    });
+    });*/
+    $("#txtCustomerCode").focus();
 }
 
 function updateCustomer(code, name, nic, dob, address, salary) {
@@ -129,9 +130,10 @@ function deleteCustomer(code) {
 }
 
 function loadCustomers() {
+    console.log("called once");
     $("#tableCustomer>tbody").empty();
     let index = 1;
-    for (let customer of customers) {
+    for ( customer of customers) {
         var row = `<tr class="clickRows"><th scope="row">${index}</th><td>${customer.code}</td><td>${customer.name}</td><td>${customer.nic}</td><td>${customer.dob}</td><td>${customer.address}</td><td>${customer.salary}</td></tr> `;
         $("#tableCustomer>tbody").append(row);
         index++;
@@ -142,10 +144,10 @@ function loadCustomers() {
 $("#btnAddCustomer").click(function () {
     saveButton = $('#btnAddCustomer');
     if (String(saveButton.text()) === String("Save Customer")) {
-        saveCustomer($("#txtCustomerCode").val(), $("#txtCustomerName").val(), $("#txtCustomerNIC").val(), $("#txtCustomerDOB").val(), $("#txtCustomerAddress").val(), $("#txtCustomerSalary").val())
+        saveCustomer($("#txtCustomerCode").val(), $("#txtCustomerName").val(), $("#txtCustomerNIC").val(), $("#txtCustomerDOB").val(), $("#txtCustomerAddress").val(), $("#txtCustomerSalary").val());
 
     } else {
-        updateCustomer($("#txtCustomerCode").val(), $("#txtCustomerName").val(), $("#txtCustomerNIC").val(), $("#txtCustomerDOB").val(), $("#txtCustomerAddress").val(), $("#txtCustomerSalary").val())
+        updateCustomer($("#txtCustomerCode").val(), $("#txtCustomerName").val(), $("#txtCustomerNIC").val(), $("#txtCustomerDOB").val(), $("#txtCustomerAddress").val(), $("#txtCustomerSalary").val());
     }
     clearFields();
 });
@@ -172,7 +174,7 @@ $('#btnSearch').click(function () {
     let searchValue = $("#floatingInput").val();
     $('#tableCustomer>tbody').empty();
     let index = 1;
-    for (let customer of customers) {
+    for ( customer of customers) {
         if (String(customer.code) === String(searchValue)) {
             $("#lblCode").text(customer.code);
             $("#lblName").text(customer.name);

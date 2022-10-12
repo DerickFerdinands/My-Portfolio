@@ -30,7 +30,7 @@ function saveItem(code, name, description, BP, SP, Qty) {
     loadItems();
     $('#itemModalTitle').text("Add Item");
     $('#btnAddItem').text("Save Item");
-    loadAllItemCodes();
+
 }
 
 function updateItem(code, name, description, BP, SP, Qty) {
@@ -83,6 +83,7 @@ function loadItems() {
         $("#tableItem>tbody").append(row);
         index++;
     }
+    loadAllItemCodes();
 }
 
 $("#btnAddItem").click(function () {
