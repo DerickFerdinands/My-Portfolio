@@ -37,9 +37,9 @@ function checkValidity(valArr, button) {
                     console.log("One one")
                     btn.click();
                     valArr[0].element.focus();
-                  /*  for( val of valArr){
+                    for( val of valArr){
                         errArr.push(val.element);
-                    }*/
+                    }
                 } else {
                     nextElem.focus();
                     addToErrArr(nextElem);

@@ -66,7 +66,7 @@ function deleteItem(code) {
     let item = getItem(code);
     if (item != null) {
         if (confirm("No Take Backs, Do You Want To Delete Item: "+code+" ?")) {
-            items.splice(items.indexOf(item));
+            items.splice(items.indexOf(item),1);
             loadItems();
         }
     } else {

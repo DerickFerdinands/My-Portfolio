@@ -86,9 +86,9 @@ function updateCustomer(code, name, nic, dob, address, salary) {
 }
 
 function getCustomer(code) {
-    for (customer of customers) {
-        if (customer.code === code) {
-            return customer;
+    for (c of customers) {
+        if (c.code === code) {
+            return c;
         }
     }
     return null;
@@ -107,7 +107,7 @@ function deleteCustomer(code) {
             confirmButtonText: 'continue'
         }).then((result) => {
             if (result.isConfirmed) {
-                customers.splice(customers.indexOf(customer));
+                customers.splice(customers.indexOf(customer),1);
                 loadCustomers();
                 Swal.fire({
                     position: 'bottom-end',
