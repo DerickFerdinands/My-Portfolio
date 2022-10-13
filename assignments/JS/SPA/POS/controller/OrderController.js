@@ -68,7 +68,7 @@ $('#btnAddToCart').click(function () {
     }
 });
 
-let orderDetailList = new Array();
+let orderDetailList = [];
 
 function getExistingOrderDetail(code) {
     for (od of orderDetailList) {
@@ -105,17 +105,31 @@ function loadCartItems() {
                     <td>${od.cost}</td>
                     <td>
                         <button type="button" class="btn btn-danger btnRemoveFromCart">Remove</button>
-                    </td>`;
+                    </td> </tr>`;
 
         itemTable.append(row);
         count++;
     }
     calculateTotal();
+    $('.btnRemoveFromCart').click(function(){
+        removeFromDeets($(this).parents('tr').children('td').eq(0).text());
+        loadCartItems();
+    });
+}
+
+function removeFromDeets(code) {
+    for (od of orderDetailList){
+        if(od.item.code===code){
+            orderDetailList.splice(orderDetailList.indexOf(od),1);
+        }
+    }
 }
 
 $('#txtCashAmount,#txtDiscount').keyup(function () {
     calculateTotal();
 });
+
+
 
 
 function calculateTotal() {
@@ -182,7 +196,7 @@ $('#btnPlaceOrder').click(function () {
                             for (od of orderDetailList) {
                                 od.item.qty -= od.qty;
                             }
-                            orderDetailList= new Array();
+                            orderDetailList = [];
                             Swal.fire({
                                 icon: 'success',
                                 title: 'Yayyy!',
@@ -237,6 +251,7 @@ function clearOrderFields() {
     $('#txtCashAmount,#txtDiscount,#txtOIName,#txtOIDesc,#txtOIUnitPrice,#txtOIQty,#txtOQty,#txtOrderId,#dtpckerODate,#txtOCName,#txtOCAddress').val("");
     $('#lblTotal,#lblSubTotal,#lblBalance').text("");
     $('#orderTable>tbody').empty();
+    setOrderID();
 }
 
 $('#txtOrderId').keyup(function (event) {
@@ -264,9 +279,7 @@ $('#txtOrderId').keyup(function (event) {
                     <td>${od.item.sellingPrice}</td>
                     <td>${od.qty}</td>
                     <td>${od.cost}</td>
-                    <td>
-                        <button type="button" class="btn btn-danger btnRemoveFromCart">Remove</button>
-                    </td>`;
+                    </tr>`;
 
                     itemTable.append(row);
                     count++;
@@ -276,4 +289,18 @@ $('#txtOrderId').keyup(function (event) {
         }
     }
 });
+setOrderID();
 
+function setOrderID(){
+    if(orders.length===0){
+        $('#txtOrderId').val('OID-001');
+    }else{
+       let split =  orders[orders.length-1].code.split('-');
+       let num =(+split[1])+1;
+        $('#txtOrderId').val('OID-' + (String(num).padStart(3,'0')));
+    }
+}
+
+$('#btnOrderClear').click(function () {
+    clearOrderFields();
+});
