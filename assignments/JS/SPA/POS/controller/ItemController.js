@@ -1,5 +1,5 @@
 const itemIdRegex = /^(I00-)[0-9]{1,3}$/;
-const itemNameRegEx = /^[A-z ]{5,20}$/;
+const itemNameRegEx = /^[A-z0-9() ]{5,20}$/;
 const itemDescriptionRegEx = /^[0-9/A-z. ,-]{7,}$/;
 const itemBPRegEx = /^[0-9]{1,}[.]?[0-9]{1,2}$/;
 const itemSPRegEx = /^[0-9]{1,}[.]?[0-9]{1,2}$/;

@@ -230,37 +230,38 @@
     <section class="sections" id="projects">
         <img id="project-background-img" src="assets/images/osman-rana-G7VN8NadjO0-unsplash.jpg" alt="">
         <div>
-            <h1>01</h1>
-            <img width="662px" src="assets/images/image%2012.png" alt="">
-            <img width="662px" src="assets/images/image%2011.png" alt="">
+            <h1 id="pIndex">01</h1>
+            <img id="pImg1" width="662px" src="assets/images/image%2012.png" alt="">
+            <img id="pImg2" width="662px" src="assets/images/image%2011.png" alt="">
         </div>
         <section>
-            <h1>D24 Hostel</h1>
-            <p>The D24 Hostel is a prominent hostel accommodation located in the Colombo area. It could reserve
+            <h1 id="projectTitle">D24 Hostel</h1>
+            <p id="projectP1">The D24 Hostel is a prominent hostel accommodation located in the Colombo area. It could
+                reserve
                 rooms for all university students who are studying on Colombo campuses. This Hostel gives room
                 facilities for both boys and girls. At a time, almost 125 students can get hostel accommodation from
                 here.</p>
 
-            <p>Since its establishment, all the student, and student fees payment management processes was done
+            <p id="projectP2">Since its establishment, all the student, and student fees payment management processes
+                was done
                 manually so far keeping records on physical files. However, time by time increasing the spacing of
                 the Hostel and increasing students’ hostel needs, this management is facing more and more
                 problems in keeping records of the students and employees.
             </p>
-            <p>Therefore, A Reservation Management System Was Introduced.</p>
-            <h3><a href="https://github.com/DerickFerdinands/ORM-Coursework.git"><i class="fa-brands fa-github"></i>
+            <p id="projectP3">Therefore, A Reservation Management System Was Introduced.</p>
+            <h3><a id="projectLink" href="https://github.com/DerickFerdinands/ORM-Coursework.git"><i
+                    class="fa-brands fa-github"></i>
                 https://github.com/DerickFerdinands/ORM-Coursework.git</a></h3>
         </section>
         <div>
             <h2>PROJECTS</h2>
             <div>
-                <img src="assets/images/Vector-1.png" alt="">
-                <h2>01</h2>
-                <h2>02</h2>
-                <h2>03</h2>
-                <h2>04</h2>
-                <h2>05</h2>
-                <h2>06</h2>
-                <img src="assets/images/Vector.png" alt="">
+                <img id="pLeft" class="project-nav" src="assets/images/Vector-1.png" alt="">
+                <h2 id="pOne" class="project-nav">01</h2>
+                <h2 id="pTwo" class="project-nav">02</h2>
+                <h2 id="pThree" class="project-nav">03</h2>
+                <h2 id="pFour" class="project-nav">04</h2>
+                <img id="pRight" class="project-nav" src="assets/images/Vector.png" alt="">
             </div>
         </div>
     </section>
@@ -563,6 +564,99 @@
 <script src="assets/JS/jquery-3.6.1.min.js"></script>
 <script>
 
+    $('.project-nav').css('cursor', 'pointer');
+
+    $('#pOne').click(function () {
+        $('#pIndex').text('01');
+        $('#projectTitle').text('D24 Hostel');
+        $('#pImg1').attr('src', 'assets/images/image%2012.png');
+        $('#pImg2').attr('src', 'assets/images/image%2011.png');
+        $('#projectP1').text('The D24 Hostel is a prominent hostel accommodation located in the Colombo area. It could\n' +
+            '                reserve\n' +
+            '                rooms for all university students who are studying on Colombo campuses. This Hostel gives room\n' +
+            '                facilities for both boys and girls. At a time, almost 125 students can get hostel accommodation from\n' +
+            '                here.');
+
+        $('#projectP2').text('Since its establishment, all the student, and student fees payment management processes\n' +
+            '                was done\n' +
+            '                manually so far keeping records on physical files. However, time by time increasing the spacing of\n' +
+            '                the Hostel and increasing students’ hostel needs, this management is facing more and more\n' +
+            '                problems in keeping records of the students and employees.');
+
+        $('#projectP3').text('Therefore, A Reservation Management System Was Introduced.');
+
+        $('#projectLink').text('https://github.com/DerickFerdinands/ORM-Coursework.git');
+    });
+
+    $('#pTwo').click(function () {
+        $('#pIndex').text('02');
+        $('#projectTitle').text('LA Project');
+        $('#projectTitle').css('background-size', 'cover !important');
+        $('#pImg1').attr('src', 'assets/images/projects/LayeredArchitecture/Screenshot 2022-09-14 202242.jpg');
+        $('#pImg2').attr('src', 'assets/images/projects/LayeredArchitecture/Screenshot 2022-09-14 202317.jpg');
+        $('#projectP1').text('The D24 Hostel is a prominent hostel accommodation located in the Colombo area. It could\n' +
+            '                reserve\n' +
+            '                rooms for all university students who are studying on Colombo campuses. This Hostel gives room\n' +
+            '                facilities for both boys and girls. At a time, almost 125 students can get hostel accommodation from\n' +
+            '                here.');
+
+        $('#projectP2').text('Since its establishment, all the student, and student fees payment management processes\n' +
+            '                was done\n' +
+            '                manually so far keeping records on physical files. However, time by time increasing the spacing of\n' +
+            '                the Hostel and increasing students’ hostel needs, this management is facing more and more\n' +
+            '                problems in keeping records of the students and employees.');
+
+        $('#projectP3').text('Therefore, A Reservation Management System Was Introduced.');
+
+        $('#projectLink').text('https://github.com/DerickFerdinands/LayeredArchitectureProject.git');
+    });
+
+    $('#pThree').click(function () {
+        $('#pIndex').text('03');
+        $('#projectTitle').text('ITech Lanka');
+        $('#projectTitle').css('background-size', 'cover !important');
+        $('#pImg1').attr('src', 'assets/images/projects/ITech/Screenshot 2022-09-14 201428.jpg');
+        $('#pImg2').attr('src', 'assets/images/projects/ITech/Screenshot 2022-09-14 201515.jpg');
+        $('#projectP1').text('The D24 Hostel is a prominent hostel accommodation located in the Colombo area. It could\n' +
+            '                reserve\n' +
+            '                rooms for all university students who are studying on Colombo campuses. This Hostel gives room\n' +
+            '                facilities for both boys and girls. At a time, almost 125 students can get hostel accommodation from\n' +
+            '                here.');
+
+        $('#projectP2').text('Since its establishment, all the student, and student fees payment management processes\n' +
+            '                was done\n' +
+            '                manually so far keeping records on physical files. However, time by time increasing the spacing of\n' +
+            '                the Hostel and increasing students’ hostel needs, this management is facing more and more\n' +
+            '                problems in keeping records of the students and employees.');
+
+        $('#projectP3').text('Therefore, A Reservation Management System Was Introduced.');
+
+        $('#projectLink').text('https://github.com/DerickFerdinands/Itech-V2.git');
+    });
+
+    $('#pFour').click(function () {
+        $('#pIndex').text('04');
+        $('#projectTitle').text('T&G Grocers');
+        $('#projectTitle').css('background-size', 'cover !important');
+        $('#pImg1').attr('src', 'assets/images/projects/TNG/Screenshot 2022-09-14 202923.jpg');
+        $('#pImg2').attr('src', 'assets/images/projects/TNG/Screenshot 2022-09-14 203022.jpg');
+        $('#projectP1').text('The D24 Hostel is a prominent hostel accommodation located in the Colombo area. It could\n' +
+            '                reserve\n' +
+            '                rooms for all university students who are studying on Colombo campuses. This Hostel gives room\n' +
+            '                facilities for both boys and girls. At a time, almost 125 students can get hostel accommodation from\n' +
+            '                here.');
+
+        $('#projectP2').text('Since its establishment, all the student, and student fees payment management processes\n' +
+            '                was done\n' +
+            '                manually so far keeping records on physical files. However, time by time increasing the spacing of\n' +
+            '                the Hostel and increasing students’ hostel needs, this management is facing more and more\n' +
+            '                problems in keeping records of the students and employees.');
+
+        $('#projectP3').text('Therefore, A Reservation Management System Was Introduced.');
+
+        $('#projectLink').text('https://github.com/DerickFerdinands/T-G-Groccers.git');
+    });
+
     $('document').ready(function () {
         $('.sections, header').css('display', 'none');
     });
@@ -669,6 +763,7 @@
                    ticking = true;
                }
            });*/
+
         /*  $("#home").click(function () {
               window.location.hash = this.hash;
               $('.sections:nth-child(2) > section:nth-child(2)').css({'animation-name': 'none'});
