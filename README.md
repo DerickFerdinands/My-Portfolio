@@ -1,8 +1,11 @@
 <h1>References</h1>
 Site Map : https://www.gloomaps.com/GypYZW6Jv6 <br>
-Wirefram : https://wireframe.cc/zS4vUh
+Wirefram : https://wireframe.cc/zS4vUh<br>
 Mockup : https://www.figma.com/file/uabNiTys9FrN69ldSg3Olk/Portfolio?node-id=0%3A1
 
+<h1>Deployment</h1>
+InfinityFree : http://ferdfolio.epizy.com <br>
+GitHub Pages : https://derickferdinands.github.io/My-Portfolio/ <br>
 <h3>Developed By Derick Andrew Ferdinands</h3>
 
 Desktop View
