@@ -1,4 +1,4 @@
-<h1>Technology & Frameworks</h1>
+<h3>Technology & Frameworks</h3>
 
 <ul>
   <li>HTML</li>
@@ -7,16 +7,16 @@
   <li>Bootstrap</li>
   <li>Jquery</li>
 </ul>
-<h1>References</h1>
+<h3>References</h3>
 Site Map : https://www.gloomaps.com/GypYZW6Jv6 <br>
 Wirefram : https://wireframe.cc/zS4vUh<br>
 Mockup : https://www.figma.com/file/uabNiTys9FrN69ldSg3Olk/Portfolio?node-id=0%3A1
 
-<h1>Deployment</h1>
+<h3>Deployment</h3>
 InfinityFree : http://ferdfolio.epizy.com <br>
 GitHub Pages : https://derickferdinands.github.io/My-Portfolio/ <br>
 
-<h1> Web POS Using CSS FrameWorks</h1>
+<h3> Web POS Using CSS FrameWorks</h3>
  Site-Map : https://www.gloomaps.com/zxx4GxZRAF <br>
  WireFrame : https://wireframe.cc/rscMG4 <br>
  Mockup : https://www.figma.com/file/cIj3btZnkIvPes2Dw89Kph/Untitled?node-id=0%3A1 <br>
