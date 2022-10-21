@@ -658,13 +658,14 @@
     });
 
     $('document').ready(function () {
-        $('.sections, header').css('display', 'none');
+        $('.sections, header>*').css('display', 'none');
     });
+
 
     $(window).on('load', function () {
         $('.container').css('display', 'none');
         $('.container').fadeOut(2000);
-        $('.sections, header').css('display', 'block');
+        $('.sections, header>*').css('display', 'block');
         $('#img1').css({
             'animation-name': 'onLoad_animation_img1',
             'animation-duration': '0.5s',
