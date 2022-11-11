@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="../assets/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        section {
+
+            height: 100px;
+            width: 1500px;
+            overflow: hidden;
+        }
+
+        section > div {
+            height: 100px;
+            aspect-ratio: 3/1;
+            border: 1px solid black;
+            display: inline-block;
+        }
+
+        main {
+            position: absolute;
+            inset: 0;
+            margin: auto;
+            width: max-content;
+            height: max-content;
+            bottom: -300px;
+        }
+    </style>
+</head>
+<body>
+<section id="container">
+
+</section>
+<main>
+    <button class="btn btn-success" id="btnStart" type="button">Start</button>
+    <button class="btn btn-danger" id="btnStop" type="button">Stop</button>
+</main>
+<script src="../assets/js/jquery-3.6.1.min.js"></script>
+<script src="../assets/js/bootstrap.min.js"></script>
+<script>
+
+
+
+    let divs = [ 'white', 'white', 'white', 'white', 'white','#DB8D8DFF', '#c65252', '#a83636', '#7f1414','#680909'];
+    let opp = ['white', 'white', 'white', 'white', 'white', '#680909', '#7f1414', '#a83636', '#c65252','#DB8D8DFF'];
+    let count = 0;
+    let check = true;
+
+
+    function reorder() {
+        if ( check == true ) {
+            let temp = divs.pop();
+            divs.unshift(temp);
+            count++;
+            $('#container').empty();
+            for (obj1 of divs) {
+                let div = `<div " style="background-color: ${obj1}"></div>`;
+                $('#container').append(div);
+            }
+            if (count == 10) {
+                check = false;
+            }
+        } else if (check == false) {
+
+            let temp = opp.shift();
+            opp.push(temp);
+            count--;
+            $('#container').empty();
+            for (obj1 of opp) {
+                let div = `<div  style="background-color: ${obj1}"></div>`;
+                $('#container').append(div);
+            }
+            if (count == 0) {
+                check = true;
+            }
+
+        }
+    }
+
+   let inter=0;
+    $('#btnStart').click(function(){
+        clearInterval(inter);
+        inter =  setInterval(reorder, 50);
+
+    });
+
+    $('#btnStop').click(function(){
+        clearInterval(inter);
+
+    });
+</script>
+</body>
+</html>
