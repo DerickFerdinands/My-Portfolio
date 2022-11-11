@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="../assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;800&family=Public+Sans:wght@600&family=Raleway:wght@500;600;700;800;900&display=swap" rel="stylesheet">
+    <style>
+        body {
+            height: 100vh;
+            width: 100vw;
+            overflow: hidden;
+            background-color: #e2e2e2;
+            font-family: 'Poppins', sans-serif !important;
+        }
+
+        body > section {
+            width: 80%;
+            max-width: 100vw;
+            height: 30vh;
+          /*  position: absolute;
+            inset: 0;
+            margin:auto;
+            bottom: 30px;*/
+        }
+
+        body > section {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: scroll;
+            border-radius: 10px;
+            background-color: #545e68;
+
+        }
+
+        ::-webkit-scrollbar{
+            width: 0;
+            height: 0;
+        }
+        body > section > div {
+            width: max-content;
+            height: max-content;
+            padding: 20px;
+            display: inline-block;
+            margin: 10px;
+            border-radius: 10px;
+            opacity: .7;
+        }
+
+        body > section > div > h1 {
+            width: max-content;
+            height: max-content;
+            font-family: 'Poppins', sans-serif;
+            font-size: 30px;
+            text-transform: uppercase;
+        }
+
+        input{
+            width: 30% !important;
+            display: inline-block !important;
+        }
+    </style>
+</head>
+<body class="container-fluid">
+<div class="mb-3 m-3 col-6">
+    <label class="form-label" for="txtName">Name</label>
+    <input class="form-control" id="txtName" placeholder="Derick" type="text">
+</div>
+<div class="m-3 col-6">
+    <label class="form-label" for="inColor">Color</label>
+    <input class="form-control" id="inColor" placeholder="red" type="color">
+</div>
+<button type="button" id="AddToQue" class="btn btn-success m-3">Add To Que</button>
+<section id="que">
+
+</section>
+<script src="../assets/js/jquery-3.6.1.min.js"></script>
+<script src="../assets/js/bootstrap.min.js"></script>
+<script>
+
+    let queArr = [];
+    new ColorObj('derick', 'pink'), new ColorObj('andrew', 'green'), new ColorObj('ferdinands', 'blue');
+
+    function ColorObj(name, color) {
+        this.name = name;
+        this.color = color;
+        queArr.push(this);
+        reorder();
+    }
+    reorder();
+    setInterval(reorder,500);
+
+    function reorder(){
+        let temp =queArr.pop();
+        queArr.unshift(temp);
+        $('#que').empty();
+        for ( obj1 of queArr){
+            let div = `<div style="background-color: ${obj1.color}"><h1>${obj1.name}</h1></div>`;
+            $('#que').append(div);
+        }
+    }
+
+    $('#AddToQue').click(function () {
+        new ColorObj($('#txtName').val(),$('#inColor').val());
+    });
+
+</script>
+</body>
+</html>
