@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <style>
+        ::-webkit-scrollbar {
+            width: 0;
+        }
+
+        body > h1 {
+            position: absolute;
+            font-family: poppins, sans-serif;
+            font-size: 50px;
+            font-weight: 600;
+            top: 0;
+            left: 0;
+        }
+
+        body {
+            transform-style: preserve-3d;
+            background: url('images/bg.webp') center;
+            background-size: cover;
+            height: 100vh;
+            font-size: 70px;
+            perspective: 10em;
+            perspective-origin: 50% 50%;
+            font-size: 105px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+        }
+
+        body > main {
+            transform-style: preserve-3d;
+            margin-top: 100px;
+        }
+
+        body > main > section {
+            transform-style: preserve-3d;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 50px;
+            transform: translateZ(-150px);
+            margin: 50px;
+        }
+
+        body > main > section > section {
+            transform-style: preserve-3d;
+            width: 2em;
+            height: 2em;
+            background: #2C2E3A;
+            cursor: pointer;
+        }
+
+        body > main > section > section > div {
+            font-family: poppins, sans-serif;
+            transform-style: preserve-3d;
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            background-color: #2C2E3A;
+            opacity: .9;
+            border: .5px solid #141A26;
+            box-shadow: 0 0 0.5em #000a inset;
+        }
+
+        .x {
+            width: max-content;
+            height: max-content;
+            position: absolute;
+            inset: 0;
+            margin: auto;
+            color: white;
+            margin: auto;
+            color: #094c4c;
+
+            text-shadow: 0px 0px 10px #FAFFFF;
+        }
+
+        .y {
+            width: max-content;
+            height: max-content;
+            position: absolute;
+            inset: 0;
+            margin: auto;
+            color: white;
+            margin: auto;
+            color: #7e1341;
+
+            text-shadow: 0px 0px 10px #FAFFFF;
+        }
+
+        .front {
+            transform: translateZ(1em);
+        }
+
+        .right {
+            transform: rotateY(90deg) translateZ(1em);
+        }
+
+        .back {
+            transform: rotateY(180deg) translateZ(1em);
+        }
+
+        .left {
+            transform: rotateY(270deg) translateZ(1em);
+        }
+
+        .top {
+            transform: rotateX(90deg) translateZ(1em);
+        }
+
+        .bottom {
+            transform: rotateX(270deg) translateZ(1em);
+        }
+
+        img {
+            height: 60%;
+            width: auto;
+            position: absolute;
+            inset: 0;
+            margin: auto;
+        }
+
+        main > section > section {
+            transition: all ease-in .3s;
+        }
+
+        * {
+            -webkit-user-select: none; /* Safari */
+            -ms-user-select: none; /* IE 10 and IE 11 */
+            user-select: none;
+        }
+    </style>
+</head>
+<body>
+<h1>Scores X:<span>100</span> O: <span>100</span></h1>
+<main>
+    <section>
+        <section id="one1">
+            <div class="front"><img alt="" src="assets/images/saturn-planet-4693533-3895598.png"></div>
+            <div class="back"></div>
+            <div class="left"></div>
+            <div class="right"></div>
+            <div class="top"><h1 class="x">X</h1></div>
+            <div class="bottom"><h1 class="y">O</h1></div>
+
+        </section>
+        <section id="one2">
+            <div class="front"><img alt="" src="assets/images/saturn-planet-4693533-3895598.png"></div>
+            <div class="back"></div>
+            <div class="left"></div>
+            <div class="right"></div>
+            <div class="top"><h1 class="x">X</h1></div>
+            <div class="bottom"><h1 class="y">O</h1></div>
+
+        </section>
+        <section id="one3">
+            <div class="front"><img alt="" src="assets/images/saturn-planet-4693533-3895598.png"></div>
+            <div class="back"></div>
+            <div class="left"></div>
+            <div class="right"></div>
+            <div class="top"><h1 class="x">X</h1></div>
+            <div class="bottom"><h1 class="y">O</h1></div>
+
+        </section>
+    </section>
+
+    <section>
+        <section id="two1">
+            <div class="front"><img alt="" src="assets/images/saturn-planet-4693533-3895598.png"></div>
+            <div class="back"></div>
+            <div class="left"></div>
+            <div class="right"></div>
+            <div class="top"><h1 class="x">X</h1></div>
+            <div class="bottom"><h1 class="y">O</h1></div>
+
+        </section>
+        <section id="two2">
+            <div class="front"><img alt="" src="assets/images/saturn-planet-4693533-3895598.png"></div>
+            <div class="back"></div>
+            <div class="left"></div>
+            <div class="right"></div>
+            <div class="top"><h1 class="x">X</h1></div>
+            <div class="bottom"><h1 class="y">O</h1></div>
+
+        </section>
+        <section id="two3">
+            <div class="front"><img alt="" src="assets/images/saturn-planet-4693533-3895598.png"></div>
+            <div class="back"></div>
+            <div class="left"></div>
+            <div class="right"></div>
+            <div class="top"><h1 class="x">X</h1></div>
+            <div class="bottom"><h1 class="y">O</h1></div>
+
+        </section>
+    </section>
+
+    <section>
+        <section id="three1">
+            <div class="front"><img alt="" src="assets/images/saturn-planet-4693533-3895598.png"></div>
+            <div class="back"></div>
+            <div class="left"></div>
+            <div class="right"></div>
+            <div class="top"><h1 class="x">X</h1></div>
+            <div class="bottom"><h1 class="y">O</h1></div>
+
+        </section>
+        <section id="three2">
+            <div class="front"><img alt="" src="assets/images/saturn-planet-4693533-3895598.png"></div>
+            <div class="back"></div>
+            <div class="left"></div>
+            <div class="right"></div>
+            <div class="top"><h1 class="x">X</h1></div>
+            <div class="bottom"><h1 class="y">O</h1></div>
+
+        </section>
+        <section id="three3">
+            <div class="front"><img alt="" src="assets/images/saturn-planet-4693533-3895598.png"></div>
+            <div class="back"></div>
+            <div class="left"></div>
+            <div class="right"></div>
+            <div class="top"><h1 class="x">X</h1></div>
+            <div class="bottom"><h1 class="y">O</h1></div>
+
+        </section>
+    </section>
+</main>
+<script src="../../assets/js/jquery-3.6.1.min.js"></script>
+<script>
+    let x = true;
+    const cube = new Cube();
+    $('main>section>section').click(function () {
+        if (!cube.CubeExists(this)) {
+            cube.AddCube(x, this);
+            if (x) {
+                $(this).css('transform', 'rotateX(-90deg)');
+                x = false;
+            } else {
+                $(this).css('transform', 'rotateX(90deg)');
+                x = true;
+            }
+        }
+    });
+
+
+    function Cube() {
+        let objs = [];
+        this.AddCube = function (bool, cube) {
+            objs.push(new GetObj(bool, cube));
+            checkWinner();
+        }
+        this.CubeExists = function (cube) {
+            for (obj of objs) {
+                if (obj.getObjCube() === cube) {
+                    return true;
+                }
+            }
+            return false;
+        }
+
+        function GetObj(bool, cube) {
+            let objBool = bool;
+            let objCube = cube;
+
+            this.getObjCube = function () {
+                return objCube;
+            }
+
+            this.getObjBool = function () {
+                return objBool;
+            }
+
+        }
+
+        let checkWinner = function () {
+            let one1 = null;
+            let one2 = null;
+            let one3 = null;
+            let two1 = null;
+            let two2 = null;
+            let two3 = null;
+            let three1 = null;
+            let three2 = null;
+            let three3 = null;
+            for (obj of objs) {
+                console.log(obj.getObjCube().id);
+                switch (obj.getObjCube().id) {
+                    case 'one1':
+                        one1 = obj.getObjBool();
+                        break;
+                    case 'one2':
+                        one2 = obj.getObjBool();
+                        break;
+                    case 'one3':
+                        one3 = obj.getObjBool();
+                        break;
+                    case 'two1':
+                        two1 = obj.getObjBool();
+                        break;
+                    case 'two2':
+                        two2 = obj.getObjBool();
+                        break;
+                    case 'two3':
+                        two3 = obj.getObjBool();
+                        break;
+                    case 'three1':
+                        three1 = obj.getObjBool();
+                        break;
+                    case 'three2':
+                        three2 = obj.getObjBool();
+                        break;
+                    case 'three3':
+                        three3 = obj.getObjBool();
+                        break;
+                }
+            }
+            if (one1 == one2 && one2 == one3 & one1 != null) {
+                let winner;
+                if (one1 == true) {
+                    winner = 'X';
+                } else {
+                    winner = 'Y';
+                }
+                alert('Winner: '+winner);
+            } else if (two1 == two2 && two2 == two3 & two1 != null) {
+                let winner;
+                if (two1 == true) {
+                    winner = 'X';
+                } else {
+                    winner = 'Y';
+                }
+                alert('Winner: '+winner);
+            } else if (three1 == three2 && three2 == three3 & three1 != null) {
+                let winner;
+                if (three1 == true) {
+                    winner = 'X';
+                } else {
+                    winner = 'Y';
+                }
+                alert('Winner: '+winner);
+            } else if (one1 == two1 && two1 == three1 & one1 != null) {
+                let winner;
+                if (one1 == true) {
+                    winner = 'X';
+                } else {
+                    winner = 'Y';
+                }
+                alert('Winner: '+winner);
+            } else if (one2 == two2 && two2 == three2 & one2 != null) {
+                let winner;
+                if (one2 == true) {
+                    winner = 'X';
+                } else {
+                    winner = 'Y';
+                }
+                alert('Winner: '+winner);
+            } else if (one3 == two3 && two3 == three3 & one3 != null) {
+                let winner;
+                if (one3 == true) {
+                    winner = 'X';
+                } else {
+                    winner = 'Y';
+                }
+                alert('Winner: '+winner);
+            } else if (one1 == two2 && two2 == three3 & one1 != null) {
+                let winner;
+                if (one1 == true) {
+                    winner = 'X';
+                } else {
+                    winner = 'Y';
+                }
+                alert('Winner: '+winner);
+            } else if (one3 == two2 && two2 == three1 & one3 != null) {
+                let winner;
+                if (one3 == true) {
+                    winner = 'X';
+                } else {
+                    winner = 'Y';
+                }
+                alert('Winner: '+winner);
+            }
+
+        }
+    }
+
+</script>
+</body>
+</html>
