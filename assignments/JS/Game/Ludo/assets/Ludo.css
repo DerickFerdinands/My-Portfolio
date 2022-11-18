@@ -203,3 +203,8 @@ img{
     background-size:cover;
     transform: rotate(0deg);
 }
+
+.star{
+    background: url("images/star.webp") center;
+    background-size:cover;
+}
