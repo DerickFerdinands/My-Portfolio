@@ -114,6 +114,7 @@ main>section{
     border-radius:50%;
     background-color: #B4B4B4;
     margin: 10px;
+    position: relative;
 }
 
 .exits{
@@ -128,7 +129,7 @@ main>section{
 .exitBlocks{
     height:100%;
     width: 100%;
-    border: 1px solid black;
+    border: 0.1px solid #6a6363;
 }
 
 .greenExit{
@@ -171,4 +172,34 @@ main>section{
 
 .redBlocks{
     background-color:#D33231;
+}
+
+img{
+    width: auto;
+    height: 130%;
+    inset: 0;
+    bottom: 20px;
+    margin: auto;
+    position: absolute;
+}
+
+.blueArrow{
+    background: url("images/blueArrow.png") center;
+    background-size:cover;
+    transform: rotate(180deg);
+}
+.redArrow{
+    background: url("images/redArrow.png") center;
+    background-size:cover;
+    transform: rotate(180deg);
+}
+.yellowArrow{
+    background: url("images/yellowArrow.png") center;
+    background-size:cover;
+    transform: rotate(0deg);
+}
+.greenArrow{
+    background: url("images/greenArrow.png") center;
+    background-size:cover;
+    transform: rotate(0deg);
 }
