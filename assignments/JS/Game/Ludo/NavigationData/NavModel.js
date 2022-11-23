@@ -77,13 +77,31 @@ const E70 = new GetNavObj($('#E70'));
 const E71 = new GetNavObj($('#E71'));
 const E72 = new GetNavObj($('#E72'));
 
-function  GetNavObj(obj) {
+function GetNavObj(obj) {
     let block = obj;
+    let coins = [];
     this.getBlock = function () {
         return block;
     }
-    this.addCoin=function(){
+    this.addCoin = function (color) {
+        switch (color) {
+            case "red":
+                appendCoin("assets/images/redCoin.png");
+                break;
+            case "green":
+                appendCoin("assets/images/greenCoin.png");
+                break;
+            case "yellow":
+                appendCoin("assets/images/yellowCoin.png");
+                break;
+            case "blue":
+                appendCoin("assets/images/blueCoin.png");
+                break;
+        }
+    }
 
+    function appendCoin(img) {
+        block.append('<img src="' + img + '">');
     }
 }
 
