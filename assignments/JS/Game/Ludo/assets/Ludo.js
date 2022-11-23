@@ -24,3 +24,8 @@ $('#dice').click(function () {
     }
     },3100);
 });
+
+$('.exitBlocks').each(function () {
+    let id=$(this).attr('id');
+    $(this).append('<h5>'+id+'</h5>');
+})
