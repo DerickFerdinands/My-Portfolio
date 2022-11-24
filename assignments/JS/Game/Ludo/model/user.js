@@ -1,8 +1,13 @@
-let users = [new User("user1"), new User("user2"), new User("user3"), new User("user4")];
+let users = [
+    new User("user1",NavPath_1),
+    new User("user2",NavPath_2),
+    new User("user3",NavPath_3),
+    new User("user4",NavPath_4)];
 
-function User(name) {
+function User(name, navPath) {
     this.name = name;
     let score = 0;
+    let path = navPath;
 
     this.getScore = function () {
         return score;
@@ -11,8 +16,16 @@ function User(name) {
     this.setScore = function (scr) {
         score = scr;
     }
+
+    this.getPath = function () {
+        return path;
+    }
 }
 
 function getCurrentUser() {
-    let userItr=[users[0],users[1],users[2],users[3]];
+    let userItr = [
+        users[0],
+        users[1],
+        users[2],
+        users[3]];
 }

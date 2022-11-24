@@ -122,12 +122,13 @@ main > section {
     background-color: #B4B4B4;
     margin: 10px;
     position: relative;
+    transition: all 0.5s linear;
 }
 
 main>section{
     transition: all 0.5s linear;
 }
-main>section>img{
+.coinPlacement{
     transition: all 0.5s linear;
 }
 
@@ -200,7 +201,7 @@ img {
     width: auto;
     height: 130%;
     inset: 0;
-    bottom: 20px;
+    padding-bottom: 10px;
     margin: auto;
     position: absolute;
 }

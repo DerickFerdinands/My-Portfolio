@@ -40,12 +40,18 @@ $('#dice').click(function () {
 
 });
 
+function checkUserQualification() {
+    return false;
+}
+
 function checkUserTurn() {
-    if (random == 6) {
+    if (checkUserQualification()) {
 
     } else {
-        $('main>section').css('transform', 'rotate(90deg)');
-        $('main>section>img').css('transform', 'rotate(-90deg)');
+        let boardAngle=getCurrentRotation(".board");
+        let imgAgle=getCurrentRotation('.coinPlacement');
+        $('main>section').css('transform', 'rotate('+(boardAngle+90)+'deg)');
+        $('.coinPlacement').css('transform', 'rotate('+(imgAgle-90)+'deg)');
     }
 }
 
@@ -53,14 +59,35 @@ $('.exitBlocks').each(function () {
     let id = $(this).attr('id');
     $(this).append('<h5>' + id + '</h5>');
 })
-/*let count=0;
- let inter =setInterval(function(){
-    if(count<=55){
-        NavPath_4[count].getBlock().css('background-color','purple');
-        console.log(count)
-        count++;
-    }else{
-        clearInterval(inter);
-    }
 
-},50);*/
+function getCurrentRotation( elid ) {
+    var el = document.querySelectorAll(elid)[0];
+    var st = window.getComputedStyle(el, null);
+    var tr = st.getPropertyValue("-webkit-transform") ||
+        st.getPropertyValue("-moz-transform") ||
+        st.getPropertyValue("-ms-transform") ||
+        st.getPropertyValue("-o-transform") ||
+        st.getPropertyValue("transform") ||
+        "fail...";
+
+    if( tr !== "none") {
+        console.log('Matrix: ' + tr);
+
+        var values = tr.split('(')[1];
+        values = values.split(')')[0];
+        values = values.split(',');
+        var a = values[0];
+        var b = values[1];
+        var c = values[2];
+        var d = values[3];
+
+        var scale = Math.sqrt(a*a + b*b);
+
+        var radians = Math.atan2(b, a);
+        var angle = Math.round( radians * (180/Math.PI));
+        return angle;
+
+    } else {
+        var angle = 0;
+        return angle;
+    }}
