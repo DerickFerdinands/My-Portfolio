@@ -123,6 +123,8 @@ main > section {
     margin: 10px;
     position: relative;
     transition: all 0.5s linear;
+    /*animation :.5s animateBorder infinite;*/
+    /*animation-direction: alternate;*/
 }
 
 main>section{
@@ -469,4 +471,15 @@ img {
         transform: rotate3d(6, 6, 6, 45deg);
         animation: none;
     }*/
+}
+
+
+
+@keyframes animateBorder {
+    from{
+        border: 1px solid black;
+    }
+    from{
+        border: 5px solid #554848;
+    }
 }

@@ -9,7 +9,7 @@ $('#dice').click(function () {
     this.style.animation = 'none';
     setTimeout(function () {
         obj.style.animation = '3s dice-animation 1';
-    }, 10);
+    }, 1);
 
     setTimeout(function () {
         dice.css('transition', 'all .5s ease-out');
@@ -39,19 +39,23 @@ $('#dice').click(function () {
     setTimeout(checkUserTurn(), 4000);
 
 });
-
+let user=null;
+let UserItr = new GetCurrentUser();
 function checkUserQualification() {
     return false;
 }
 
 function checkUserTurn() {
-    if (checkUserQualification()) {
-
+    if (random==6) {
+        user=UserItr.getUser();
+        console.log(user);
+        user.animateAvailableCoins();
     } else {
+        UserItr.switchUser();
         let boardAngle=getCurrentRotation(".board");
         let imgAgle=getCurrentRotation('.coinPlacement');
-        $('main>section').css('transform', 'rotate('+(boardAngle+90)+'deg)');
-        $('.coinPlacement').css('transform', 'rotate('+(imgAgle-90)+'deg)');
+        $('main>section').css('transform', 'rotate('+(boardAngle-90)+'deg)');
+        $('.coinPlacement').css('transform', 'rotate('+(imgAgle+90)+'deg)');
     }
 }
 
