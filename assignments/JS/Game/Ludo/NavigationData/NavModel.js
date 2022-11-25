@@ -101,7 +101,8 @@ function GetNavObj(obj) {
     }
 
     function appendCoin(img) {
-        block.append('<img src="' + img + '">');
+        block.append('<img style="transform: scale(0)" src="' + img + '">');
+        block.children().css('transform', 'scale(1)');
     }
 }
 

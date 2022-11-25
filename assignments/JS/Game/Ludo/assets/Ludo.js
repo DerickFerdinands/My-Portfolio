@@ -8,7 +8,7 @@ $('#dice').click(function () {
     let dice = $(this);
     this.style.animation = 'none';
     setTimeout(function () {
-        obj.style.animation = '3s dice-animation 1';
+        obj.style.animation = '.5s dice-animation linear 1';
     }, 1);
 
     setTimeout(function () {
@@ -44,25 +44,19 @@ let UserItr = new GetCurrentUser();
 function checkUserQualification() {
     return false;
 }
-
+let imgAngle=0;
 function checkUserTurn() {
     if (random==6) {
         user=UserItr.getUser();
-        console.log(user);
         user.animateAvailableCoins();
     } else {
         UserItr.switchUser();
         let boardAngle=getCurrentRotation(".board");
-        let imgAgle=getCurrentRotation('.coinPlacement');
+         imgAngle=getCurrentRotation('.coinPlacement');
         $('main>section').css('transform', 'rotate('+(boardAngle-90)+'deg)');
-        $('.coinPlacement').css('transform', 'rotate('+(imgAgle+90)+'deg)');
+        $('.coinPlacement').css('transform', 'rotate('+(imgAngle+90)+'deg)');
     }
 }
-
-$('.exitBlocks').each(function () {
-    let id = $(this).attr('id');
-    $(this).append('<h5>' + id + '</h5>');
-})
 
 function getCurrentRotation( elid ) {
     var el = document.querySelectorAll(elid)[0];
@@ -75,8 +69,6 @@ function getCurrentRotation( elid ) {
         "fail...";
 
     if( tr !== "none") {
-        console.log('Matrix: ' + tr);
-
         var values = tr.split('(')[1];
         values = values.split(')')[0];
         values = values.split(',');

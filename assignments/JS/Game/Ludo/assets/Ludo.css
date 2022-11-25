@@ -152,6 +152,7 @@ main>section{
 
 .exitBlocks>img{
     height: 100%;
+    transition: all .3s linear;
 }
 
 .greenExit {
@@ -206,6 +207,19 @@ img {
     padding-bottom: 10px;
     margin: auto;
     position: absolute;
+    transition: all .3s linear;
+}
+.greenExit>div{
+    transform: rotate(90deg);
+}
+.yellowExit>div{
+    transform: rotate(90deg);
+}
+.blueExit>div{
+    transform: rotate(-90deg);
+}
+.redExit>div{
+    transform: rotate(-90deg);
 }
 
 .blueArrow {
@@ -429,48 +443,12 @@ img {
 }
 
 @keyframes dice-animation {
-    0% {
-        transform: rotate3d(1, 1, 1, 45deg);
+  from{
+      transform: rotateX(0deg);
+  }
+    to{
+        transform: rotateX(360deg);
     }
-
-    10% {
-        transform: rotate3d(1, 1, 1, 360deg);
-    }
-
-    20% {
-        transform: rotate3d(2, 2, 2, 45deg);
-    }
-
-    30% {
-        transform: rotate3d(2, 2, 2, 360deg);
-    }
-
-    40% {
-        transform: rotate3d(3, 3, 3, 45deg);
-    }
-
-    50% {
-        transform: rotate3d(3, 3, 3, 360deg);
-    }
-
-    60% {
-        transform: rotate3d(4, 4, 4, 45deg);
-    }
-    70% {
-        transform: rotate3d(4, 4, 4, 360deg);
-    }
-
-    80% {
-        transform: rotate3d(5, 5, 5, 45deg);
-    }
-    90% {
-        transform: rotate3d(5, 5, 5, 360deg);
-    }
-
-/*    100% {
-        transform: rotate3d(6, 6, 6, 45deg);
-        animation: none;
-    }*/
 }
 
 
@@ -481,5 +459,23 @@ img {
     }
     from{
         border: 5px solid #554848;
+    }
+}
+
+@keyframes shrinkDown {
+    from{
+        transform: scale(1);
+    }
+    to{
+        transform: scale(0);
+    }
+}
+
+@keyframes grow {
+    from{
+        transform: scale(0);
+    }
+    to{
+        transform: scale(1);
     }
 }
