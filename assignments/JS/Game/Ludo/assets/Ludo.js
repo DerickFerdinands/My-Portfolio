@@ -39,26 +39,35 @@ $('#dice').click(function () {
     setTimeout(checkUserTurn(), 4000);
 
 });
-let user=null;
+let user = null;
 let UserItr = new GetCurrentUser();
+
 function checkUserQualification() {
     return false;
 }
-let imgAngle=0;
+
+let turn = false;
+
 function checkUserTurn() {
-    if (random==6) {
-        user=UserItr.getUser();
+    user = UserItr.getUser();
+    if (random == 6) {
         user.animateAvailableCoins();
+        if (user.getCoinCount() < 4) {
+            console.log("Coin Count : "+user.getCoinCount());
+            turn = true;
+        }
+    } else if (turn) {
+        turn = false;
     } else {
         UserItr.switchUser();
-        let boardAngle=getCurrentRotation(".board");
-         imgAngle=getCurrentRotation('.coinPlacement');
-        $('main>section').css('transform', 'rotate('+(boardAngle-90)+'deg)');
-        $('.coinPlacement').css('transform', 'rotate('+(imgAngle+90)+'deg)');
+        let boardAngle = getCurrentRotation(".board");
+        let imgAngle = getCurrentRotation('.coinPlacement');
+        $('main>section').css('transform', 'rotate(' + (boardAngle - 90) + 'deg)');
+        $('.coinPlacement').css('transform', 'rotate(' + (imgAngle + 90) + 'deg)');
     }
 }
 
-function getCurrentRotation( elid ) {
+function getCurrentRotation(elid) {
     var el = document.querySelectorAll(elid)[0];
     var st = window.getComputedStyle(el, null);
     var tr = st.getPropertyValue("-webkit-transform") ||
@@ -68,7 +77,7 @@ function getCurrentRotation( elid ) {
         st.getPropertyValue("transform") ||
         "fail...";
 
-    if( tr !== "none") {
+    if (tr !== "none") {
         var values = tr.split('(')[1];
         values = values.split(')')[0];
         values = values.split(',');
@@ -77,13 +86,14 @@ function getCurrentRotation( elid ) {
         var c = values[2];
         var d = values[3];
 
-        var scale = Math.sqrt(a*a + b*b);
+        var scale = Math.sqrt(a * a + b * b);
 
         var radians = Math.atan2(b, a);
-        var angle = Math.round( radians * (180/Math.PI));
+        var angle = Math.round(radians * (180 / Math.PI));
         return angle;
 
     } else {
         var angle = 0;
         return angle;
-    }}
+    }
+}

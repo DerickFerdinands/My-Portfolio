@@ -24,6 +24,10 @@ function User(name, navPath, coinColor, place1, place2, place3, place4) {
         return path;
     }
 
+    this.getCoinCount=function(){
+        return cPlacement.length;
+    }
+
     this.animateAvailableCoins = function () {
         cPlacement.forEach((item, index) => {
             let temp = document.getElementById($(item).attr('id'));
@@ -34,13 +38,14 @@ function User(name, navPath, coinColor, place1, place2, place3, place4) {
 
             item.click(function () {
                 endCoinAnimation();
+
                 item.children().css('transform', 'scale(0)');
                 item.children().remove();
-                console.log("index:"+cPlacement.indexOf(item))
-                cPlacement.slice(cPlacement.indexOf(item), 1);
+
+                cPlacement.splice(cPlacement.indexOf(item),1);
+
                 path[0].addCoin(color);
                 cPlacement.forEach((item, index) => {
-                    console.log(item.attr('id'));
                     item.unbind();
                 });
             });
