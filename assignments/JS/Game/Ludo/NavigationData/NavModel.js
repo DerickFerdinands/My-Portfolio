@@ -78,31 +78,41 @@ const E71 = new GetNavObj($('#E71'));
 const E72 = new GetNavObj($('#E72'));
 
 function GetNavObj(obj) {
+
     let block = obj;
     let coins = [];
+
     this.getBlock = function () {
         return block;
     }
     this.addCoin = function (color) {
         switch (color) {
             case "red":
-                appendCoin("assets/images/redCoin.png");
+                appendCoin("assets/images/redCoin.png",'red');
                 break;
             case "green":
-                appendCoin("assets/images/greenCoin.png");
+                appendCoin("assets/images/greenCoin.png",'green');
                 break;
             case "yellow":
-                appendCoin("assets/images/yellowCoin.png");
+                appendCoin("assets/images/yellowCoin.png",'yellow');
                 break;
             case "blue":
-                appendCoin("assets/images/blueCoin.png");
+                appendCoin("assets/images/blueCoin.png",'blue');
                 break;
         }
     }
 
-    function appendCoin(img) {
-        block.append('<img style="transform: scale(0)" src="' + img + '">');
+    function appendCoin(img, cls) {
+        block.append('<img class="'+cls+'" style="transform: scale(0)" src="' + img + '">');
         block.children().css('transform', 'scale(1)');
+    }
+
+    this.removeCoin= function(color){
+        block.children("img").each(function(){
+            if($(this).attr('class')==color){
+                $(this).remove();
+            }
+        })
     }
 }
 

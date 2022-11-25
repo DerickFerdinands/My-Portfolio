@@ -479,3 +479,13 @@ img {
         transform: scale(1);
     }
 }
+
+@keyframes boxBorder {
+    from{
+        border: 1px solid #6a6363;
+    }
+    to{
+        border: 3px solid #6a6363;
+    }
+
+}

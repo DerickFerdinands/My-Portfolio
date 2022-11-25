@@ -52,12 +52,12 @@ function checkUserTurn() {
     user = UserItr.getUser();
     if (random == 6) {
         user.animateAvailableCoins();
-        console.log("Coin Count : " + user.getCoinCount());
-
             turn = true;
+            user.animateCoinsOnPath();
 
     } else if (turn && user.getCoinCount()<4) {
         turn = false;
+        user.animateCoinsOnPath();
     } else {
         UserItr.switchUser();
         let boardAngle = getCurrentRotation(".board");

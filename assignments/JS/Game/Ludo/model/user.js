@@ -24,8 +24,42 @@ function User(name, navPath, coinColor, place1, place2, place3, place4) {
         return path;
     }
 
-    this.getCoinCount=function(){
+    this.getCoinCount = function () {
         return cPlacement.length;
+    }
+
+    this.animateCoinsOnPath = function () {
+        path.forEach((item, index) => {
+            item.getBlock().children().each( function(){
+                console.log('img item');
+                console.log("item : "+$(this).attr('class'));
+                if ($(this).attr('class') == color && (path.length-(index+1))>=random ) {
+                    console.log("working");
+                    item.getBlock().css('animation', 'none');
+                    item.getBlock().css('animation', '.5s animateBorder infinite');
+
+                    item.getBlock().click(function () {
+
+                        path.forEach((item, index) => {
+                            item.getBlock().children().each(function(){
+                                if ($(this).attr('class') == color  && ((path.length-(index+1))>=random)) {
+                                    $(item).unbind();
+                                }});
+                        });
+
+                        for (let i=index;i<(index+random);i++){
+                            setInterval(function () {
+                                path[i].removeCoin(color);
+                                path[i+1].addCoin(color);
+                            },500);
+
+                        }
+                    });
+                }
+            });
+
+
+        });
     }
 
     this.animateAvailableCoins = function () {
@@ -42,7 +76,7 @@ function User(name, navPath, coinColor, place1, place2, place3, place4) {
                 item.children().css('transform', 'scale(0)');
                 item.children().remove();
 
-                cPlacement.splice(cPlacement.indexOf(item),1);
+                cPlacement.splice(cPlacement.indexOf(item), 1);
 
                 path[0].addCoin(color);
                 cPlacement.forEach((item, index) => {
