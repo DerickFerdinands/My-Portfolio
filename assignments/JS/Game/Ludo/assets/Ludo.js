@@ -52,11 +52,11 @@ function checkUserTurn() {
     user = UserItr.getUser();
     if (random == 6) {
         user.animateAvailableCoins();
-        if (user.getCoinCount() < 4) {
-            console.log("Coin Count : "+user.getCoinCount());
+        console.log("Coin Count : " + user.getCoinCount());
+
             turn = true;
-        }
-    } else if (turn) {
+
+    } else if (turn && user.getCoinCount()<4) {
         turn = false;
     } else {
         UserItr.switchUser();
