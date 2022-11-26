@@ -518,8 +518,38 @@ aside>img{
     width: auto;
     position: relative;
     display: inline-block;
+
+}
+aside>div>div{
+    height: 10vh;
+    aspect-ratio: 1/1;
+    border-radius:10px;
+    margin-left: 15%;
+    display: inline-block;
+}
+aside>div>h6{
+    display: inline-block;
+    color: white;
+}
+aside>div{
+    border:1px solid black;
+}
+aside>div:nth-of-type(1)>div{
+background: url("images/USER_01-removebg-preview.png") center;
+    background-size: cover;
 }
 
-aside>div:nth-of-type(1)>div{
+aside>div:nth-of-type(2)>div{
+    background: url("images/USER_02-removebg-preview.png") center;
+    background-size: cover;
+}
 
+aside>div:nth-of-type(3)>div{
+    background: url("images/USER_03-removebg-preview.png") center;
+    background-size: cover;
+}
+
+aside>div:nth-of-type(4)>div{
+    background: url("images/USER_04-removebg-preview.png") center;
+    background-size: cover;
 }
