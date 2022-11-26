@@ -524,7 +524,7 @@ aside>div>div{
     height: 10vh;
     aspect-ratio: 1/1;
     border-radius:10px;
-    margin-left: 15%;
+    margin-left: 5%;
     display: inline-block;
 }
 aside>div>h6{
@@ -533,6 +533,7 @@ aside>div>h6{
 }
 aside>div{
     border:1px solid black;
+    margin-left: 5%;
 }
 aside>div:nth-of-type(1)>div{
 background: url("images/USER_01-removebg-preview.png") center;
