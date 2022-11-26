@@ -102,10 +102,7 @@ function GetNavObj(obj) {
         }
     }
 
-    function appendCoin(img, cls) {
-        block.append('<img class="' + cls + '" style="transform: scale(0)" src="' + img + '">');
-        block.children().css('transform', 'scale(1)');
-
+    function reArrangeCoins() {
         let children = block.children();
         switch (children.length) {
 
@@ -172,13 +169,21 @@ function GetNavObj(obj) {
         }
     }
 
+    function appendCoin(img, cls) {
+        block.append('<img class="' + cls + '" style="transform: scale(0)" src="' + img + '">');
+        block.children().css('transform', 'scale(1)');
+
+        reArrangeCoins();
+
+    }
+
     let count = 0;
     this.removeCoin = function (color) {
         block.children("img").each(function () {
             if (count == 0) {
                 if ($(this).attr('class') == color) {
                     $(this).remove();
-                    console.log()
+                    reArrangeCoins();
                     count++;
                 }
             }
