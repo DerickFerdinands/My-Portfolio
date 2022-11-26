@@ -77,10 +77,15 @@ const E70 = new GetNavObj($('#E70'));
 const E71 = new GetNavObj($('#E71'));
 const E72 = new GetNavObj($('#E72'));
 
+const FINAL_GREEN= new GetNavObj($('#finalGreen'));
+const FINAL_YELLOW= new GetNavObj($('#finalYellow'));
+const FINAL_RED= new GetNavObj($('#finalRed'));
+const FINAL_BLUE= new GetNavObj($('#finalBlue'));
+
 function GetNavObj(obj) {
 
     let block = obj;
-    let coins = [];
+
 
     this.getBlock = function () {
         return block;

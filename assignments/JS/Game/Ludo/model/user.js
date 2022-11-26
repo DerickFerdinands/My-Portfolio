@@ -48,7 +48,6 @@ function User(name, navPath, coinColor, place1, place2, place3, place4) {
                 if(count==0) {
 
                     if ($(this).attr('class') == color && (path.length - (index + 1)) >= random) {
-                        console.log("working");
                         item.getBlock().css('animation', 'none');
                         item.getBlock().css('animation', '.5s animateBorder infinite');
 
@@ -57,11 +56,15 @@ function User(name, navPath, coinColor, place1, place2, place3, place4) {
                             endCoinAnimation();
                             let navPath = path.slice(index, (index + random + 1));
                             let i = 0;
-                            setInterval(function () {
+                          let inter=   setInterval(function () {
                                 if (i != navPath.length - 1) {
+                                    jump.play();
                                     navPath[i].removeCoin(color);
                                     navPath[i + 1].addCoin(color);
                                     i++;
+                                }else{
+                                    switchUser();
+                                    clearInterval(inter);
                                 }
                             }, 250);
 

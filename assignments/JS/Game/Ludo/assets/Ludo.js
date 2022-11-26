@@ -1,8 +1,10 @@
-let random = 6;
+let random = 0;
+
+const jump = new Audio("assets/audio/jump.wav")
 
 
 $('#dice').click(function () {
-    // random = Math.floor((Math.random() * 6) + 1);
+    random = Math.floor((Math.random() * 6) + 1);
     console.log(random);
     var obj = this;
     let dice = $(this);
@@ -46,25 +48,31 @@ function checkUserQualification() {
     return false;
 }
 
-let turn = false;
+
+let turnCount = 0;
 
 function checkUserTurn() {
     user = UserItr.getUser();
     if (random == 6) {
         user.animateAvailableCoins();
-            turn = true;
-            user.animateCoinsOnPath();
-
-    } else if (turn && user.getCoinCount()<4) {
-        turn = false;
+        turnCount = 0;
         user.animateCoinsOnPath();
+
+    } else if ((user.getCoinCount() < 4) && (turnCount == 0)) {
+        user.animateCoinsOnPath();
+        turnCount++;
     } else {
-        UserItr.switchUser();
-        let boardAngle = getCurrentRotation(".board");
-        let imgAngle = getCurrentRotation('.coinPlacement');
-        $('main>section').css('transform', 'rotate(' + (boardAngle - 90) + 'deg)');
-        $('.coinPlacement').css('transform', 'rotate(' + (imgAngle + 90) + 'deg)');
+        switchUser();
     }
+}
+
+function switchUser() {
+    UserItr.switchUser();
+    let boardAngle = getCurrentRotation(".board");
+    let imgAngle = getCurrentRotation('.coinPlacement');
+    $('main>section').css('transform', 'rotate(' + (boardAngle - 90) + 'deg)');
+    $('.coinPlacement').css('transform', 'rotate(' + (imgAngle + 90) + 'deg)');
+    turnCount = 0;
 }
 
 function getCurrentRotation(elid) {

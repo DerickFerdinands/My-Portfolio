@@ -54,7 +54,8 @@ let NavPath_1 = [
     E64,
     E63,
     E62,
-    E61
+    E61,
+    FINAL_RED
 ];
 
 let NavPath_2 = [
@@ -113,7 +114,8 @@ let NavPath_2 = [
     E9,
     E10,
     E11,
-    E12
+    E12,
+    FINAL_GREEN
 
 ];
 
@@ -173,7 +175,8 @@ let NavPath_3=[
     E45,
     E46,
     E47,
-    E48
+    E48,
+    FINAL_YELLOW
 ];
 
 let NavPath_4=[
@@ -232,5 +235,6 @@ let NavPath_4=[
     E28,
     E27,
     E26,
-    E25
+    E25,
+    FINAL_BLUE
 ];
