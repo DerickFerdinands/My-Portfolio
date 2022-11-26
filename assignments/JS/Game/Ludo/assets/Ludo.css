@@ -153,6 +153,7 @@ main>section{
 .exitBlocks>img{
     height: 100%;
     transition: all .3s linear;
+    flex-shrink: 1;
 }
 
 .greenExit {

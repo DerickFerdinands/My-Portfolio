@@ -88,29 +88,96 @@ function GetNavObj(obj) {
     this.addCoin = function (color) {
         switch (color) {
             case "red":
-                appendCoin("assets/images/redCoin.png",'red');
+                appendCoin("assets/images/redCoin.png", 'red');
                 break;
             case "green":
-                appendCoin("assets/images/greenCoin.png",'green');
+                appendCoin("assets/images/greenCoin.png", 'green');
                 break;
             case "yellow":
-                appendCoin("assets/images/yellowCoin.png",'yellow');
+                appendCoin("assets/images/yellowCoin.png", 'yellow');
                 break;
             case "blue":
-                appendCoin("assets/images/blueCoin.png",'blue');
+                appendCoin("assets/images/blueCoin.png", 'blue');
                 break;
         }
     }
 
     function appendCoin(img, cls) {
-        block.append('<img class="'+cls+'" style="transform: scale(0)" src="' + img + '">');
+        block.append('<img class="' + cls + '" style="transform: scale(0)" src="' + img + '">');
         block.children().css('transform', 'scale(1)');
+
+        let children = block.children();
+        switch (children.length) {
+
+            case 2: {
+                children.eq(0).css({
+                    'inset':'initial',
+                    'scale': '.8',
+                    'left': '0'
+                });
+                children.eq(1).css({
+                    'inset':'initial',
+                    'scale': '.8',
+                    'right': '0'
+                });
+                break;
+            }
+
+            case 3: {
+                children.eq(0).css({
+                    'inset':'initial',
+                    'scale': '.8',
+                    'top':'-20%',
+                    'left': '0'
+                });
+                children.eq(1).css({
+                    'inset':'initial',
+                    'scale': '.8',
+                    'top':'-20%',
+                    'right': '0'
+                });
+                children.eq(2).css({
+                    'inset':'0',
+                    'scale': '.8',
+                    'right': '0'
+                });
+                break;
+            }
+            case 4: {
+                children.eq(0).css({
+                    'inset':'initial',
+                    'scale': '.8',
+                    'top':'-20%',
+                    'left': '0'
+                });
+                children.eq(1).css({
+                    'inset':'initial',
+                    'scale': '.8',
+                    'top':'-20%',
+                    'right': '0'
+                });
+                children.eq(2).css({
+                    'inset':'initial',
+                    'scale': '.8',
+                    'bottom':'-20%',
+                    'right': '0'
+                });
+                children.eq(3).css({
+                    'inset':'initial',
+                    'scale': '.8',
+                    'bottom':'-20%',
+                    'right': '0'
+                });
+                break;
+            }
+        }
     }
 
-    this.removeCoin= function(color){
-        block.children("img").each(function(){
-            if($(this).attr('class')==color){
+    this.removeCoin = function (color) {
+        block.children("img").each(function () {
+            if ($(this).attr('class') == color) {
                 $(this).remove();
+
             }
         })
     }

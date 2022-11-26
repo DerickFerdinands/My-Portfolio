@@ -1,8 +1,8 @@
-let random = 0;
+let random = 6;
 
 
 $('#dice').click(function () {
-    random = Math.floor((Math.random() * 6) + 1);
+    // random = Math.floor((Math.random() * 6) + 1);
     console.log(random);
     var obj = this;
     let dice = $(this);

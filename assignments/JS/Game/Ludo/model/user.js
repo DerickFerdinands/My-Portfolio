@@ -28,12 +28,16 @@ function User(name, navPath, coinColor, place1, place2, place3, place4) {
         return cPlacement.length;
     }
 
+    function sleep(ms) {
+        return new Promise(resolve => setTimeout(resolve, ms));
+    }
+
     this.animateCoinsOnPath = function () {
         path.forEach((item, index) => {
-            item.getBlock().children().each( function(){
+            item.getBlock().children().each(function () {
                 console.log('img item');
-                console.log("item : "+$(this).attr('class'));
-                if ($(this).attr('class') == color && (path.length-(index+1))>=random ) {
+                console.log("item : " + $(this).attr('class'));
+                if ($(this).attr('class') == color && (path.length - (index + 1)) >= random) {
                     console.log("working");
                     item.getBlock().css('animation', 'none');
                     item.getBlock().css('animation', '.5s animateBorder infinite');
@@ -41,19 +45,24 @@ function User(name, navPath, coinColor, place1, place2, place3, place4) {
                     item.getBlock().click(function () {
 
                         path.forEach((item, index) => {
-                            item.getBlock().children().each(function(){
-                                if ($(this).attr('class') == color  && ((path.length-(index+1))>=random)) {
-                                    $(item).unbind();
-                                }});
+                            item.getBlock().children().each(function () {
+                                if ($(this).attr('class') == color && ((path.length - (index + 1)) >= random)) {
+                                    item.getBlock().unbind();
+                                    item.getBlock().css('animation', 'none');
+                                }
+                            });
                         });
 
-                        for (let i=index;i<(index+random);i++){
-                            setInterval(function () {
-                                path[i].removeCoin(color);
-                                path[i+1].addCoin(color);
-                            },500);
+                        let navPath = path.slice(index, (index + random + 1));
+                        let i = 0;
+                        setInterval(function () {
+                            if (i != navPath.length-1) {
+                                navPath[i].removeCoin(color);
+                                navPath[i + 1].addCoin(color);
+                                i++;
+                            }
+                        }, 250);
 
-                        }
                     });
                 }
             });
