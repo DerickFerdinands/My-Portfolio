@@ -28,46 +28,50 @@ function User(name, navPath, coinColor, place1, place2, place3, place4) {
         return cPlacement.length;
     }
 
-    function sleep(ms) {
-        return new Promise(resolve => setTimeout(resolve, ms));
-    }
-
-    this.animateCoinsOnPath = function () {
+    function unbindPathBlocks() {
         path.forEach((item, index) => {
             item.getBlock().children().each(function () {
-                console.log('img item');
-                console.log("item : " + $(this).attr('class'));
-                if ($(this).attr('class') == color && (path.length - (index + 1)) >= random) {
-                    console.log("working");
+                if ($(this).attr('class') == color && ((path.length - (index + 1)) >= random)) {
+                    item.getBlock().unbind();
                     item.getBlock().css('animation', 'none');
-                    item.getBlock().css('animation', '.5s animateBorder infinite');
+                }
+            });
+        });
+    }
 
-                    item.getBlock().click(function () {
 
-                        path.forEach((item, index) => {
-                            item.getBlock().children().each(function () {
-                                if ($(this).attr('class') == color && ((path.length - (index + 1)) >= random)) {
-                                    item.getBlock().unbind();
-                                    item.getBlock().css('animation', 'none');
+    this.animateCoinsOnPath = function () {
+        let count=0;
+        path.forEach((item, index) => {
+
+            item.getBlock().children().each(function () {
+                if(count==0) {
+
+                    if ($(this).attr('class') == color && (path.length - (index + 1)) >= random) {
+                        console.log("working");
+                        item.getBlock().css('animation', 'none');
+                        item.getBlock().css('animation', '.5s animateBorder infinite');
+
+                        item.getBlock().click(function () {
+                            unbindPathBlocks();
+                            endCoinAnimation();
+                            let navPath = path.slice(index, (index + random + 1));
+                            let i = 0;
+                            setInterval(function () {
+                                if (i != navPath.length - 1) {
+                                    navPath[i].removeCoin(color);
+                                    navPath[i + 1].addCoin(color);
+                                    i++;
                                 }
-                            });
+                            }, 250);
+
                         });
-
-                        let navPath = path.slice(index, (index + random + 1));
-                        let i = 0;
-                        setInterval(function () {
-                            if (i != navPath.length-1) {
-                                navPath[i].removeCoin(color);
-                                navPath[i + 1].addCoin(color);
-                                i++;
-                            }
-                        }, 250);
-
-                    });
+                        count++;
+                    }
                 }
             });
 
-
+            count=0;
         });
     }
 
@@ -81,16 +85,11 @@ function User(name, navPath, coinColor, place1, place2, place3, place4) {
 
             item.click(function () {
                 endCoinAnimation();
-
+                unbindPathBlocks();
                 item.children().css('transform', 'scale(0)');
                 item.children().remove();
-
                 cPlacement.splice(cPlacement.indexOf(item), 1);
-
                 path[0].addCoin(color);
-                cPlacement.forEach((item, index) => {
-                    item.unbind();
-                });
             });
         });
     }
@@ -99,6 +98,7 @@ function User(name, navPath, coinColor, place1, place2, place3, place4) {
         cPlacement.forEach((item, index) => {
             let temp = document.getElementById($(item).attr('id'));
             temp.style.animation = 'none';
+            item.unbind();
         });
     }
     this.endAnimation = endCoinAnimation();

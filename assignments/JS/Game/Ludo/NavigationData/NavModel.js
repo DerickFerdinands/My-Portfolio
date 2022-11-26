@@ -111,12 +111,12 @@ function GetNavObj(obj) {
 
             case 2: {
                 children.eq(0).css({
-                    'inset':'initial',
+                    'inset': 'initial',
                     'scale': '.8',
                     'left': '0'
                 });
                 children.eq(1).css({
-                    'inset':'initial',
+                    'inset': 'initial',
                     'scale': '.8',
                     'right': '0'
                 });
@@ -125,47 +125,46 @@ function GetNavObj(obj) {
 
             case 3: {
                 children.eq(0).css({
-                    'inset':'initial',
+                    'inset': 'initial',
                     'scale': '.8',
-                    'top':'-20%',
+                    'top': '-20%',
                     'left': '0'
                 });
                 children.eq(1).css({
-                    'inset':'initial',
+                    'inset': 'initial',
                     'scale': '.8',
-                    'top':'-20%',
+                    'top': '-20%',
                     'right': '0'
                 });
                 children.eq(2).css({
-                    'inset':'0',
-                    'scale': '.8',
-                    'right': '0'
+                    'inset': '0',
+                    'scale': '.8'
                 });
                 break;
             }
             case 4: {
                 children.eq(0).css({
-                    'inset':'initial',
+                    'inset': 'initial',
                     'scale': '.8',
-                    'top':'-20%',
+                    'top': '-20%',
                     'left': '0'
                 });
                 children.eq(1).css({
-                    'inset':'initial',
+                    'inset': 'initial',
                     'scale': '.8',
-                    'top':'-20%',
+                    'top': '-20%',
                     'right': '0'
                 });
                 children.eq(2).css({
-                    'inset':'initial',
+                    'inset': 'initial',
                     'scale': '.8',
-                    'bottom':'-20%',
-                    'right': '0'
+                    'bottom': '-20%',
+                    'left': '0'
                 });
                 children.eq(3).css({
-                    'inset':'initial',
+                    'inset': 'initial',
                     'scale': '.8',
-                    'bottom':'-20%',
+                    'bottom': '-20%',
                     'right': '0'
                 });
                 break;
@@ -173,13 +172,18 @@ function GetNavObj(obj) {
         }
     }
 
+    let count = 0;
     this.removeCoin = function (color) {
         block.children("img").each(function () {
-            if ($(this).attr('class') == color) {
-                $(this).remove();
-
+            if (count == 0) {
+                if ($(this).attr('class') == color) {
+                    $(this).remove();
+                    console.log()
+                    count++;
+                }
             }
-        })
+        });
+        count = 0;
     }
 }
 
