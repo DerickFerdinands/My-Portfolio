@@ -534,6 +534,8 @@ aside>div>h6{
 aside>div{
     border:1px solid black;
     margin-left: 5%;
+    width: 14vw;
+    margin-bottom: 5%;
 }
 aside>div:nth-of-type(1)>div:nth-of-type(1){
 background: url("images/USER_01-removebg-preview.png") center;
@@ -558,6 +560,11 @@ aside>div:nth-of-type(4)>div:nth-of-type(1){
     height: 2vh;
     border-radius:2px;
 }
+/*
+*{
+    font-family: 'Poppins', Sans-serif;
+}
+*/
 
 aside>div:nth-of-type(1)>div:nth-of-type(2){
     background-color:#D33231;
@@ -574,3 +581,11 @@ aside>div:nth-of-type(3)>div:nth-of-type(2){
 aside>div:nth-of-type(4)>div:nth-of-type(2){
     background-color:#2B91D6;
 }
+
+aside>div>svg{
+    margin-left: 10px;
+    display: inline-block;
+    color: white;
+}
+
+
