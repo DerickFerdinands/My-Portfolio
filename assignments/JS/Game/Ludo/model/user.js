@@ -66,12 +66,14 @@ function User(name, navPath, coinColor, place1, place2, place3, place4) {
                                     if (path.indexOf(navPath[i + 1]) == (path.length - 1)) {
                                         turnCount = 0;
                                         checkWinner();
+                                        turn = true;
                                     }
 
                                     i++;
                                 } else {
                                     if ((random != 6) && (turnCount != 0)) {
                                         switchUser();
+                                        turn = true;
                                     }
                                     clearInterval(inter);
                                     turn = true;
