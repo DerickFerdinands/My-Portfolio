@@ -178,6 +178,23 @@ function GetNavObj(obj) {
         block.append('<img class="' + cls + '" style="transform: scale(0)" src="' + img + '">');
         block.children().css('transform', 'scale(1)');
         reArrangeCoins();
+        sendBack(cls);
+    }
+
+    function sendBack(cls){
+        let count=0;
+        block.children().each(function () {
+            if(count==0) {
+                let tempCoin = $(this);
+                console.log(tempCoin.attr('class'));
+                if (tempCoin.attr('class') != cls) {
+                    tempCoin.remove();
+                    retrieveCoin(tempCoin.attr('class'));
+                    console.log('Executed Retrieval');
+                }
+                count++;
+            }
+        });
     }
 
     let count = 0;

@@ -1,0 +1,638 @@
+main {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body{
+    background: url("images/Frame 1.png") center;
+    background-size:cover;
+}
+
+main > section {
+    aspect-ratio: 1/1;
+    height: 90vh;
+    border: 1px solid black;
+    border-radius: 10px;
+    position: relative !important;
+}
+
+.player {
+    aspect-ratio: 1/1;
+    height: 40%;
+    border: 1px solid black;
+    position: absolute;
+}
+
+.player:nth-of-type(1) {
+    top: 0;
+    left: 0;
+    border-top-left-radius: 10px;
+    background-color: #229746;
+}
+
+.player:nth-of-type(2) {
+    top: 0;
+    right: 0;
+    border-top-right-radius: 10px;
+    background-color: #ECBE04;
+}
+
+.player:nth-of-type(3) {
+    bottom: 0;
+    left: 0;
+    border-bottom-left-radius: 10px;
+    background-color: #D33231;
+}
+
+.player:nth-of-type(4) {
+    bottom: 0;
+    right: 0;
+    border-bottom-right-radius: 10px;
+    background-color: #2B91D6;
+}
+
+.center {
+    aspect-ratio: 1/1;
+    height: 20%;
+    position: absolute;
+    inset: 0;
+    margin: auto;
+    border: 1px solid black;
+}
+
+.centerPieces {
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+    position: absolute;
+    height: 50%;
+    width: 100%;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+.centerPieces:nth-of-type(1) {
+    background-color: #229746;
+    transform: rotate(90deg);
+    left: -25%;
+}
+
+.centerPieces:nth-of-type(2) {
+    background-color: #ECBE04;
+    transform: rotate(180deg);
+    top: -50%;
+
+}
+
+.centerPieces:nth-of-type(3) {
+    background-color: #D33231;
+    bottom: -50%;
+}
+
+.centerPieces:nth-of-type(4) {
+    background-color: #2B91D6;
+    transform: rotate(270deg);
+    right: -25%;
+}
+
+.coinSurface {
+    aspect-ratio: 1/1;
+    height: 65%;
+    background-color: white;
+    border-radius: 10px;
+    border: 2px solid black;
+    position: absolute;
+    inset: 0;
+    margin: auto;
+
+}
+
+.coinSurface > div {
+    display: flex;
+    width: 100%;
+    height: 50%;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.coinSurface > div:nth-of-type(2) {
+    align-items: flex-start;
+}
+
+.coinPlacement {
+    aspect-ratio: 1/1;
+    height: 55%;
+    border-radius: 50%;
+    background-color: #B4B4B4;
+    margin: 10px;
+    position: relative;
+    transition: all 0.5s linear;
+    /*animation :.5s animateBorder infinite;*/
+    /*animation-direction: alternate;*/
+}
+
+main>section{
+    transition: all 0.5s linear;
+}
+.coinPlacement{
+    transition: all 0.5s linear;
+}
+
+.exits {
+    height: 20%;
+    width: 40%;
+    position: absolute;
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(6, 1fr);
+}
+
+.exitBlocks {
+    height: 100%;
+    width: 100%;
+    border: 0.1px solid #6a6363;
+    position:relative;
+}
+
+.exitBlocks>img{
+    height: 100%;
+    transition: all .3s linear;
+    flex-shrink: 1;
+}
+
+.greenExit {
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+.blueExit {
+    top: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+}
+
+.yellowExit {
+    left: 0;
+    right: 0;
+    top: 9vh;
+    margin: auto;
+    transform: rotate(90deg);
+}
+
+.redExit {
+    left: 0;
+    right: 0;
+    bottom: 9vh;
+    margin: auto;
+    transform: rotate(90deg);
+}
+
+.greenBlocks {
+    background-color: #229746;
+}
+
+.blueBlocks {
+    background-color: #2B91D6;
+}
+
+.yellowBlocks {
+    background-color: #ECBE04;
+}
+
+.redBlocks {
+    background-color: #D33231;
+}
+
+img {
+    width: auto;
+    height: 130%;
+    inset: 0;
+    padding-bottom: 10px;
+    margin: auto;
+    position: absolute;
+    transition: all .3s linear;
+}
+.greenExit>div{
+    transform: rotate(90deg);
+}
+.yellowExit>div{
+    transform: rotate(90deg);
+}
+.blueExit>div{
+    transform: rotate(-90deg);
+}
+.redExit>div{
+    transform: rotate(-90deg);
+}
+
+.blueArrow {
+    background: url("images/blueArrow.png") center;
+    background-size: cover;
+    transform: rotate(180deg);
+}
+
+.redArrow {
+    background: url("images/redArrow.png") center;
+    background-size: cover;
+    transform: rotate(180deg);
+}
+
+.yellowArrow {
+    background: url("images/yellowArrow.png") center;
+    background-size: cover;
+    transform: rotate(0deg);
+}
+
+.greenArrow {
+    background: url("images/greenArrow.png") center;
+    background-size: cover;
+    transform: rotate(0deg);
+}
+
+.star {
+    background: url("images/star.webp") center;
+    background-size: cover;
+}
+
+.greenStar {
+    background: url("images/greenStar.png") center;
+    background-size: cover;
+}
+
+.blueStar {
+    background: url("images/blueStar.png") center;
+    background-size: cover;
+}
+
+.yellowStar {
+    background: url("images/yellowStar.png") center;
+    background-size: cover;
+}
+
+.redStar {
+    background: url("images/redStar.png") center;
+    background-size: cover;
+}
+
+.diceArea {
+    aspect-ratio: 1/1;
+    width: 10vw;
+    border-radius: 20px;
+    position: absolute;
+    bottom: 5vh;
+    left: 15vw;
+    transform-style: preserve-3d;
+    font-size: 70px;
+    perspective: -1em;
+    perspective-origin: 50% 50%;
+}
+
+.diceArea > div {
+    aspect-ratio: 1/1;
+    width: 6vw;
+    background-color: rgba(10, 88, 202, 0.85);
+    position: absolute;
+    transform-style: preserve-3d;
+    inset: 0;
+    margin: auto;
+    border-radius: 10px;
+    background: #e0e0e0;
+    box-shadow: 5px 5px 15px #bebebe,
+    -5px -5px 15px #ffffff;
+}
+
+.diceArea > div > div {
+
+    aspect-ratio: 1/1;
+    height: 15%;
+
+    border-radius: 123px;
+    background: #201d1d;
+    box-shadow: inset 2px 2px 4px #100f0f,
+    inset -2px -2px 4px #302c2c;
+    margin: 15px;
+}
+
+.front {
+    transform: translateZ(3vw);
+}
+
+.front > div {
+    position: absolute;
+    inset: 0;
+    margin: auto !important;
+}
+
+.back {
+    transform: translateZ(-3vw);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.back > div:nth-of-type(1) {
+    align-self: self-end;
+}
+
+.back > div:nth-of-type(2) {
+    align-self: self-start;
+}
+
+.left {
+    transform: rotateY(270deg) translateZ(3vw);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.left > div:nth-of-type(1) {
+    align-self: self-start;
+}
+
+.left > div:nth-of-type(2) {
+    align-self: center;
+}
+
+.left > div:nth-of-type(3) {
+    align-self: self-end;
+}
+
+.right {
+    transform: rotateY(90deg) translateZ(3vw);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.right > div {
+    height: 30% !important;
+}
+
+.top {
+    transform: rotateX(90deg) translateZ(3vw);
+    max-height: 100%;
+}
+
+.top > div {
+    display: inline-block;
+    position: absolute;
+}
+
+.top > div:nth-of-type(3) {
+    inset: 0;
+    margin: auto;
+}
+
+.top > div:nth-of-type(2) {
+    right: 0;
+}
+
+.top > div:nth-of-type(4) {
+    bottom: 0;
+}
+
+.top > div:nth-of-type(5) {
+    bottom: 0;
+    right: 0;
+}
+
+
+.bottom {
+    transform: rotateX(270deg) translateZ(3vw);
+}
+
+.bottom > div {
+    display: inline-block;
+    position: absolute;
+}
+
+.bottom > div:nth-of-type(odd) {
+    left: 0;
+}
+
+.bottom > div:nth-of-type(even) {
+    right: 0;
+}
+
+.bottom > div:nth-of-type(3), .bottom > div:nth-of-type(4) {
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+.bottom > div:nth-of-type(3) {
+    left: 15px;
+}
+
+.bottom > div:nth-of-type(4) {
+    right: 15px;
+}
+
+.bottom > div:nth-of-type(5), .bottom > div:nth-of-type(6) {
+    bottom: 0;
+}
+
+#dice{
+    animation-iteration-count: 1;
+    animation-duration: 4s;
+    animation-timing-function: ease-out;
+    transition: all .5s ease-out;
+}
+
+#dice:hover{
+    cursor: pointer;
+}
+
+@keyframes dice-animation {
+  from{
+      transform: rotateX(0deg);
+  }
+    to{
+        transform: rotateX(360deg);
+    }
+}
+
+
+
+@keyframes animateBorder {
+    from{
+        border: 1px solid black;
+    }
+    from{
+        border: 5px solid #554848;
+    }
+}
+
+@keyframes shrinkDown {
+    from{
+        transform: scale(1);
+    }
+    to{
+        transform: scale(0);
+    }
+}
+
+@keyframes grow {
+    from{
+        transform: scale(0);
+    }
+    to{
+        transform: scale(1);
+    }
+}
+
+@keyframes boxBorder {
+    from{
+        border: 1px solid #6a6363;
+    }
+    to{
+        border: 3px solid #6a6363;
+    }
+
+}
+
+aside{
+    position: absolute;
+    top: 1%;
+    left: 1%;
+    display: inline-block;
+    width:max-content;
+}
+
+aside>h1{
+    font-family: 'Poppins', Sans-serif;
+    color: white;
+    display: inline-block;
+    position: relative;
+    top: 5px;
+
+}
+
+aside>img{
+    height:13vh;
+    width: auto;
+    position: relative;
+    display: inline-block;
+
+}
+aside>div>div{
+    height: 10vh;
+    aspect-ratio: 1/1;
+    border-radius:10px;
+    margin-left: 5%;
+    display: inline-block;
+}
+aside>div>h6{
+    display: inline-block;
+    color: white;
+}
+aside>div{
+    border:1px solid black;
+    margin-left: 5%;
+    width: 14vw;
+    margin-bottom: 5%;
+}
+aside>div:nth-of-type(1)>div:nth-of-type(1){
+background: url("images/USER_01-removebg-preview.png") center;
+    background-size: cover;
+}
+
+aside>div:nth-of-type(2)>div:nth-of-type(1){
+    background: url("images/USER_02-removebg-preview.png") center;
+    background-size: cover;
+}
+
+aside>div:nth-of-type(3)>div:nth-of-type(1){
+    background: url("images/USER_03-removebg-preview.png") center;
+    background-size: cover;
+}
+
+aside>div:nth-of-type(4)>div:nth-of-type(1){
+    background: url("images/USER_04-removebg-preview.png") center;
+    background-size: cover;
+}
+.color{
+    height: 2vh;
+    border-radius:2px;
+}
+/*
+*{
+    font-family: 'Poppins', Sans-serif;
+}
+*/
+
+aside>div:nth-of-type(1)>div:nth-of-type(2){
+    background-color:#D33231;
+}
+
+aside>div:nth-of-type(2)>div:nth-of-type(2){
+    background-color:#229746;
+}
+
+aside>div:nth-of-type(3)>div:nth-of-type(2){
+    background-color:#ECBE04;
+}
+
+aside>div:nth-of-type(4)>div:nth-of-type(2){
+    background-color:#2B91D6;
+}
+
+aside>div>svg{
+    margin-left: 10px;
+    display: inline-block;
+    color: white;
+}
+
+aside:nth-of-type(2){
+    position: absolute;
+    top: 15%;
+    left:initial;
+    right: 12%;
+    display: inline-block;
+    width:max-content;
+}
+
+aside:nth-of-type(2)>div:nth-of-type(1)>div:nth-of-type(1){
+    background: url("images/MEDAL_GOLD.png") center;
+    background-size: cover;
+}
+
+aside:nth-of-type(2)>div:nth-of-type(2)>div:nth-of-type(1){
+    background: url("images/MEDAL_SILVER.png") center;
+    background-size: cover;
+}
+
+aside:nth-of-type(2)>div:nth-of-type(3)>div:nth-of-type(1){
+    background: url("images/MEDAL_BRONZE.png") center;
+    background-size: cover;
+}
+
+aside:nth-of-type(2)>div:nth-of-type(4)>div:nth-of-type(1){
+    background: url("images/MEDAL_BRONZE.png") center;
+    background-size: cover;
+}
+
+::-webkit-scrollbar{
+    width:0;
+}
+
+.centerPieces>img{
+    transform: scale(.5) !important;
+    position: relative !important;
+}
+
+main>img{
+    position: absolute;
+    inset:0;
+    margin:auto;
+    width: auto;
+    height: 30vh;
+}
+.modal{
+    font-family: 'Poppins', Sans-serif;
+}

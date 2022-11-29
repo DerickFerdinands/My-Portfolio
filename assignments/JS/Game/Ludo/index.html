@@ -13,7 +13,7 @@
 <main>
     <section class="board">
         <div class="player">
-            <div class="coinSurface">
+            <div class="greenCoinSurface coinSurface">
                 <div>
                     <div class="coinPlacement" id="cg1"><img alt="" src="assets/images/greenCoin.png"></div>
                     <div class="coinPlacement" id="cg2"><img alt="" src="assets/images/greenCoin.png"></div>
@@ -26,7 +26,7 @@
             </div>
         </div>
         <div class="player">
-            <div class="coinSurface">
+            <div class="yellowCoinSurface coinSurface">
                 <div>
                     <div class="coinPlacement" id="cy1"><img alt="" src="assets/images/yellowCoin.png"></div>
                     <div class="coinPlacement" id="cy2"><img alt="" src="assets/images/yellowCoin.png"></div>
@@ -38,14 +38,10 @@
             </div>
         </div>
         <div class="player">
-            <div class="coinSurface">
+            <div class="redCoinSurface coinSurface">
                 <div>
-                    <div class="coinPlacement" id="cr1">
-                        <img alt="" src="assets/images/redCoin.png">
-                    </div>
-                    <div class="coinPlacement" id="cr2">
-                        <img alt="" src="assets/images/redCoin.png">
-                    </div>
+                    <div class="coinPlacement" id="cr1"><img alt="" src="assets/images/redCoin.png"></div>
+                    <div class="coinPlacement" id="cr2"><img alt="" src="assets/images/redCoin.png"></div>
                 </div>
                 <div>
                     <div class="coinPlacement" id="cr3"><img alt="" src="assets/images/redCoin.png"></div>
@@ -54,7 +50,7 @@
             </div>
         </div>
         <div class="player">
-            <div class="coinSurface">
+            <div class="blueCoinSurface coinSurface">
                 <div>
                     <div class="coinPlacement" id="cb1"><img alt="" src="assets/images/blueCoin.png"></div>
                     <div class="coinPlacement" id="cb2"><img alt="" src="assets/images/blueCoin.png"></div>
@@ -205,7 +201,7 @@
         <br>
         <div>
             <div></div>
-            <h6 id="txtUser01" >User_001</h6>
+            <h6 id="txtUser01">User_001</h6>
             <div class="color"></div>
             <i class="fa-solid fa-pen-to-square"></i>
         </div>
@@ -216,7 +212,7 @@
             <i class="fa-solid fa-pen-to-square"></i>
         </div>
         <div>
-            <div ></div>
+            <div></div>
             <h6 id="txtUser03">User_003</h6>
             <div class="color"></div>
             <i class="fa-solid fa-pen-to-square"></i>
@@ -248,10 +244,11 @@
         </div>
     </aside>
 
-    <img src="assets/images/loading.gif" alt="">
+    <img alt="" src="assets/images/loading.gif">
 
 </main>
-<div class="modal fade" id="playerForm" tabindex="-1" data-bs-backdrop="static" aria-labelledby="playerFormLabel" aria-hidden="true">
+<div aria-hidden="true" aria-labelledby="playerFormLabel" class="modal fade" data-bs-backdrop="static" id="playerForm"
+     tabindex="-1">
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
@@ -260,25 +257,25 @@
             <div class="modal-body">
                 <form>
                     <div class="mb-3">
-                        <label for="player1" class="form-label">Player 01</label>
-                        <input type="text" class="form-control" id="player1" aria-describedby="player1">
+                        <label class="form-label" for="player1">Player 01</label>
+                        <input aria-describedby="player1" class="form-control" id="player1" type="text">
                     </div>
                     <div class="mb-3">
-                        <label for="player2" class="form-label">Player 02</label>
-                        <input type="text" class="form-control" id="player2" aria-describedby="player2">
+                        <label class="form-label" for="player2">Player 02</label>
+                        <input aria-describedby="player2" class="form-control" id="player2" type="text">
                     </div>
                     <div class="mb-3">
-                        <label for="player3" class="form-label">Player 03</label>
-                        <input type="text" class="form-control" id="player3" aria-describedby="player3">
+                        <label class="form-label" for="player3">Player 03</label>
+                        <input aria-describedby="player3" class="form-control" id="player3" type="text">
                     </div>
                     <div class="mb-3">
-                        <label for="player4" class="form-label">Player 04</label>
-                        <input type="text" class="form-control" id="player4" aria-describedby="player4">
+                        <label class="form-label" for="player4">Player 04</label>
+                        <input aria-describedby="player4" class="form-control" id="player4" type="text">
                     </div>
                 </form>
             </div>
             <div class="modal-footer">
-                <button type="button" id="submitPlayers" class="btn btn-primary">Let's Go!</button>
+                <button class="btn btn-primary" id="submitPlayers" type="button">Let's Go!</button>
             </div>
         </div>
     </div>

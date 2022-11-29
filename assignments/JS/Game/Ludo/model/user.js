@@ -104,7 +104,7 @@ function User(name, navPath, coinColor, place1, place2, place3, place4) {
                 item.children().remove();
                 cPlacement.splice(cPlacement.indexOf(item), 1);
                 path[0].addCoin(color);
-                turn=true;
+                turn = true;
             });
         });
     }
@@ -130,5 +130,72 @@ function GetCurrentUser() {
     this.switchUser = function () {
         let tempUser = userItr.shift();
         userItr.push(tempUser);
+    }
+}
+
+function retrieveCoin(cls) {
+    console.log('In Class!',cls);
+    switch (cls) {
+        case 'red': {
+            let count = 0;
+            $('.redCoinSurface').children().children().each(function () {
+                if (count == 0) {
+                    let tempPlacement = $(this);
+                    console.log(tempPlacement);
+                    if ((tempPlacement.children().length) == 0) {
+                        console.log('true');
+                        tempPlacement.append(`<img class="${cls}" src="../assets/images/redCoin.png">`);
+                        count++;
+                        console.log('appended');
+                    }
+
+                }
+            });
+            break;
+        }
+
+        case 'green': {
+            let count = 0;
+            $('.greenCoinSurface').children().children().each(function () {
+                if (count == 0) {
+                    let tempPlacement = $(this);
+                    console.log(tempPlacement);
+                    if ((tempPlacement.children().length) == 0) {
+                        tempPlacement.append(`<img class="${cls}" src="../assets/images/greenCoin.png">`);
+                        count++;
+                    }
+
+                }
+            });
+            break;
+        }
+        case 'yellow': {
+            let count = 0;
+            $('.yellowCoinSurface').children().children().each(function () {
+                if (count == 0) {
+                    let tempPlacement = $(this);
+                    if ((tempPlacement.children().length) == 0) {
+                        tempPlacement.append(`<img class="${cls}" src="../assets/images/yellowCoin.png">`);
+                        count++;
+                    }
+
+                }
+            });
+            break;
+        }
+        case 'blue': {
+            let count = 0;
+            $('.blueCoinSurface').children().children().each(function () {
+                if (count == 0) {
+                    let tempPlacement = $(this);
+                    if ((tempPlacement.children().length) == 0) {
+                        tempPlacement.append('<img class="' + cls + '" style="transform: scale(0)" src="../assets/images/blueCoin.png">');
+                        count++;
+                    }
+
+                }
+            });
+            break;
+        }
     }
 }
