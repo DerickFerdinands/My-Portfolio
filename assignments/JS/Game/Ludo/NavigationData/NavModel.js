@@ -186,11 +186,10 @@ function GetNavObj(obj) {
         block.children().each(function () {
             if(count==0) {
                 let tempCoin = $(this);
-                console.log(tempCoin.attr('class'));
                 if (tempCoin.attr('class') != cls) {
                     tempCoin.remove();
+                    turnCount=0;
                     retrieveCoin(tempCoin.attr('class'));
-                    console.log('Executed Retrieval');
                 }
                 count++;
             }

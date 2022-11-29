@@ -134,7 +134,6 @@ function GetCurrentUser() {
 }
 
 function retrieveCoin(cls) {
-    console.log('In Class!',cls);
     switch (cls) {
         case 'red': {
             let count = 0;
@@ -143,10 +142,8 @@ function retrieveCoin(cls) {
                     let tempPlacement = $(this);
                     console.log(tempPlacement);
                     if ((tempPlacement.children().length) == 0) {
-                        console.log('true');
                         tempPlacement.append(`<img class="${cls}" src="../assets/images/redCoin.png">`);
                         count++;
-                        console.log('appended');
                     }
 
                 }
@@ -159,7 +156,6 @@ function retrieveCoin(cls) {
             $('.greenCoinSurface').children().children().each(function () {
                 if (count == 0) {
                     let tempPlacement = $(this);
-                    console.log(tempPlacement);
                     if ((tempPlacement.children().length) == 0) {
                         tempPlacement.append(`<img class="${cls}" src="../assets/images/greenCoin.png">`);
                         count++;
