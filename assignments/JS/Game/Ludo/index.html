@@ -205,25 +205,25 @@
         <br>
         <div>
             <div></div>
-            <h6>User_001</h6>
+            <h6 id="txtUser01" >User_001</h6>
             <div class="color"></div>
             <i class="fa-solid fa-pen-to-square"></i>
         </div>
         <div>
             <div></div>
-            <h6>User_002</h6>
+            <h6 id="txtUser02">User_002</h6>
+            <div class="color"></div>
+            <i class="fa-solid fa-pen-to-square"></i>
+        </div>
+        <div>
+            <div ></div>
+            <h6 id="txtUser03">User_003</h6>
             <div class="color"></div>
             <i class="fa-solid fa-pen-to-square"></i>
         </div>
         <div>
             <div></div>
-            <h6>User_003</h6>
-            <div class="color"></div>
-            <i class="fa-solid fa-pen-to-square"></i>
-        </div>
-        <div>
-            <div></div>
-            <h6>User_004</h6>
+            <h6 id="txtUser04">User_004</h6>
             <div class="color"></div>
             <i class="fa-solid fa-pen-to-square"></i>
         </div>
@@ -251,6 +251,38 @@
     <img src="assets/images/loading.gif" alt="">
 
 </main>
+<div class="modal fade" id="playerForm" tabindex="-1" data-bs-backdrop="static" aria-labelledby="playerFormLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" id="playerFormLabel">Players</h1>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="mb-3">
+                        <label for="player1" class="form-label">Player 01</label>
+                        <input type="text" class="form-control" id="player1" aria-describedby="player1">
+                    </div>
+                    <div class="mb-3">
+                        <label for="player2" class="form-label">Player 02</label>
+                        <input type="text" class="form-control" id="player2" aria-describedby="player2">
+                    </div>
+                    <div class="mb-3">
+                        <label for="player3" class="form-label">Player 03</label>
+                        <input type="text" class="form-control" id="player3" aria-describedby="player3">
+                    </div>
+                    <div class="mb-3">
+                        <label for="player4" class="form-label">Player 04</label>
+                        <input type="text" class="form-control" id="player4" aria-describedby="player4">
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" id="submitPlayers" class="btn btn-primary">Let's Go!</button>
+            </div>
+        </div>
+    </div>
+</div>
 
 <script src="../../assets/js/bootstrap.min.js"></script>
 <script src="../../assets/js/jquery-3.6.1.min.js"></script>

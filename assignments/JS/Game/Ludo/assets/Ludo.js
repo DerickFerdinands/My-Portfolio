@@ -5,14 +5,54 @@ $(window).on('load', function () {
     $('section, aside, div').css('display', '');
     $('main>img').css('display', 'none');
     $('body').css('background', '');
+
+    $('#playerForm').modal('show');
 });
+
+$('#submitPlayers').click(function () {
+    let user01 = "";
+    let user02 = "";
+    let user03 = "";
+    let user04 = "";
+    if($('#player1').val().length>0){
+        user01=$('#player1').val();
+    }else{
+        $('#player1').css('border','2px solid red');
+    }
+    if($('#player2').val().length>0){
+        user02=$('#player2').val();
+    }else{
+        $('#player2').css('border','2px solid red');
+    }
+    if($('#player3').val().length>0){
+        user03=$('#player3').val();
+    }else{
+        $('#player3').css('border','2px solid red');
+    }
+    if($('#player4').val().length>0){
+        user04=$('#player4').val();
+    }else{
+        $('#player4').css('border','2px solid red');
+    }
+
+    if((user01.length>0)&&(user02.length>0)&&(user03.length>0)&&(user04.length>0)){
+        $('#txtUser01').text(user01);
+        $('#txtUser02').text(user02);
+        $('#txtUser03').text(user03);
+        $('#txtUser04').text(user04);
+        $('#playerForm').modal('hide');
+    }
+
+    $('#txtUser01').text();
+});
+
 $('document').ready(function () {
     $('section, aside, div').css('display', 'none');
     $('body').css('background', '#F0EEF0');
 });
 $('#dice').click(function () {
     if (turn) {
-        turn=false;
+        turn = false;
         random = Math.floor((Math.random() * 6) + 1);
         console.log(random);
         var obj = this;
@@ -72,7 +112,7 @@ function checkUserTurn() {
         turnCount++;
     } else {
         switchUser();
-        turn=true;
+        turn = true;
     }
 }
 

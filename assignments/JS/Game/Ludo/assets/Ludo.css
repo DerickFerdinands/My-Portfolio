@@ -633,3 +633,6 @@ main>img{
     width: auto;
     height: 30vh;
 }
+.modal{
+    font-family: 'Poppins', Sans-serif;
+}
