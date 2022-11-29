@@ -178,6 +178,7 @@ function GetNavObj(obj) {
         block.append('<img class="' + cls + '" style="transform: scale(0)" src="' + img + '">');
         block.children().css('transform', 'scale(1)');
 
+
         reArrangeCoins();
 
     }

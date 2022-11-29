@@ -58,13 +58,24 @@ function User(name, navPath, coinColor, place1, place2, place3, place4) {
                             let i = 0;
                           let inter=   setInterval(function () {
                                 if (i != navPath.length - 1) {
+                                    let jump = new Audio("assets/audio/jump.wav")
                                     jump.play();
                                     navPath[i].removeCoin(color);
                                     navPath[i + 1].addCoin(color);
+
+                                    if(path.indexOf(navPath[i+1])==(path.length-1)){
+                                        alert("pocket");
+                                        scores.push(this.name);
+                                        turnCount=0;
+                                    }
+
                                     i++;
                                 }else{
-                                    switchUser();
+                                    if((random!=6)&&(turnCount!=0)){
+                                        switchUser();
+                                    }
                                     clearInterval(inter);
+
                                 }
                             }, 250);
 

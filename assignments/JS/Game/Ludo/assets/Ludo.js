@@ -1,10 +1,19 @@
-let random = 0;
+let random = 6;
+let scores =[];
 
-const jump = new Audio("assets/audio/jump.wav")
-
-
+/*$(window).on('load', function () {
+    // alert("Hello");
+    // jump.play();
+});
+$('document').ready(function () {
+    $('body').append('<button style="display:none;" id="playBtn"></button>');
+    $('#playBtn').click(function () {
+        jump.play();
+    });
+    $('#playBtn').click();
+});*/
 $('#dice').click(function () {
-    random = Math.floor((Math.random() * 6) + 1);
+    // random = Math.floor((Math.random() * 6) + 1);
     console.log(random);
     var obj = this;
     let dice = $(this);
@@ -36,7 +45,7 @@ $('#dice').click(function () {
                 break;
 
         }
-    }, 3000);
+    }, 500);
 
     setTimeout(checkUserTurn(), 4000);
 
