@@ -159,3 +159,64 @@ function getCurrentRotation(elid) {
         return angle;
     }
 }
+
+function checkWinner(){
+        if($('#finalGreen').children().length ==4){
+            let add =true;
+            scores.forEach((value, index) => {
+                if(value==$('#txtUser02').text()){
+                    add=false;
+                }
+            })
+
+            if(add){
+                scores.push($('#txtUser02').text());
+            }
+        }
+
+    if($('#finalRed').children().length ==4){
+        let add =true;
+        scores.forEach((value, index) => {
+            if(value==$('#txtUser01').text()){
+                add=false;
+            }
+        })
+
+        if(add){
+            scores.push($('#txtUser01').text());
+        }
+    }
+
+    if($('#finalBlue').children().length ==4){
+        let add =true;
+        scores.forEach((value, index) => {
+            if(value==$('#txtUser04').text()){
+                add=false;
+            }
+        })
+
+        if(add){
+            scores.push($('#txtUser04').text());
+        }
+    }
+    if($('#finalYellow').children().length ==4){
+        let add =true;
+        scores.forEach((value, index) => {
+            if(value==$('#txtUser03').text()){
+                add=false;
+            }
+        })
+
+        if(add){
+            scores.push($('#txtUser03').text());
+        }
+    }
+addToScoreBoard();
+}
+
+function addToScoreBoard() {
+    let boardPlaces = [$('#Winner'),$('#runnerUp'),$('#secondRunnerUp'),$('#thirdRunnerUp')];
+    scores.forEach((value, index) => {
+        boardPlaces[index].text(value);
+    });
+}

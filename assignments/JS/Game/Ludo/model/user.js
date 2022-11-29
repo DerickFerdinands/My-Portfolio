@@ -64,9 +64,8 @@ function User(name, navPath, coinColor, place1, place2, place3, place4) {
                                     navPath[i + 1].addCoin(color);
 
                                     if (path.indexOf(navPath[i + 1]) == (path.length - 1)) {
-                                        alert("pocket");
-                                        scores.push(this.name);
                                         turnCount = 0;
+                                        checkWinner();
                                     }
 
                                     i++;
