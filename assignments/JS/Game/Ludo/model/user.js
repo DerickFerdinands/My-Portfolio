@@ -41,11 +41,11 @@ function User(name, navPath, coinColor, place1, place2, place3, place4) {
 
 
     this.animateCoinsOnPath = function () {
-        let count=0;
+        let count = 0;
         path.forEach((item, index) => {
 
             item.getBlock().children().each(function () {
-                if(count==0) {
+                if (count == 0) {
 
                     if ($(this).attr('class') == color && (path.length - (index + 1)) >= random) {
                         item.getBlock().css('animation', 'none');
@@ -56,26 +56,26 @@ function User(name, navPath, coinColor, place1, place2, place3, place4) {
                             endCoinAnimation();
                             let navPath = path.slice(index, (index + random + 1));
                             let i = 0;
-                          let inter=   setInterval(function () {
+                            let inter = setInterval(function () {
                                 if (i != navPath.length - 1) {
                                     let jump = new Audio("assets/audio/jump.wav")
                                     jump.play();
                                     navPath[i].removeCoin(color);
                                     navPath[i + 1].addCoin(color);
 
-                                    if(path.indexOf(navPath[i+1])==(path.length-1)){
+                                    if (path.indexOf(navPath[i + 1]) == (path.length - 1)) {
                                         alert("pocket");
                                         scores.push(this.name);
-                                        turnCount=0;
+                                        turnCount = 0;
                                     }
 
                                     i++;
-                                }else{
-                                    if((random!=6)&&(turnCount!=0)){
+                                } else {
+                                    if ((random != 6) && (turnCount != 0)) {
                                         switchUser();
                                     }
                                     clearInterval(inter);
-
+                                    turn = true;
                                 }
                             }, 250);
 
@@ -85,7 +85,7 @@ function User(name, navPath, coinColor, place1, place2, place3, place4) {
                 }
             });
 
-            count=0;
+            count = 0;
         });
     }
 
@@ -104,6 +104,7 @@ function User(name, navPath, coinColor, place1, place2, place3, place4) {
                 item.children().remove();
                 cPlacement.splice(cPlacement.indexOf(item), 1);
                 path[0].addCoin(color);
+                turn=true;
             });
         });
     }
