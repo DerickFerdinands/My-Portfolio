@@ -16,21 +16,25 @@ $('#submitPlayers').click(function () {
     let user04 = "";
     if($('#player1').val().length>0){
         user01=$('#player1').val();
+        $('#player1').css('border','2px solid grey');
     }else{
         $('#player1').css('border','2px solid red');
     }
     if($('#player2').val().length>0){
         user02=$('#player2').val();
+         $('#player2').css('border','2px solid grey');
     }else{
         $('#player2').css('border','2px solid red');
     }
     if($('#player3').val().length>0){
         user03=$('#player3').val();
+        $('#player3').css('border','2px solid grey');
     }else{
         $('#player3').css('border','2px solid red');
     }
     if($('#player4').val().length>0){
         user04=$('#player4').val();
+         $('#player4').css('border','2px solid grey');
     }else{
         $('#player4').css('border','2px solid red');
     }
@@ -111,7 +115,7 @@ function checkUserTurn() {
         user.animateCoinsOnPath();
         turnCount++;
     } else {
-        switchUser();
+        setTimeout(switchUser,1200);
         turn = true;
     }
 }
