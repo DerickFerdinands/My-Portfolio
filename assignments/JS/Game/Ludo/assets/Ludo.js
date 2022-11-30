@@ -57,7 +57,7 @@ $('document').ready(function () {
 $('#dice').click(function () {
     if (turn) {
         turn = false;
-        // random = Math.floor((Math.random() * 6) + 1);
+        random = Math.floor((Math.random() * 6) + 1);
         console.log(random);
         var obj = this;
         let dice = $(this);
