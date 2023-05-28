@@ -257,10 +257,11 @@
             <h2>PROJECTS</h2>
             <div>
                 <img id="pLeft" class="project-nav" src="assets/images/Vector-1.png" alt="">
-                <h2 id="pOne" class="project-nav">01</h2>
-                <h2 id="pTwo" class="project-nav">02</h2>
-                <h2 id="pThree" class="project-nav">03</h2>
-                <h2 id="pFour" class="project-nav">04</h2>
+                <h2 id="pZero" class="project-nav">01</h2>
+                <h2 id="pOne" class="project-nav">02</h2>
+                <h2 id="pTwo" class="project-nav">03</h2>
+                <h2 id="pThree" class="project-nav">04</h2>
+                <h2 id="pFour" class="project-nav">05</h2>
                 <img id="pRight" class="project-nav" src="assets/images/Vector.png" alt="">
             </div>
         </div>
@@ -566,8 +567,30 @@
 
     $('.project-nav').css('cursor', 'pointer');
 
-    $('#pOne').click(function () {
+    $('#pZero').click(function () {
         $('#pIndex').text('01');
+        $('#projectTitle').text('Easy Car Rental');
+        $('#pImg1').attr('src', 'assets/images/projects/Easy Car Rental/ECR-01.svg');
+        $('#pImg2').attr('src', 'assets/images/projects/Easy Car Rental/ECR-02.svg');
+        $('#projectP1').text('Easy car rental private limited is a car rental service with 5 years of history. This company has about\n'+
+        '50 cars and 40 drivers working for them in regular shifts. This company is located at No. 200, Galle\n'+
+        'Road, Panadura, and well known for their services. Usually, people who don’t own a car, people who\n'+
+        'are waiting for their car to be repaired and, travelers or tourists seek their services.\n');
+
+        $('#projectP2').text('However, the Easy Car Rental owner decided to hire a new manager for the rental services due to the\n' +
+            'declining sales from month to month. As such, the new manager did his research and found out that\n' +
+            'their business process is kind of old fashioned and people are getting used to renting cars online. He\n' +
+            'realized, considering the trend, they are at a disadvantage. With the facts at hand, the manager\n' +
+            'proposed that they buy a Software Solution for the problem at hand and was accepted by the shop\n' +
+            'owner.');
+
+        $('#projectP3').text('Therefore, A Car Rental System Was Introduced.');
+
+        $('#projectLink').text('https://github.com/DerickFerdinands/Spring-Final-Project.git');
+    });
+
+    $('#pOne').click(function () {
+        $('#pIndex').text('02');
         $('#projectTitle').text('D24 Hostel');
         $('#pImg1').attr('src', 'assets/images/image%2012.png');
         $('#pImg2').attr('src', 'assets/images/image%2011.png');
@@ -589,7 +612,7 @@
     });
 
     $('#pTwo').click(function () {
-        $('#pIndex').text('02');
+        $('#pIndex').text('03');
         $('#projectTitle').text('LA Project');
         $('#projectTitle').css('background-size', 'cover !important');
         $('#pImg1').attr('src', 'assets/images/projects/LayeredArchitecture/Screenshot 2022-09-14 202242.jpg');
@@ -612,7 +635,7 @@
     });
 
     $('#pThree').click(function () {
-        $('#pIndex').text('03');
+        $('#pIndex').text('04');
         $('#projectTitle').text('ITech Lanka');
         $('#projectTitle').css('background-size', 'cover !important');
         $('#pImg1').attr('src', 'assets/images/projects/ITech/Screenshot 2022-09-14 201428.jpg');
@@ -635,7 +658,7 @@
     });
 
     $('#pFour').click(function () {
-        $('#pIndex').text('04');
+        $('#pIndex').text('05');
         $('#projectTitle').text('T&G Grocers');
         $('#projectTitle').css('background-size', 'cover !important');
         $('#pImg1').attr('src', 'assets/images/projects/TNG/Screenshot 2022-09-14 202923.jpg');
